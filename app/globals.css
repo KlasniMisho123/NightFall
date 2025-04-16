@@ -2,7 +2,7 @@
 
 
 .loading-div-one {
-
+    animation: bounce 1s ease-in-out infinite;
 }
 
 @keyframes bounce {
