@@ -9,8 +9,8 @@ export function useAuth() {
     return useContext(AuthContext)
 }
 
-export function AuthProvider({}) {
-  [authTest, setAuthTest] = useState(false)
+export function AuthProvider({ children }) {
+  const [authTest, setAuthTest] = useState(false)
 
   useEffect(()=>{
     setAuthTest(true)
