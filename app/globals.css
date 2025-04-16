@@ -8,7 +8,15 @@
       transform: translateY(-50px);
     }
   }
-
+  @keyframes bounce-animation-reverse {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(50px);
+    }
+  }
+  
   @keyframes firstDivAnim {
     0% {
         top: 0;
@@ -100,42 +108,41 @@
 }
 
 .secondDiv-animation-delay-0 {
-    animation: bounce-animation 1s ease-in-out infinite;
+    animation: bounce-animation-reverse 1s ease-in-out infinite;
     animation-delay: 0s;
-}
-
-.secondDiv-animation-delay-1 {
-    animation: bounce-animation 1s ease-in-out infinite;
+  }
+  
+  .secondDiv-animation-delay-1 {
+    animation: bounce-animation-reverse 1s ease-in-out infinite;
     animation-delay: 0.1s;
-}
-
-.secondDiv-animation-delay-2 {
-    animation: bounce-animation 1s ease-in-out infinite;
+  }
+  
+  .secondDiv-animation-delay-2 {
+    animation: bounce-animation-reverse 1s ease-in-out infinite;
     animation-delay: 0.2s;
-}
-
-.secondDiv-animation-delay-3 {
-    animation: bounce-animation 1s ease-in-out infinite;
+  }
+  
+  .secondDiv-animation-delay-3 {
+    animation: bounce-animation-reverse 1s ease-in-out infinite;
     animation-delay: 0.3s;
-}
-
-.secondDiv-animation-delay-4 {
-    animation: bounce-animation 1s ease-in-out infinite;
+  }
+  
+  .secondDiv-animation-delay-4 {
+    animation: bounce-animation-reverse 1s ease-in-out infinite;
     animation-delay: 0.4s;
-}
-
-.secondDiv-animation-delay-5 {
-    animation: bounce-animation 1s ease-in-out infinite;
+  }
+  
+  .secondDiv-animation-delay-5 {
+    animation: bounce-animation-reverse 1s ease-in-out infinite;
     animation-delay: 0.5s;
-}
-
-.secondDiv-animation-delay-6 {
-    animation: bounce-animation 1s ease-in-out infinite;
+  }
+  
+  .secondDiv-animation-delay-6 {
+    animation: bounce-animation-reverse 1s ease-in-out infinite;
     animation-delay: 0.6s;
-}
-
-.secondDiv-animation-delay-7 {
-    animation: bounce-animation 1s ease-in-out infinite;
+  }
+  
+  .secondDiv-animation-delay-7 {
+    animation: bounce-animation-reverse 1s ease-in-out infinite;
     animation-delay: 0.7s;
-}
-
+  }
