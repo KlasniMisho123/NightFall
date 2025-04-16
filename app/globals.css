@@ -22,14 +22,14 @@
       top: 0;
       z-index: 50;
     }
-    20% {
+    25% {
       transform: scale(1.5);
     }
     50% {
       top: calc(100% + 60px);
     }
     75% {
-      transform: scale(0.8);
+      transform: scale(0.80);
       z-index: 0;
     }
     100% {
@@ -43,14 +43,14 @@
       top: 0;
       z-index: 50;
     }
-    20% {
-      transform: scale(0.8);
+    25% {
+      transform: scale(1.5);
     }
     50% {
       top: calc(100% + 60px);
     }
     75% {
-      transform: scale(1.5);
+      transform: scale(0.80);
       z-index: 0;
     }
     100% {
@@ -61,11 +61,11 @@
   
 
 .loading-div-one {
-    animation: firstDivAnim 3s ease-in-out infinite;
+    animation: firstDivAnim 5s ease-in-out infinite;
 }
 
 .loading-div-two {
-    animation: secondDivAnim 3s ease-in-out infinite;
+    animation: secondDivAnim 5s ease-in-out infinite;
 }
 
 .firstDiv-animation-delay-0 {

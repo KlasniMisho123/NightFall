@@ -3,7 +3,7 @@ import React from 'react'
 export default function Loading() {
   return (
     <div className='flex flex-col h-[100vh] bg-blue-300 items-center justify-center'>
-      <div className="flex gap-1 items-center loading-div-two">
+      <div className="flex gap-2 items-center loading-div-two">
         <div className="h-8 w-8 bg-red-500 rounded-full secondDiv-animation-delay-0"></div>
         <div className="h-8 w-8 bg-red-500 rounded-full secondDiv-animation-delay-1"></div>
         <div className="h-8 w-8 bg-red-500 rounded-full secondDiv-animation-delay-2"></div>
