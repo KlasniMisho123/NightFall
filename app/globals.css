@@ -6,7 +6,7 @@
     gap: 1rem;
 }
 
-@keyframes bounce {
+@keyframes bounce-animation {
     0%, 100% {
       transform: translateY(0);
     }
@@ -16,41 +16,41 @@
   }
 
   .animation-delay-0 {
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0s;
   }
   
   .animation-delay-1 {
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.125s;
   }
   
   .animation-delay-2 {
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.25s;
   }
   
   .animation-delay-3 {
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.s;
   }
   
   .animation-delay-4 {
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.4s;
   }
   
   .animation-delay-5 {
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.5s;
   }
   
   .animation-delay-6 {
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.6s;
   }
   
   .animation-delay-7 {
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.7s;
   }
