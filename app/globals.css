@@ -19,52 +19,53 @@
   
   @keyframes firstDivAnim {
     0% {
-        top: 0;
-        z-index: 50;
+      top: 0;
+      z-index: 50;
     }
     20% {
-        transform: scale(1.5);
+      transform: scale(1.5);
     }
     50% {
-        top: calc(100% + 60px);
+      top: calc(100% + 60px);
     }
     75% {
-        transform: scale(0.80);
-        z-index: 0;
+      transform: scale(0.8);
+      z-index: 0;
     }
     100% {
-        top: 0;
-        z-index: 2;
+      top: 0;
+      z-index: 2;
     }
   }
+  
   @keyframes secondDivAnim {
     0% {
-        top: 0;
-        z-index: 50;
+      top: 0;
+      z-index: 50;
     }
     20% {
-        transform: scale(1.5);
+      transform: scale(0.8);
     }
     50% {
-        top: calc(100% + 60px);
+      top: calc(100% + 60px);
     }
     75% {
-        transform: scale(0.80);
-        z-index: 0;
+      transform: scale(1.5);
+      z-index: 0;
     }
     100% {
-        top: 0;
-        z-index: 2;
+      top: 0;
+      z-index: 2;
     }
   }
+  
 
 .loading-div-one {
     animation: firstDivAnim 3s ease-in-out infinite;
 }
 
 .loading-div-two {
-    animation: firstDivAnim 3s ease-in-out infinite;
-    animation-delay: 3s;
+    animation: secondDivAnim 3s ease-in-out infinite;
 }
 
 .firstDiv-animation-delay-0 {
