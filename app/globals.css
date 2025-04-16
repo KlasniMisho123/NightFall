@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+
+.loading-div-one {
+
+}
+
+@keyframes bounce {
+    50% {
+        transform:  translateY(-50px);
+    }
+}
