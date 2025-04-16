@@ -158,6 +158,6 @@
 
 @keyframes forge {
     50% {
-        transform: translateY(-20px) rotate(45deg);
+        transform: translateY(-20px) rotate(-60deg);
     }
 }
