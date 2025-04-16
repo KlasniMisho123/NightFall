@@ -11,7 +11,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-100px);
+      transform: translateY(-50px);
     }
   }
 
@@ -22,17 +22,17 @@
   
   .animation-delay-1 {
     animation: bounce-animation 1s ease-in-out infinite;
-    animation-delay: 0.125s;
+    animation-delay: 0.1s;
   }
   
   .animation-delay-2 {
     animation: bounce-animation 1s ease-in-out infinite;
-    animation-delay: 0.25s;
+    animation-delay: 0.2s;
   }
   
   .animation-delay-3 {
     animation: bounce-animation 1s ease-in-out infinite;
-    animation-delay: 0.s;
+    animation-delay: 0.3s;
   }
   
   .animation-delay-4 {
