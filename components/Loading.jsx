@@ -23,8 +23,6 @@ export default function Loading() {
         <div className="h-8 w-8 bg-yellow-500 rounded-full firstDiv-animation-delay-6"></div>
         <div className="h-8 w-8 bg-yellow-500 rounded-full firstDiv-animation-delay-7"></div>
       </div>
-
-
     </div>
   )
 }
