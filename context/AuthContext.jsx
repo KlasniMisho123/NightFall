@@ -16,14 +16,16 @@ export function AuthProvider({}) {
     setAuthTest(true)
   },[])
 
-}
+
 
 const value = {
     authTest
 }
 
-return(
+return (
     <AuthContext.Provider value={value}>
         {children}
     </AuthContext.Provider>
 )
+
+}
