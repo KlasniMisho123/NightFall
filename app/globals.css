@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-
-.loading-div-one {
-    display: flex;
-    gap: 1rem;
-}
-
 @keyframes bounce-animation {
     0%, 100% {
       transform: translateY(0);
@@ -15,7 +9,29 @@
     }
   }
 
+  @keyframes firstDivAnim {
+    0% {
+        top: 0
+    }
+    50% {
+        top: calc(100% + 60px);
+    }
+    100% {
+        top: 0
+    }
+  }
+
+.loading-div-one {
+    display: flex;
+    gap: 1rem;
+}
+.loading-div-two {
+    display: flex;
+    gap: 1rem;
+}
+
   .animation-delay-0 {
+    animation: bounce-animation 1s ease-in-out infinite;
     animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0s;
   }
