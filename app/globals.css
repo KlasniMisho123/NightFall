@@ -55,46 +55,87 @@
 }
 
 .loading-div-two {
-    display: flex;
-    gap: 1rem;
+    animation: firstDivAnim 3s ease-in-out infinite;
+    animation-delay: 3s;
 }
 
-  .animation-delay-0 {
+.firstDiv-animation-delay-0 {
     animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0s;
-  }
-  
-  .animation-delay-1 {
+}
+
+.firstDiv-animation-delay-1 {
     animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.1s;
-  }
-  
-  .animation-delay-2 {
+}
+
+.firstDiv-animation-delay-2 {
     animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.2s;
-  }
-  
-  .animation-delay-3 {
+}
+
+.firstDiv-animation-delay-3 {
     animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.3s;
-  }
-  
-  .animation-delay-4 {
+}
+
+.firstDiv-animation-delay-4 {
     animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.4s;
-  }
-  
-  .animation-delay-5 {
+}
+
+.firstDiv-animation-delay-5 {
     animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.5s;
-  }
-  
-  .animation-delay-6 {
+}
+
+.firstDiv-animation-delay-6 {
     animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.6s;
-  }
-  
-  .animation-delay-7 {
+}
+
+.firstDiv-animation-delay-7 {
     animation: bounce-animation 1s ease-in-out infinite;
     animation-delay: 0.7s;
-  }
+}
+
+.secondDiv-animation-delay-0 {
+    animation: bounce-animation 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.secondDiv-animation-delay-1 {
+    animation: bounce-animation 1s ease-in-out infinite;
+    animation-delay: 0.1s;
+}
+
+.secondDiv-animation-delay-2 {
+    animation: bounce-animation 1s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+.secondDiv-animation-delay-3 {
+    animation: bounce-animation 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+.secondDiv-animation-delay-4 {
+    animation: bounce-animation 1s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+.secondDiv-animation-delay-5 {
+    animation: bounce-animation 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.secondDiv-animation-delay-6 {
+    animation: bounce-animation 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+.secondDiv-animation-delay-7 {
+    animation: bounce-animation 1s ease-in-out infinite;
+    animation-delay: 0.7s;
+}
+
