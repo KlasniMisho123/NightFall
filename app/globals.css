@@ -150,3 +150,14 @@
     animation: bounce-animation-reverse 1s ease-in-out infinite;
     animation-delay: 0.7s;
   }
+
+  .forge-animation {
+    display: inline-block;
+    animation: forge 1s ease-in-out infinite;
+}
+
+@keyframes forge {
+    50% {
+        transform: translateY(-20px) rotate(45deg);
+    }
+}
