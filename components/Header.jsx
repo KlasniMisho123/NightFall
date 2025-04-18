@@ -1,10 +1,13 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import { Exo_2 } from 'next/font/google';
 import Link from 'next/link';
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 
 export default function Header() {
+  const [isMenuBarActive, setIsMenuBarActive] = useState(false)
+
   return (
     <div className='flex items-center justify-between bg-gray-600 px-4 pt-2 pb-3'>
       <Link  className='flex gap-2 items-center font-bold text-blue-400  moonLogoAnimation cursor-pointer'
@@ -44,9 +47,16 @@ export default function Header() {
           <i className="fa-regular fa-compass text-gray-300 text-lg compassAnimation mt-1 "></i>
         </Link>
       </nav>
-        <div className='flex visible sm:invisible'>
-          <i className="fa-solid fa-bars text-gray-300 text-lg"></i>
+        <div className='flex visible sm:invisible'
+          onClick={()=> {
+            setIsMenuBarActive(true)
+          }}>
+          <i className={`fa-solid fa-bars text-lg transition-all transition-duration-300` + (isMenuBarActive? "text-black" : "text-gray-300")}>
+
+          </i>
         </div>
+          {isMenuBarActive? 
+          <div> MENUBAR ACTIVE </div>:""}
     </div>
   )
 }
