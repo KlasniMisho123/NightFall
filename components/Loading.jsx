@@ -3,7 +3,7 @@ import React from 'react'
 export default function Loading() {
   return (
     <div className='flex flex-col h-[100vh]  items-center justify-center'>
-      <div className="flex justify-center items-center text-red-500 text-5xl font-bold absolute top-24">
+      <div className="flex justify-center items-center text-red-500 text-5xl font-bold absolute top-32">
         Work In Process 
         <i className="fa-solid fa-hammer ml-4 forge-animation">
         </i>
