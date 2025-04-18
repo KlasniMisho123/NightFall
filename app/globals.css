@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  scroll-behavior: smooth;
+}
+
 /* OADING ANIMATION>> */
 .loading-div-one {
     animation: firstDivAnim 5s ease-in-out infinite;
