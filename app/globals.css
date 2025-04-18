@@ -95,7 +95,19 @@
 }
 /* <<LOADING ANIMATION */
 .moonLogoAnimation {
+  animation: rollback 0.5s ease-in-out;
+}
+.moonLogoAnimation:hover {
   animation: roll 0.5s ease-in-out forwards;
+}
+
+@keyframes rollback {
+  0% {
+    transform: translateX(50px)
+  }
+  100% {
+    transform: translateX(0px)
+  }
 }
 
 @keyframes roll {
