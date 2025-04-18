@@ -66,8 +66,8 @@ export default function Header() {
       <div
         className={
           `flex cursor-pointer ` +
-          (isSideNavBarActive ? "visible" : "")
-          // (isSideNavBarActive ? "visible" : "sm:invisible")
+          // to test sidenavbar
+          (isSideNavBarActive ? "visible" : "sm:invisible")
         }
         onClick={toggleSideNavBar}
       >
@@ -82,7 +82,7 @@ export default function Header() {
       {/* {shouldRenderNav && ( */}
           <nav
           className={
-            'absolute w-full top-[9vh] left-0 z-50 bg-gray-900 text-white transition-all duration-500 ease-in-out overflow-hidden ' +
+            'absolute w-full top-[16vh] left-0 z-50 bg-gray-900 text-white transition-all duration-500 ease-in-out overflow-hidden md:top-[13vh] lg:top-[9vh] ' +
             (isSideNavBarActive ? 'max-h-[500px]' : 'max-h-0')
             }
           >
