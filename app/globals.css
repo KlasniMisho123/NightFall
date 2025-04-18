@@ -101,11 +101,11 @@
   animation: spinback 0.5s ease-in-out;
 }
 .moonLogoAnimation:hover {
-  animation: slide 0.5s ease-in-out forwards;
+  animation: slide 0.75s ease-in-out forwards;
 }
 
 .moonLogoAnimation:hover .moonImg{
-  animation: spin 0.5s ease-in-out forwards;
+  animation: spin 0.75s ease-in-out forwards;
 }
 
 @keyframes slideback {
