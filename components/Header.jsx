@@ -78,15 +78,14 @@ export default function Header() {
         )}
       </div>
         
-
-        {isSideNavBarActive?
-        (
+        {/* IT SKIPS OPEN ANIMATION? */}
+      {/* {shouldRenderNav && ( */}
           <nav
           className={
             'absolute w-full top-[9vh] left-0 z-50 bg-gray-900 text-white transition-all duration-500 ease-in-out overflow-hidden ' +
             (isSideNavBarActive ? 'max-h-[500px]' : 'max-h-0')
-          }
-        >
+            }
+          >
             <div className="flex flex-col p-6 pb-12 gap-6">
               <Link className="flex gap-2 items-center text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium border-b border-gray-700 p-4"
                 href='/'
@@ -121,8 +120,8 @@ export default function Header() {
               </Link>
             </div>
         </nav>
-        ):(<></>)
-       }
+        {/* )} */}
     </div>
   )
+  
 }
