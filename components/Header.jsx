@@ -54,13 +54,12 @@ export default function Header() {
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
         </Link>
 
-        <Link className="flex gap-1 items-center px-1 py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+        <Link className="flex gap-1 items-center px-1 py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium rocket-flies"
         href='/support'
         >
           Contact us
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
-          <i className="fa-solid fa-rocket text-red-400  text-lg compassAnimation mt-1"></i> 
-          {/* onhover Rocker flies up */}
+          <i className="fa-solid fa-rocket text-red-400 text-lg mt-1"></i> 
         </Link>
       </nav>
       <div
@@ -111,7 +110,7 @@ export default function Header() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
               </Link>
               
-              <Link className="flex gap-2 items-center text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium border-b border-gray-700 p-4"
+              <Link className="flex gap-2 items-center text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium border-b border-gray-700 p-4 "
                 href='/support'
                 onClick={() => {setIsSideNavBarActive(false)}}>
                 <i className="fa-solid fa-rocket text-red-400 text-lg compassAnimation mt-1"></i>
