@@ -61,9 +61,9 @@ export default function Header() {
         </div>
         {isSideNavBarActive?
         (
-          <nav className='absolute h-full w-full bg-gray-900 top-[10vh] left-0 z-50 text-white'>
+          <nav className='flex flex-col absolute h-full w-full bg-gray-900 top-[10vh] left-0 z-50 text-white p-6 gap-6 '>
             
-            <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+            <Link className="flex gap-1 items-center  text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium border-b-2 border-white p-4 "
               href='/'
               onClick={() => {
                 setIsSideNavBarActive(false)
@@ -74,7 +74,7 @@ export default function Header() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
             </Link>
            
-            <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+            <Link className="flex gap-1 items-center  text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium border-b-2 border-white p-4 "
               href='/projects'
               onClick={() => {
                 setIsSideNavBarActive(false)
@@ -85,7 +85,7 @@ export default function Header() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
             </Link>
            
-            <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+            <Link className="flex gap-1 items-center  text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium border-b-2 border-white p-4 "
               href='/aboutus'
               onClick={() => {
                 setIsSideNavBarActive(false)
@@ -95,7 +95,7 @@ export default function Header() {
               About us
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
             </Link>
-            <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+            <Link className="flex gap-1 items-center  text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium border-b-2 border-white p-4 "
               href='/support'
               onClick={() => {
                 setIsSideNavBarActive(false)
