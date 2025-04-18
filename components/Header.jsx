@@ -6,7 +6,12 @@ import Link from 'next/link';
 const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 
 export default function Header() {
-  const [isMenuBarActive, setIsMenuBarActive] = useState(false)
+  const [isSideNavBarActive, setIsSideNavBarActive] = useState(false)
+
+
+  function toggleSideNavBar() {
+    setIsSideNavBarActive(!isSideNavBarActive)
+  }
 
   return (
     <div className='flex items-center justify-between bg-gray-600 px-4 pt-2 pb-3'>
@@ -48,15 +53,18 @@ export default function Header() {
         </Link>
       </nav>
         <div className='flex visible sm:invisible'
-          onClick={()=> {
-            setIsMenuBarActive(true)
-          }}>
-          <i className={`fa-solid fa-bars text-lg transition-all transition-duration-300` + (isMenuBarActive? "text-black" : "text-gray-300")}>
-
-          </i>
+          onClick={toggleSideNavBar}>
+          {isSideNavBarActive?
+           (<i className={`fa-solid fa-xmark text-lg transition-all transition-duration-300 text-red-500 ` + (isSideNavBarActive? "" : " invisible")}></i>):
+           (<i className={`fa-solid fa-bars text-lg transition-all transition-duration-300 text-gray-300 ` + (isSideNavBarActive? " invisible" : "")}></i>)
+          }
         </div>
-          {isMenuBarActive? 
-          <div> MENUBAR ACTIVE </div>:""}
+        {isSideNavBarActive?
+          (
+            <div className='absolute h-full w-full bg-gray-300 opacity-10 '> </div>
+          ):
+          ("")
+         }
     </div>
   )
 }
