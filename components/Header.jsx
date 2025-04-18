@@ -27,13 +27,15 @@ export default function Header() {
     <div className='flex items-center justify-between bg-gray-600 px-4 pt-2 pb-3'>
       <Link  className='flex gap-2 items-center font-bold text-blue-400  moonLogoAnimation cursor-pointer'
       href='/'
+      onClick={() => {setIsSideNavBarActive(false)}}
       >
         <img  src='./moonlogo.png' alt='NightFall Home' className='max-h-12 max-w-12 shadow-lg shadow-sky-500/50 rounded-full moonImg'/>
         <span className={' ' + exo2.className}> NightFall </span>
       </Link>
-      <nav className='flex whitespace-nowrap gap-2 w-0 invisible md:gap-4 lg:gap-4 lg:ml-[-10%] sm:visible sm:w-auto'>
+      <nav className={'flex whitespace-nowrap gap-2 w-0 invisible md:gap-4 lg:gap-4 lg:ml-[-10%] sm:visible sm:w-auto ' + exo2.className}>
         <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
         href='/'
+        onClick={() => {setIsSideNavBarActive(false)}}
         >
         <i className="fa-solid fa-house"></i>
         Home
@@ -42,6 +44,7 @@ export default function Header() {
 
         <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
         href='/projects'
+        onClick={() => {setIsSideNavBarActive(false)}}
         >
           Projects
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
@@ -49,6 +52,7 @@ export default function Header() {
 
         <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
         href='/aboutus'
+        onClick={() => {setIsSideNavBarActive(false)}}
         >
           About us
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
@@ -56,6 +60,7 @@ export default function Header() {
 
         <Link className="flex gap-1 items-center px-1 py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium rocket-flies"
         href='/support'
+        onClick={() => {setIsSideNavBarActive(false)}}
         >
           Contact us
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
@@ -81,9 +86,10 @@ export default function Header() {
       {/* {shouldRenderNav && ( */}
           <nav
           className={
-            'absolute w-full top-[13vh] left-0 z-50 bg-gray-900 text-white transition-all duration-500 ease-in-out overflow-hidden md:top-[13vh] lg:top-[9vh] ' +
-            (isSideNavBarActive ? 'max-h-[500px]' : 'max-h-0')
-            }
+            'absolute w-full top-[10vh] left-0 z-50 bg-gray-900 text-white transition-all duration-500 ease-in-out overflow-hidden md:top-[10vh] lg:top-[9vh] ' +
+            exo2.className +
+            (isSideNavBarActive ? ' max-h-[500px]' : ' max-h-0')
+          }
           >
             <div className="flex flex-col p-6 pb-12 gap-6">
               <Link className="flex gap-2 items-center text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium border-b border-gray-700 p-4"
