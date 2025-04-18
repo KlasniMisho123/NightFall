@@ -76,7 +76,7 @@ export default function Header() {
               href='/'
               >
               <i className="fa-solid fa-house"></i>
-              Home
+              Projects
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
             </Link>
             </div>
@@ -85,7 +85,14 @@ export default function Header() {
               href='/'
               >
               <i className="fa-solid fa-house"></i>
-              Home
+              About us
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
+            </Link>
+            <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+              href='/support'
+              >
+              <i className="fa-regular fa-compass text-gray-300 text-lg compassAnimation mt-1 "></i>
+              Contact us
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
             </Link>
             </div>
