@@ -108,6 +108,16 @@
   animation: spin 0.75s ease-in-out forwards;
 }
 
+.compassAnimation {
+  animation: compassSearch 1s ease-in-out infinite;
+}
+
+@keyframes compassSearch {
+  50% {
+    transform: rotate(30deg)
+  }
+}
+
 @keyframes slideback {
   0% {
     transform: translateX(50px)

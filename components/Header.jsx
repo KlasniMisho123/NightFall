@@ -11,26 +11,26 @@ export default function Header() {
         <span className={' ' + exo2.className}> NightFall </span>
       </div>
       <nav className='flex whitespace-nowrap gap-2 md:gap-4 lg:gap-4 lg:ml-[-10%]'>
-        <div className="flex gap-1 items-center px-3 py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium">
-        <i className="fa-solid fa-house text-black"></i>
+        <div className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium">
+        <i className="fa-solid fa-house"></i>
         Home
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
         </div>
 
-        <div className="flex gap-1 items-center px-3 py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium">
+        <div className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium">
           Projects
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
         </div>
 
-        <div className="px-3 py-2 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium">
+        <div className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium">
           About us
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
         </div>
 
-        <div className="px-3 py-2 text-blue-400 hover:text-blue-400/90 relative group cursor-pointer font-medium">
-          <i className="fa-solid fa-compass"></i>
+        <div className="flex gap-1 items-center px-1 py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium">
           Contact us
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
+          <i className="fa-regular fa-compass text-red-500 text-lg compassAnimation pt-1 "></i>
         </div>
       </nav>
       <div></div>
