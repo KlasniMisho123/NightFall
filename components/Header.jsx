@@ -55,16 +55,44 @@ export default function Header() {
         <div className='flex visible sm:invisible'
           onClick={toggleSideNavBar}>
           {isSideNavBarActive?
-           (<i className={`fa-solid fa-xmark text-lg transition-all transition-duration-300 text-red-500 ` + (isSideNavBarActive? "" : " invisible")}></i>):
-           (<i className={`fa-solid fa-bars text-lg transition-all transition-duration-300 text-gray-300 ` + (isSideNavBarActive? " invisible" : "")}></i>)
+           (<i className={`fa-solid fa-xmark text-lg transition-all transition-duration-300 text-red-500 relative z-2` + (isSideNavBarActive? "" : " invisible")}></i>):
+           (<i className={`fa-solid fa-bars text-lg transition-all transition-duration-300 text-gray-300 relative z-2` + (isSideNavBarActive? " invisible" : "")}></i>)
           }
         </div>
         {isSideNavBarActive?
-          (
-            <div className='absolute h-full w-full bg-gray-300 opacity-10 '> </div>
-          ):
-          ("")
-         }
+        (
+          <nav className='absolute h-full w-full bg-gray-900 top-[10vh] left-0 z-50 text-white'>
+            <div>
+            <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+              href='/'
+              >
+              <i className="fa-solid fa-house"></i>
+              Home
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
+            </Link>
+            </div>
+            <div>
+            <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+              href='/'
+              >
+              <i className="fa-solid fa-house"></i>
+              Home
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
+            </Link>
+            </div>
+            <div>
+            <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+              href='/'
+              >
+              <i className="fa-solid fa-house"></i>
+              Home
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
+            </Link>
+            </div>
+          </nav>
+        ):
+        ("")
+       }
     </div>
   )
 }
