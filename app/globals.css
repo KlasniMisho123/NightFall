@@ -95,13 +95,20 @@
 }
 /* <<LOADING ANIMATION */
 .moonLogoAnimation {
-  animation: rollback 0.5s ease-in-out;
+  animation: slideback 0.5s ease-in-out;
+}
+.moonLogoAnimation .moonImg{
+  animation: spinback 0.5s ease-in-out;
 }
 .moonLogoAnimation:hover {
-  animation: roll 0.5s ease-in-out forwards;
+  animation: slide 0.5s ease-in-out forwards;
 }
 
-@keyframes rollback {
+.moonLogoAnimation:hover .moonImg{
+  animation: spin 0.5s ease-in-out forwards;
+}
+
+@keyframes slideback {
   0% {
     transform: translateX(50px)
   }
@@ -110,12 +117,28 @@
   }
 }
 
-@keyframes roll {
+@keyframes slide {
   0% {
-    transform: translateX(0px)
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(50px)
+    transform: translateX(50px);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinback {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
