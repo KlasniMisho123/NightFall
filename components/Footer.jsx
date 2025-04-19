@@ -17,7 +17,11 @@ export default function Footer() {
           <img  src='./moonlogo.png' alt='NightFall Home' className='max-h-12 max-w-12 shadow-lg shadow-sky-500/50 rounded-full moonImg'/>
           <span className={' ' + exo2.className}> NightFall </span>
         </Link>
-
+        <div>Flex/ pricing/ .. ...</div>
+{/* https://www.facebook.com/profile.php?id=61575481044791 */}
+{/* <i className="fa-brands fa-facebook"></i> */}
+          <div>Socials</div>
+          <div>Motto</div>
       </div>
       <span className="h-0.5 bg-blue-500 w-full opacity-100 transition-all duration-300"></span>
       <div className='text-center text-gray-100'>© Copyright 2025, All Rights Reserved by Nightfall Webworks</div>

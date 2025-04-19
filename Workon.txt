@@ -5,3 +5,8 @@ How To Use UnicornIcons?
  ---- HEADER ---
     ~ sideNavBar Skips open animation with {shouldRenderNav && ()} / want to be dismounted after close. -bagon?
     ~ SideNavBar close/Open Animation (x / =)
+
+
+--- Footer ---
+
+sidenavbar activated, footer homebutton must shut down sidenavbar.
