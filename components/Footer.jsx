@@ -1,12 +1,18 @@
 'use client'
 import { Exo_2 } from 'next/font/google';
 import Link from 'next/link';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 
 export default function Footer() {
  const [isSideNavBarActive, setIsSideNavBarActive] = useState(false)
+ const [currentDate, setCurrentDate] = useState("")
+
+useEffect(()=>{
+  let curDate = new Date()
+  setCurrentDate(curDate)
+},[])
 
   return (
     <footer className={'flex flex-col py-6 px-4 bg-gray-600 rounded-t gap-4 ' + exo2.className}>
