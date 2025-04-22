@@ -26,7 +26,9 @@ useEffect(()=>{
         <div className='flex text-gray-300 items-center gap-1 '><i className="fa-solid fa-star text-yellow-300"></i> We Create in the Dark, So You Shine in the Light</div>
 {/* https://www.facebook.com/profile.php?id=61575481044791 */}
           <div>
-              <i className="fa-brands fa-facebook text-lg  transition-all ttransition-duration-300 text-white hover:text-blue-500"></i>
+            <div className='flex justify-center items-center cursor-pointer transition-all transition-duration-300 bg-gray-500/50 h-8 w-8 rounded-full pt-0.5 hover:bg-blue-500'>
+              <i className="fa-brands fa-facebook-f text-xl text-white "></i>
+            </div>
           </div>
       </div>
       <span className="h-0.5 bg-blue-500 w-full opacity-100 transition-all duration-300"></span>
