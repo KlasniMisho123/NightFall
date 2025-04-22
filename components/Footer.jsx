@@ -25,6 +25,13 @@ useEffect(()=>{
         </Link>
         <div className='flex text-gray-300 items-center gap-1 '><i className="fa-solid fa-star text-yellow-300"></i> We Create in the Dark, So You Shine in the Light</div>
           <div className='flex gap-2'>
+           <a
+              className='flex justify-center items-center cursor-pointer transition-all duration-300 bg-gray-500/50 h-8 w-8 rounded-full pt-0.5 hover:bg-orange-600'
+              title='nighfallwebworks@gmail.com'
+            >
+              <i className="fa-solid fa-envelope text-xl text-white"></i>
+            </a>
+            
             <a className='flex justify-center items-center cursor-pointer transition-all transition-duration-300 bg-gray-500/50 h-8 w-8 rounded-full pt-0.5 hover:bg-blue-500'
             href='https://www.facebook.com/profile.php?id=61575481044791'
             target="_blank"
@@ -32,11 +39,13 @@ useEffect(()=>{
               <i className="fa-brands fa-facebook-f text-xl text-white "></i>
             </a>
 
-            <div className='flex justify-center items-center cursor-pointer transition-all transition-duration-300 bg-gray-500/50 h-8 w-8 rounded-full pt-0.5 hover:bg-orange-600'
-            title='nighfallwebworks@gmail.com'
+            <a className='flex justify-center items-center cursor-pointer transition-all transition-duration-300 bg-gray-500/50 text-white h-8 w-8 rounded-full pt-0.5
+             hover:bg-gray-900'
+            href='https://github.com/KlasniMisho123'
+            target="_blank"
             >
-              <i className="fa-solid fa-envelope text-xl text-white"></i>
-            </div>
+              <i className="fa-brands fa-github text-xl "></i>
+            </a>
 
           </div>
       </div>
