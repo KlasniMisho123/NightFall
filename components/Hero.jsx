@@ -8,7 +8,8 @@ export default function Hero() {
         <div className=''> 
           {/* HERO CARD */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
-          <span className='border-4 rounded-lg px-4 py-2 inline-block border-blue-500 text-blue-500 font-bold'> Motto </span> 
+          {/* Dummy Text */}
+          <span className='border-4 rounded-lg px-4 py-2 inline-block border-blue-500/80 text-blue-500/90 font-bold'> ჩვენ გეხმარებით ციფრულ ტრანსფორმაციაში </span> 
           <h1></h1>
           <p> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
             The passage is attributed to an unknown typesetter in the 15th century who is thought:
