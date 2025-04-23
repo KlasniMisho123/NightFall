@@ -23,7 +23,7 @@ useEffect(()=>{
           <img  src='./moonlogo.png' alt='NightFall Home' className='max-h-12 max-w-12 shadow-lg shadow-sky-500/50 rounded-full moonImg'/>
           <span className={' ' + exo2.className}> NightFall </span>
         </Link>
-        <div className='flex text-gray-300 items-center gap-1 '><i className="fa-solid fa-star text-yellow-300"></i> We Create in the Dark, So You Shine in the Light</div>
+        <div className='flex text-gray-300 items-center whitespace-none text-center gap-1 text-sm md:text-base '><i className="fa-solid fa-star text-yellow-300"></i> We Create in the Dark, So You Shine in the Light</div>
           <div className='flex gap-2'>
            <a
               className='flex justify-center items-center cursor-pointer transition-all duration-300 bg-gray-500/50 h-8 w-8 rounded-full pt-0.5 hover:bg-orange-600'

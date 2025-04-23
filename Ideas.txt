@@ -1,1 +1,2 @@
 Small Screen Navbar Activation Animation
+responsive footer
