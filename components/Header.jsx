@@ -65,7 +65,7 @@ export default function Header() {
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
         </Link>
 
-        <Link className={`flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium ` + (selectedNavSection === "support"? " navactive" : "")}
+        <Link className={`flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium rocket-flies ` + (selectedNavSection === "support"? " navactive" : "")}
         href='/support'
         onClick={() => {handleSelectedNavSection('support')}}
         >
