@@ -1,1 +1,1 @@
-Small Screen Navbar With Menubar-> flex-COL
+Small Screen Navbar Activation Animation
