@@ -1,4 +1,4 @@
-import { Exo_2, Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Exo_2, Geist, Geist_Mono, Poppins, Urbanist } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 import Header from "@/components/Header";
@@ -10,6 +10,7 @@ const geistSans = Geist({
 });
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
+const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata = {
   title: "NightFall Webworks",
