@@ -40,7 +40,7 @@ export default function Header() {
         <span className={' ' + exo2.className}> NightFall </span>
       </Link>
       <nav className={'flex whitespace-nowrap gap-2 w-0 invisible md:gap-4 lg:gap-4 lg:ml-[-10%] sm:visible sm:w-auto ' + exo2.className}>
-        <Link className="flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium"
+        <Link className={`flex gap-1 items-center px-1  py-1 text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium ` + (selectedNavSection === "home"? " text-blue-500  after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-500" : "")}
         href='/'
         onClick={() => {handleSelectedNavSection('home')}}
         >
