@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className='h-[100vh] px-12 py-4 bg-[#A7C6DA] '>
       <div className='flex justify-between my-4'>
-        <div className=''> 
+        <div className='min-w-[60%] bg-red-300'> 
           {/* HERO CARD */}
           {/* Background color */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
@@ -31,7 +31,7 @@ export default function Hero() {
             Stat DIV?
           </section>
         </div>
-        <div> Hero </div>
+        <div className='min-w-[35%] bg-green-300'> Hero </div>
         {/* <div> ANIMATION</div> */}
       </div>
         <section> OUR SERVICES </section>
