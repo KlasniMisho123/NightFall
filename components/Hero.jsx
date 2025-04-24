@@ -13,6 +13,7 @@ export default function Hero() {
           {/* Background color */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
           {/* Dummy Text */}
+          {/* COMMIT */}
           <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[-5deg] text-sm md:text-base ' + urbanist.className }> Your partner in digital transformation</span> 
           <h1 className={`text-white text-4xl my-4 sm:text-6xl font-bold mt-2 ` + urbanist.className}>
             Digitize Your Idea
