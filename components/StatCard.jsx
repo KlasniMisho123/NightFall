@@ -8,6 +8,8 @@ export default function StatCard(props) {
   const { color } = props;
 // same title color or -100
 // colors?
+// animation on load totalStatsOne ... 
+// RESPONSIVE
   return (
     <div className='flex flex-col gap-4 items-center px-0  py-4 min-w-[150px] totalStatsOne md:px-2 lg:px-4 '>
       <div className='border-1 border-blue-500  bg-blue-500 px-4 py-1 rounded-lg '> </div>   

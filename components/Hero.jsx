@@ -40,11 +40,11 @@ export default function Hero() {
             </button>
           </div>
 
-          <section className={'bg-white mt-12 mb-4 flex justify-between p-4 px-2 rounded-lg  md:px-4 lg:px-8 '} >
+          <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-12 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 '} >
               
               {/* <StatCard /> */}
 
-              <div className='flex flex-col gap-4 items-center px-0  py-4 min-w-[150px] totalStatsOne md:px-2 lg:px-4 '>
+              <div className='flex flex-col gap-4 items-center px-0 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-blue-500  bg-blue-500 px-4 py-1 rounded-lg '> </div>   
                 <h2 className={'text-4xl text-blue-500 italic ' + mono.className}> 300+ </h2>
                 <h3 className={'text-sm text-blue-500 ' + poppins.className} > USERS </h3>
@@ -58,14 +58,14 @@ export default function Hero() {
                 <h4 className={'text-xs '}> For a Healthier Life </h4>
               </div>
 
-              <div className=' flex flex-col gap-4 items-center px-4 py-4 min-w-[150px] totalStatsTwo '> 
+              <div className='flex flex-col gap-4 items-center px-0 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-red-500  bg-red-500 px-4 py-1 rounded-lg '> </div>
                 <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 100 </h2>
                 <h3 className={'text-sm text-red-500 ' + poppins.className}>  Mood Commits  </h3>
                 <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
               </div>
-              
-              <div className=' flex flex-col gap-4 items-center px-4 py-4 min-w-[150px] totalStatsTwo '> 
+
+              <div className='flex flex-col gap-4 items-center px-0 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-green-500  bg-emerald-500 px-4 py-1 rounded-lg '> </div>
                 <h2 className={'text-4xl text-green-500 italic ' + mono.className}> 450 </h2>
                 <h3 className={'text-sm text-green-500 ' + poppins.className}>  Reaction  </h3>
@@ -73,9 +73,12 @@ export default function Hero() {
               </div>
           </section>  
         </div>
-        <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'> Hero </div>
-        {/* <div> ANIMATION</div> */}
+        <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'>
+           Hero
+           <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' />
+        </div>
       </div>
+        {/* <div> ANIMATION</div> */}
         <section> OUR SERVICES </section>
     </div>
   )
