@@ -2,6 +2,13 @@ import React from 'react'
 
 export default function StatCard() {
   return (
-        <div className='border-8 border-black'> 100 </div>
+        <div className='flex flex-col gap-2 items-center '> 
+          <div className='border-6 border-purple-500 rounded w-12 '></div>
+          <div className='font-bold text-4xl text-purple-500 '> 100+ </div>
+          <div className='font-bold text-lg text-purple-500'> Years Of Service </div>
+          <div className=''> To Monitor Mood </div>
+        </div>
   )
 }
+
+
