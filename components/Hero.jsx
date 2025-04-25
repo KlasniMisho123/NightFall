@@ -1,6 +1,7 @@
 import React from 'react'
 import Loading from './Loading'
 import { Urbanist } from 'next/font/google';
+import StatCard from './statCard';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -32,11 +33,11 @@ export default function Hero() {
             </button>
           </div>
 
-          <section className='bg-pink-300 flex justify-between'>
-            <div> Stat CARD 1</div>
-            <div> Stat CARD 1</div>
-            <div> Stat CARD 1</div>
-            <div> Stat CARD 1</div>
+          <section className='bg-pink-300 mt-12 mb-4 flex justify-between'>
+            <div> <StatCard/> </div>
+            <div> <StatCard/> </div>
+            <div> <StatCard/> </div>
+            <div> <StatCard/> </div>
           </section>
         </div>
         <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'> Hero </div>
