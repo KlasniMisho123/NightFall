@@ -8,12 +8,11 @@ export default function Hero() {
   return (
     <div className='h-[100vh] px-12 py-4 bg-[#A7C6DA] '>
       <div className='flex justify-between my-4'>
-        <div className='min-w-[60%] bg-red-300'> 
+        <div className='min-w-[60%] '> 
           {/* HERO CARD */}
           {/* Background color */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
           {/* Dummy Text */}
-          {/* COMMIT */}
           <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[-5deg] text-sm md:text-base ' + urbanist.className }> Your partner in digital transformation</span> 
           <h1 className={`text-white text-4xl my-4 sm:text-6xl font-bold mt-2 ` + urbanist.className}>
             Digitize Your Idea
@@ -25,14 +24,18 @@ export default function Hero() {
           </p>
 
           <div className='flex gap-2 my-4'>
-            <button className='border-2 p-2 '>Contact Us</button>
-            <button className='border-2 p-2 '>About Us</button>
+            <button className='border-2 p-2 px-4 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 transition-all duration-300 cursor-pointer shadow-sm '>Contact Us</button>
+            {/* bg-[#213448] */}
+            <button className="border-2 p-2 px-4 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 transition-all duration-300 cursor-pointer shadow-sm ">
+  About Us
+</button>
+
           </div>
           <section>
             Stat DIV?
           </section>
         </div>
-        <div className='min-w-[35%] bg-green-300'> Hero </div>
+        <div className='min-w-[35%] border-2 border-gray-800'> Hero </div>
         {/* <div> ANIMATION</div> */}
       </div>
         <section> OUR SERVICES </section>
