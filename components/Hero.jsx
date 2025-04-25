@@ -44,24 +44,24 @@ export default function Hero() {
               
               <StatCard />
 
-              <div className=' flex flex-col gap-4 items-center px-4 py-8 min-w-[150px] totalStatsOne '>
+              <div className='flex flex-col gap-4 items-center px-4 py-4 min-w-[150px] totalStatsOne '>
                 <div className='border-1 border-purple-500  bg-purple-500 px-4 py-1 rounded-lg '> </div>
                 <h2 className={'text-4xl text-purple-500 italic ' + mono.className}> 200 </h2>
                 <h3 className={'text-sm text-purple-500 ' + poppins.className}> Total Users </h3>
                 <h4 className={'text-xs '}> For a Healthier Life </h4>
               </div>
 
-              <div className=' flex flex-col gap-4 items-center px-4 py-8 min-w-[150px] totalStatsTwo '> 
+              <div className=' flex flex-col gap-4 items-center px-4 py-4 min-w-[150px] totalStatsTwo '> 
                 <div className='border-1 border-red-500  bg-red-500 px-4 py-1 rounded-lg '> </div>
                 <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 100 </h2>
                 <h3 className={'text-sm text-red-500 ' + poppins.className}>  Mood Commits  </h3>
                 <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
               </div>
 
-              <div className=' flex flex-col gap-4 items-center px-4 py-8 min-w-[150px] totalStatsTwo '> 
+              <div className=' flex flex-col gap-4 items-center px-4 py-4 min-w-[150px] totalStatsTwo '> 
                 <div className='border-1 border-red-500  bg-red-500 px-4 py-1 rounded-lg '> </div>
-                <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 100 </h2>
-                <h3 className={'text-sm text-red-500 ' + poppins.className}>  Mood Commits  </h3>
+                <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 450 </h2>
+                <h3 className={'text-sm text-red-500 ' + poppins.className}>  Reaction  </h3>
                 <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
               </div>
           </section>  
