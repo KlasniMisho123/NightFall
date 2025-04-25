@@ -182,10 +182,6 @@ body {
   background-color: #3b82f6;
 }
 
-
-
-
-
 @keyframes compassSearch {
   50% {
     transform: rotate(30deg)

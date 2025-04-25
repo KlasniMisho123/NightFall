@@ -2,3 +2,4 @@ Small Screen Navbar Activation Animation
 responsive footer
 --- HERO.jsx ---
 {/* ROCKET/.. -!? FLIES AND LEAVES MOTTO/card */}
+finished counting stats?, slide down/slot matchine like animation?

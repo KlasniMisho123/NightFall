@@ -18,13 +18,13 @@ export default function Hero() {
             Digitize Your Idea
           </h1>
 
-          <p className="text-gray-50 text-sm max-w-md mt-3 leading-relaxed md:text-base ">
+          <p className="text-gray-50 text-sm max-w-md  mt-3 leading-relaxed lg:max-w-2xl md:text-base ">
           Nightfall Webworks helps you build modern, responsive websites that elevate your brand and grow your digital presence.
           From concept to launch — we code your vision into reality.
           </p>
 
 
-          <div className="flex my-6 gap-4 sm:gap-[10%]">
+          <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
             <button className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap">
               Contact Us
             </button>
@@ -33,21 +33,11 @@ export default function Hero() {
             </button>
           </div>
 
-          <section className='bg-white mt-12 mb-4 flex justify-between p-4 px-8'>
-            
-
-            <div className='bg-yellow-300'> 
+          <section className='bg-white mt-12 mb-4 flex justify-between p-16 px-8 rounded-lg '>
+              <StatCard color="blue-500"/> 
               <StatCard/> 
-            </div>
-            <div className='bg-red-300'> 
               <StatCard/> 
-            </div>
-            <div className='bg-blue-300'> 
               <StatCard/> 
-            </div>
-            <div className='bg-green-300'> 
-              <StatCard/> 
-            </div>
           </section>
         </div>
         <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'> Hero </div>
