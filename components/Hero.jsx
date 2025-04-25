@@ -40,11 +40,18 @@ export default function Hero() {
             </button>
           </div>
 
-          <section className={'bg-white mt-12 mb-4 flex justify-between p-4 px-8 rounded-lg '} >
+          <section className={'bg-white mt-12 mb-4 flex justify-between p-4 px-2 rounded-lg  md:px-4 lg:px-8 '} >
               
-              <StatCard />
+              {/* <StatCard /> */}
 
-              <div className='flex flex-col gap-4 items-center px-4 py-4 min-w-[150px] totalStatsOne '>
+              <div className='flex flex-col gap-4 items-center px-0  py-4 min-w-[150px] totalStatsOne md:px-2 lg:px-4 '>
+                <div className='border-1 border-blue-500  bg-blue-500 px-4 py-1 rounded-lg '> </div>   
+                <h2 className={'text-4xl text-blue-500 italic ' + mono.className}> 300+ </h2>
+                <h3 className={'text-sm text-blue-500 ' + poppins.className} > USERS </h3>
+                <h4 className={'text-xs '}> To Monitor Mood </h4>
+              </div>
+
+              <div className='flex flex-col gap-4 items-center px-0  py-4 min-w-[150px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-purple-500  bg-purple-500 px-4 py-1 rounded-lg '> </div>
                 <h2 className={'text-4xl text-purple-500 italic ' + mono.className}> 200 </h2>
                 <h3 className={'text-sm text-purple-500 ' + poppins.className}> Total Users </h3>
@@ -57,11 +64,11 @@ export default function Hero() {
                 <h3 className={'text-sm text-red-500 ' + poppins.className}>  Mood Commits  </h3>
                 <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
               </div>
-
+              
               <div className=' flex flex-col gap-4 items-center px-4 py-4 min-w-[150px] totalStatsTwo '> 
-                <div className='border-1 border-red-500  bg-red-500 px-4 py-1 rounded-lg '> </div>
-                <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 450 </h2>
-                <h3 className={'text-sm text-red-500 ' + poppins.className}>  Reaction  </h3>
+                <div className='border-1 border-green-500  bg-emerald-500 px-4 py-1 rounded-lg '> </div>
+                <h2 className={'text-4xl text-green-500 italic ' + mono.className}> 450 </h2>
+                <h3 className={'text-sm text-green-500 ' + poppins.className}>  Reaction  </h3>
                 <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
               </div>
           </section>  
