@@ -26,7 +26,7 @@ export default function Hero() {
           <div className='flex gap-2 my-4'>
             <button className='border-2 p-2 px-4 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 transition-all duration-300 cursor-pointer shadow-sm '>Contact Us</button>
             {/* bg-[#213448] */}
-            <button className="border-2 p-2 px-4 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 transition-all duration-300 cursor-pointer shadow-sm ">
+            <button className="border-2 p-2 px-4 rounded-lg text-white border-blue-500 hover:text-blue-500  transition-all duration-300 cursor-pointer shadow-sm ">
   About Us
 </button>
 
