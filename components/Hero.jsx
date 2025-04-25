@@ -6,6 +6,7 @@ import StatCard from './statCard';
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Hero() {
+  let color = "red-500"
   return (
     <div className='py-4 bg-[#A7C6DA] px-4 md:px-14 lg:px-28 '>
       <div className='flex gap-2 justify-between my-6'>
@@ -35,9 +36,14 @@ export default function Hero() {
 
           <section className='bg-white mt-12 mb-4 flex justify-between p-16 px-8 rounded-lg '>
               <StatCard color="blue-500"/> 
-              <StatCard/> 
-              <StatCard/> 
-              <StatCard/> 
+              <StatCard color="purple-500" /> 
+              <StatCard color="red-500" /> 
+              <div className='flex flex-col gap-2 items-center '> 
+                <div className={`border-6 rounded w-12 border-${color}`}></div>
+                <div className={`font-bold text-4xl text-${color}`}>100+</div>
+                <div className={`font-bold text-lg text-${color}`}>Years Of Service</div>
+                <div className=''> To Monitor Mood </div>
+              </div>
           </section>
         </div>
         <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'> Hero </div>
