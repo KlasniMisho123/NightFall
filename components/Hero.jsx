@@ -6,14 +6,14 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Hero() {
   return (
-    <div className='h-[100vh] py-4 bg-[#A7C6DA] px-2 md:px-18 lg:px-28 '>
+    <div className='h-[100vh] py-4 bg-[#A7C6DA] px-4 md:px-14 lg:px-28 '>
       <div className='flex gap-2 justify-between my-6'>
-        <div className='min-w-none md:min-w-[60%] '> 
+        <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO CARD */}
           {/* Background color */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
           <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[-5deg] text-sm md:text-base ' + urbanist.className }> Your partner in digital transformation</span> 
-          <h1 className={`text-white text-3xl my-4 md:text-4xl lg:text-6xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
+          <h1 className={`text-white text-4xl my-4 md:text-6xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
             Digitize Your Idea
           </h1>
 
@@ -32,11 +32,14 @@ export default function Hero() {
             </button>
           </div>
 
-          <section className='bg-pink-300'>
-            STATS DIV
+          <section className='bg-pink-300 flex justify-between'>
+            <div> Stat CARD 1</div>
+            <div> Stat CARD 1</div>
+            <div> Stat CARD 1</div>
+            <div> Stat CARD 1</div>
           </section>
         </div>
-        <div className='min-w-none md:min-w-[35%] border-2 border-gray-800'> Hero </div>
+        <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'> Hero </div>
         {/* <div> ANIMATION</div> */}
       </div>
         <section> OUR SERVICES </section>
