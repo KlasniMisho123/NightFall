@@ -33,11 +33,19 @@ export default function Hero() {
             </button>
           </div>
 
-          <section className='bg-pink-300 mt-12 mb-4 flex justify-between'>
-            <div> <StatCard/> </div>
-            <div> <StatCard/> </div>
-            <div> <StatCard/> </div>
-            <div> <StatCard/> </div>
+          <section className='bg-pink-100 mt-12 mb-4 flex justify-between mr-20'>
+            <div className='bg-yellow-300'> 
+              <StatCard/> 
+            </div>
+            <div className='bg-red-300'> 
+              <StatCard/> 
+            </div>
+            <div className='bg-blue-300'> 
+              <StatCard/> 
+            </div>
+            <div className='bg-green-300'> 
+              <StatCard/> 
+            </div>
           </section>
         </div>
         <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'> Hero </div>
