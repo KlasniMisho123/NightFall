@@ -7,7 +7,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Hero() {
   return (
-    <div className='h-[100vh] py-4 bg-[#A7C6DA] px-4 md:px-14 lg:px-28 '>
+    <div className='py-4 bg-[#A7C6DA] px-4 md:px-14 lg:px-28 '>
       <div className='flex gap-2 justify-between my-6'>
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO CARD */}
