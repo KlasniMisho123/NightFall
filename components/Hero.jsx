@@ -1,12 +1,18 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Loading from './Loading'
-import { Urbanist } from 'next/font/google';
+import { Poppins, Space_Mono, Urbanist } from 'next/font/google';
 import StatCard from './statCard';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
+const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 
 export default function Hero() {
+
+  // const [color, setColor] = useState("red-500")
   let color = "red-500"
+
   return (
     <div className='py-4 bg-[#A7C6DA] px-4 md:px-14 lg:px-28 '>
       <div className='flex gap-2 justify-between my-6'>
@@ -34,17 +40,49 @@ export default function Hero() {
             </button>
           </div>
 
-          <section className='bg-white mt-12 mb-4 flex justify-between p-16 px-8 rounded-lg '>
+          {/* <section className='bg-white mt-12 mb-4 flex justify-between p-16 px-8 rounded-lg '>
               <StatCard color="blue-500"/> 
               <StatCard color="purple-500" /> 
               <StatCard color="red-500" /> 
+
               <div className='flex flex-col gap-2 items-center '> 
-                <div className={`border-6 rounded w-12 border-${color}`}></div>
+                <div className={`border-6 rounded w-12 border-red-500`}></div>
                 <div className={`font-bold text-4xl text-${color}`}>100+</div>
                 <div className={`font-bold text-lg text-${color}`}>Years Of Service</div>
                 <div className=''> To Monitor Mood </div>
               </div>
-          </section>
+
+          </> */}
+          <section className={'bg-white mt-12 mb-4 flex justify-between p-4 px-8 rounded-lg '} >
+              
+              <div className=' flex flex-col gap-4 items-center px-4 py-8 min-w-[150px] totalStats '> 
+                <div className='border-1 border-blue-500  bg-blue-500 px-4 py-1 rounded-lg '> </div>   
+                <h2 className={'text-4xl text-blue-500 italic ' + mono.className}> 300+ </h2>
+                <h3 className={'text-sm text-blue-400 ' + poppins.className} > USERS </h3>
+                <h4 className={'text-xs '}> To Monitor Mood </h4>
+              </div>
+
+              <div className=' flex flex-col gap-4 items-center px-4 py-8 min-w-[150px] totalStatsOne '>
+                <div className='border-1 border-purple-500  bg-purple-500 px-4 py-1 rounded-lg '> </div>
+                <h2 className={'text-4xl text-purple-500 italic ' + mono.className}> 200 </h2>
+                <h3 className={'text-sm text-purple-500 ' + poppins.className}> Total Users </h3>
+                <h4 className={'text-xs '}> For a Healthier Life </h4>
+              </div>
+
+              <div className=' flex flex-col gap-4 items-center px-4 py-8 min-w-[150px] totalStatsTwo '> 
+                <div className='border-1 border-red-500  bg-red-500 px-4 py-1 rounded-lg '> </div>
+                <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 100 </h2>
+                <h3 className={'text-sm text-red-500 ' + poppins.className}>  Mood Commits  </h3>
+                <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
+              </div>
+
+              <div className=' flex flex-col gap-4 items-center px-4 py-8 min-w-[150px] totalStatsTwo '> 
+                <div className='border-1 border-red-500  bg-red-500 px-4 py-1 rounded-lg '> </div>
+                <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 100 </h2>
+                <h3 className={'text-sm text-red-500 ' + poppins.className}>  Mood Commits  </h3>
+                <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
+              </div>
+          </section>  
         </div>
         <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'> Hero </div>
         {/* <div> ANIMATION</div> */}
