@@ -32,9 +32,8 @@ export default function Hero() {
             </button>
           </div>
 
-
-          <section>
-            Stat DIV?
+          <section className='bg-pink-300'>
+            STATS DIV
           </section>
         </div>
         <div className='min-w-none md:min-w-[35%] border-2 border-gray-800'> Hero </div>
