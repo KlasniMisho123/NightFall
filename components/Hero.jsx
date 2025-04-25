@@ -14,11 +14,11 @@ export default function Hero() {
   let color = "red-500"
 
   return (
-    <div className='py-4 bg-[#A7C6DA] px-4 md:px-14 lg:px-28 '>
+    <div className='py-4 bg-gray-800 px-4 md:px-14 lg:px-28 '>
       <div className='flex gap-2 justify-between my-6'>
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO CARD */}
-          {/* Background color */}
+          {/* Background color  bg-[#A7C6DA]/ bg-gray-800 / bg-gray-900 */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
           <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[-5deg] text-sm md:text-base ' + urbanist.className }> Your partner in digital transformation</span> 
           <h1 className={`text-white text-4xl my-4 md:text-6xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
