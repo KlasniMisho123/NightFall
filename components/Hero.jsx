@@ -50,36 +50,32 @@ export default function Hero() {
               
               {/* <StatCard /> */}
               {/* RESPONSIVE */}
-              <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-                <i className="fa-solid fa-laptop-code text-8xl text-indigo-700 text-center"></i>
-                <div className="flex flex-col gap-2 mt-4">
-                  <p className="text-gray-600">WEBSITE DEVELOPMENT</p>
-                  <p>Custom-built websites for businesses of all sizes.</p>
-                </div>
+              <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
+                <div className='border-1 border-blue-500  bg-blue-500 px-4 py-1 rounded-lg '> </div>   
+                <h2 className={'text-4xl text-blue-500 italic ' + mono.className}> 300+ </h2>
+                <h3 className={'text-sm text-blue-500 ' + poppins.className} > USERS </h3>
+                <h4 className={'text-xs '}> To Monitor Mood </h4>
               </div>
 
-              <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-                <i className="fa-solid fa-paint-brush text-8xl text-purple-700 text-center"></i>
-                <div className="flex flex-col gap-2 mt-4">
-                  <p className="text-gray-600">UI/UX DESIGN</p>
-                  <p>Crafting stunning, user-friendly interfaces.</p>
-                </div>
+              <div className='flex flex-col gap-4 items-center px-1  py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
+                <div className='border-1 border-purple-500  bg-purple-500 px-4 py-1 rounded-lg '> </div>
+                <h2 className={'text-4xl text-purple-500 italic ' + mono.className}> 200 </h2>
+                <h3 className={'text-sm text-purple-500 ' + poppins.className}> Total Users </h3>
+                <h4 className={'text-xs '}> For a Healthier Life </h4>
               </div>
 
-              <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-                <i className="fa-solid fa-chart-line text-8xl text-blue-600 text-center"></i>
-                <div className="flex flex-col gap-2 mt-4">
-                  <p className="text-gray-600">SEO OPTIMIZATION</p>
-                  <p>Boost your online presence and search rankings.</p>
-                </div>
+              <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
+                <div className='border-1 border-red-500  bg-red-500 px-4 py-1 rounded-lg '> </div>
+                <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 100 </h2>
+                <h3 className={'text-sm text-red-500 ' + poppins.className}>  Mood Commits  </h3>
+                <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
               </div>
 
-              <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-                <i className="fa-solid fa-headset text-8xl text-gray-700 text-center"></i>
-                <div className="flex flex-col gap-2 mt-4">
-                  <p className="text-gray-600">ONGOING SUPPORT</p>
-                  <p>We maintain and update your website, so you don't have to.</p>
-                </div>
+              <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
+                <div className='border-1 border-green-500  bg-emerald-500 px-4 py-1 rounded-lg '> </div>
+                <h2 className={'text-4xl text-green-500 italic ' + mono.className}> 450 </h2>
+                <h3 className={'text-sm text-green-500 ' + poppins.className}>  Reaction  </h3>
+                <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
               </div>
           </section>  
         </div>
@@ -98,7 +94,7 @@ export default function Hero() {
           </div>
 
           <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-            <i className="fa-solid fa-laptop-code text-8xl text-center"></i>
+            <i className="fa-solid fa-laptop-code text-8xl text-indigo-700 text-center"></i>
             <div className="flex flex-col gap-2 mt-4">
               <p className="text-gray-600">WEBSITE DEVELOPMENT</p>
               <p>Custom-built websites for businesses of all sizes.</p>
@@ -106,7 +102,7 @@ export default function Hero() {
           </div>
 
           <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-            <i className="fa-solid fa-paint-brush text-8xl text-center"></i>
+            <i className="fa-solid fa-paint-brush text-8xl text-purple-700 text-center"></i>
             <div className="flex flex-col gap-2 mt-4">
               <p className="text-gray-600">UI/UX DESIGN</p>
               <p>Crafting stunning, user-friendly interfaces.</p>
@@ -114,7 +110,7 @@ export default function Hero() {
           </div>
 
           <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-            <i className="fa-solid fa-chart-line text-8xl text-center"></i>
+            <i className="fa-solid fa-chart-line text-8xl text-blue-600 text-center"></i>
             <div className="flex flex-col gap-2 mt-4">
               <p className="text-gray-600">SEO OPTIMIZATION</p>
               <p>Boost your online presence and search rankings.</p>
@@ -122,7 +118,7 @@ export default function Hero() {
           </div>
 
           <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-            <i className="fa-solid fa-headset text-8xl text-center"></i>
+            <i className="fa-solid fa-headset text-8xl text-gray-700 text-center"></i>
             <div className="flex flex-col gap-2 mt-4">
               <p className="text-gray-600">ONGOING SUPPORT</p>
               <p>We maintain and update your website, so you don't have to.</p>
