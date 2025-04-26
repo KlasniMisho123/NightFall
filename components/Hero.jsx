@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Loading from './Loading'
 import { Poppins, Space_Mono, Urbanist } from 'next/font/google';
 import StatCard from './statCard';
+import Link from 'next/link';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
@@ -32,40 +33,46 @@ export default function Hero() {
 
 
           <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
-            <button className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap">
+            <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 
+            transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
+            href={'/aboutus'}
+            >
               Contact Us
-            </button>
-            <button className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white border-blue-500 hover:text-blue-500 transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap">
+            </Link>
+            <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white border-blue-500 hover:text-blue-500 transition-all duration-300 
+            cursor-pointer shadow-sm whitespace-nowrap"
+            href={'/support'}
+            >
               About Us
-            </button>
+            </Link>
           </div>
 
           <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-12 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 '} >
               
               {/* <StatCard /> */}
 
-              <div className='flex flex-col gap-4 items-center px-0 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
+              <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-blue-500  bg-blue-500 px-4 py-1 rounded-lg '> </div>   
                 <h2 className={'text-4xl text-blue-500 italic ' + mono.className}> 300+ </h2>
                 <h3 className={'text-sm text-blue-500 ' + poppins.className} > USERS </h3>
                 <h4 className={'text-xs '}> To Monitor Mood </h4>
               </div>
 
-              <div className='flex flex-col gap-4 items-center px-0  py-4 min-w-[150px] totalStatsOne md:px-2 lg:px-4 '>
+              <div className='flex flex-col gap-4 items-center px-1  py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-purple-500  bg-purple-500 px-4 py-1 rounded-lg '> </div>
                 <h2 className={'text-4xl text-purple-500 italic ' + mono.className}> 200 </h2>
                 <h3 className={'text-sm text-purple-500 ' + poppins.className}> Total Users </h3>
                 <h4 className={'text-xs '}> For a Healthier Life </h4>
               </div>
 
-              <div className='flex flex-col gap-4 items-center px-0 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
+              <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-red-500  bg-red-500 px-4 py-1 rounded-lg '> </div>
                 <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 100 </h2>
                 <h3 className={'text-sm text-red-500 ' + poppins.className}>  Mood Commits  </h3>
                 <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
               </div>
 
-              <div className='flex flex-col gap-4 items-center px-0 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
+              <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-green-500  bg-emerald-500 px-4 py-1 rounded-lg '> </div>
                 <h2 className={'text-4xl text-green-500 italic ' + mono.className}> 450 </h2>
                 <h3 className={'text-sm text-green-500 ' + poppins.className}>  Reaction  </h3>
