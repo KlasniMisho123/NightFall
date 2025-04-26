@@ -49,7 +49,7 @@ export default function Hero() {
           <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-12 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 '} >
               
               {/* <StatCard /> */}
-
+              {/* RESPONSIVE */}
               <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-blue-500  bg-blue-500 px-4 py-1 rounded-lg '> </div>   
                 <h2 className={'text-4xl text-blue-500 italic ' + mono.className}> 300+ </h2>
@@ -86,7 +86,7 @@ export default function Hero() {
       </div>
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
-        <section className='grid grid-cols-3 gap-6 p-4 py-8'> 
+        <section className='grid grid-cols-2 md:grid-cols-3 gap-6 p-4 py-8'> 
           <div className='p-8 py-12 flex flex-col gap-2 bg-black '>
             <p className='text-gray-300'>OUR SERVICES </p>
             <h2 className='text-4xl text-white font-bold'>What <br/> CAN WE <br/>  DO?</h2>
