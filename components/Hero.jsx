@@ -87,11 +87,14 @@ export default function Hero() {
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
         <section className='grid grid-cols-2 md:grid-cols-3 gap-6 p-4 py-8'> 
-          <div className='p-8 py-12 flex flex-col gap-2 bg-black '>
-            <p className='text-gray-300'>OUR SERVICES </p>
-            <h2 className='text-4xl text-white font-bold'>What <br/> CAN WE <br/>  DO?</h2>
-            {/* BG PHOTO */}
-          </div>
+        <div className="flex flex-col justify-center gap-2 p-4 py-18 services-card bg-blue-800/50 ">
+            <h3 className="text-lg text-gray-200 text-center lg:text-start ">Our Services</h3>
+            <div className="flex flex-col items-center text-4xl font-bold lg:items-start">
+                <div>What</div>
+                <div>Can We</div>
+                <div>Do?</div>
+            </div>
+        </div>
 
           <div className="p-6 flex flex-col justify-between bg-white shadow-md">
             <i className="fa-solid fa-laptop-code text-8xl text-indigo-700 text-center"></i>
@@ -125,11 +128,15 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className='p-6  flex flex-col justify-between bg-white shadow-md'>
-            <div className='flex flex-col gap-2'>
-              <p>More</p>
-            </div>
+          <Link className="flex justify-center items-center text-black gap-8 p-4 rounded cursor-pointer bg-white
+          transition-all transition-duration-300 transition-ease-in-out ring-4 ring-blue-900 hover:scale-105 aboutus-card"
+          href="/aboutus"
+          >
+          <div>
+              <i className="fa-solid fa-angle-right text-9xl text-gray-300 aboutus-arrow "></i>
+              <h3 className="text-lg text-gray-600 text-center lg:text-start ">More on us</h3>
           </div>
+          </Link>
           
          
         </section>
