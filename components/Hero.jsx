@@ -93,38 +93,45 @@ export default function Hero() {
             {/* BG PHOTO */}
           </div>
 
-          <div className='p-6  flex flex-col justify-between bg-white shadow-md'>
-            <i className="fa-brands fa-affiliatetheme text-8xl text-center"></i>
-            <div className='flex flex-col gap-2'>
-              <p>FINANCIAL FUNCTIONS</p>
-              <p>ACCOUNTING SERVICES --=</p>
+          <div className="p-6 flex flex-col justify-between bg-white shadow-md">
+            <i className="fa-solid fa-laptop-code text-8xl text-center"></i>
+            <div className="flex flex-col gap-2 mt-4">
+              <p className="text-gray-600">WEBSITE DEVELOPMENT</p>
+              <p>Custom-built websites for businesses of all sizes.</p>
             </div>
-            {/* Turning animation */}
           </div>
-          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
-            <i className="fa-brands fa-affiliatetheme"></i>
-            <p>FINANCIAL FUNCTIONS</p>
-            <p>ACCOUNTING SERVICES --=</p>
-            {/* Turning animation */}
+
+          <div className="p-6 flex flex-col justify-between bg-white shadow-md">
+            <i className="fa-solid fa-paint-brush text-8xl text-center"></i>
+            <div className="flex flex-col gap-2 mt-4">
+              <p className="text-gray-600">UI/UX DESIGN</p>
+              <p>Crafting stunning, user-friendly interfaces.</p>
+            </div>
           </div>
-          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
-            <i className="fa-brands fa-affiliatetheme"></i>
-            <p>FINANCIAL FUNCTIONS</p>
-            <p>ACCOUNTING SERVICES --=</p>
-            {/* Turning animation */}
+
+          <div className="p-6 flex flex-col justify-between bg-white shadow-md">
+            <i className="fa-solid fa-chart-line text-8xl text-center"></i>
+            <div className="flex flex-col gap-2 mt-4">
+              <p className="text-gray-600">SEO OPTIMIZATION</p>
+              <p>Boost your online presence and search rankings.</p>
+            </div>
           </div>
-          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
-            <i className="fa-brands fa-affiliatetheme"></i>
-            <p>FINANCIAL FUNCTIONS</p>
-            <p>ACCOUNTING SERVICES --=</p>
-            {/* Turning animation */}
+
+          <div className="p-6 flex flex-col justify-between bg-white shadow-md">
+            <i className="fa-solid fa-headset text-8xl text-center"></i>
+            <div className="flex flex-col gap-2 mt-4">
+              <p className="text-gray-600">ONGOING SUPPORT</p>
+              <p>We maintain and update your website, so you don't have to.</p>
+            </div>
           </div>
-          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
-            <i className="fa-brands fa-affiliatetheme"></i>
-            <p>FINANCIAL FUNCTIONS</p>
-            <p>ACCOUNTING SERVICES --=</p>
-            {/* Turning animation */}
+
+          <div className='p-6  flex flex-col justify-between bg-white shadow-md'>
+            <div className='flex flex-col gap-2'>
+              <p>More</p>
+            </div>
           </div>
+          
+         
         </section>
     </div>
   )
