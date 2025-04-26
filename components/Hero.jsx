@@ -19,6 +19,7 @@ export default function Hero() {
       <div className='flex gap-2 justify-between my-6'>
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO CARD */}
+          {/* HERO BACKGROUND? */}
           {/* Background color  bg-[#A7C6DA]/ bg-gray-800 / bg-gray-900 */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
           <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[-5deg] text-sm md:text-base ' + urbanist.className }> Your partner in digital transformation</span> 
@@ -86,7 +87,14 @@ export default function Hero() {
         </div>
       </div>
         {/* <div> ANIMATION</div> */}
-        <section> OUR SERVICES </section>
+        <section className='grid'> 
+          <div>What WE Can Do</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>More</div>
+        </section>
     </div>
   )
 }
