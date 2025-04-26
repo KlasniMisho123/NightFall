@@ -87,7 +87,8 @@ export default function Hero() {
         </div>
       </div>
         {/* <div> ANIMATION</div> */}
-        <section className='grid'> 
+        {/* LAZY LOAD ANIMATION */}
+        <section className='grid grid-cols-2  bg-purple-300 p-4 py-8'> 
           <div>What WE Can Do</div>
           <div>2</div>
           <div>3</div>
