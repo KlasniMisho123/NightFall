@@ -89,7 +89,13 @@ export default function Hero() {
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
         <section className='grid grid-cols-2  bg-purple-300 p-4 py-8'> 
-          <div>What WE Can Do</div>
+          <div className=''>
+            <i className="fa-brands fa-affiliatetheme"></i>
+            <p>FINANCIAL FUNCTIONS</p>
+            <p>ACCOUNTING SERVICES --=</p>
+            {/* Turning animation */}
+          </div>
+
           <div>2</div>
           <div>3</div>
           <div>4</div>
