@@ -11,7 +11,7 @@ const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 
 export default function Hero() {
   // const [color, setColor] = useState("red-500")
-  
+
   return (
     <div className='py-4 bg-gray-800 px-4 md:px-14 lg:px-28 '>
       <div className='flex gap-2 justify-between my-6'>
@@ -93,10 +93,12 @@ export default function Hero() {
             {/* BG PHOTO */}
           </div>
 
-          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
-            <i className="fa-brands fa-affiliatetheme"></i>
-            <p>FINANCIAL FUNCTIONS</p>
-            <p>ACCOUNTING SERVICES --=</p>
+          <div className='p-6  flex flex-col justify-between bg-white shadow-md'>
+            <i className="fa-brands fa-affiliatetheme text-8xl text-center"></i>
+            <div className='flex flex-col gap-2'>
+              <p>FINANCIAL FUNCTIONS</p>
+              <p>ACCOUNTING SERVICES --=</p>
+            </div>
             {/* Turning animation */}
           </div>
           <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
