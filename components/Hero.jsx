@@ -120,13 +120,20 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-            <i className="fa-solid fa-headset text-8xl text-gray-700 text-center"></i>
-            <div className="flex flex-col gap-2 mt-4">
-              <p className="text-gray-600">ONGOING SUPPORT</p>
-              <p>We maintain and update your website, so you don't have to.</p>
+          <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
+         transition-all transition-duration-300 transition-ease-in-out hover:scale-105"
+         routerLink="/moon">
+            <div className="flex justify-center">
+                <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
             </div>
-          </div>
+            <div className="flex flex-col items-center font-bold lg:items-start">
+                <h3 className="text-lg text-gray-600 text-center lg:text-start ">Ongoing Support</h3>
+                <div className="flex justify-between  my-4 w-full services-item-card-three">
+                    <h3 className="text-2xl">Website Maintenance</h3>
+                    <h3 className="text-2xl"> <i className="fa-solid fa-right-long services-item-arrow-three"></i> </h3>
+                </div>
+            </div>
+        </div>
 
           <Link className="flex justify-center items-center text-black gap-8 p-4 rounded cursor-pointer bg-white
           transition-all transition-duration-300 transition-ease-in-out ring-4 ring-blue-900 hover:scale-105 aboutus-card"
