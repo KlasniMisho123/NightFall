@@ -33,15 +33,15 @@ export default function Hero() {
 
 
           <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
-            <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 
+            <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
             transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
-            href={'/aboutus'}
+            href={'/support'}
             >
               Contact Us
             </Link>
-            <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white border-blue-500 hover:text-blue-500 transition-all duration-300 
+            <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white border-blue-500 hover:text-blue-500 transition-all duration-300 text-center
             cursor-pointer shadow-sm whitespace-nowrap"
-            href={'/support'}
+            href={'/aboutus'}
             >
               About Us
             </Link>
@@ -82,7 +82,7 @@ export default function Hero() {
         </div>
         <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'>
            Hero
-           <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' />
+           {/* <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' /> */}
         </div>
       </div>
         {/* <div> ANIMATION</div> */}
