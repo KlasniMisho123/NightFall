@@ -10,10 +10,8 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 
 export default function Hero() {
-
   // const [color, setColor] = useState("red-500")
-  let color = "red-500"
-
+  
   return (
     <div className='py-4 bg-gray-800 px-4 md:px-14 lg:px-28 '>
       <div className='flex gap-2 justify-between my-6'>
@@ -88,23 +86,43 @@ export default function Hero() {
       </div>
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
-        <section className='grid grid-cols-2  bg-purple-300 p-4 py-8'> 
-          <div className='p-4 bg-white flex flex-col gap-2 bg-black '>
+        <section className='grid grid-cols-3 gap-6 p-4 py-8'> 
+          <div className='p-8 py-12 flex flex-col gap-2 bg-black '>
             <p className='text-gray-300'>OUR SERVICES </p>
-            <h2 className='text-4xl text-white'>What <br/> CAN WE <br/>  DO?</h2>
+            <h2 className='text-4xl text-white font-bold'>What <br/> CAN WE <br/>  DO?</h2>
             {/* BG PHOTO */}
           </div>
 
-          <div className=''>
+          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
             <i className="fa-brands fa-affiliatetheme"></i>
             <p>FINANCIAL FUNCTIONS</p>
             <p>ACCOUNTING SERVICES --=</p>
             {/* Turning animation */}
           </div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>More</div>
+          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
+            <i className="fa-brands fa-affiliatetheme"></i>
+            <p>FINANCIAL FUNCTIONS</p>
+            <p>ACCOUNTING SERVICES --=</p>
+            {/* Turning animation */}
+          </div>
+          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
+            <i className="fa-brands fa-affiliatetheme"></i>
+            <p>FINANCIAL FUNCTIONS</p>
+            <p>ACCOUNTING SERVICES --=</p>
+            {/* Turning animation */}
+          </div>
+          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
+            <i className="fa-brands fa-affiliatetheme"></i>
+            <p>FINANCIAL FUNCTIONS</p>
+            <p>ACCOUNTING SERVICES --=</p>
+            {/* Turning animation */}
+          </div>
+          <div className='p-8 py-12 flex flex-col gap-2 bg-white shadow-md'>
+            <i className="fa-brands fa-affiliatetheme"></i>
+            <p>FINANCIAL FUNCTIONS</p>
+            <p>ACCOUNTING SERVICES --=</p>
+            {/* Turning animation */}
+          </div>
         </section>
     </div>
   )
