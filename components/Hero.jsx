@@ -89,14 +89,18 @@ export default function Hero() {
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
         <section className='grid grid-cols-2  bg-purple-300 p-4 py-8'> 
+          <div className='p-4 bg-white flex flex-col gap-2 bg-black '>
+            <p className='text-gray-300'>OUR SERVICES </p>
+            <h2 className='text-4xl text-white'>What <br/> CAN WE <br/>  DO?</h2>
+            {/* BG PHOTO */}
+          </div>
+
           <div className=''>
             <i className="fa-brands fa-affiliatetheme"></i>
             <p>FINANCIAL FUNCTIONS</p>
             <p>ACCOUNTING SERVICES --=</p>
             {/* Turning animation */}
           </div>
-
-          <div>2</div>
           <div>3</div>
           <div>4</div>
           <div>5</div>
