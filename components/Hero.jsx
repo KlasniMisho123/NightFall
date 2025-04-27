@@ -122,7 +122,7 @@ export default function Hero() {
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
          transition-all transition-duration-300 transition-ease-in-out hover:scale-105"
-         routerLink="/moon">
+         >
             <div className="flex justify-center">
                 <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
             </div>
@@ -144,7 +144,7 @@ export default function Hero() {
               <h3 className="text-lg text-gray-600 text-center lg:text-start ">More on us</h3>
           </div>
           </Link>
-          
+          {/* hover arrow animation */}
          
         </section>
     </div>
