@@ -86,7 +86,7 @@ export default function Hero() {
       </div>
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
-        <section className='grid grid-cols-2 md:grid-cols-3 gap-6 p-4 py-8'> 
+        <section className='grid grid-cols-2 md:grid-cols-3 gap-6 p-2 py-8 my-12 '> 
         <div className="flex flex-col justify-center gap-2 p-4 py-18 services-card bg-blue-800/50 ">
             <h3 className="text-lg text-gray-200 text-center lg:text-start ">Our Services</h3>
             <div className="flex flex-col items-center text-4xl font-bold lg:items-start">
@@ -95,34 +95,50 @@ export default function Hero() {
                 <div>Do?</div>
             </div>
         </div>
-
-          <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-            <i className="fa-solid fa-laptop-code text-8xl text-indigo-700 text-center"></i>
-            <div className="flex flex-col gap-2 mt-4">
-              <p className="text-gray-600">WEBSITE DEVELOPMENT</p>
-              <p>Custom-built websites for businesses of all sizes.</p>
+          <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
+            transition-all transition-duration-300 transition-ease-in-out hover:scale-105">
+            <div className="flex justify-center">
+                <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
             </div>
-          </div>
-
-          <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-            <i className="fa-solid fa-paint-brush text-8xl text-purple-700 text-center"></i>
-            <div className="flex flex-col gap-2 mt-4">
-              <p className="text-gray-600">UI/UX DESIGN</p>
-              <p>Crafting stunning, user-friendly interfaces.</p>
-            </div>
-          </div>
-
-          <div className="p-6 flex flex-col justify-between bg-white shadow-md">
-            <i className="fa-solid fa-chart-line text-8xl text-blue-600 text-center"></i>
-            <div className="flex flex-col gap-2 mt-4">
-              <p className="text-gray-600">SEO OPTIMIZATION</p>
-              <p>Boost your online presence and search rankings.</p>
+            <div className="flex flex-col items-center font-bold lg:items-start">
+                <h3 className="text-lg text-gray-600 text-center lg:text-start ">WEBSITE DEVELOPMENT</h3>
+                <div className="flex justify-between  my-4 w-full services-item-card-three">
+                    <h3 className="text-2xl">Custom-built websites for businesses of all sizes.</h3>
+                    <h3 className="text-2xl"> <i className="fa-solid fa-right-long services-item-arrow-three"></i> </h3>
+                </div>
             </div>
           </div>
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
-         transition-all transition-duration-300 transition-ease-in-out hover:scale-105"
-         >
+            transition-all transition-duration-300 transition-ease-in-out hover:scale-105">
+            <div className="flex justify-center">
+                <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
+            </div>
+            <div className="flex flex-col items-center font-bold lg:items-start">
+                <h3 className="text-lg text-gray-600 text-center lg:text-start ">UI/UX DESIGN</h3>
+                <div className="flex justify-between  my-4 w-full services-item-card-three">
+                    <h3 className="text-2xl">Crafting stunning, user-friendly interfaces.</h3>
+                    <h3 className="text-2xl"> <i className="fa-solid fa-right-long services-item-arrow-three"></i> </h3>
+                </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
+            transition-all transition-duration-300 transition-ease-in-out hover:scale-105">
+            <div className="flex justify-center">
+                <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
+            </div>
+            <div className="flex flex-col items-center font-bold lg:items-start">
+                <h3 className="text-lg text-gray-600 text-center lg:text-start ">SEO OPTIMIZATION</h3>
+                <div className="flex justify-between  my-4 w-full services-item-card-three">
+                    <h3 className="text-2xl">Boost your online presence and search rankings.</h3>
+                    <h3 className="text-2xl"> <i className="fa-solid fa-right-long services-item-arrow-three"></i> </h3>
+                </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
+            transition-all transition-duration-300 transition-ease-in-out hover:scale-105">
             <div className="flex justify-center">
                 <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
             </div>
@@ -133,7 +149,7 @@ export default function Hero() {
                     <h3 className="text-2xl"> <i className="fa-solid fa-right-long services-item-arrow-three"></i> </h3>
                 </div>
             </div>
-        </div>
+          </div>
 
           <Link className="flex justify-center items-center text-black gap-8 p-4 rounded cursor-pointer bg-white
           transition-all transition-duration-300 transition-ease-in-out ring-4 ring-blue-900 hover:scale-105 aboutus-card"

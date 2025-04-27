@@ -4,3 +4,5 @@ responsive footer
 {/* ROCKET/.. -!? FLIES AND LEAVES MOTTO/card */}
 Open Animation -> Nightfall? maybe cloud, and changes wole background?
 finished counting stats?, slide down/slot matchine like animation?
+
+~Services, Different Component/style?
