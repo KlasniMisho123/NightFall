@@ -101,10 +101,9 @@ export default function Hero() {
                 <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
             </div>
             <div className="flex flex-col items-center font-bold lg:items-start">
-                <h3 className="text-lg text-gray-600 text-center lg:text-start ">WEBSITE DEVELOPMENT</h3>
+                <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">Custom Websites</h3>
                 <div className="flex justify-between  my-4 w-full services-item-card-three">
-                    <h3 className="text-2xl">Custom-built websites for businesses of all sizes.</h3>
-                    <h3 className="text-2xl"> <i className="fa-solid fa-right-long services-item-arrow-three"></i> </h3>
+                    <h3 className="text-xl">Bespoke designs built for your brand.</h3>
                 </div>
             </div>
           </div>
@@ -115,10 +114,9 @@ export default function Hero() {
                 <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
             </div>
             <div className="flex flex-col items-center font-bold lg:items-start">
-                <h3 className="text-lg text-gray-600 text-center lg:text-start ">UI/UX DESIGN</h3>
+                <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">UI/UX DESIGN</h3>
                 <div className="flex justify-between  my-4 w-full services-item-card-three">
                     <h3 className="text-2xl">Crafting stunning, user-friendly interfaces.</h3>
-                    <h3 className="text-2xl"> <i className="fa-solid fa-right-long services-item-arrow-three"></i> </h3>
                 </div>
             </div>
           </div>
@@ -129,10 +127,9 @@ export default function Hero() {
                 <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
             </div>
             <div className="flex flex-col items-center font-bold lg:items-start">
-                <h3 className="text-lg text-gray-600 text-center lg:text-start ">SEO OPTIMIZATION</h3>
+                <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">SEO OPTIMIZATION</h3>
                 <div className="flex justify-between  my-4 w-full services-item-card-three">
                     <h3 className="text-2xl">Boost your online presence and search rankings.</h3>
-                    <h3 className="text-2xl"> <i className="fa-solid fa-right-long services-item-arrow-three"></i> </h3>
                 </div>
             </div>
           </div>
@@ -143,10 +140,9 @@ export default function Hero() {
                 <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
             </div>
             <div className="flex flex-col items-center font-bold lg:items-start">
-                <h3 className="text-lg text-gray-600 text-center lg:text-start ">Ongoing Support</h3>
+                <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">Ongoing Support</h3>
                 <div className="flex justify-between  my-4 w-full services-item-card-three">
                     <h3 className="text-2xl">Website Maintenance</h3>
-                    <h3 className="text-2xl"> <i className="fa-solid fa-right-long services-item-arrow-three"></i> </h3>
                 </div>
             </div>
           </div>
