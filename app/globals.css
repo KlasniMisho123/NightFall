@@ -125,6 +125,7 @@ body {
 .services-card {
   background-image: url(https://media.istockphoto.com/id/1217882746/photo/diverse-team-of-electronics-development-engineers-standing-at-the-desk-working-with-documents.jpg?s=612x612&w=0&k=20&c=EvA0Gt_LKlGTHljVYZ6ha7QjDLY02_aUPJo_GcldWLc=);
   object-fit: cover;
+  /* https://i.pinimg.com/736x/1c/44/f8/1c44f8914b9f20e13b6168a2c2be3586.jpg */
 }
 
 @keyframes rockerFliesOut {
