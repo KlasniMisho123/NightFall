@@ -98,7 +98,7 @@ export default function Hero() {
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105">
             <div className="flex justify-center">
-                <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
+                <img src="websitesWallpaper.jpg" className="h-[200px] w-full " alt="" />
             </div>
             <div className="flex flex-col items-center font-bold lg:items-start">
                 <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">Custom Websites</h3>
@@ -111,7 +111,7 @@ export default function Hero() {
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105">
             <div className="flex justify-center">
-                <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
+                <img src="UI-UXWallpaper.jpg" className="h-[200px] w-full object-cover " alt="" />
             </div>
             <div className="flex flex-col items-center font-bold lg:items-start">
                 <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">UI/UX Design</h3>
@@ -124,7 +124,7 @@ export default function Hero() {
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105">
             <div className="flex justify-center">
-                <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
+                <img src="Deployment.jpg" className="h-[200px] w-full object-cover " alt="" />
             </div>
             <div className="flex flex-col items-center font-bold lg:items-start">
                 <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">Hosting & Deployment</h3>
@@ -137,7 +137,7 @@ export default function Hero() {
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105">
             <div className="flex justify-center">
-                <img src="https://i.pinimg.com/736x/ab/05/7f/ab057f53c79ae06b122e34641f607c91.jpg" className="h-[200px] w-full " alt="" />
+                <img src="https://i.pinimg.com/736x/f3/90/83/f390833d8027009df267a6e776bc255f.jpg" className="h-[200px] w-full object-cover " alt="" />
             </div>
             <div className="flex flex-col items-center font-bold lg:items-start">
                 <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">Ongoing Support</h3>
