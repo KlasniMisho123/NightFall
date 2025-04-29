@@ -98,7 +98,7 @@ export default function Hero() {
         </div>
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
-              <p className='rotate-y-180'>Desc</p>
+              <p className='rotate-y-180'>Service Desc/Details</p>
             <div className="flex justify-center">
                 <img src="websitesWallpaper.jpg" className="h-[200px] w-full " alt="" />
             </div>
@@ -113,7 +113,7 @@ export default function Hero() {
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card ">
-                <p className='rotate-y-180'>Desc</p>
+                <p className='rotate-y-180'>Service Desc/Details</p>
 
             <div className="flex justify-center">
                 <img src="UI-UXWallpaper.jpg" className="h-[200px] w-full object-cover " alt="" />
@@ -142,6 +142,7 @@ export default function Hero() {
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
+              <p className='rotate-y-180'>Service Desc/Details</p>
             <div className="flex justify-center">
                 <img src="Maintenance.jpg" className="h-[200px] w-full object-cover " alt="" />
             </div>
