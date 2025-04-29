@@ -191,9 +191,22 @@ body {
 }
 
 .flip-card {
-  background-color: rgb(184, 101, 101);
   transition: all 1.5s ease;
   position: relative;
+}
+
+.flip-card p {
+  position: absolute; 
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden; 
+  transition: opacity 0.75s ease, visibility 0s 0.75s; 
+}
+
+.flip-card:hover p {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.75s ease, visibility 0s 0s;
 }
 
 .flip-card:hover {
@@ -206,6 +219,7 @@ body {
 
 .flip-card:hover h3, .flip-card:hover img {
   opacity: 0;
+  display: none;
 }
 
 .flip-card h3, .flip-card img {
