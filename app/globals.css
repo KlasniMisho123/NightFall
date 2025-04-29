@@ -192,22 +192,31 @@ body {
 
 .flip-card {
   background-color: rgb(184, 101, 101);
-  transition: all;
-  transition-duration: 1.5s;
+  transition: all 1.5s ease;
+  position: relative;
 }
 
 .flip-card:hover {
   transform: rotateY(180deg);
 }
 
-.flip-card:hover h3 {
-  display: none;
+.flip-card h3, .flip-card img {
+  transition: opacity 0.75s ease;
+}
+
+.flip-card:hover h3, .flip-card:hover img {
   opacity: 0;
 }
 
-.flip-card:hover img {
-  display: none;
+.flip-card h3, .flip-card img {
+  opacity: 1;
+  transition: opacity 0.75s ease;
 }
+
+.flip-card:hover h3, .flip-card:hover img {
+  opacity: 0;
+}
+
 
 
 @keyframes compassSearch {
