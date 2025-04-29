@@ -111,7 +111,7 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
-            transition-all transition-duration-300 transition-ease-in-out hover:scale-105">
+            transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card ">
             <div className="flex justify-center">
                 <img src="UI-UXWallpaper.jpg" className="h-[200px] w-full object-cover " alt="" />
             </div>

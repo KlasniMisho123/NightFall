@@ -190,6 +190,26 @@ body {
   background-color: #3b82f6;
 }
 
+.flip-card {
+  background-color: rgb(184, 101, 101);
+  transition: all;
+  transition-duration: 1.5s;
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover h3 {
+  display: none;
+  opacity: 0;
+}
+
+.flip-card:hover img {
+  display: none;
+}
+
+
 @keyframes compassSearch {
   50% {
     transform: rotate(30deg)
