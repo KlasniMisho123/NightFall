@@ -98,7 +98,8 @@ export default function Hero() {
         </div>
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
-              <p className='rotate-y-180'>Service Desc/Details</p>
+              <p className='rotate-y-180  p-4 '>Stand out with a custom-built website tailored to your brand's identity and goals.
+                 From design to deployment, we craft unique digital experiences that leave a lasting impression.</p>
             <div className="flex justify-center">
                 <img src="websitesWallpaper.jpg" className="h-[200px] w-full " alt="" />
             </div>
@@ -113,7 +114,8 @@ export default function Hero() {
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card ">
-                <p className='rotate-y-180'>Service Desc/Details</p>
+                <p className='rotate-y-180 p-4'>Deliver seamless, user-first experiences with thoughtfully crafted interfaces. 
+                  We design intuitive, visually stunning layouts that keep users engaged and coming back.</p>
 
             <div className="flex justify-center">
                 <img src="UI-UXWallpaper.jpg" className="h-[200px] w-full object-cover " alt="" />
@@ -128,7 +130,8 @@ export default function Hero() {
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
-              <p className='rotate-y-180'>Service Desc/Details</p>
+              <p className='rotate-y-180 p-4 '>Effortless hosting and reliable deployment solutions to keep your websites fast, secure, and always online. 
+                Say goodbye to downtime and technical headaches — we handle it all so you can focus on what matters most</p>
             <div className="flex justify-center">
                 <img src="Deployment.jpg" className="h-[200px] w-full object-cover " alt="" />
             </div>
@@ -142,7 +145,8 @@ export default function Hero() {
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
-              <p className='rotate-y-180'>Service Desc/Details</p>
+              <p className='rotate-y-180 p-4 '>Keep your site running smoothly with proactive updates, security monitoring, and performance optimization.
+                 Our ongoing support ensures your website stays fresh, functional, and problem-free.</p>
             <div className="flex justify-center">
                 <img src="Maintenance.jpg" className="h-[200px] w-full object-cover " alt="" />
             </div>
