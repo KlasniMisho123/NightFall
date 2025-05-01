@@ -56,13 +56,13 @@ export default function Hero() {
               <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green-500`}/>
           </section>  
         </div>
-        <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'>
+        <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800 text-white'>
            Hero
            {/* <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' /> */}
         </div>
 
       </div>
-        <span> NightFall/Services -Animation </span>
+        <span className='text-white'> NightFall/Services -Animation </span>
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
         {/* RESPONSIVE */}
