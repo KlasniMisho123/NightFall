@@ -49,10 +49,9 @@ export default function Hero() {
 
           <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-12 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 '} >
               
-              {/* <StatCard /> */}
               {/* RESPONSIVE */}
               
-              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} />
+              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} color={`blue-500`}/>
 
               <div className='flex flex-col gap-4 items-center px-1  py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-purple-500  bg-purple-500 px-4 py-1 rounded-lg '> </div>
@@ -85,6 +84,7 @@ export default function Hero() {
         <span> NightFall/Services -Animation </span>
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
+        {/* RESPONSIVE */}
         <section className='grid grid-cols-2 md:grid-cols-3 gap-6 p-2 py-8 my-12 text-white '> 
         <div className="flex flex-col justify-center gap-2 p-4 py-18 services-card bg-blue-800/50 ">
         {/* https://i.pinimg.com/736x/1c/44/f8/1c44f8914b9f20e13b6168a2c2be3586.jpg */}
