@@ -51,30 +51,9 @@ export default function Hero() {
               {/* RESPONSIVE */}
               
               <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
-              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
-              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
-              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
-
-              <div className='flex flex-col gap-4 items-center px-1  py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
-                <div className='border-1 border-purple-500  bg-purple-500 px-4 py-1 rounded-lg '> </div>
-                <h2 className={'text-4xl text-purple-500 italic ' + mono.className}> 200 </h2>
-                <h3 className={'text-sm text-purple-500 ' + poppins.className}> Total Users </h3>
-                <h4 className={'text-xs '}> For a Healthier Life </h4>
-              </div>
-
-              <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
-                <div className='border-1 border-red-500  bg-red-500 px-4 py-1 rounded-lg '> </div>
-                <h2 className={'text-4xl text-red-500 italic ' + mono.className}> 100 </h2>
-                <h3 className={'text-sm text-red-500 ' + poppins.className}>  Mood Commits  </h3>
-                <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
-              </div>
-
-              <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
-                <div className='border-1 border-green-500  bg-emerald-500 px-4 py-1 rounded-lg '> </div>
-                <h2 className={'text-4xl text-green-500 italic ' + mono.className}> 450 </h2>
-                <h3 className={'text-sm text-green-500 ' + poppins.className}>  Reaction  </h3>
-                <h4 className={'text-xs '}> Connecting with Your Emotions </h4>
-              </div>
+              <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Lifed`} cardColor={`purple-500`}/>
+              <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red-500`}/>
+              <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green-500`}/>
           </section>  
         </div>
         <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] border-2 border-gray-800'>
