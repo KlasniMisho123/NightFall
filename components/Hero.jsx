@@ -115,35 +115,20 @@ export default function Hero() {
               cardParagraph={`Beautiful, intuitive interfaces users love.`}
           />
 
-          <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
-            transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
-              <p className='rotate-y-180 p-4 '>Effortless hosting and reliable deployment solutions to keep your websites fast, secure, and always online. 
-                Say goodbye to downtime and technical headaches — we handle it all so you can focus on what matters most</p>
-            <div className="flex justify-center">
-                <img src="Deployment.jpg" loading="lazy" className="h-[200px] w-full object-cover " alt="" />
-            </div>
-            <div className="flex flex-col items-center font-bold lg:items-start">
-                <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">Hosting & Deployment</h3>
-                <div className="flex justify-between  my-4 w-full services-item-card-three">
-                    <h3 className="text-xl">Lightning-fast hosting, zero stress.</h3>
-                </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
-            transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
-              <p className='rotate-y-180 p-4 '>Keep your site running smoothly with proactive updates, security monitoring, and performance optimization.
-                 Our ongoing support ensures your website stays fresh, functional, and problem-free.</p>
-            <div className="flex justify-center">
-                <img src="Maintenance.jpg" loading="lazy" className="h-[200px] w-full object-cover " alt="" />
-            </div>
-            <div className="flex flex-col items-center font-bold lg:items-start">
-                <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">Ongoing Support</h3>
-                <div className="flex justify-between  my-4 w-full services-item-card-three">
-                    <h3 className="text-xl">Website Maintenance</h3>
-                </div>
-            </div>
-          </div>
+          <ServiceCard
+              desc={`Effortless hosting and reliable deployment solutions to keep your websites fast, secure, and always online. 
+                Say goodbye to downtime and technical headaches — we handle it all so you can focus on what matters most`}
+              title={`Hosting & Deployment`}
+              imgSrc={`Deployment.jpg`}
+              cardParagraph={`Lightning-fast hosting, zero stress.`}
+          />
+          <ServiceCard
+              desc={`Keep your site running smoothly with proactive updates, security monitoring, and performance optimization.
+                 Our ongoing support ensures your website stays fresh, functional, and problem-free.`}
+              title={`Ongoing Support`}
+              imgSrc={`Maintenance.jpg`}
+              cardParagraph={`Website Maintenance`}
+          />
 
           <Link className="flex justify-center items-center text-black gap-8 p-4 rounded group cursor-pointer bg-white
           transition-all transition-duration-300 transition-ease-in-out ring-4 ring-blue-900 hover:scale-105 aboutus-card"
