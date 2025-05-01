@@ -5,7 +5,7 @@ OUR SERVICES -->
  Desining Websites
  Website Maintenance
 
- Hero, stats --> StatCard
+ Hero, stats --> // Dinamicly Apply Color ?
 
  Homepage, Services --> ServiceCard - Animation -->
 
