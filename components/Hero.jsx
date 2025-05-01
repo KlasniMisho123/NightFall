@@ -101,8 +101,7 @@ export default function Hero() {
         </div>
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
-              <p className='rotate-y-180  p-4 '>Stand out with a custom-built website tailored to your brand's identity and goals.
-                 From design to deployment, we craft unique digital experiences that leave a lasting impression.</p>
+              <p className='rotate-y-180  p-4 '></p>
             <div className="flex justify-center">
                 <img src="websitesWallpaper.jpg" loading="lazy" className="h-[200px] w-full " alt="" />
             </div>
@@ -112,8 +111,12 @@ export default function Hero() {
                     <h3 className="text-xl">Bespoke designs built for your brand.</h3>
                 </div>
             </div>
-            {/* HOVER ANIMATION, Card flip */}
           </div>
+          <ServiceCard
+              desc={`Stand out with a custom-built website tailored to your brand's identity and goals.
+              From design to deployment, we craft unique digital experiences that leave a lasting impression.`}
+            />
+
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card ">
