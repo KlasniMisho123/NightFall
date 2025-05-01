@@ -1,18 +1,13 @@
 import { Poppins, Space_Mono } from 'next/font/google';
 import React from 'react'
-
+import { colorMap } from '@/utils';
 const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 
 export default function StatCard(props) {
   const {cardColor, stat, title, titleDec } = props;
 // Dinamicly Apply Color ?
-  const colorMap = {
-    "blue-500": "bg-blue-500 border-blue-500 text-blue-500",
-    "purple-500": "bg-purple-500 border-purple-500 text-purple-500",
-    "red-500": "bg-red-500 border-red-500 text-red-500",
-    "green-500": "bg-green-500 border-green-500 text-green-500"
-  };
+  
 
   const colorClasses = colorMap[cardColor] || "";
 
