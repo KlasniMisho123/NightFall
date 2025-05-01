@@ -11,7 +11,6 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 
 export default function Hero() {
-  // const [color, setColor] = useState("red-500")
 
   return (
     <div className='py-4 bg-gray-800 px-4 md:px-14 lg:px-28 '>
@@ -51,7 +50,10 @@ export default function Hero() {
               
               {/* RESPONSIVE */}
               
-              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} color={`blue-500`}/>
+              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
+              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
+              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
+              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
 
               <div className='flex flex-col gap-4 items-center px-1  py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-purple-500  bg-purple-500 px-4 py-1 rounded-lg '> </div>
