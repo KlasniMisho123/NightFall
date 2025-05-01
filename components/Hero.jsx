@@ -107,21 +107,13 @@ export default function Hero() {
               cardParagraph={`Bespoke designs built for your brand.`}
           />
 
-          <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
-            transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card ">
-                <p className='rotate-y-180 p-4'>Deliver seamless, user-first experiences with thoughtfully crafted interfaces. 
-                  We design intuitive, visually stunning layouts that keep users engaged and coming back.</p>
-
-            <div className="flex justify-center">
-                <img src="UI-UXWallpaper.jpg" loading="lazy" className="h-[200px] w-full object-cover " alt="" />
-            </div>
-            <div className="flex flex-col items-center font-bold lg:items-start">
-                <h3 className="text-lg text-gray-600 text-center lg:text-start text-2xl lg:text-2xl ">UI/UX Design</h3>
-                <div className="flex justify-between  my-4 w-full services-item-card-three">
-                    <h3 className="text-xl">Beautiful, intuitive interfaces users love.</h3>
-                </div>
-            </div>
-          </div>
+          <ServiceCard
+              desc={`Deliver seamless, user-first experiences with thoughtfully crafted interfaces. 
+                  We design intuitive, visually stunning layouts that keep users engaged and coming back.`}
+              title={`UI/UX Design`}
+              imgSrc={`UI-UXWallpaper.jpg`}
+              cardParagraph={`Beautiful, intuitive interfaces users love.`}
+          />
 
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
