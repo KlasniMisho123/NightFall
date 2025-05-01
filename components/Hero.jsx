@@ -4,6 +4,7 @@ import Loading from './Loading'
 import { Poppins, Space_Mono, Urbanist } from 'next/font/google';
 import StatCard from './statCard';
 import Link from 'next/link';
+import ServiceCard from './ServiceCard';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
