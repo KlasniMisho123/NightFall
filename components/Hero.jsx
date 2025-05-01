@@ -83,7 +83,9 @@ export default function Hero() {
            Hero
            {/* <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' /> */}
         </div>
+
       </div>
+        <span> NightFall/Services -Animation </span>
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
         <section className='grid grid-cols-2 md:grid-cols-3 gap-6 p-2 py-8 my-12 text-white '> 
@@ -96,7 +98,6 @@ export default function Hero() {
                 <div>Do?</div>
             </div>
         </div>
-        <span> SS</span>
           <div className="flex flex-col bg-white text-black gap-8 p-4 rounded cursor-pointer
             transition-all transition-duration-300 transition-ease-in-out hover:scale-105 flip-card">
               <p className='rotate-y-180  p-4 '>Stand out with a custom-built website tailored to your brand's identity and goals.
