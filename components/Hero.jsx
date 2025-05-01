@@ -51,12 +51,8 @@ export default function Hero() {
               
               {/* <StatCard /> */}
               {/* RESPONSIVE */}
-              <div className='flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
-                <div className='border-1 border-blue-500  bg-blue-500 px-4 py-1 rounded-lg '> </div>   
-                <h2 className={'text-4xl text-blue-500 italic ' + mono.className}> 300+ </h2>
-                <h3 className={'text-sm text-blue-500 ' + poppins.className} > USERS </h3>
-                <h4 className={'text-xs '}> To Monitor Mood </h4>
-              </div>
+              
+              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} />
 
               <div className='flex flex-col gap-4 items-center px-1  py-4 min-w-[100px] totalStatsOne md:px-2 lg:px-4 '>
                 <div className='border-1 border-purple-500  bg-purple-500 px-4 py-1 rounded-lg '> </div>
