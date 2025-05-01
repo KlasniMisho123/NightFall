@@ -6,3 +6,7 @@ OUR SERVICES -->
  Website Maintenance
 
  Hero, stats --> StatCard
+
+ Homepage, Services --> ServiceCard - Animation -->
+
+
