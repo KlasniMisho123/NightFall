@@ -5,5 +5,7 @@ responsive footer
 Open Animation -> Nightfall? maybe cloud, and changes whole background/or other?
 finished counting stats?, slide down/slot matchine like animation?
 
+--- nightfalls animation OR stationary bg-gray-800
+
 ~Services, Different Component/style?
 responsive

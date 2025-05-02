@@ -231,15 +231,13 @@ body {
 .flip-card:hover h3, .flip-card:hover img {
   opacity: 0;
 }
+
 .bg-nightfall {
-  background-color: #93C5FD;
-  animation: bg-nightfall-animation 1.5s ease forwards;
+  background-color: white;
+  animation: bg-nightfall-animation 1.5s  forwards;
 }
 
 @keyframes bg-nightfall-animation {
-  0% {
-    background-color: #93C5FD;
-  }
   100% {
     background-color: #1F2937; 
   }
