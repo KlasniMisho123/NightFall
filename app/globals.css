@@ -232,7 +232,9 @@ body {
   opacity: 0;
 }
 
-
+.load-hero {
+  background-color: red;
+}
 
 @keyframes compassSearch {
   50% {

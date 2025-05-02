@@ -14,7 +14,8 @@ export default function Hero() {
 
   return (
     <div className='py-4 bg-gray-800 px-4 md:px-14 lg:px-28 '>
-      <div className='flex gap-2 justify-between my-6'>
+      <div className='flex gap-2 justify-between my-6 load-hero'>
+        {/* HERO Div ^ */}
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO CARD */}
           {/* HERO BACKGROUND? */}

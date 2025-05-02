@@ -6,7 +6,7 @@ const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 
 export default function StatCard(props) {
   const {cardColor, stat, title, titleDec } = props;
-// Dinamicly Apply Color ?
+// Dinamicly Apply Color ? other Ways?
   
 
   const colorClasses = colorMap[cardColor] || "";
