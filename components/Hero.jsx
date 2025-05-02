@@ -13,7 +13,7 @@ const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 export default function Hero() {
 
   return (
-    <div className='py-4 bg-blue-300 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 background-nightfall'>
+    <div className='py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall'>
       <div className='flex gap-2 justify-between my-6 load-hero z-10'>
         {/* HERO Div ^ */}
         <div className='min-w-none md:min-w-[50%] '> 
