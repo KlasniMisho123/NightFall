@@ -29,7 +29,7 @@ export default function Header() {
   },[isSideNavBarActive])
 
   return (
-    <div className='flex items-center justify-between bg-gray-600 px-4 pt-2 pb-3'>
+    <div className='relative flex items-center justify-between bg-gray-600 px-4 pt-2 pb-3 z-50'>
       <Link  className='flex gap-2 items-center font-bold text-blue-400  moonLogoAnimation cursor-pointer'
       href='/'
       onClick={() => {
