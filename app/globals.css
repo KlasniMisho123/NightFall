@@ -233,8 +233,16 @@ body {
 }
 
 .load-hero {
-  background-color: red;
+  transform: translateY(-150%);
+  animation: hero-load-animation 0.5s forwards ease;
 }
+
+@keyframes hero-load-animation {
+  100%{
+    transform: translateY(0%);
+  }
+}
+
 
 @keyframes compassSearch {
   50% {
