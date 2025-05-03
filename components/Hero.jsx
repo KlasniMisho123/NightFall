@@ -131,7 +131,7 @@ export default function Hero() {
                       Need a Customer Service?
                     </h1>
                     <p className="text-gray-600">
-                      We're here to help — anytime!
+                      Our team is ready to assist you with any issues or questions you may have.
                     </p>
                   </div>
 
