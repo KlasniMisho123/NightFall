@@ -234,7 +234,7 @@ body {
 
 .bg-nightfall {
   background-color: white;
-  animation: bg-nightfall-animation 1.5s  forwards;
+  animation: bg-nightfall-animation 1.25s  forwards;
 }
 
 @keyframes bg-nightfall-animation {
