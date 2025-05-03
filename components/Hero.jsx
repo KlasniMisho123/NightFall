@@ -126,10 +126,15 @@ export default function Hero() {
                   transition-all transition-duration-300 shadow-md  hover:shadow-none bg-blue-500 hover:bg-transparent group  hover:border-blue-500 '>
                     <i className="fa-brands fa-rocketchat text-4xl text-gray-100 group-hover:text-blue-500 "></i>
                   </div>
-                  <div>
-                    <h1>Need a Customer Service?</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed ...</p>
+                  <div className="space-y-4">
+                    <h1 className={"text-2xl font-bold text-gray-800 " + urbanist.className}>
+                      Need a Customer Service?
+                    </h1>
+                    <p className="text-gray-600">
+                      We're here to help — anytime!
+                    </p>
                   </div>
+
                 <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
                   <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
                   transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
