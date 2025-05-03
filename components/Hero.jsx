@@ -13,7 +13,7 @@ const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 export default function Hero() {
 
   return (
-    <div className='py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall'>
+    <div className='py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall overflow-hidden'>
       <div className='flex gap-2 justify-between my-6 load-hero z-10'>
         {/* HERO Div ^ */}
         <div className='min-w-none md:min-w-[50%] '> 
@@ -118,13 +118,18 @@ export default function Hero() {
           </Link>
           {/* hover arrow animation */}
         </section>
-            <section className='my-12 py-12 bg-white w-full flex justify-center items-center text-black '>
-                <div className='flex gap-4'> 
+          <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+          <div className="bg-white mx-6 my-12 py-12 text-black rounded">
+              <div className="flex justify-center items-center">
+                <div className="flex gap-4">
                   <div>1</div>
                   <div>2</div>
                   <div>3</div>
                 </div>
-            </section>
+              </div>
+            </div>
+          </section>
+
     </div>
   )
 }
