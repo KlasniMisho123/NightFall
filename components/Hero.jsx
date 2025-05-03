@@ -121,10 +121,21 @@ export default function Hero() {
           <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
           <div className="bg-white mx-6 my-12 py-12 text-black rounded">
               <div className="flex justify-center items-center">
-                <div className="flex gap-4">
+                <div className="flex justify-center items-center gap-20">
                   <div>1</div>
-                  <div>2</div>
-                  <div>3</div>
+                  <div>
+                    <h1>Need a Customer Service?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed ...</p>
+                  </div>
+                <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
+                  <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
+                  transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
+                  href={'/support'}
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+
                 </div>
               </div>
             </div>
