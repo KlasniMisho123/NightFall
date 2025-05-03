@@ -117,8 +117,14 @@ export default function Hero() {
           </div>
           </Link>
           {/* hover arrow animation */}
-         
         </section>
+            <section className='my-12 py-12 bg-white w-full flex justify-center items-center text-black '>
+                <div className='flex gap-4'> 
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                </div>
+            </section>
     </div>
   )
 }
