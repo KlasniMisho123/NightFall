@@ -122,7 +122,10 @@ export default function Hero() {
           <div className="bg-white mx-6 my-12 py-12 text-black rounded">
               <div className="flex justify-center items-center">
                 <div className="flex justify-center items-center gap-20">
-                  <div>1</div>
+                  <div className='flex justify-center items-center p-8 border-2 border-gray-800 rounded w-20 h-20 cursor-pointer 
+                  transition-all transition-duration-300 shadow-md  hover:shadow-none bg-purple-300 hover:bg-transparent'>
+                    <i className="fa-brands fa-rocketchat text-4xl text-gray-800 "></i>
+                  </div>
                   <div>
                     <h1>Need a Customer Service?</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed ...</p>
