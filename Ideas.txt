@@ -9,3 +9,5 @@ finished counting stats?, slide down/slot matchine like animation?
 
 ~Services, Different Component/style?
 responsive
+
+projects -> projects, add project? request project?
