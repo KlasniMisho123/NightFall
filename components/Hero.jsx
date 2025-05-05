@@ -124,7 +124,7 @@ export default function Hero() {
               <div className="flex justify-center items-center">
                 <div className="flex justify-center items-center gap-20">
                   <div className='flex justify-center items-center p-8 border-2 border-gray-100 rounded w-20 h-20 cursor-pointer 
-                  transition-all transition-duration-300 shadow-md  hover:shadow-none bg-blue-500 hover:bg-transparent group  hover:border-blue-500 '>
+                  transition-all transition-duration-600 shadow-md  hover:shadow-none bg-blue-500 hover:bg-transparent group  hover:border-blue-500 '>
                     <i className="fa-brands fa-rocketchat text-4xl text-gray-100 group-hover:text-blue-500 "></i>
                   </div>
                   <div className="space-y-4">
@@ -149,9 +149,6 @@ export default function Hero() {
               </div>
             </div>
           </section>
-        <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[5deg] text-sm md:text-base ' + urbanist.className }>
-         How it Works
-        </span> 
         <WorkStages />
     </div>
   )
