@@ -21,10 +21,10 @@ export default function WorkStages() {
             inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsum</p>
         </div>
         <div className='my-4'>
-          <div>Create a new idea for client project</div>
-          <div>Start designing idea/project </div>
-          <div>DEMO VERSION  & TESTING, client checks/discuss </div>
-          <div>Web Application is ready to be deployed</div>
+          <div>Ideation and concept development for the client project</div>
+          <div>Initial design and prototyping phase </div>
+          <div>Demo release, client feedback, and iterative testing</div>
+          <div>Finalized web application ready for deployment</div>
         </div>
       </div>
       <div className='grid grid-cols-2 bg-red-100 h-full'>
