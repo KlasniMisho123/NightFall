@@ -148,7 +148,8 @@ export default function Hero() {
               </div>
             </div>
           </section>
-
+        <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[5deg] text-sm md:text-base ' + urbanist.className }>
+         Our Services</span> 
     </div>
   )
 }
