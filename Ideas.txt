@@ -1,10 +1,8 @@
-Small Screen Navbar Activation Animation
 responsive footer
 --- HERO.jsx ---
 {/* ROCKET/.. -!? FLIES AND LEAVES MOTTO/card */}
 Open Animation -> Nightfall? maybe cloud, and changes whole background/or other?
-finished counting stats?, slide down/slot matchine like animation?
-
+finished counting stats?, slide down/slot matchine like animation - after connected base.
 --- nightfalls animation OR stationary bg-gray-800
 
 ~Services, Different Component/style?

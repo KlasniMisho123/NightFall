@@ -1,10 +1,5 @@
 Logo Starting With RollBack - Remove/Keep
 
-OUR SERVICES -->
- Build Custom Websites
- Desining Websites
- Website Maintenance
-
  Hero, stats --> // Dinamicly Apply Color ?
 
  Homepage, Services --> ServiceCard - Animation -->

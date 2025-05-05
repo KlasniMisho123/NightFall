@@ -9,5 +9,5 @@ How To Use UnicornIcons?
 
 --- Footer ---
 
-sidenavbar activated, footer homebutton must shut down sidenavbar.
+sidenavbar activated, footer homebutton must shut down sidenavbar. - useAux, handlestate?
 footer  mootto. 
