@@ -20,8 +20,11 @@ export default function WorkStages() {
              inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem 
             inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsum</p>
         </div>
-        <div className='my-4'>
-          <div>Ideation and concept development for the client project</div>
+        <div className='my-4 text-white'>
+          <div className='flex items-center gap-4'>
+            <i className="fa-regular fa-circle-check text-green-400"></i>
+            Ideation and concept development for the client project
+          </div>
           <div>Initial design and prototyping phase </div>
           <div>Demo release, client feedback, and iterative testing</div>
           <div>Finalized web application ready for deployment</div>
