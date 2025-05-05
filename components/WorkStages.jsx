@@ -23,11 +23,20 @@ export default function WorkStages() {
         <div className='my-4 text-white'>
           <div className='flex items-center gap-4'>
             <i className="fa-regular fa-circle-check text-green-400"></i>
-            Ideation and concept development for the client project
+            <h4> Ideation and concept development for the client project </h4> 
           </div>
-          <div>Initial design and prototyping phase </div>
-          <div>Demo release, client feedback, and iterative testing</div>
-          <div>Finalized web application ready for deployment</div>
+          <div className='flex items-center gap-4'>
+            <i className="fa-regular fa-circle-check text-green-400"></i>
+            <h4> Initial design and prototyping phase</h4> 
+          </div>
+          <div className='flex items-center gap-4'>
+          <i className="fa-regular fa-circle-check text-green-400"></i>
+            <h4> Demo release, client feedback, and iterative testing </h4>
+            </div>
+          <div className='flex items-center gap-4'>
+          <i className="fa-regular fa-circle-check text-green-400"></i>
+          <h4> Finalized web application ready for deployment</h4>
+            </div>
         </div>
       </div>
       <div className='grid grid-cols-2 bg-red-100 h-full'>
