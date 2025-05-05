@@ -21,18 +21,18 @@ export default function WorkStages() {
             inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsum</p>
         </div>
         <div className='my-4'>
-          <div>req1</div>
-          <div>req2</div>
-          <div>req3</div>
-          <div>req4</div>
+          <div>Create a new idea for client project</div>
+          <div>Start designing idea/project </div>
+          <div>DEMO VERSION  & TESTING, client checks/discuss </div>
+          <div>Web Application is ready to be deployed</div>
         </div>
       </div>
-      <div className='bg-red-100 h-full'>
+      <div className='grid grid-cols-2 bg-red-100 h-full'>
         {/* STAGE CARDS */}
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+        <div>01. IDEA </div>
+        <div className='mt-8'>02. UI/UX DESIGN</div>
+        <div>03.DEMO & TESTING </div>
+        <div className='mt-8'>04.DEPLOYMENT</div>
       </div>
     </section>
   )
