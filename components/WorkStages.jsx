@@ -51,7 +51,7 @@ export default function WorkStages() {
 
           <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 group overflow-hidden'>
             <div className='relative pt-8'>
-              <i className="fa-solid fa-lightbulb fa-bounce text-8xl opacity-40 text-yellow-400 absolute top-0 left-0 z-0"></i>
+              <i className="fa-solid fa-lightbulb fa-bounce text-8xl opacity-60 text-yellow-500 absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>01. IDEA</h1> 
             </div>
             <p className='text-gray-700 text-sm'>
@@ -61,7 +61,7 @@ export default function WorkStages() {
 
           <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 group overflow-hidden'>
             <div className='relative pt-8'> 
-              <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+              <i className="fa-solid fa-cubes hover:fa-bounce text-8xl opacity-60 text-purple-500 absolute absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>03. DEMO & TESTING</h1> 
             </div>
             <p> Ideation and concept development </p>
@@ -74,7 +74,7 @@ export default function WorkStages() {
 
         <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 group overflow-hidden'>
             <div className='relative pt-8'> 
-              <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+              <i className="fa-solid fa-compass-drafting hover:fa-bounce text-8xl opacity-60 text-blue-500 absolute absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>02. WEB DESIGN</h1> 
             </div>
             <p> Ideation and concept development </p>
@@ -82,7 +82,7 @@ export default function WorkStages() {
           
           <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 group overflow-hidden'>
             <div className='relative pt-8'> 
-              <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+              <i className="fa-solid fa-bullseye hover:fa-bounce text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>04. DEPLOYMENT</h1> 
             </div>
             <p> Ideation and concept development </p>
