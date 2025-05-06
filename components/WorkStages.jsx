@@ -50,20 +50,20 @@ export default function WorkStages() {
         {/* FLEX 1 */}
         <div className='flex flex-col gap-8'>
 
-          <div className='flex flex-col p-4 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700'>
+          <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 group overflow-hidden'>
             <div className='relative pt-8'>
-              <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute top-0 left-0 z-0"></i>
-              <h1 className='relative z-10 font-bold text-2xl ml-2'>04.IDEA</h1> 
+              <i className="fa-solid fa-lightbulb fa-bounce text-8xl opacity-40 text-yellow-400 absolute top-0 left-0 z-0"></i>
+              <h1 className='relative z-10 font-bold text-2xl ml-2'>01. IDEA</h1> 
             </div>
             <p className='text-gray-700 text-sm'>
               Brainstorming and conceptualizing tailored solutions for client needs.
             </p>
           </div>
 
-          <div className='flex flex-col p-4 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700'>
+          <div className='flex flex-col p-4 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 '>
             <div className='relative pt-8'> 
               <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
-              <h1 className='relative z-10 font-bold text-2xl ml-2'>04. DEMO & TESTING</h1> 
+              <h1 className='relative z-10 font-bold text-2xl ml-2'>03. DEMO & TESTING</h1> 
             </div>
             <p> Ideation and concept development </p>
           </div>
@@ -76,7 +76,7 @@ export default function WorkStages() {
         <div className='flex flex-col p-4 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700'>
             <div className='relative pt-8'> 
               <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
-              <h1 className='relative z-10 font-bold text-2xl ml-2'>04.WEB DESIGN</h1> 
+              <h1 className='relative z-10 font-bold text-2xl ml-2'>02. WEB DESIGN</h1> 
             </div>
             <p> Ideation and concept development </p>
           </div>
@@ -84,7 +84,7 @@ export default function WorkStages() {
           <div className='flex flex-col p-4 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700'>
             <div className='relative pt-8'> 
               <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
-              <h1 className='relative z-10 font-bold text-2xl ml-2'>04.DEPLOYMENT</h1> 
+              <h1 className='relative z-10 font-bold text-2xl ml-2'>04. DEPLOYMENT</h1> 
             </div>
             <p> Ideation and concept development </p>
           </div>
