@@ -54,8 +54,9 @@ export default function WorkStages() {
               <i className="fa-solid fa-lightbulb fa-bounce text-8xl opacity-60 text-yellow-500 absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>01. IDEA</h1> 
             </div>
-            <p className='text-gray-700 text-sm'>
-              Brainstorming and conceptualizing tailored solutions for client needs.
+            <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
+              We begin by understanding the client's vision, exploring possibilities, 
+              and generating innovative ideas that align with their goals.
             </p>
           </div>
 
