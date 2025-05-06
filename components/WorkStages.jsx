@@ -26,19 +26,19 @@ export default function WorkStages() {
         </div>
         {/* COL/ROWS */}
         <div className='flex flex-col my-4 text-white gap-4 '>
-          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-600/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 cursor-pointer group '>
+          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-600/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 group '>
             <i className="fa-solid fa-moon text-xl text-purple-400/80 group-hover:bg-blue-500 transition-all transition-duration-300  group-hover:text-gray-300 rounded-full px-1.5 py-1 "></i>
             <h4> Ideation and concept development for the client project </h4> 
           </div>
-          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 cursor-pointer group '>
+          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 group '>
             <i className="fa-solid fa-moon text-xl text-purple-400/80 group-hover:bg-blue-500 transition-all transition-duration-300  group-hover:text-gray-300 rounded-full px-1.5 py-1 "></i>
             <h4> Initial design and prototyping phase </h4> 
           </div>
-          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 cursor-pointer group '>
+          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 group '>
             <i className="fa-solid fa-moon text-xl text-purple-400/80 group-hover:bg-blue-500 transition-all transition-duration-300  group-hover:text-gray-300 rounded-full px-1.5 py-1 "></i>
             <h4> Demo release, client feedback, and iterative testing </h4> 
           </div>
-          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 cursor-pointer group '>
+          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 group '>
             <i className="fa-solid fa-moon text-xl text-purple-400/80 group-hover:bg-blue-500 transition-all transition-duration-300  group-hover:text-gray-300 rounded-full px-1.5 py-1 "></i>
             <h4> Finalized web application ready for deployment </h4> 
           </div>
@@ -47,10 +47,10 @@ export default function WorkStages() {
       <div className='grid grid-cols-2 h-full'>
         {/* STAGE CARDS */}
         {/* STAGE CARD BG- Roman numbers/icons/imgs */}
-        <div className='flex flex-col p-4 bg-white gap-[30%] h-[300px]'>
-          <div> 
-            <i className="fa-solid fa-lightbulb fa-bounce text-5xl "></i>
-            <h1>01. IDEA</h1> 
+        <div className='flex flex-col p-4 bg-white gap-2 min-h-[300px] rounded-xs '>
+          <div className='relative'> 
+            <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+            <h1 className='relative z-10 m-10 mt-14 font-bold text-2xl'>01. IDEA</h1> 
           </div>
           <p> Ideation and concept development </p>
         </div>
