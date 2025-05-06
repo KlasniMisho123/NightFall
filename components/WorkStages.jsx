@@ -92,7 +92,7 @@ export default function WorkStages() {
               <i className="fa-solid fa-bullseye text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
               <div className='flex items-center relative z-10 font-bold ml-13 arrow-land'>
                 <img src='arrow.png' alt='arrow' className='h-14 w-14 rotate-45 select-none'/> 
-                <h1 className=' text-2xl '> DEPLOYMENT </h1> 
+                <h1 className=' text-xl '> DEPLOYMENT </h1> 
               </div>
             </div>
             <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
