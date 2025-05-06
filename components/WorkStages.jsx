@@ -1,17 +1,7 @@
-import { Inter, Poppins, Rubik, Urbanist } from 'next/font/google';
+import Urbanist  from 'next/font/google';
 import React from 'react'
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700']});
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-});
-
-const rubik = Rubik({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-});
 
 export default function WorkStages() {
   return (
@@ -26,7 +16,7 @@ export default function WorkStages() {
             How It <span className='text-purple-500/90 font-extrabold'> Works </span> ?
           </h1>
           {/* p max-w-[500px] for now */}
-          <p className="text-gray-200 max-w-[500px] text-sm md:text-base mt-4 leading-relaxed tracking-wide font-light italic">
+          <p className="text-gray-200 max-w-[500px] text-sm md:text-base mt-4 leading-relaxed tracking-wide font-light italic ">
             From the first spark of an idea to the final deployment, 
             our process is built to turn concepts into fully realized web
             applications. Each step ensures clarity, creativity,
