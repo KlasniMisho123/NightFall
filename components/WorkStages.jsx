@@ -22,7 +22,8 @@ export default function WorkStages() {
         </div>
         <div className='my-4 text-white'>
           <div className='flex items-center gap-4'>
-            <i className="fa-regular fa-circle-check text-green-400"></i>
+            <i className="fa-solid fa-moon text-xl text-purple-400/80 hover:bg-blue-500 hover:text-gray-300 rounded-full px-1.5 py-1 "></i>
+            {/* <i className="fa-regular fa-circle-check text-green-400"></i> */}
             <h4> Ideation and concept development for the client project </h4> 
           </div>
           <div className='flex items-center gap-4'>
