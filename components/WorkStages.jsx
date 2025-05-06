@@ -65,7 +65,10 @@ export default function WorkStages() {
               <i className="fa-solid fa-cubes hover:fa-bounce text-8xl opacity-60 text-purple-500 absolute absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>03. DEMO & TESTING</h1> 
             </div>
-            <p> Ideation and concept development </p>
+            <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
+               Through interactive demos and rigorous testing, we ensure functionality, 
+                performance, and usability across all major platforms and devices.
+            </p>
           </div>
 
         </div>
@@ -78,7 +81,10 @@ export default function WorkStages() {
               <i className="fa-solid fa-compass-drafting hover:fa-bounce text-8xl opacity-60 text-blue-500 absolute absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>02. WEB DESIGN</h1> 
             </div>
-            <p> Ideation and concept development </p>
+            <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
+               We translate concepts into clean, responsive, and visually engaging 
+               designs that reflect the brand’s identity and enhance user experience.
+            </p>
           </div>
           
           <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 group overflow-hidden'>
@@ -86,7 +92,10 @@ export default function WorkStages() {
               <i className="fa-solid fa-bullseye hover:fa-bounce text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>04. DEPLOYMENT</h1> 
             </div>
-            <p> Ideation and concept development </p>
+            <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
+               After final review, we launch the product smoothly, configure hosting,
+              and set up maintenance tools to ensure long-term success.
+            </p>
           </div>
 
         </div>
