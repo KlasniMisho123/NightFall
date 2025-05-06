@@ -44,19 +44,40 @@ export default function WorkStages() {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-2 h-full'>
+      <div className='grid grid-cols-2 h-full gap-4'>
         {/* STAGE CARDS */}
         {/* STAGE CARD BG- Roman numbers/icons/imgs */}
-        <div className='flex flex-col p-4 bg-white gap-2 min-h-[300px] rounded-xs '>
+        <div className='flex flex-col p-4 bg-white gap-2 min-h-[300px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
           <div className='relative'> 
             <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
             <h1 className='relative z-10 m-10 mt-14 font-bold text-2xl'>01. IDEA</h1> 
           </div>
           <p> Ideation and concept development </p>
         </div>
-        <div className='mt-8'>02. UI/UX DESIGN</div>
+        <div className='mt-8 flex flex-col p-4 bg-white gap-2 min-h-[300px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
+          <div className='relative'> 
+            <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+            <h1 className='relative z-10 m-10 mt-14 font-bold text-2xl'>01. IDEA</h1> 
+          </div>
+          <p> Ideation and concept development </p>
+        </div>
+        <div className='flex flex-col p-4 bg-white gap-2 min-h-[300px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
+          <div className='relative'> 
+            <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+            <h1 className='relative z-10 m-10 mt-14 font-bold text-2xl'>01. IDEA</h1> 
+          </div>
+          <p> Ideation and concept development </p>
+        </div>
+        <div className='flex flex-col p-4 bg-white gap-2 min-h-[300px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
+          <div className='relative'> 
+            <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+            <h1 className='relative z-10 m-10 mt-14 font-bold text-2xl'>01. IDEA</h1> 
+          </div>
+          <p> Ideation and concept development </p>
+        </div>
+        {/* <div className='mt-8'>02. UI/UX DESIGN</div>
         <div>03.DEMO & TESTING </div>
-        <div className='mt-8'>04.DEPLOYMENT</div>
+        <div className='mt-8'>04.DEPLOYMENT</div> */}
       </div>
     </section>
   )
