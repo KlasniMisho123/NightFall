@@ -1,4 +1,4 @@
-import Urbanist  from 'next/font/google';
+import { Urbanist }  from 'next/font/google';
 import React from 'react'
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
