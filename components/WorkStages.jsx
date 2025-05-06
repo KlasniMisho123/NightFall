@@ -44,9 +44,16 @@ export default function WorkStages() {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-2 bg-red-100 h-full'>
+      <div className='grid grid-cols-2 h-full'>
         {/* STAGE CARDS */}
-        <div>01. IDEA </div>
+        {/* STAGE CARD BG- Roman numbers/icons/imgs */}
+        <div className='flex flex-col p-4 bg-white gap-[30%] h-[300px]'>
+          <div> 
+            <i className="fa-solid fa-lightbulb fa-bounce text-5xl "></i>
+            <h1>01. IDEA</h1> 
+          </div>
+          <p> Ideation and concept development </p>
+        </div>
         <div className='mt-8'>02. UI/UX DESIGN</div>
         <div>03.DEMO & TESTING </div>
         <div className='mt-8'>04.DEPLOYMENT</div>
