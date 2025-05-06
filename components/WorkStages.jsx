@@ -8,7 +8,7 @@ export default function WorkStages() {
       <div className='flex flex-col gap-4 '>
         <div className='my-4'>
           {/* WorkStages Color */}
-          <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-purple-500/80 text-purple-500/90 font-bold rotate-[10deg] text-sm md:text-base ' + urbanist.className }>
+          <span className={'border-4 rounded-lg px-4 py-2 my-8 inline-block border-purple-500/80 text-purple-500/90 font-bold rotate-[10deg] text-sm md:text-base ' + urbanist.className }>
             Work Process
           </span> 
           <h1 className={`text-white text-xl my-4 md:text-2xl lg:text-4xl font-semibold mt-2 whitespace-nowrap ` + urbanist.className}>
@@ -93,7 +93,7 @@ export default function WorkStages() {
             <div className='relative pt-5'> 
               <i className="fa-solid fa-bullseye text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
               <div className='flex items-center relative z-10 font-bold arrow-land '>
-                <img src='arrow.png' alt='arrow' className='h-14 w-14 rotate-45 select-none'/> 
+                <img src='arrow.png' alt='arrow' className='h-14 w-14 rotate-45 select-none '/> 
                 <h1 className=' text-xl '> DEPLOYMENT </h1> 
               </div>
             </div>
