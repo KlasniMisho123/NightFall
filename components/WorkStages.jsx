@@ -1,7 +1,18 @@
-import { Urbanist } from 'next/font/google';
+import { Inter, Poppins, Rubik, Urbanist } from 'next/font/google';
 import React from 'react'
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700']});
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
+
+const rubik = Rubik({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
+
 export default function WorkStages() {
   return (
     <section className='flex justify-evenly gap-8 '>
@@ -54,9 +65,9 @@ export default function WorkStages() {
             hover:border-yellow-700 group overflow-hidden'>
             <div className='relative pt-8'>
               <i className="fa-solid fa-lightbulb fa-bounce text-8xl opacity-60 text-yellow-500 absolute top-0 left-0 z-0"></i>
-              <h1 className='relative z-10 font-bold text-2xl ml-2'>01. IDEA</h1> 
+              <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>01. IDEA</h1> 
             </div>
-            <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-yellow-500 transition-all duration-300'>
+            <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-yellow-500 transition-all duration-300'>
               We begin by understanding the client's vision, exploring possibilities, 
               and generating innovative ideas that align with their goals.
             </p>
@@ -67,9 +78,9 @@ export default function WorkStages() {
             hover:border-purple-700 group overflow-hidden'>
             <div className='relative pt-8'> 
               <i className="fa-solid fa-cubes text-8xl opacity-60 text-purple-500 absolute absolute top-0 left-0 z-0"></i>
-              <h1 className='relative z-10 font-bold text-2xl ml-2'>03. DEMO & TESTING</h1> 
+              <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>03. DEMO & TESTING</h1> 
             </div>
-            <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
+            <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
                Through interactive demos and rigorous testing, we ensure functionality, 
                 performance, and usability across all major platforms and devices.
             </p>
@@ -85,9 +96,9 @@ export default function WorkStages() {
           hover:border-blue-700 group overflow-hidden'>
             <div className='relative pt-8'> 
               <i className="fa-solid fa-compass-drafting text-8xl opacity-60 text-blue-500 absolute absolute top-0 left-0 z-0"></i>
-              <h1 className='relative z-10 font-bold text-2xl ml-2'>02. WEB DESIGN</h1> 
+              <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>02. WEB DESIGN</h1> 
             </div>
-            <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-blue-500 transition-all duration-300'>
+            <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-blue-500 transition-all duration-300'>
                We translate concepts into clean, responsive, and visually engaging 
                designs that reflect the brand’s identity and enhance user experience.
             </p>
@@ -100,10 +111,10 @@ export default function WorkStages() {
               <i className="fa-solid fa-bullseye text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
               <div className='flex items-center relative z-10 font-bold arrow-land '>
                 <img src='arrow.png' alt='arrow' className='h-14 w-14 rotate-45 select-none '/> 
-                <h1 className=' text-xl '> DEPLOYMENT </h1> 
+                <h1 className={'text-2xl ' + urbanist.className}> DEPLOYMENT </h1> 
               </div>
             </div>
-            <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-red-500 transition-all duration-300'>
+            <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-red-500 transition-all duration-300'>
                After final review, we launch the product smoothly, configure hosting,
               and set up maintenance tools to ensure long-term success.
             </p>

@@ -6,3 +6,5 @@ Logo - shadow only on bot/ check during animation
  Homepage, Services --> ServiceCard - Animation -->
 
 Homepage -->  card to projects?
+
+WorkStages --> responsive
