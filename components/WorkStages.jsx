@@ -44,39 +44,54 @@ export default function WorkStages() {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-2 h-full gap-4 p-8'>
+      <div className='flex h-full gap-4 p-8'>
         {/* STAGE CARDS */}
         {/* STAGE CARD BG- Roman numbers/icons/imgs */}
-        <div className='flex flex-col p-4 bg-white gap-2 min-h-[300px] max-w-[250px] rounded-sm transition-all duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
-          <div className='relative pt-8'>
-            <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute top-0 left-0 z-0"></i>
-            <h1 className='relative z-10 font-bold text-2xl'>01. IDEA</h1> 
+        {/* FLEX 1 */}
+        <div className='flex flex-col gap-8'>
+
+          <div className='flex flex-col p-4 bg-white gap-12 min-h-[300px] max-w-[250px] rounded-sm transition-all duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
+            <div className='relative pt-8'>
+              <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute top-0 left-0 z-0"></i>
+              <h1 className='relative z-10 font-bold text-2xl'>IDEA</h1> 
+            </div>
+            <p className='text-gray-700 text-sm'>
+              Brainstorming and conceptualizing tailored solutions for client needs.
+            </p>
           </div>
-          <p className='text-gray-700 text-sm'>
-            Brainstorming and conceptualizing tailored solutions for client needs.
-          </p>
-        </div>
-        <div className='mt-8 flex flex-col p-4 bg-white gap-2 min-h-[300px] max-w-[250px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
-          <div className='relative'> 
-            <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
-            <h1 className='relative z-10 m-10 mt-14 font-bold text-2xl'>02.WEB DESIGN</h1> 
+
+          <div className='flex flex-col p-4 bg-white gap-12 min-h-[300px] max-w-[250px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
+            <div className='relative pt-8'> 
+              <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+              <h1 className='relative z-10 font-bold text-2xl '>DEMO & TESTING</h1> 
+            </div>
+            <p> Ideation and concept development </p>
           </div>
-          <p> Ideation and concept development </p>
+
         </div>
-        <div className='flex flex-col p-4 bg-white gap-2 min-h-[300px] max-w-[250px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
-          <div className='relative'> 
-            <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
-            <h1 className='relative z-10 m-10 mt-14 font-bold text-2xl'>03.DEMO & TESTING</h1> 
+
+          {/* FLEX 2 */}
+        <div className='flex flex-col gap-8 mt-8'>
+
+          <div className=' flex flex-col p-4 bg-white gap-12 min-h-[300px] max-w-[250px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
+            <div className='relative pt-8'> 
+              <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+              <h1 className='relative z-10 font-bold text-2xl'>WEB DESIGN</h1> 
+            </div>
+            <p> Ideation and concept development </p>
           </div>
-          <p> Ideation and concept development </p>
-        </div>
-        <div className='mt-8 flex flex-col p-4 bg-white gap-2 min-h-[300px] max-w-[250px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
-          <div className='relative'> 
-            <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
-            <h1 className='relative z-10 m-10 mt-14 font-bold text-2xl'>04.DEPLOYMENT</h1> 
+          
+          <div className=' flex flex-col p-4 bg-white gap-12 min-h-[300px] max-w-[250px] rounded-sm transition-all transition-duration-300 border-2 border-transparent shadow-md hover:border-blue-700'>
+            <div className='relative pt-8'> 
+              <i className="fa-solid fa-lightbulb hover:fa-bounce text-8xl opacity-40 text-yellow-400 absolute absolute top-0 left-0 z-0"></i>
+              <h1 className='relative z-10 font-bold text-2xl'>DEPLOYMENT</h1> 
+            </div>
+            <p> Ideation and concept development </p>
           </div>
-          <p> Ideation and concept development </p>
+
         </div>
+        
+        
         {/* <div className='mt-8'></div>
         <div> </div>
         <div className='mt-8'></div> */}
