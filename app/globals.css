@@ -243,7 +243,7 @@ body {
 
 @keyframes arrow-land-animation {
   0% {
-    transform: translateX(100px);
+    transform: translateX(500px);
   } 100% {
     transform: translateX(52px);
   }

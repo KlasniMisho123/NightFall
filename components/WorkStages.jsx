@@ -89,7 +89,7 @@ export default function WorkStages() {
           
           <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300
            border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] 
-           hover:border-purple-700 group overflow-hidden '>
+           hover:border-purple-700 group overflow-hidden group'>
             <div className='relative pt-5'> 
               <i className="fa-solid fa-bullseye text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
               <div className='flex items-center relative z-10 font-bold arrow-land '>
