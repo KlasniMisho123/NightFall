@@ -8,36 +8,40 @@ export default function WorkStages() {
       <div className='flex flex-col gap-4 '>
         <div className='my-4'>
           {/* WorkStages Color */}
-          <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-purple-500/80 text-purple-500/90 font-bold rotate-[5deg] text-sm md:text-base ' + urbanist.className }>
-            Work Stages
+          <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-purple-500/80 text-purple-500/90 font-bold rotate-[10deg] text-sm md:text-base ' + urbanist.className }>
+            Work Process
           </span> 
           <h1 className={`text-white text-xl my-4 md:text-2xl lg:text-4xl font-semibold mt-2 whitespace-nowrap ` + urbanist.className}>
             How It <span className='text-purple-500/90 font-extrabold'> Works </span> ?
           </h1>
           {/* p max-w-[500px] for now */}
-          <p className='max-w-[500px]'>
-            lorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem
-             inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem 
-            inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsum</p>
+          <p className='max-w-[500px] text-gray-200'>
+            From the first spark of an idea to the final deployment, 
+            our process is built to turn concepts into fully realized web
+            applications. Each step ensures clarity, creativity,
+            and collaboration—so you’re always involved, and the end result
+            exceeds expectations.
+          </p>
+
         </div>
         {/* COL/ROWS */}
         <div className='flex flex-col my-4 text-white gap-4 '>
-          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:bg-gray-600 cursor-pointer group '>
+          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-600/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 cursor-pointer group '>
             <i className="fa-solid fa-moon text-xl text-purple-400/80 group-hover:bg-blue-500 transition-all transition-duration-300  group-hover:text-gray-300 rounded-full px-1.5 py-1 "></i>
             <h4> Ideation and concept development for the client project </h4> 
           </div>
-          <div className='flex items-center gap-4'>
-            <i className="fa-regular fa-circle-check text-green-400"></i>
-            <h4> Initial design and prototyping phase</h4> 
+          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 cursor-pointer group '>
+            <i className="fa-solid fa-moon text-xl text-purple-400/80 group-hover:bg-blue-500 transition-all transition-duration-300  group-hover:text-gray-300 rounded-full px-1.5 py-1 "></i>
+            <h4> Initial design and prototyping phase </h4> 
           </div>
-          <div className='flex items-center gap-4'>
-          <i className="fa-regular fa-circle-check text-green-400"></i>
-            <h4> Demo release, client feedback, and iterative testing </h4>
-            </div>
-          <div className='flex items-center gap-4'>
-          <i className="fa-regular fa-circle-check text-green-400"></i>
-          <h4> Finalized web application ready for deployment</h4>
-            </div>
+          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 cursor-pointer group '>
+            <i className="fa-solid fa-moon text-xl text-purple-400/80 group-hover:bg-blue-500 transition-all transition-duration-300  group-hover:text-gray-300 rounded-full px-1.5 py-1 "></i>
+            <h4> Demo release, client feedback, and iterative testing </h4> 
+          </div>
+          <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 cursor-pointer group '>
+            <i className="fa-solid fa-moon text-xl text-purple-400/80 group-hover:bg-blue-500 transition-all transition-duration-300  group-hover:text-gray-300 rounded-full px-1.5 py-1 "></i>
+            <h4> Finalized web application ready for deployment </h4> 
+          </div>
         </div>
       </div>
       <div className='grid grid-cols-2 bg-red-100 h-full'>
