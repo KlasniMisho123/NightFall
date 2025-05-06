@@ -62,7 +62,7 @@ export default function WorkStages() {
 
           <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 group overflow-hidden'>
             <div className='relative pt-8'> 
-              <i className="fa-solid fa-cubes hover:fa-bounce text-8xl opacity-60 text-purple-500 absolute absolute top-0 left-0 z-0"></i>
+              <i className="fa-solid fa-cubes text-8xl opacity-60 text-purple-500 absolute absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>03. DEMO & TESTING</h1> 
             </div>
             <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
@@ -78,7 +78,7 @@ export default function WorkStages() {
 
         <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 group overflow-hidden'>
             <div className='relative pt-8'> 
-              <i className="fa-solid fa-compass-drafting hover:fa-bounce text-8xl opacity-60 text-blue-500 absolute absolute top-0 left-0 z-0"></i>
+              <i className="fa-solid fa-compass-drafting text-8xl opacity-60 text-blue-500 absolute absolute top-0 left-0 z-0"></i>
               <h1 className='relative z-10 font-bold text-2xl ml-2'>02. WEB DESIGN</h1> 
             </div>
             <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
@@ -88,9 +88,12 @@ export default function WorkStages() {
           </div>
           
           <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)] hover:border-purple-700 group overflow-hidden'>
-            <div className='relative pt-8'> 
-              <i className="fa-solid fa-bullseye hover:fa-bounce text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
-              <h1 className='relative z-10 font-bold text-2xl ml-2'>04. DEPLOYMENT</h1> 
+            <div className='relative pt-5'> 
+              <i className="fa-solid fa-bullseye text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
+              <div className='flex items-center relative z-10 font-bold ml-13 arrow-land'>
+                <img src='arrow.png' alt='arrow' className='h-14 w-14 rotate-45 select-none'/> 
+                <h1 className=' text-2xl '> DEPLOYMENT </h1> 
+              </div>
             </div>
             <p className='text-gray-600 text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
                After final review, we launch the product smoothly, configure hosting,
