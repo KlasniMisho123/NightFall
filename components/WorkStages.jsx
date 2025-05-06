@@ -22,15 +22,15 @@ export default function WorkStages() {
           <span className={'border-4 rounded-lg px-4 py-2 my-8 inline-block border-purple-500/80 text-purple-500/90 font-bold rotate-[10deg] text-sm md:text-base ' + urbanist.className }>
             Work Process
           </span> 
-          <h1 className={`text-white text-xl my-4 md:text-2xl lg:text-4xl font-semibold mt-2 whitespace-nowrap ` + urbanist.className}>
+          <h1 className={`text-white text-xl my-4 md:text-3xl lg:text-5xl font-semibold mt-2 whitespace-nowrap ` + urbanist.className}>
             How It <span className='text-purple-500/90 font-extrabold'> Works </span> ?
           </h1>
           {/* p max-w-[500px] for now */}
-          <p className='max-w-[500px] text-gray-200'>
+          <p className="text-gray-200 max-w-[500px] text-sm md:text-base mt-4 leading-relaxed tracking-wide font-light italic">
             From the first spark of an idea to the final deployment, 
             our process is built to turn concepts into fully realized web
             applications. Each step ensures clarity, creativity,
-            and collaboration—so you’re always involved, and the end result
+            and collaboration — so you’re always involved, and the end result
             exceeds expectations.
           </p>
 
