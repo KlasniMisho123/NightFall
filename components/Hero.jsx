@@ -122,7 +122,7 @@ export default function Hero() {
           <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] ">
           <div className="bg-white mx-2  my-6 py-6 text-black rounded md:py-8 lg:py-10 md:mx-4 lg:mx-8 md:my-12">
               <div className="flex justify-center items-center overflow-hidden">
-                <div className="flex flex-col [290px]:flex-row justify-center items-center px-2 gap-2 sm:gap-4 sm:px-4 md:gap-10 lg:gap-20  ">
+                <div className="flex flex-col [290px]:flex-row  justify-center items-center px-2 gap-2 sm:gap-4 sm:px-4 md:gap-10 lg:gap-20  ">
                   <div className='hidden [290px]:flex justify-center items-center p-8 border-2 border-gray-100 rounded w-20 h-20 cursor-pointer 
                   transition-all transition-duration-600 shadow-md  hover:shadow-none bg-blue-500 hover:bg-transparent group  hover:border-blue-500 '>
                     <i className="fa-brands fa-rocketchat text-4xl text-gray-100 group-hover:text-blue-500 "></i>
