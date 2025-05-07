@@ -7,4 +7,4 @@ Logo - shadow only on bot/ check during animation
 
 Homepage -->  card to projects?
 
-WorkStages --> responsive
+WorkStages --> responsive --> on screen load
