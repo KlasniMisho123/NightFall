@@ -49,9 +49,9 @@ export default function WorkStages() {
 
         {/* STAGE CARDS */}
         {/* FLEX 1 */}
-        <div className='flex flex-col gap-8'>
+        <div className='flex flex-col gap-4 sm:gap-8'>
 
-          <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300
+          <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300
             border-2 border-transparent shadow-[0_4px_12px_rgba(250,204,21,0.4)]
             hover:border-yellow-700 group overflow-hidden'>
             <div className='relative pt-8'>
@@ -64,7 +64,7 @@ export default function WorkStages() {
             </p>
           </div>
 
-          <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300 
+          <div className='relative translate-y-[360px] sm:translate-y-0 flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300 
             border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)]
             hover:border-purple-700 group overflow-hidden'>
             <div className='relative pt-8'> 
@@ -80,9 +80,9 @@ export default function WorkStages() {
         </div>
 
           {/* FLEX 2 */}
-        <div className='flex flex-col gap-8 mt-8'>
+        <div className='flex flex-col gap-4 sm:gap-8 mt-8'>
 
-        <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300
+        <div className='relative translate-y-[-360px] sm:translate-y-0 flex flex-col  p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300
           border-2 border-transparent shadow-[0_4px_12px_rgba(59,130,246,0.4)]
           hover:border-blue-700 group overflow-hidden'>
             <div className='relative pt-8'> 
@@ -95,7 +95,7 @@ export default function WorkStages() {
             </p>
           </div>
           
-          <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[300px] rounded-md transition-all duration-300
+          <div className='flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300
            border-2 border-transparent shadow-[0_4px_12px_rgba(239,68,68,0.4)] 
            hover:border-red-700 group overflow-hidden group'>
             <div className='relative pt-5'> 

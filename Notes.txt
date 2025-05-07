@@ -8,3 +8,5 @@ Logo - shadow only on bot/ check during animation
 Homepage -->  card to projects?
 
 WorkStages --> responsive --> on screen load
+
+WorkStage  Cards Responsive --> sm break/ translate y for proper ordeR???
