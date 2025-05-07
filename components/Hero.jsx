@@ -105,7 +105,7 @@ export default function Hero() {
                  Our ongoing support ensures your website stays fresh, functional, and problem-free.`}
               title={`Ongoing Support`}
               imgSrc={`Maintenance.jpg`}
-              cardParagraph={`Website Maintenance`}
+              cardParagraph={`Ongoing Website Maintenance & Support`}
           />
 
           <Link className="flex justify-center items-center text-black gap-8 p-4 rounded group cursor-pointer bg-white
