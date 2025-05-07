@@ -5,7 +5,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function WorkStages() {
   return (
-    <section className='flex flex-col justify-evenly gap-8 lg:flex-row '>
+    <section className='flex flex-col justify-evenly gap-2 lg:gap-4 xl:gap-8 lg:flex-row '>
       <div className='flex flex-col gap-4 '>
         <div className='my-4'>
           {/* WorkStages Color */}
@@ -45,7 +45,8 @@ export default function WorkStages() {
           </div>
         </div>
       </div>
-      <div className='flex h-full gap-4 p-0 lg:p-8 '>
+      <div className='flex flex-col items-center h-full gap-4 justify-start py-8 px-0 xl:px-8 md:justify-center md:gap-8 sm:flex-row sm:items-start '>
+
         {/* STAGE CARDS */}
         {/* FLEX 1 */}
         <div className='flex flex-col gap-8'>
