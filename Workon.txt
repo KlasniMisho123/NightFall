@@ -11,3 +11,6 @@ How To Use UnicornIcons?
 
 sidenavbar activated, footer homebutton must shut down sidenavbar. - useAux, handlestate?
 footer  mootto. 
+
+
+React Logic on Screen Sizes?
