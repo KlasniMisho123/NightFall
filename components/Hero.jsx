@@ -123,7 +123,7 @@ export default function Hero() {
           <div className="bg-white mx-6 my-12 py-12 text-black rounded">
               <div className="flex justify-center items-center">
                 <div className="flex flex-col sm:flex-row justify-center items-center px-2 gap-2 sm:gap-4 sm:px-4 md:gap-10 lg:gap-20  ">
-                  <div className='relative translate-y-[165px] translate-x-[-165px] flex justify-center items-center p-8 border-2 border-gray-100 rounded w-20 h-20 cursor-pointer 
+                  <div className='relative right-12 flex justify-center items-center p-8 border-2 border-gray-100 rounded w-20 h-20 cursor-pointer 
                   transition-all transition-duration-600 shadow-md  hover:shadow-none bg-blue-500 hover:bg-transparent group  hover:border-blue-500 '>
                     <i className="fa-brands fa-rocketchat text-4xl text-gray-100 group-hover:text-blue-500 "></i>
                   </div>
@@ -136,7 +136,7 @@ export default function Hero() {
                     </p>
                   </div>
 
-                <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
+                <div className="absolute top-10 left-12 flex my-6 gap-[20%] sm:gap-[10%]  ">
                   <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
                   transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
                   href={'/support'}
