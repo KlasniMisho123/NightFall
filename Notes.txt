@@ -9,4 +9,7 @@ Homepage -->  card to projects?
 
 WorkStages --> responsive --> on screen load
 
-WorkStage  Cards Responsive --> sm break/ translate y for proper ordeR???
+WorkStage  Cards Responsive --> sm break/ translate y for proper order???
+
+____ Responsive ____
+responsive updates
