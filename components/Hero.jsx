@@ -67,8 +67,8 @@ export default function Hero() {
         {/* <div> ANIMATION</div> */}
         {/* LAZY LOAD ANIMATION */}
         {/* RESPONSIVE */}
-        <section className='grid grid-cols-2 md:grid-cols-3 gap-6 p-2 py-8 my-12 text-white '> 
-        <div className="flex flex-col justify-center gap-2 p-4 py-18 services-card bg-blue-800/50 ">
+        <section className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4 lg:gap-6 lg:p-2 lg:py-8 my-12 text-white '> 
+        <div className="flex flex-col justify-center gap-2 p-4 py-18 services-card bg-blue-800/50 max-w-[400px]">
         {/* https://i.pinimg.com/736x/1c/44/f8/1c44f8914b9f20e13b6168a2c2be3586.jpg */}
             <h3 className="text-lg text-gray-200 text-center lg:text-start ">Our Services</h3>
             <div className="flex flex-col items-center text-4xl font-bold lg:items-start">
@@ -109,7 +109,7 @@ export default function Hero() {
           />
 
           <Link className="flex justify-center items-center text-black gap-8 p-4 rounded group cursor-pointer bg-white
-          transition-all transition-duration-300 transition-ease-in-out ring-4 ring-blue-900 hover:scale-105 aboutus-card"
+          transition-all transition-duration-300 transition-ease-in-out ring-4 ring-blue-900 hover:scale-105 aboutus-card max-w-[400px] min-h-[370px]"
           href="/aboutus"
           >
           <div>
