@@ -16,7 +16,7 @@ useEffect(()=>{
 
   return (
     <footer className={'flex flex-col py-2 pb-4  px-4 bg-gray-600 rounded-t gap-4 ' + exo2.className}>
-      <div className='flex flex-col gap-4 items-start justify-start md:flex-row md:justify-between md:items-center md:gap-0  mx-4'>
+      <div className='flex flex-col gap-4 items-start justify-start md:flex-row md:justify-between md:items-center md:gap-0  mx-0 sm:mx-2 md:mx-4'>
         <Link  className='flex gap-2 items-center font-bold text-blue-400  moonLogoAnimation cursor-pointer'
         href='/'
         onClick={() => {setIsSideNavBarActive(false)}}>

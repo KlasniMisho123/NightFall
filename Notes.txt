@@ -1,9 +1,11 @@
 Logo Starting With RollBack - Remove/Keep
 Logo - shadow only on bot/ check during animation 
 
- Hero, stats --> // Dinamicly Apply Color ?
+Hero, stats --> // Dinamicly Apply Color ?
 
- Homepage, Services --> ServiceCard - Animation -->
+Homepage, Services --> ServiceCard - Animation -->
+
+Sm Navbar Animaton translate into X and reverse.
 
 Homepage -->  card to projects?
 
