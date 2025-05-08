@@ -268,13 +268,13 @@ body {
 }
 
 .hero-stats-load {
-  transform: translateY(-150%);
-  animation: hero-animation-animation 0.5s forwards ease;
+  transform: translateX(-150%);
+  animation: hero-stats-load-animation 0.75s forwards ease;
 }
 
 @keyframes hero-stats-load-animation {
   100%{
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
 
