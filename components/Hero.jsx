@@ -20,6 +20,7 @@ export default function Hero() {
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO CARD */}
           {/* HERO BACKGROUND? */}
+          {/* HERO ANIMATION Moon / Sun  DayChangeAnimation ? */}
           {/* Background color  bg-[#A7C6DA]/ bg-gray-800 / bg-gray-900 */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
           <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[-5deg] text-sm md:text-base ' + urbanist.className }> Your partner in digital transformation</span> 
@@ -58,7 +59,7 @@ export default function Hero() {
           </section>  
         </div>
         <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] text-white'>
-           Hero
+           {/* Hero */}
            {/* <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' /> */}
         </div>
 
@@ -69,7 +70,6 @@ export default function Hero() {
         {/* RESPONSIVE */}
         <section className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4 lg:gap-6 lg:p-2 lg:py-8 my-12 text-white '> 
         <div className="flex flex-col justify-center gap-2 p-4 py-18 services-card bg-blue-800/50 max-w-[400px] min-h-[370px] ">
-        {/* https://i.pinimg.com/736x/1c/44/f8/1c44f8914b9f20e13b6168a2c2be3586.jpg */}
             <h3 className="text-lg text-gray-200 text-center lg:text-start ">Our Services</h3>
             <div className="flex flex-col items-center text-4xl font-bold lg:items-start">
                 <div>What</div>
