@@ -16,7 +16,7 @@ useEffect(()=>{
 
   return (
     <footer className={'flex flex-col py-2 pb-4  px-4 bg-gray-600 rounded-t gap-4 ' + exo2.className}>
-      <div className='flex justify-between items-center mx-4'>
+      <div className='flex flex-col gap-4 items-start justify-start md:flex-row md:justify-between md:items-center md:gap-0  mx-4'>
         <Link  className='flex gap-2 items-center font-bold text-blue-400  moonLogoAnimation cursor-pointer'
         href='/'
         onClick={() => {setIsSideNavBarActive(false)}}>
@@ -53,7 +53,7 @@ useEffect(()=>{
           </div>
       </div>
       <span className="h-0.5 bg-blue-500 w-full opacity-100 transition-all duration-300"></span>
-      <div className='text-center text-gray-100'>© Copyright 2025, All Rights Reserved by Nightfall Webworks</div>
+      <div className='text-center text-gray-300 text-xs md:text-sm'>© Copyright 2025, All Rights Reserved by Nightfall Webworks</div>
     </footer>
   )
 }
