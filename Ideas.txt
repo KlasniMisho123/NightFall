@@ -1,3 +1,5 @@
+LAZY LOADING
+
 responsive footer
 --- HERO.jsx ---
 {/* ROCKET/.. -!? FLIES AND LEAVES MOTTO/card */}

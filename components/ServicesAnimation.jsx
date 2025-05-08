@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function ServicesAnimation() {
   return (
-    <div>ServicesAnimation</div>
+    <section>
+        <span className='text-white'> NightFall/Services -Animation </span>
+    </section>
   )
 }
