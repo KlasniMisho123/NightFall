@@ -16,43 +16,43 @@ export default function Hero() {
 
   return (
     <div className='py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall overflow-hidden'>
-      <div className='flex gap-2 justify-between my-6 load-hero z-10'>
-        {/* HERO Div ^ */}
+      <div className='flex gap-2 justify-between my-6 z-10'>
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO CARD */}
           {/* HERO BACKGROUND? */}
           {/* HERO ANIMATION Moon / Sun  DayChangeAnimation ? */}
           {/* Background color  bg-[#A7C6DA]/ bg-gray-800 / bg-gray-900 */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
-          <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[-5deg] text-sm md:text-base ' + urbanist.className }> Your partner in digital transformation</span> 
-          <h1 className={`text-white text-4xl my-4 md:text-6xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
-            Digitize Your Idea
-          </h1>
+          <div className='load-hero'>
+            <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[-5deg] text-sm md:text-base ' + urbanist.className }> Your partner in digital transformation</span> 
+            <h1 className={`text-white text-4xl my-4 md:text-6xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
+              Digitize Your Idea
+            </h1>
 
-          <p className="text-gray-50 text-sm max-w-md  mt-3 leading-relaxed lg:max-w-2xl md:text-base ">
-          Nightfall Webworks helps you build modern, responsive websites that elevate your brand and grow your digital presence.
-          From concept to launch — we code your vision into reality.
-          </p>
+            <p className="text-gray-50 text-sm max-w-md  mt-3 leading-relaxed lg:max-w-2xl md:text-base ">
+            Nightfall Webworks helps you build modern, responsive websites that elevate your brand and grow your digital presence.
+            From concept to launch — we code your vision into reality.
+            </p>
 
 
-          <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
-            <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
-            transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
-            href={'/support'}
-            >
-              Contact Us
-            </Link>
-            <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white border-blue-500 hover:text-blue-500 transition-all duration-300 text-center
-            cursor-pointer shadow-sm whitespace-nowrap"
-            href={'/aboutus'}
-            >
-              About Us
-            </Link>
+            <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
+              <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
+              transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
+              href={'/support'}
+              >
+                Contact Us
+              </Link>
+              <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white border-blue-500 hover:text-blue-500 transition-all duration-300 text-center
+              cursor-pointer shadow-sm whitespace-nowrap"
+              href={'/aboutus'}
+              >
+                About Us
+              </Link>
+            </div>
           </div>
 
-          <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-12 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 '} >
+          <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-24 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 '} >
               {/* RESPONSIVE */}
-              
               <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
               <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Lifed`} cardColor={`purple-500`}/>
               <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red-500`}/>
@@ -60,7 +60,7 @@ export default function Hero() {
           </section>  
         </div>
         <div className='min-w-none sm:min-w-[20%] md:min-w-[25%] text-white'>
-           {/* Hero */}
+           Hero
            {/* <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' /> */}
         </div>
 
