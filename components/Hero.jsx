@@ -35,7 +35,7 @@ export default function Hero() {
             </p>
 
 
-            <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
+            <div className="flex my-6 gap-[20%] sm:gap-[10%] ">
               <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
               transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
               href={'/support'}
@@ -51,7 +51,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-24 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 '} >
+          <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-24 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 hero-stats-load '} >
               {/* RESPONSIVE */}
               <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue-500`}/>
               <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Lifed`} cardColor={`purple-500`}/>

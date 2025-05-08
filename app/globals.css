@@ -267,6 +267,17 @@ body {
   }
 }
 
+.hero-stats-load {
+  transform: translateY(-150%);
+  animation: hero-animation-animation 0.5s forwards ease;
+}
+
+@keyframes hero-stats-load-animation {
+  100%{
+    transform: translateY(0%);
+  }
+}
+
 @keyframes compassSearch {
   50% {
     transform: rotate(30deg)
