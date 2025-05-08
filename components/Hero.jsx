@@ -59,7 +59,7 @@ export default function Hero() {
               <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green-500`}/>
           </section>  
         </div>
-        <section className='min-w-none sm:min-w-[20%] md:min-w-[25%] text-white bg-red-700 main-hero-load '>
+        <section className='min-w-none sm:min-w-[20%] md:min-w-[25%] text-white main-hero-load '>
            Hero
            {/* <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' /> */}
         </section>
