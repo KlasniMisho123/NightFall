@@ -278,6 +278,18 @@ body {
   }
 }
 
+.main-hero-load {
+  transform: translateX(150%);
+  animation: main-hero-load-animation 1s forwards ease;
+}
+
+@keyframes main-hero-load-animation {
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
 @keyframes compassSearch {
   50% {
     transform: rotate(30deg)
