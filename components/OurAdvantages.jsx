@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ServicesAnimation() {
+export default function OurAdvantages() {
   return (
     <section className='flex gap-4 border-2 border-blue-700 rounded px-2 py-4 '>
         {/* <span className='text-white'> NightFall/Services -Animation </span> */}
