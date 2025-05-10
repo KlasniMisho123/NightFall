@@ -39,7 +39,7 @@ export default function OurAdvantages() {
         <div className='flex flex-row py-4 overflow-hidden '> 
         {advantageCardArray.map((card, index) => ( 
             <div className='flex-shrink-0 w-1/3' key={index}> 
-                <AdvantagesCard 
+                <AdvantagesCard
                     title={card.title}
                     icon={card.icon}
                 />
