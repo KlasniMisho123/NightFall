@@ -1,26 +1,15 @@
-import React from 'react';
-import AdvantageCard from './AdvantageCard';
+import { Fugaz_One } from 'next/font/google';
+import React from 'react'
 
 
-export default function OurAdvantages() {
-  const cards = [
-    { bgColor: 'bg-green-400', icon: 'fa-solid fa-crosshairs', title: 'Precision' },
-    { bgColor: 'bg-yellow-400', icon: '', title: 'Speed' },
-    { bgColor: 'bg-red-400', icon: '', title: 'Security' },
-    { bgColor: 'bg-blue-400', icon: '', title: 'Support' },
-    { bgColor: 'bg-purple-400', icon: '', title: 'Scalability' },
-  ];
+const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 
+export default function AdvantagesCard(props) {
+    const {icon, title } = props
   return (
-    <section className="flex gap-4 border-2 border-blue-700 rounded px-2 py-4 overflow-x-auto">
-      {cards.map((card, index) => (
-        <AdvantageCard
-          key={index}
-          bgColor={card.bgColor}
-          icon={card.icon}
-          title={card.title}
-        />
-      ))}
-    </section>
-  );
+    <div className='flex flex-col gap-8 rounded-lg border border-gray-300 bg-indigo-400 p-2 items-center justify-center w-[150px] h-[200px] advantageCardAction '>
+        <div className={`text-4xl text-gray-100 `}>{icon}</div>
+        <h1 className={'text-gray-100  ' + fugaz.className}> {title} </h1>
+    </div>
+  )
 }
