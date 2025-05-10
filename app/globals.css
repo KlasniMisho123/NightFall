@@ -289,6 +289,30 @@ body {
   }
 }
 
+.advantageCardAction {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: rollAround 15s ease-in-out infinite; 
+  box-shadow: 3px 3px 1px 1px rgb(179, 124, 218);
+}
+
+@keyframes rollAround {
+  0% {
+    transform: translateX(40px);
+  }
+  25% {
+    transform: translateX(-400px);
+  }
+  50% {
+    transform: translateX(-800px);
+  }
+  75% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+
 
 @keyframes compassSearch {
   50% {

@@ -35,7 +35,7 @@ const advantageCardArray = [
 export default function OurAdvantages() {
   return (
     <div className='py-8 border border-gray-200 flex flex-col justify-center items-center gap-4 min-w-[430px] overflow-hidden '>
-        <h1 className={'text-center text-base lg:text-lg textGradient ' + fugaz.className}> Our Advantages </h1>
+        <h1 className={'text-center text-base lg:text-lg textGradient text-white ' + fugaz.className}> Our Advantages </h1>
         <div className='flex flex-row py-4 overflow-hidden '> 
         {advantageCardArray.map((card, index) => ( 
             <div className='flex-shrink-0 w-1/3' key={index}> 
