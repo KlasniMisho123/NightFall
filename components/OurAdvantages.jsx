@@ -8,34 +8,40 @@ const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 const advantageCardArray = [
   {
     title: "Private",
-    icon: <i className="fa-solid fa-shield-halved"></i>
+    icon: <i className="fa-solid fa-shield-halved"></i>,
+    color: ""
   }, 
   {
     title: "Simple",
-    icon: <i className="fa-solid fa-egg"></i>
+    icon: <i className="fa-solid fa-egg"></i>,
+    color: ""
   },
   {
     title: "Targeted",
-    icon: <i className="fa-solid fa-bullseye"></i>
+    icon: <i className="fa-solid fa-bullseye"></i>,
+    color: ""
   },
   {
     title: "Insightful",
-    icon: <i className="fa-solid fa-lightbulb"></i>
+    icon: <i className="fa-solid fa-lightbulb"></i>,
+    color: ""
   },
   {
     title: "Engaging",
-    icon: <i className="fa-brands fa-sketch"></i>
+    icon: <i className="fa-brands fa-sketch"></i>,
+    color: ""
   }, 
   {
     title: " User Friendly ",
-    icon: <i className="fa-solid fa-users"></i>
+    icon: <i className="fa-solid fa-users"></i>,
+    color: ""
   }, 
 ]
 
 export default function OurAdvantages() {
   return (
     <div className='py-8 border border-gray-200 flex flex-col justify-center items-center gap-4 min-w-[430px] overflow-hidden '>
-        <h1 className={'text-center text-base lg:text-lg textGradient text-white ' + fugaz.className}> Our Advantages </h1>
+        <h1 className={'text-center text-lg lg:text-2xl textGradient text-white ' + fugaz.className}> Our Advantages </h1>
         <div className='flex flex-row py-4 overflow-hidden '> 
         {advantageCardArray.map((card, index) => ( 
             <div className='flex-shrink-0 w-1/3' key={index}> 
