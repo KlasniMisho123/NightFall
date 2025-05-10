@@ -7,36 +7,58 @@ const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 
 const advantageCardArray = [
   {
-    title: "Private",
+    title: "Secure",
     icon: <i className="fa-solid fa-shield-halved"></i>,
-    color: ""
-  }, 
+    color: "text-blue-600"
+  },
   {
-    title: "Simple",
+    title: "Clean",
     icon: <i className="fa-solid fa-egg"></i>,
-    color: ""
+    color: "text-gray-600"
   },
   {
-    title: "Targeted",
+    title: "Custom",
     icon: <i className="fa-solid fa-bullseye"></i>,
-    color: ""
+    color: "text-red-500"
   },
   {
-    title: "Insightful",
+    title: "Creative",
     icon: <i className="fa-solid fa-lightbulb"></i>,
-    color: ""
+    color: "text-yellow-500"
   },
   {
-    title: "Engaging",
+    title: "Bold",
     icon: <i className="fa-brands fa-sketch"></i>,
-    color: ""
-  }, 
+    color: "text-indigo-500"
+  },
   {
-    title: " User Friendly ",
+    title: "Trusted",
     icon: <i className="fa-solid fa-users"></i>,
-    color: ""
-  }, 
-]
+    color: "text-green-600"
+  },
+  {
+    title: "Fast",
+    icon: <i className="fa-solid fa-bolt"></i>,
+    color: "text-orange-500"
+  },
+  {
+    title: "Modern",
+    icon: <i className="fa-solid fa-display"></i>,
+    color: "text-cyan-500"
+  },
+  {
+    title: "Responsive",
+    icon: <i className="fa-solid fa-mobile-screen-button"></i>,
+    color: "text-purple-600"
+  },
+  {
+    title: "SEO",
+    icon: <i className="fa-solid fa-chart-line"></i>,
+    color: "text-emerald-500"
+  }
+];
+
+
 
 export default function OurAdvantages() {
   return (
