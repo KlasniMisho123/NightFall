@@ -59,10 +59,12 @@ export default function Hero() {
           </section>  
         </div>
         <section className='min-w-none sm:min-w-[20%] md:min-w-[25%] text-white main-hero-load flex items-center '>
-           <div className='bg-red-100 flex flex-col'> 
-            <i className="fa-solid fa-sun text-6xl text-[#FFD43B]"></i>
+           <div className='bg-white flex flex-col items-center p-8 '> 
+            <div className='flex justify-center '>
+              <i className="fa-solid fa-sun text-6xl text-[#FFD43B]"></i>
+              <i className="fa-solid fa-moon text-6xl text-[#B197FC]"> </i>
+            </div>
             <i className="fa-solid fa-mountain text-9xl text-[#74C0FC]"></i>
-            <i className="fa-solid fa-moon text-6xl text-[#B197FC]"> </i>
            </div>
            {/* <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' /> */}
         </section>
