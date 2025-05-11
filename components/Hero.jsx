@@ -58,6 +58,7 @@ export default function Hero() {
               <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green-500`}/>
           </section>  
         </div>
+        {/* Consider other Variatons for This Animation// (moon/sun ..env) */}
         <section className='min-w-none sm:min-w-[20%] md:min-w-[25%] text-white main-hero-load flex items-center '>
            <div className='bg-white flex flex-col items-center p-8 '> 
             <div className='flex justify-center '>
