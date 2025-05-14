@@ -1,4 +1,3 @@
-import MessageBox from '@/components/MessageBox';
 import { Urbanist } from 'next/font/google';
 import React from 'react'
 
@@ -12,32 +11,6 @@ export default function Projects() {
           Our Projects
         </span> 
         {/* Chat Like Description? */}
-        <div className='flex flex-col gap-4 '>
-            <MessageBox text="GREAT NEWS" />
-            <MessageBox response={true} text="GREAT NEWS2" />
-          
-        </div>
-        {/* <div className='flex gap-4 '>
-          <div className=''>
-            <div className='bg-blue-500 text-white p-4 rounded-full '> 
-              <p> Tell Me About Your Projects </p>
-            </div>
-            <div className='bg-blue-500 text-white p-4 rounded-full '> 
-              <p> Tell Me About Your Projects 2</p>
-            </div>
-          </div>
-
-          <div className=''>
-            <div className='bg-blue-500 text-white p-4 rounded-full  '> 
-              <p> Right NOW </p>
-            </div>
-            <div className='bg-blue-500 text-white p-4 rounded-full  '> 
-              <p> Right NOW 2</p>
-            </div>
-          </div>
-          
-        </div> */}
-
       </section>
     </div>
   )
