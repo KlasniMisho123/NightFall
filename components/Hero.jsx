@@ -59,16 +59,16 @@ export default function Hero() {
           </section>  
         </div>
         {/* Consider other Variatons for This Animation// (moon/sun ..env) */}
-        <section className='min-w-none sm:min-w-[20%] md:min-w-[25%] text-white main-hero-load flex items-center '>
-           <div className='flex flex-col items-center p-8 '> 
-            <div className='flex justify-center '>
-              <i className="fa-solid fa-sun text-6xl text-[#FFD43B]"></i>
-              <i className="fa-solid fa-moon text-6xl text-[#B197FC]"> </i>
+        <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] text-white main-hero-load flex items-center'>
+          <div className='flex flex-col items-center p-8'> 
+            <div className='flex justify-center gap-2'>
+              <img src='sun.png' alt='Sun icon' className='h-24 w-24 object-cover ' />
+              <img src='moonlogo.png' alt='Moon logo' className='h-24 w-24 object-cover' />
             </div>
-              <img src='Mountains.png' alt='Mountain Png' />
-           </div>
-           {/* <img src='https://i.pinimg.com/originals/df/88/b0/df88b01e4797b1efb65c74be984dc7f4.gif' /> */}
+            <img src='Mountains.png' alt='Mountain landscape' className='mt-4 object-cover' />
+          </div>
         </section>
+
 
       </div>
       {/* OUR ADVANTAGES Demo // */}
