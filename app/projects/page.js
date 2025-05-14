@@ -13,17 +13,8 @@ export default function Projects() {
         </span> 
         {/* Chat Like Description? */}
         <div className='flex flex-col gap-4 '>
-            <MessageBox start="start" text="GREAT NEWS" />
-            <div className='bg-blue-500 text-white p-4 rounded-full self-end '> 
-              <p> Tell Me About Your Projects 2</p>
-            </div>
-
-            <div className='bg-blue-500 text-white p-4 rounded-full self-start'> 
-              <p> Right NOW </p>
-            </div>
-            <div className='bg-blue-500 text-white p-4 rounded-full  self-end'> 
-              <p> Right NOW 2</p>
-            </div>
+            <MessageBox text="GREAT NEWS" />
+            <MessageBox response={true} text="GREAT NEWS2" />
           
         </div>
         {/* <div className='flex gap-4 '>
