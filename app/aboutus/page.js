@@ -3,14 +3,16 @@ import React from 'react'
 
 export default function Aboutus() {
   return (
-     <div className='flex flex-col mx-12 gap-4'>
-          <MessageBox text="Hey there! Welcome to our Projects page. 🎉" />
-          <MessageBox response={true} text="Hi! What kind of projects do you work on?" />
-          <MessageBox text="We build modern, user-focused applications—from creative web apps to powerful backend tools." />
-          <MessageBox response={true} text="That sounds awesome. Are these live projects or just concepts?" />
-          <MessageBox text="Most are live and actively maintained! We love turning ideas into real, usable solutions." />
-          <MessageBox response={true} text="Can I explore them here?" />
-          <MessageBox text="Absolutely! Scroll down to check them out, and feel free to click into any one to learn more." />
-        </div>
+    <section className='my-10 mx-[20%] min-h-[100vh]'>
+      <div className='flex flex-col mx-12 gap-4'>
+        {/* ONCLICK SHOW MORE... ANIMATIONS */}
+        <MessageBox text="Hey there! Want to know who we are?" />
+        <MessageBox response={true} text="Sure, hit me with it." />
+        <MessageBox text="We're a small team building thoughtful, creative digital tools." />
+        <MessageBox response={true} text="Nice. What's your focus?" />
+        <MessageBox text="Simple—design with purpose, and code with care. 🚀" />
+      </div>
+
+    </section>
   )
 }
