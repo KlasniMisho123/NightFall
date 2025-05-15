@@ -1,16 +1,18 @@
 'use client'
 import React, { useState } from 'react'
-import { Poppins, Space_Mono, Urbanist } from 'next/font/google';
+import { Inter, Poppins, Space_Mono, Urbanist } from 'next/font/google';
 import StatCard from './statCard';
 import Link from 'next/link';
 import ServiceCard from './ServiceCard';
 import WorkStages from './WorkStages';
 import OurAdvantages from './OurAdvantages';
 import HeroAnimation from './HeroAnimation';
+import BorderedTitle from './BorderedTitle';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
+const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Hero() {
 
@@ -24,12 +26,12 @@ export default function Hero() {
           {/* Background color  bg-[#A7C6DA]/ bg-gray-800 / bg-gray-900 */}
           {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
           <div className='load-hero'>
-            <span className={'border-4 rounded-lg px-4 py-2 my-4 inline-block border-blue-500/80 text-blue-500/90 font-bold rotate-[-5deg] text-sm md:text-base ' + urbanist.className }> Your partner in digital transformation</span> 
+            <BorderedTitle text="Your partner in digital transformation" color="blue-500" posAngle={true} /> 
             <h1 className={`text-white text-4xl my-4 md:text-6xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
               Digitize Your Idea
             </h1>
 
-            <p className="text-gray-50 text-sm max-w-md  mt-3 leading-relaxed lg:max-w-2xl md:text-base ">
+            <p className={"text-gray-300 text-sm max-w-md  mt-3 leading-relaxed lg:max-w-2xl md:text-base " + inter.className}>
             Nightfall Webworks helps you build modern, responsive websites that elevate your brand and grow your digital presence.
             From concept to launch — we code your vision into reality.
             </p>

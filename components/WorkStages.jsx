@@ -10,7 +10,7 @@ export default function WorkStages() {
       <div className='flex flex-col gap-4 '>
         <div className='my-4'>
           {/* WorkStages Color */}
-         <BorderedTitle text="Work Process" /> 
+         <BorderedTitle text="Work Process" color="purple-500" posAngle={false} /> 
           <h1 className={`text-white text-xl my-4 md:text-3xl lg:text-5xl font-semibold mt-2 whitespace-nowrap ` + urbanist.className}>
             How It <span className='text-purple-500/90 font-extrabold'> Works </span> ?
           </h1>
