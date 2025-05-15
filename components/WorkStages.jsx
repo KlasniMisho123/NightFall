@@ -1,5 +1,6 @@
 import { Urbanist }  from 'next/font/google';
 import React from 'react'
+import BorderedTitle from './BorderedTitle';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -9,9 +10,7 @@ export default function WorkStages() {
       <div className='flex flex-col gap-4 '>
         <div className='my-4'>
           {/* WorkStages Color */}
-          <span className={'border-4 rounded-lg px-4 py-2 my-8 inline-block border-purple-500/80 text-purple-500/90 font-bold rotate-[10deg] text-sm md:text-base ' + urbanist.className }>
-            Work Process
-          </span> 
+         <BorderedTitle text="Work Process" /> 
           <h1 className={`text-white text-xl my-4 md:text-3xl lg:text-5xl font-semibold mt-2 whitespace-nowrap ` + urbanist.className}>
             How It <span className='text-purple-500/90 font-extrabold'> Works </span> ?
           </h1>
