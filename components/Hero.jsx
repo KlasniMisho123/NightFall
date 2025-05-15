@@ -61,7 +61,6 @@ export default function Hero() {
         </div>
         {/* Consider other Variatons for This Animation// (moon/sun ..env) */}
         <HeroAnimation />
-
       </div>
       {/* OUR ADVANTAGES Demo // */}
         <OurAdvantages />

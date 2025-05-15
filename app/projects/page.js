@@ -11,6 +11,10 @@ export default function Projects() {
           Our Projects
         </span> 
         {/* Chat Like Description? */}
+        <div>
+          <h1>Sharing Our Experience With You </h1>
+          <p>If you're curious about our previous work, the projects we've contributed to, and our role in their development, feel free to explore our portfolio.</p>
+        </div>
       </section>
     </div>
   )
