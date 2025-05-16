@@ -1,4 +1,5 @@
 import BorderedTitle from '@/components/BorderedTitle';
+import ProjectLayout from '@/components/ProjectLayout';
 import { Inter, Urbanist } from 'next/font/google';
 import React from 'react'
 
@@ -18,7 +19,7 @@ export default function Projects() {
         </div>
         {/* Div For Projects */}
       </section>
-        
+        <ProjectLayout />
     </div>
   )
 }
