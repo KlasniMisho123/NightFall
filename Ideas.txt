@@ -16,3 +16,4 @@ projects -> projects, add project? request project?
 Hero Load, Stats from Left,  Animation/Hero from Right, TitleCard From top 
 
 ProjectCards -> On Scroll Animation
+// ProjectCards Style !! >>

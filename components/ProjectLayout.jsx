@@ -3,8 +3,9 @@ import ProjectCard from './ProjectCard'
 
 
 export default function ProjectLayout() {
+    // CARD STYLE >>
   return (
-    <section className="my-12 flex justify-center gap-8 w-full text-white">
+    <section className="my-4 flex justify-center gap-8 w-full text-white">
         <div className='flex flex-1 flex-col gap-16 '>
              {/*  year, title, webLink, projectDesc, projectSpanColor, client, time, service, imgSrc */}
             <ProjectCard year={2024} projectName="MoodCheck" title=" - Track your mood and see how you feel over time" webLink="https://mood-check.vercel.app/" projectSpanColor="indigo-500" client="Developeing Skills"
