@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
 export default function Projects() {
   return (
     // PURPLE/BLUE-500? (Span, Card)
-    <div className='min-h-[100vh] py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall' >
+    <div className='min-h-[100vh] py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall ' >
       <section className='my-10 mx-[20%] '>
         <BorderedTitle text="Our Projects" color="purple-500" angle={5}/>
         {/* Light Background */}

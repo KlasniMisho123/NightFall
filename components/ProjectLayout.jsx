@@ -5,7 +5,7 @@ export default function ProjectLayout() {
     <section className='my-12 flex bg-[#091826] justify-center gap-8 w-full text-white'>
         <div className='flex flex-col '>
              {/* Demo Project Card 1 */}
-            <div className=''>
+            <div className='bg-transparent'>
                {/* Year */}
                {/* Titile, Href -> dynamic page? */}
                {/* Project Desc */}

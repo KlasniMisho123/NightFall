@@ -252,8 +252,10 @@ body {
 
 @keyframes bg-nightfall-animation {
   100% {
-    background-color: #1F2937; 
+    background-color: #091826; 
   }
+  /* #091826 */
+  /* #1F2937 */
 }
 
 .load-hero {
