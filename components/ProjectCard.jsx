@@ -4,7 +4,8 @@ import Link from 'next/link';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
-export default function ProjectCard() {
+export default function ProjectCard(props) {
+    const { year, title, webLink, projectDesc, projectSpanColor, client, time, service, imgSrc } = props
   return (
     <div className='bg-transparent flex flex-col gap-4'>
       <div className={'text-white text-4xl font-bold ' + urbanist.className } > 2024 </div>
