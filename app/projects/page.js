@@ -18,14 +18,7 @@ export default function Projects() {
         </div>
         {/* Div For Projects */}
       </section>
-        <div className='my-12 flex bg-[#091826] justify-center gap-8 w-full text-white'>
-          <div className='flex flex-col '>
-            1
-          </div>
-          <div className='flex flex-col mt-5'>
-            2
-          </div>
-        </div>
+        
     </div>
   )
 }
