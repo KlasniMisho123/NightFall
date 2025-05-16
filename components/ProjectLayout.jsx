@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import { Urbanist } from 'next/font/google';
+import Link from 'next/link';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -13,10 +14,12 @@ export default function ProjectLayout() {
                {/* Year */}
                 <div className={'text-white text-4xl font-bold ' + urbanist.className } > 2024 </div>
                {/* Titile, Href -> dynamic page? */}
-               {/* https://mood-check.vercel.app/ */}
-                <div> MoodCheck </div>
+               {/*  */}
+                <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4 leading-snug">
+                    <span className={'text-indigo-500 font-bold ' + urbanist.className }> MoodCheck </span> - Track your mood and see how you feel over time
+                </h2>
                {/* Project Desc */}
-                <p> <span className={'text-indigo-500 text-lg font-bold ' + urbanist.className }> MoodCheck </span>  is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
+                <p className='my-4 elipses'> <span className={'text-indigo-500 text-lg font-bold ' + urbanist.className }> MoodCheck </span> is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
                     and save your entries securely to a Firebase server tied to your personal account. The app provides a simple and intuitive interface for logging daily moods,
                     helping you stay mindful of your emotional well-being over time. In addition to mood logging, MoodCheck includes extra features such as mood statistics to 
                     help you visualize patterns or changes in your emotional state, as well as a section for light-hearted jokes to brighten your day.
@@ -27,19 +30,24 @@ export default function ProjectLayout() {
                 <div className='flex justify-between '>
                     <div className='flex flex-col gap-1'>
                         <div>Client</div>
-                        <div>Developeing Skills</div>
+                        <div className='text-gray-500'>Developeing Skills</div>
                     </div>
                     <div className='flex flex-col gap-1'>
                         <div>Time Duration</div>
-                        <div>10 Days</div>
+                        <div className='text-gray-500'>10 Days</div>
                     </div>
                     <div className='flex flex-col gap-1'>
                         <div>Service</div>
-                        <div>Web Page Development</div>
+                        <div className='text-gray-500'>Web Page Development</div>
                     </div>
                 </div>
                 {/* Project Img */}
-                <img src='Moodcheck.png' alt="Project Image" className='object-cover rounded-2xl max-w-full max-h-[300px]' />
+                <Link
+                className=' rounded-2xl max-w-full max-h-[300px] overflow-hidden transition-all transition-duration-300 hover:scale-103'
+                href={'https://mood-check.vercel.app/'}
+                >
+                    <img src='Moodcheck.png' alt="Project Image" className='object-cover' />
+                </Link>
             </div>
         </div>
         {/* Demo Project Card 2 */}
