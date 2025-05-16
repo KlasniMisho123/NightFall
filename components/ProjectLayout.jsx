@@ -14,10 +14,12 @@ export default function ProjectLayout() {
                {/* Year */}
                 <div className={'text-white text-4xl font-bold ' + urbanist.className } > 2024 </div>
                {/* Titile, Href -> dynamic page? */}
-               {/*  */}
-                <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4 leading-snug">
+               {/* Other Animation */}
+                <Link className="text-2xl sm:text-3xl font-semibold text-white mb-4 leading-snug transition-all transition-duration-300 hover:underline decoration-blue-500"
+                href={'https://mood-check.vercel.app/'}
+                >
                     <span className={'text-indigo-500 font-bold ' + urbanist.className }> MoodCheck </span> - Track your mood and see how you feel over time
-                </h2>
+                </Link>
                {/* Project Desc */}
                 <p className='my-4 elipses'> <span className={'text-indigo-500 text-lg font-bold ' + urbanist.className }> MoodCheck </span> is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
                     and save your entries securely to a Firebase server tied to your personal account. The app provides a simple and intuitive interface for logging daily moods,
