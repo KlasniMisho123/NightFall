@@ -18,7 +18,9 @@ export default function ProjectCard() {
             <span className={'text-indigo-500 font-bold ' + urbanist.className }> MoodCheck </span> - Track your mood and see how you feel over time
         </Link>
         {/* Project Desc */}
-        <p className='my-4 elipses'> <span className={'text-indigo-500 text-lg font-bold ' + urbanist.className }> MoodCheck </span> is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
+        <p className="my-4 line-clamp-5">
+            <span className={'text-indigo-500 text-lg font-bold ' + urbanist.className }> MoodCheck </span> 
+            is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
             and save your entries securely to a Firebase server tied to your personal account. The app provides a simple and intuitive interface for logging daily moods,
             helping you stay mindful of your emotional well-being over time. In addition to mood logging, MoodCheck includes extra features such as mood statistics to 
             help you visualize patterns or changes in your emotional state, as well as a section for light-hearted jokes to brighten your day.
