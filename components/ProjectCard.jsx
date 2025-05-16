@@ -15,7 +15,7 @@ export default function ProjectCard(props) {
         >
             <span className={'text-indigo-500 font-bold ' + urbanist.className }> {projectName} </span> {title}
         </Link>
-        <p className="my-4 line-clamp-5">
+        <p className="my-4 line-clamp-5 text-gray-400">
             <span className={'text-indigo-500 text-lg font-bold ' + urbanist.className }> {projectName} </span> 
             {projectDesc}
         </p>
