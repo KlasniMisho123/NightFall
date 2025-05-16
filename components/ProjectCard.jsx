@@ -1,8 +1,9 @@
 import React from 'react'
-import { Urbanist } from 'next/font/google';
+import { Exo_2, Urbanist } from 'next/font/google';
 import Link from 'next/link';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
+const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 
 export default function ProjectCard(props) {
     const { year, projectName, title, webLink, projectDesc, projectSpanColor, client, time, service, imgSrc } = props
@@ -15,7 +16,7 @@ export default function ProjectCard(props) {
         >
             <span className={'text-indigo-500 font-bold ' + urbanist.className }> {projectName} </span> {title}
         </Link>
-        <p className="my-4 line-clamp-5 text-gray-400">
+        <p className={"my-4 line-clamp-5 text-gray-400 " + exo2.className}>
             <span className={'text-indigo-500 text-lg font-bold ' + urbanist.className }> {projectName} </span> 
             {projectDesc}
         </p>
