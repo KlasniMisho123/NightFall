@@ -7,7 +7,7 @@ export default function ProjectLayout() {
     <section className='my-12 flex justify-center gap-8 w-full text-white'>
         <div className='flex flex-col '>
              {/*  year, title, webLink, projectDesc, projectSpanColor, client, time, service, imgSrc */}
-            <ProjectCard year={2024} title="MoodCheck" webLink="https://mood-check.vercel.app/" projectSpanColor="indigo-500" client="Developeing Skills"
+            <ProjectCard year={2024} projectName="MoodCheck" title=" - Track your mood and see how you feel over time" webLink="https://mood-check.vercel.app/" projectSpanColor="indigo-500" client="Developeing Skills"
             time="10 Days" service="Web Page Development" imgSrc="Moodcheck.png"
             
             projectDesc="is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
