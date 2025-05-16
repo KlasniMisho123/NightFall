@@ -13,6 +13,7 @@ export default function ProjectLayout() {
                {/* Year */}
                 <div className={'text-white text-4xl font-bold ' + urbanist.className } > 2024 </div>
                {/* Titile, Href -> dynamic page? */}
+               {/* https://mood-check.vercel.app/ */}
                 <div> MoodCheck </div>
                {/* Project Desc */}
                 <p> <span className={'text-indigo-500 text-lg font-bold ' + urbanist.className }> MoodCheck </span>  is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
@@ -23,22 +24,22 @@ export default function ProjectLayout() {
                 </p>
 
                {/* Flex,  Flex-col(Client, Client Name), (Time Duration, Time) (Service, Service)*/}
-                <div className='flex justify-center '>
-                    <div className='flex flex-col gap-4'>
-                        <div>1</div>
-                        <div>2</div>
+                <div className='flex justify-between '>
+                    <div className='flex flex-col gap-1'>
+                        <div>Client</div>
+                        <div>Developeing Skills</div>
                     </div>
-                    <div className='flex flex-col gap-4'>
-                        <div>1</div>
-                        <div>2</div>
+                    <div className='flex flex-col gap-1'>
+                        <div>Time Duration</div>
+                        <div>10 Days</div>
                     </div>
-                    <div className='flex flex-col gap-4'>
-                        <div>1</div>
-                        <div>2</div>
+                    <div className='flex flex-col gap-1'>
+                        <div>Service</div>
+                        <div>Web Page Development</div>
                     </div>
                 </div>
                 {/* Project Img */}
-                <img src='Moodcheck.png' alt="Project Image" className='object-cover rounded-2xl' />
+                <img src='Moodcheck.png' alt="Project Image" className='object-cover rounded-2xl max-w-full max-h-[300px]' />
             </div>
         </div>
         {/* Demo Project Card 2 */}
