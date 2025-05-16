@@ -1,5 +1,6 @@
 import React from 'react'
 import { Urbanist } from 'next/font/google';
+import Link from 'next/link';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -10,7 +11,8 @@ export default function ProjectCard() {
         {/* Year */}
         {/* Titile, Href -> dynamic page? */}
         {/* Other Animation */}
-        <Link className="text-2xl sm:text-3xl font-semibold text-white mb-4 leading-snug transition-all transition-duration-300 hover:underline decoration-blue-500"
+        <Link
+        className="text-xl md:text-2xl font-semibold text-white mb-4 leading-snug transition-all duration-300 hover:underline decoration-blue-500 max-w-[650px] truncate"
         href={'https://mood-check.vercel.app/'}
         >
             <span className={'text-indigo-500 font-bold ' + urbanist.className }> MoodCheck </span> - Track your mood and see how you feel over time

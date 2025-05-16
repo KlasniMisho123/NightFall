@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import Link from 'next/link';
 
 
 export default function ProjectLayout() {
@@ -11,7 +10,7 @@ export default function ProjectLayout() {
             <ProjectCard />
         </div>
         {/* Demo Project Card 2 */}
-        <div className='mt-6'>
+        <div className='mt-16'>
             <ProjectCard />
         </div>
     </section>
