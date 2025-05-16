@@ -6,8 +6,8 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 export default function BorderedTitle(props) {
   const { text, color = 'purple-500', posAngle} = props;
 
-  const borderColorClass = `border-${color}/80`;
-  const textColorClass = `text-${color}/90`;
+  const borderColorClass = `border-${color}`;
+  const textColorClass = `text-${color}`;
 
   return (
     <span
