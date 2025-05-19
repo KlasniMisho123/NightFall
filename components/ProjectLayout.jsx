@@ -3,9 +3,8 @@ import ProjectCard from './ProjectCard'
 
 
 export default function ProjectLayout() {
-    // CARD STYLE >>
   return (
-    <section className="my-4 flex justify-center gap-8 w-full text-white">
+    <section className="py-6 flex justify-center gap-8 w-full text-white">
         <div className='flex flex-1 flex-col gap-16 '>
              {/*  year, title, webLink, projectDesc, projectSpanColor, client, time, service, imgSrc */}
             <ProjectCard year={2024} projectName="MoodCheck" title=" - Track your mood and see how you feel over time" webLink="https://mood-check.vercel.app/" projectSecondaryColor="indigo" client="Developeing Skills"
@@ -36,7 +35,7 @@ export default function ProjectLayout() {
             caffeine levels and keeps track of total daily intake, allowing users to visualize how their caffeine consumption fluctuates throughout the day. In addition to tracking
             caffeine, the app highlights top-consumed coffee types, estimates daily spending, and provides useful insights to promote more mindful consumption. 
             Whether you're a casual drinker or a coffee enthusiast, Expressometer offers a clear, data-driven picture of your coffee habits." />
-            
+
             <ProjectCard year={2024} projectName="MoodCheck" title=" - Track your mood and see how you feel over time" webLink="https://mood-check.vercel.app/" projectSecondaryColor="indigo" client="Developeing Skills"
             time="10 Days" service="Web Page Development" imgSrc="MoodCheck.png"
             projectDesc="is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
