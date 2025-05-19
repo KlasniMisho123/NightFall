@@ -8,11 +8,19 @@ const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 export default function ProjectCard(props) {
     const { year, projectName, title, webLink, projectDesc, projectSecondaryColor, client, time, service, imgSrc } = props
 
-    const borderColorClass = `hover:border-${projectSecondaryColor}`;
-    // const textColorClass = `text-${color}`;
+    const borderColorMap = {
+    indigo: 'hover:border-indigo-500',
+    blue: 'hover:border-blue-500',
+    red: 'hover:border-red-500',
+    green: 'hover:border-green-500',
+    yellow: 'hover:border-yellow-500',
+    pink: 'hover:border-pink-500',
+    };
+
+    const borderColorClass = borderColorMap[projectSecondaryColor] || 'hover:border-white';
 
   return (
-    <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all transition-duration-300 ${borderColorClass}` } >
+    <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${borderColorClass}`}>
       <div className={'text-white text-4xl font-bold ' + urbanist.className }>{year}</div>
         <Link
         className="text-xl md:text-2xl font-semibold text-white mb-4 leading-snug transition-all duration-300 hover:underline decoration-blue-500 max-w-[650px] truncate"
