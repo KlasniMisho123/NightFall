@@ -8,8 +8,8 @@ const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 export default function ProjectCard(props) {
     const { year, projectName, title, webLink, projectDesc, projectSpanColor, client, time, service, imgSrc } = props
   return (
-    <div className='bg-transparent flex flex-col gap-4 rounded-2xl p-4 '>
-      <div className={'text-white text-4xl font-bold ' + urbanist.className } >{year}</div>
+    <div className='bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent hover:border-indigo-500 transition-all transition-duration-300 '>
+      <div className={'text-white text-4xl font-bold ' + urbanist.className }>{year}</div>
         <Link
         className="text-xl md:text-2xl font-semibold text-white mb-4 leading-snug transition-all duration-300 hover:underline decoration-blue-500 max-w-[650px] truncate"
         href={webLink}
