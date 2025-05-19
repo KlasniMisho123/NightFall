@@ -1,6 +1,7 @@
 import React from 'react'
 import { Exo_2, Urbanist } from 'next/font/google';
 import Link from 'next/link';
+import { colorClassMap } from '@/utils';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
@@ -8,16 +9,9 @@ const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 export default function ProjectCard(props) {
     const { year, projectName, title, webLink, projectDesc, projectSecondaryColor, client, time, service, imgSrc } = props
 
-    const borderColorMap = {
-    indigo: 'hover:border-indigo-500',
-    blue: 'hover:border-blue-500',
-    red: 'hover:border-red-500',
-    green: 'hover:border-green-500',
-    yellow: 'hover:border-yellow-500',
-    pink: 'hover:border-pink-500',
-    };
 
     const borderColorClass = borderColorMap[projectSecondaryColor] || 'hover:border-white';
+    const decorationClass = borderColorMap[projectSecondaryColor] || 'decoration-blue-500';
 
   return (
     <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${borderColorClass}`}>
