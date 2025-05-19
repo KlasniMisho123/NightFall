@@ -9,21 +9,26 @@ const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 export default function ProjectCard(props) {
     const { year, projectName, title, webLink, projectDesc, projectSecondaryColor, client, time, service, imgSrc } = props
 
+    const classes = colorClassMap[projectSecondaryColor] || {
+        border: 'hover:border-white',
+        text: 'text-white',
+        decoration: 'decoration-white',
+    }
 
-    const borderColorClass = borderColorMap[projectSecondaryColor] || 'hover:border-white';
-    const decorationClass = borderColorMap[projectSecondaryColor] || 'decoration-blue-500';
+    // const borderColorClass = borderColorMap[projectSecondaryColor] || 'hover:border-white';
+    // const decorationClass = borderColorMap[projectSecondaryColor] || 'decoration-blue-500';
 
   return (
-    <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${borderColorClass}`}>
+    <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${classes.border}`}>
       <div className={'text-white text-4xl font-bold ' + urbanist.className }>{year}</div>
         <Link
-        className="text-xl md:text-2xl font-semibold text-white mb-4 leading-snug transition-all duration-300 hover:underline decoration-blue-500 max-w-[650px] truncate"
+        className={`text-xl md:text-2xl font-semibold text-white mb-4 leading-snug transition-all duration-300 hover:underline ${classes.decoration} 0 max-w-[650px] truncate`}
         href={webLink}
         >
-            <span className={'text-indigo-500 font-bold ' + urbanist.className }> {projectName} </span> {title}
+            <span className={`${classes.text} font-bold ` + urbanist.className }> {projectName} </span> {title}
         </Link>
         <p className={"my-4 line-clamp-5 text-gray-400 " + exo2.className}>
-            <span className={'text-indigo-500 text-lg font-bold ' + urbanist.className }> {projectName} </span> 
+            <span className={`${classes.text} text-lg font-bold ` + urbanist.className }> {projectName} </span> 
             {projectDesc}
         </p>
 
