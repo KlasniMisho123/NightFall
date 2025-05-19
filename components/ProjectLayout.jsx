@@ -28,7 +28,7 @@ export default function ProjectLayout() {
             
         </div>
         <div className='mt-16 flex flex-1 flex-col gap-16 '>
-            <ProjectCard year={2024} projectName="EspressoMeter" title=" Coffee Tracking for Cofee Fiends" webLink="https://espresso-meter.vercel.app/" projectSecondaryColor="indigo-500" client="Developeing Skills"
+            <ProjectCard year={2024} projectName="EspressoMeter" title=" Coffee Tracking for Cofee Fiends" webLink="https://espresso-meter.vercel.app/" projectSecondaryColor="red-500" client="Developeing Skills"
             time="2 Weeks" service="Web Page Development" imgSrc="EspressoMeter.png"
             
             projectDesc="Expressometer is a web application designed to help users monitor and understand their coffee consumption habits in a detailed and engaging way. 
