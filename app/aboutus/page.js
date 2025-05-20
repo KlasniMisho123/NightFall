@@ -5,6 +5,7 @@ import React from 'react'
 export default function Aboutus() {
   return (
     <section className=' min-h-[100vh] bg-nightfall bg-white '>
+      {/* Different Bg? Style? about us? */}
       <div className='relative py-8 bg-transparent px-[20%]'>
         <img src="https://xtratheme.com/corporate/wp-content/uploads/sites/57/2018/07/header-banner.jpg"
         alt="Background"
