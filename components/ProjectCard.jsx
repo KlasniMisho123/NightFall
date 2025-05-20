@@ -19,10 +19,11 @@ export default function ProjectCard(props) {
   return (
     <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${classes.border}`}>
         <Link
-        className={`text-xl md:text-2xl font-semibold text-white mb-4 leading-snug transition-all duration-300 hover:underline ${classes.decoration} 0 max-w-[650px] truncate`}
+        className={`text-xl md:text-2xl font-semibold text-white mb-4 leading-snug 0 max-w-[650px] truncate`}
         href={webLink}
         >
-            <span className={`${classes.text} font-bold  px-2 rounded-r-full border-2 mr-2 ` + urbanist.className }> {projectName} </span> {title}
+            <span className={`${classes.text} font-bold  px-2 rounded-r-full border-2 mr-1 ` + urbanist.className }> {projectName} </span> -
+            <span className={`transition-all duration-300 hover:underline ${classes.decoration}`}> {title} </span> 
         </Link>
         <p className={"my-4 line-clamp-5 text-gray-400 " + exo2.className}>
             <span className={`${classes.text} ${classes.border} text-lg font-bold ` + urbanist.className }> {projectName} </span> 
