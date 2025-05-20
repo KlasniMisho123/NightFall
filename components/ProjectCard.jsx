@@ -15,20 +15,17 @@ export default function ProjectCard(props) {
         decoration: 'decoration-white',
     }
 
-    // const borderColorClass = borderColorMap[projectSecondaryColor] || 'hover:border-white';
-    // const decorationClass = borderColorMap[projectSecondaryColor] || 'decoration-blue-500';
 
   return (
     <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${classes.border}`}>
-      <div className={'text-white text-4xl font-bold ' + urbanist.className }>{year}</div>
         <Link
         className={`text-xl md:text-2xl font-semibold text-white mb-4 leading-snug transition-all duration-300 hover:underline ${classes.decoration} 0 max-w-[650px] truncate`}
         href={webLink}
         >
-            <span className={`${classes.text} font-bold ` + urbanist.className }> {projectName} </span> {title}
+            <span className={`${classes.text} font-bold  px-2 rounded-r-full border-2 mr-2 ` + urbanist.className }> {projectName} </span> {title}
         </Link>
         <p className={"my-4 line-clamp-5 text-gray-400 " + exo2.className}>
-            <span className={`${classes.text} text-lg font-bold ` + urbanist.className }> {projectName} </span> 
+            <span className={`${classes.text} ${classes.border} text-lg font-bold ` + urbanist.className }> {projectName} </span> 
             {projectDesc}
         </p>
 
@@ -54,6 +51,7 @@ export default function ProjectCard(props) {
         >
             <img src={imgSrc} alt="Project Image" className='object-cover' />
         </Link>
+        <div className={'text-white text-4xl font-bold ' + urbanist.className }>{year}</div>
     </div>
   )
 }
