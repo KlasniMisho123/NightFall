@@ -30,6 +30,7 @@ export default function ProjectCard(props) {
             {projectDesc}
         </p>
 
+        <div className={'text-white text-4xl font-bold ' + urbanist.className }>{year}</div>
         {/* Flex,  Flex-col(Client, Client Name), (Time Duration, Time) (Service, Service)*/}
         <div className={'flex justify-between ' + exo2.cl}>
             <div className='flex flex-col gap-1'>
@@ -52,7 +53,6 @@ export default function ProjectCard(props) {
         >
             <img src={imgSrc} alt="Project Image" className='object-cover' />
         </Link>
-        <div className={'text-white text-4xl font-bold ' + urbanist.className }>{year}</div>
     </div>
   )
 }
