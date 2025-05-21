@@ -8,10 +8,10 @@ const exo2 = Exo_2({subsets: ["latin"],weight: ["300", "700"]});
 
 export default function Aboutus() {
   return (
-    <section className=' min-h-[100vh] bg-nightfall bg-white '>
+    <section className=' min-h-[100vh] bg-nightfall bg-white text-white'>
       {/* Different Bg? Style? about us? */}
       <div className='relative py-8 bg-transparent px-[20%]'>
-        <img src="https://xtratheme.com/corporate/wp-content/uploads/sites/57/2018/07/header-banner.jpg"
+        <img src="aboutus-bg.jpg"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover z-0"/>
       {/* <BorderedTitle text="About Us" color="blue-500" posAngle={false} /> */}
@@ -20,6 +20,28 @@ export default function Aboutus() {
           <p className='text-gray-400 text-center max-w-[500px] ' > 🌒 We’re more than a design agency — we’re your digital partner. From UX strategy to clean code, Nightfall helps brands transform ideas into powerful online experiences. </p>
         </div>
       </div>
+      <section className='flex flex-col gap-8 py-8 mx-[20%] '> 
+        <div className='flex justify-center gap-4'>
+          <div>
+             <p>Little About</p>
+             <h2>Our Story</h2>
+             <p> OUR STORY</p>
+          </div>
+          <div>
+            <img src='b.jpg' alt='Our Story photo' className='object-cover max-h-[300px]' />
+          </div>
+        </div>
+
+        <div>
+          <div>Our Team</div>
+        </div>
+
+        <div>
+          <div>Our Goals</div>
+        </div>
+        {/* Strong Sides */}
+        {/* Our Vision */}
+      </section>
 
         <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 gap-4'> 
             {/* ONCLICK SHOW MORE... ANIMATIONS */}
