@@ -24,7 +24,7 @@ export default function Aboutus() {
           <MessageBox response={true} text="Do you stick around after launch?" />
           <MessageBox text="Yes - and we also offer ongoing support packages to keep everything running smoothly." /> */}
           <h2 className={'text-5xl font-light ' + exo2.className} > About Us </h2>
-          <p className='text-gray-400 text-center ' > 🌒 We’re more than a design agency — we’re your digital partner. From UX strategy to clean code, Nightfall helps brands transform ideas into powerful online experiences. </p>
+          <p className='text-gray-400 text-center max-w-[500px] ' > 🌒 We’re more than a design agency — we’re your digital partner. From UX strategy to clean code, Nightfall helps brands transform ideas into powerful online experiences. </p>
         </div>
       </div>
 
