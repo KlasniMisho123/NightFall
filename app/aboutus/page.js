@@ -21,7 +21,7 @@ export default function Aboutus() {
         </div>
       </div>
 
-        <div className='flex flex-col max-w-[1000px] justify-self-center py-12 gap-4'> 
+        <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 gap-4'> 
             {/* ONCLICK SHOW MORE... ANIMATIONS */}
           <MessageBox response={true} text="Hey! Who are you guys?" />
           <MessageBox text="Hey! We’re a fresh team offering smart web solutions built around your needs." />
