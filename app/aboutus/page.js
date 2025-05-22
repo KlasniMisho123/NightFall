@@ -26,7 +26,7 @@ export default function Aboutus() {
       <section className='flex flex-col gap-8 py-8 mx-[20%] '> 
         <div className='flex justify-center gap-4'>
           <div className='flex flex-col gap-2'>
-             <p>Little About</p>
+             <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Little About</p>
              <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Story</h2>
              <p className={'text-gray-400 font-light mt-4' + inter.className}> 
               At Nightfall Web, our journey began with a single goal: to turn creative ideas into powerful digital experiences. As a passionate web solutions startup,
@@ -37,7 +37,7 @@ export default function Aboutus() {
               </p>
           </div>
           <div>
-            <img src='b.jpg' alt='Our Story photo' className='object-cover max-h-[300px]' />
+            <img src='b.jpg' alt='Our Story photo' className='object-cover min-h-[300px]' />
           </div>
         </div>
 
