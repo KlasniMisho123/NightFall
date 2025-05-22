@@ -25,7 +25,13 @@ export default function Aboutus() {
           <div>
              <p>Little About</p>
              <h2>Our Story</h2>
-             <p> OUR STORY</p>
+             <p> 
+              At Nightfall Web, our journey began with a single goal: to turn creative ideas into powerful digital experiences. As a passionate web solutions startup,
+              we’re not just building websites — we’re building our future. Founded by a team eager to grow and gain hands-on experience, Nightfall Web is driven by curiosity, 
+              innovation, and a deep desire to help businesses shine online. Whether it’s custom websites, UI/UX design, or hosting and maintenance, we approach each project
+              as an opportunity to learn, collaborate, and make an impact. We may be at the start of our journey, but our dedication is unwavering. Every line of code, every pixel, 
+              and every solution is crafted with care, backed by our commitment to quality and a hunger to grow. Let’s build something great — together.
+              </p>
           </div>
           <div>
             <img src='b.jpg' alt='Our Story photo' className='object-cover max-h-[300px]' />
