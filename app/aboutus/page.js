@@ -27,7 +27,7 @@ export default function Aboutus() {
         <div className='flex justify-center gap-4'>
           <div className='flex flex-col gap-2'>
              <p>Little About</p>
-             <h2 className={'text-2xl font-bold ' + urbanist.className}>Our Story</h2>
+             <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Story</h2>
              <p className={'text-gray-400 font-light mt-4' + inter.className}> 
               At Nightfall Web, our journey began with a single goal: to turn creative ideas into powerful digital experiences. As a passionate web solutions startup,
               we’re not just building websites — we’re building our future. Founded by a team eager to grow and gain hands-on experience, Nightfall Web is driven by curiosity, 
