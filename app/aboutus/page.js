@@ -24,7 +24,7 @@ export default function Aboutus() {
         </div>
       </div>
       <section className='flex flex-col gap-8 py-8 mx-[20%] '> 
-        <div className='flex justify-center gap-4'>
+        <div className='flex justify-center gap-6'>
           <div className='flex flex-col gap-2'>
              <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Little About</p>
              <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Story</h2>
@@ -37,7 +37,7 @@ export default function Aboutus() {
               </p>
           </div>
           <div>
-            <img src='b.jpg' alt='Our Story photo' className='object-cover min-h-[300px]' />
+            <img src='https://i.pinimg.com/736x/ed/c6/2f/edc62fccbbbdee334e00dda45966d963.jpg' alt='Our Story photo' className='object-cover min-w-[400px] max-h-[400px] ' />
           </div>
         </div>
 
