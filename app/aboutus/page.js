@@ -1,10 +1,13 @@
 import BorderedTitle from '@/components/BorderedTitle';
 import MessageBox from '@/components/MessageBox';
-import { Exo_2 } from 'next/font/google';
+import { Exo_2, Inter, Poppins, Urbanist } from 'next/font/google';
 import React from 'react'
 
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["300", "700"]});
+const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
+const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 
 export default function Aboutus() {
   return (
@@ -22,10 +25,10 @@ export default function Aboutus() {
       </div>
       <section className='flex flex-col gap-8 py-8 mx-[20%] '> 
         <div className='flex justify-center gap-4'>
-          <div>
+          <div className='flex flex-col gap-2'>
              <p>Little About</p>
-             <h2>Our Story</h2>
-             <p> 
+             <h2 className={'text-2xl font-bold ' + urbanist.className}>Our Story</h2>
+             <p className={'text-gray-400 font-light mt-4' + inter.className}> 
               At Nightfall Web, our journey began with a single goal: to turn creative ideas into powerful digital experiences. As a passionate web solutions startup,
               we’re not just building websites — we’re building our future. Founded by a team eager to grow and gain hands-on experience, Nightfall Web is driven by curiosity, 
               innovation, and a deep desire to help businesses shine online. Whether it’s custom websites, UI/UX design, or hosting and maintenance, we approach each project
