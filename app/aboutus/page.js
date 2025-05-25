@@ -41,14 +41,14 @@ export default function Aboutus() {
           </div>
         </div>
 
-        <div>
-          <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Little About</p>
-             <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2>
+        <div className='flex flex-col gap-2'>
+          <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
+          <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2>
+          <div>
+            <div>Team</div>
+          </div>
         </div>
 
-        <div>
-          <div>Our Goals</div>
-        </div>
         {/* Strong Sides */}
         {/* Our Vision */}
       </section>
