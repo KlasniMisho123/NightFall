@@ -40,21 +40,37 @@ export default function Aboutus() {
             <img src='https://i.pinimg.com/736x/ed/c6/2f/edc62fccbbbdee334e00dda45966d963.jpg' alt='Our Story photo' className='object-cover min-w-[400px] max-h-[400px] ' />
           </div>
         </div>
+        {/* <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
+        <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2> */}
+        <div class="flex flex-row-reverse justify-evenly pt-8 mx-4 gap-4"> 
+         <div class="flex justify-center gap-8 pt-8 ">  
+            <div class="flex flex-col ">
+                <p class="text-gray-600">A little about us</p>
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold">Our Goals <i class="fa-solid fa-bullseye text-red-500 animate-bounce"></i></h2>
+              
+                <p class="mt-12 text-gray-700 leading-relaxed max-w-[500px] text-sm  md:text-base">
+                  Our goal is to empower people with accurate, visually engaging weather insights that help them plan their days with confidence. 
+                  Whether it's preparing for a sunny adventure or staying safe during storms, we aim to make weather updates more than just numbers — 
+                  we make them personal, practical, and beautiful.
+                </p>
+              
+                <ul class="list-inside mt-6 space-y-2 text-base md:text-lg ">
+                  <li class="goal-list flex gap-4 items-center"> <i class="fa-solid fa-bullseye text-xl"></i> 
+                    Deliver real-time, easy-to-understand weather information
+                    </li>
+                  <li class="goal-list flex gap-4 items-center"> <i class="fa-solid fa-bullseye text-xl"></i> 
+                    Encourage outdoor activity and preparedness through friendly forecasts
+                    </li>
+                  <li class="goal-list flex gap-4 items-center"> <i class="fa-solid fa-bullseye text-xl"></i> 
+                    Blend technology and design for an intuitive user experience
+                  </li>
 
-        <div className='flex flex-row-reverse mt-8 '>
-          <div className='flex flex-col gap-2'>
-            {/* <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
-            <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2> */}
-            <p className={''} >A little about </p>
-            <h2 className={''}>Our Goals</h2>
-            <div>
-              <div>Team</div>
+                </ul>
             </div>
-          </div>
-           <div>
-            <img src='TeamExamplePic.avif' alt='Our Story photo' className='object-cover' />
+            <img src="https://i.pinimg.com/736x/b3/b3/eb/b3b3eb81e2cca6f50c42a63cdea1afeb.jpg" class="w-[40%] object-cover" alt="team-photo" />
           </div>
         </div>
+
 
         <div className='flex flex-col gap-2'>
           <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
