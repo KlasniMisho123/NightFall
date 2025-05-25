@@ -42,7 +42,7 @@ export default function Aboutus() {
         </div>
         {/* <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
         <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2> */}
-        <div className="flex justify-evenly pt-8 mx-4 gap-4 bg-white p-4 text-black "> 
+        <div className="flex justify-evenly pt-8 mx-4 gap-4"> 
          <div className="flex flex-row-reverse  justify-center gap-8 pt-8 ">  
             <div className="flex flex-col ">
                 <p className="text-gray-600">A little about us</p>
