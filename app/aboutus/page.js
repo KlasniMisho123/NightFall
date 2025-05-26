@@ -46,7 +46,7 @@ export default function Aboutus() {
          <div className="flex flex-row-reverse  justify-center gap-8 pt-8 ">  
             <div className="flex flex-col ">
                 <p className="text-white ">A little about </p>
-                <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-blue-500 ">Our Goals <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold  ">Our <span className='text-blue-500'> Goals </span> <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
               
                 <p className="mt-12 text-gray-400 leading-relaxed max-w-[500px] text-sm  md:text-base">
                   Our goal is to empower people with accurate, visually engaging weather insights that help them plan their days with confidence. 
@@ -54,14 +54,14 @@ export default function Aboutus() {
                   we make them personal, practical, and beautiful.
                 </p>
               
-                <ul className="list-inside mt-6 space-y-2 text-base md:text-lg ">
-                  <li className="goal-list flex gap-4 items-center"> <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 hover:text-red-500 "></i> 
-                    Deliver real-time, easy-to-understand weather information
+                <ul className="list-inside mt-6 space-y-2 text-base md:text-lg text-white ">
+                  <li className="goal-list flex gap-4 items-center p-2  border-2 border-transparent rounded-lg truncate bg-gray-800 group shadow-sm hover:shadow-xl "> <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 text-white group-hover:text-red-500 "></i> 
+                    Deliver real-time, easy-to-understand weather forecasts
                     </li>
-                  <li className="goal-list flex gap-4 items-center"> <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 hover:text-red-500 "></i> 
+                  <li className="goal-list flex gap-4 items-center"> <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 text-white hover:text-red-500 "></i> 
                     Encourage outdoor activity and preparedness through friendly forecasts
                     </li>
-                  <li className="goal-list flex gap-4 items-center"> <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 hover:text-red-500 "></i> 
+                  <li className="goal-list flex gap-4 items-center"> <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 text-white hover:text-red-500 "></i> 
                     Blend technology and design for an intuitive user experience
                   </li>
 
