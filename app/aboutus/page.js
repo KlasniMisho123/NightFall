@@ -45,10 +45,10 @@ export default function Aboutus() {
         <div className="flex justify-evenly pt-8 mx-4 gap-4"> 
          <div className="flex flex-row-reverse  justify-center gap-8 pt-8 ">  
             <div className="flex flex-col ">
-                <p className="text-gray-600">A little about us</p>
-                <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">Our Goals <i className="fa-solid fa-bullseye text-red-500 animate-bounce"></i></h2>
+                <p className="text-white ">A little about </p>
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-blue-500 ">Our Goals <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
               
-                <p className="mt-12 text-gray-700 leading-relaxed max-w-[500px] text-sm  md:text-base">
+                <p className="mt-12 text-gray-400 leading-relaxed max-w-[500px] text-sm  md:text-base">
                   Our goal is to empower people with accurate, visually engaging weather insights that help them plan their days with confidence. 
                   Whether it's preparing for a sunny adventure or staying safe during storms, we aim to make weather updates more than just numbers — 
                   we make them personal, practical, and beautiful.
@@ -67,7 +67,7 @@ export default function Aboutus() {
 
                 </ul>
             </div>
-            <img src="https://i.pinimg.com/736x/b3/b3/eb/b3b3eb81e2cca6f50c42a63cdea1afeb.jpg" class="w-[40%] object-cover" alt="team-photo" />
+            <img src="https://i.pinimg.com/736x/b3/b3/eb/b3b3eb81e2cca6f50c42a63cdea1afeb.jpg" className="w-[40%] object-cover" alt="team-photo" />
           </div>
         </div>
 
