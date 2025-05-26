@@ -56,19 +56,19 @@ export default function Aboutus() {
               {/* top-bg isnot even? */}
                 <ul className="list-inside mt-6 space-y-2 text-base md:text-base text-white ">
                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
-                    <i className="fa-solid fa-bullseye text-xl text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
+                    <i className="fa-solid fa-circle-check text-xl text-green-400 group-hover:text-white bg-transparent group-hover:bg-green-400 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
                     <span className="truncate">Gain real-world experience through client work.</span>
                   </li>
                    <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
-                    <i className="fa-solid fa-bullseye text-xl text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
+                    <i className="fa-solid fa-bullseye text-xl text-red-500 group-hover:text-whitebg-transparent group-hover:bg-white p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
                     <span className="truncate">Create thoughtful, user-centered design that solves real problems.</span>
                   </li>
                    <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
-                    <i className="fa-solid fa-bullseye text-xl text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
+                    <i className="fa-solid fa-handshake-simple text-xl text-yellow-500 group-hover:text-white bg-transparent group-hover:bg-yellow-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
                     <span className="truncate">Build lasting client relationships based on trust and care.</span>
                   </li>
                    <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
-                    <i className="fa-solid fa-bullseye text-xl text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
+                    <i className="fa-solid fa-rocket text-xl text-red-500 group-hover:text-white bg-transparent group-hover:bg-red-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
                     <span className="truncate">Help startups grow with budget-friendly tools.</span>
                   </li>
                 </ul>
