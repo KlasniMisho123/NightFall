@@ -53,26 +53,24 @@ export default function Aboutus() {
                   Whether it's preparing for a sunny adventure or staying safe during storms, we aim to make weather updates more than just numbers — 
                   we make them personal, practical, and beautiful.
                 </p>
-              
+              {/* top-bg isnot even? */}
                 <ul className="list-inside mt-6 space-y-2 text-base md:text-base text-white ">
-                  <li className="goal-list flex gap-2 items-center p-2 border-2 border-transparent rounded-lg truncate bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 "> 
-                    <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 text-blue-500 group-hover:text-white p-1 group-hover:bg-blue-500 rounded-full "></i> 
-                    Deliver real-time, easy-to-understand weather forecasts
+                  <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
+                    <i className="fa-solid fa-bullseye text-xl text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
+                    <span className="truncate">Deliver real-time, easy-to-understand weather forecasts</span>
                   </li>
-                  <li className="goal-list flex gap-2 items-center p-2 border-2 border-transparent rounded-lg truncate bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 "> 
-                    <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 text-blue-500 group-hover:text-white p-1 group-hover:bg-blue-500 rounded-full "></i> 
-                    Deliver real-time, easy-to-understand weather forecasts
+                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
+                    <i className="fa-solid fa-bullseye text-xl text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
+                    <span className="truncate">Deliver real-time, easy-to-understand weather forecasts</span>
                   </li>
-                  <li className="goal-list flex gap-2 items-center p-2 border-2 border-transparent rounded-lg truncate bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 "> 
-                    <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 text-blue-500 group-hover:text-white p-1 group-hover:bg-blue-500 rounded-full "></i> 
-                    Deliver real-time, easy-to-understand weather forecasts
+                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
+                    <i className="fa-solid fa-bullseye text-xl text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
+                    <span className="truncate">Deliver real-time, easy-to-understand weather forecasts</span>
                   </li>
-                  <li className="goal-list flex gap-2 items-center p-2 border-2 border-transparent rounded-lg truncate bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 "> 
-                    <i className="fa-solid fa-bullseye text-xl transition-all transition-duration-300 text-blue-500 group-hover:text-white p-1 group-hover:bg-blue-500 rounded-full "></i> 
-                    Deliver real-time, easy-to-understand weather forecasts
+                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
+                    <i className="fa-solid fa-bullseye text-xl text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
+                    <span className="truncate">Deliver real-time, easy-to-understand weather forecasts</span>
                   </li>
-
-
                 </ul>
             </div>
             <img src="https://i.pinimg.com/736x/b3/b3/eb/b3b3eb81e2cca6f50c42a63cdea1afeb.jpg" className="w-[40%] object-cover" alt="team-photo" />
