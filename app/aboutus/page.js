@@ -81,8 +81,12 @@ export default function Aboutus() {
         <div className='flex flex-col gap-2'>
           <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
           <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2>
-          <div>
-            <div>Team</div>
+          <div className='flex flex-col gap-4 mt-8'>
+            <p className={'flex gap-2 text-base md:text-lg truncate' + urbanist.className}> <i className="fa-solid fa-seedling text-green-500 text-xl "></i> We design with intention, develop with care, and grow alongside the people we support. </p>
+            <p> Team Paragraph </p>
+            <div>
+               Team Div 
+            </div>
           </div>
         </div>
 
