@@ -10,6 +10,7 @@ export default function Projects() {
   return (
     // PURPLE/BLUE-500? (Span, Card)
     // Different Background
+    // Create Project Form ??
     <div className="transition-all transition-duration-300 bg-nightfall">
       <div className='w-full py-2 px-4 md:px-14 lg:px-28 '
       style={{
