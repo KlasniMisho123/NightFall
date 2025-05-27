@@ -49,9 +49,9 @@ export default function Aboutus() {
                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold  ">Our <span className='text-blue-500'> Goals </span> <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
               
                 <p className="mt-12 text-gray-400 leading-relaxed max-w-[500px] text-sm  md:text-base">
-                  Our goal is to empower people with accurate, visually engaging weather insights that help them plan their days with confidence. 
-                  Whether it's preparing for a sunny adventure or staying safe during storms, we aim to make weather updates more than just numbers — 
-                  we make them personal, practical, and beautiful.
+                  Our goal is to empower startups and small teams with smart, beautifully designed web solutions — from custom websites to ongoing support. 
+                  As we help others grow their digital presence, we’re also growing ourselves — gaining real-world experience, refining our craft,
+                   and building meaningful partnerships along the way.
                 </p>
               {/* top-bg isnot even? */}
                 <ul className="list-inside mt-6 space-y-2 text-base md:text-base text-white ">
