@@ -96,11 +96,12 @@ export default function Aboutus() {
                <div className='flex justify-center items-center h-35 w-35 bg-red-500 rounded-full border-4 border-white z-3 relative ml-[-15px]'>
                 <img src='avatars/Multiavatar-an.png'  alt='misho_avatar'/>
                </div>
-               <div className='flex justify-center items-center h-35 w-35 bg-gray-300 rounded-full border-4 border-white z-3 relative ml-[-15px]'>
-                <span className='text-5xl text-black dot-bounce'> . </span>
-                <span className='text-5xl text-black animate-bounce'> . </span>
-                <span className='text-5xl text-black '> . </span>
-               </div>
+               <div className="flex justify-center items-center h-35 w-35 bg-gray-300 rounded-full border-4 border-white relative z-30 ml-[-15px]">
+                <span className="dot-bounce dot1 text-5xl text-black">.</span>
+                <span className="dot-bounce dot2 text-5xl text-black">.</span>
+                <span className="dot-bounce dot3 text-5xl text-black">.</span>
+              </div>
+
             </div>
           </div>
         </div>

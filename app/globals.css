@@ -129,21 +129,14 @@ body {
 }
 
 .dot-bounce {
-  animation: custom-bounce 1s infinite;
+  animation: bounce 1s infinite;
   display: inline-block;
+  line-height: 1; /* Prevents vertical shifting */
 }
 
-.dot1 {
-  animation-delay: 0s;
-}
-
-.dot2 {
-  animation-delay: 0.2s;
-}
-
-.dot3 {
-  animation-delay: 0.4s;
-}
+.dot1 { animation-delay: 0s; }
+.dot2 { animation-delay: 0.1s; }
+.dot3 { animation-delay: 0.2s; }
 
 
 @keyframes custom-bounce {
