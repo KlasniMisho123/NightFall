@@ -128,6 +128,16 @@ body {
   /* https://i.pinimg.com/736x/1c/44/f8/1c44f8914b9f20e13b6168a2c2be3586.jpg */
 }
 
+.dot-bounce {
+  animation: dot-bounce-animation 1s ease-in-out infinite;
+}
+
+@keyframes dot-bounce-animation {
+  50%{
+    transform: translateY(-25px);
+  }
+}
+
 @keyframes rockerFliesOut {
   0% {
     transform: translateY(0) rotate(0deg);
