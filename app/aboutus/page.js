@@ -83,9 +83,19 @@ export default function Aboutus() {
           <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2>
           <div className='flex flex-col gap-4 mt-8'>
             <p className={'flex gap-2 text-base md:text-lg truncate' + urbanist.className}> <i className="fa-solid fa-seedling text-green-500 text-xl "></i> We design with intention, develop with care, and grow alongside the people we support. </p>
-            <p> Team Paragraph </p>
-            <div>
-               Team Div 
+            <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base mt-4">
+              We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
+            </p>
+            <div className='flex gap-4 '>
+               <div className='flex justify-center items-center h-22 w-22 bg-red-500 rounded-full'>
+                1
+               </div>
+               <div className='flex justify-center items-center h-22 w-22 bg-red-500 rounded-full'>
+                2
+               </div>
+               <div className='flex justify-center items-center h-22 w-22 bg-red-500 rounded-full'>
+                3
+               </div>
             </div>
           </div>
         </div>
