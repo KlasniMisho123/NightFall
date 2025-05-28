@@ -10,6 +10,8 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 
 export default function Aboutus() {
+
+
   return (
     <section className=' min-h-[100vh] bg-nightfall bg-white text-white'>
       {/* Different Bg? Style? about us? */}
@@ -86,6 +88,7 @@ export default function Aboutus() {
             <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base ">
               We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
             </p>
+            {/* Onclick Animation -> display */}
             <div className='flex mt-4'>
                <div title='🚀 Misho — Full-Stack Developer' className='flex justify-center items-center h-35 w-35 rounded-full border-4 border-white z-1 relative cursor-pointer hover:z-100 hover:scale-105 transition-all transition-duration-300 '>
                 <img src='avatars/Multiavatar-smalik.png'  alt='misho_avatar'/>
