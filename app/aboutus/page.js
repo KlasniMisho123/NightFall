@@ -78,12 +78,12 @@ export default function Aboutus() {
         </div>
 
 
-        <div className='flex flex-col gap-2'>
+        <div className='flex flex-col gap-2 pt-8 '>
           <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
           <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2>
-          <div className='flex flex-col gap-6 mt-8'>
+          <div className='flex flex-col gap-6 mt-4'>
             <p className={'flex gap-2 text-base md:text-lg truncate' + urbanist.className}> <i className="fa-solid fa-seedling text-green-500 text-xl "></i> We design with intention, develop with care, and grow alongside the people we support. </p>
-            <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base mt-4">
+            <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base ">
               We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
             </p>
             <div className='flex mt-4'>
