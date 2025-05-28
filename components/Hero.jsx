@@ -150,5 +150,6 @@ export default function Hero() {
           </section>
         <WorkStages />
     </div>
+    // Proejects Section
   )
 }
