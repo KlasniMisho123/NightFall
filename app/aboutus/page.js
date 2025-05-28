@@ -81,20 +81,25 @@ export default function Aboutus() {
         <div className='flex flex-col gap-2'>
           <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
           <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2>
-          <div className='flex flex-col gap-4 mt-8'>
+          <div className='flex flex-col gap-6 mt-8'>
             <p className={'flex gap-2 text-base md:text-lg truncate' + urbanist.className}> <i className="fa-solid fa-seedling text-green-500 text-xl "></i> We design with intention, develop with care, and grow alongside the people we support. </p>
             <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base mt-4">
               We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
             </p>
-            <div className='flex gap-4 '>
-               <div className='flex justify-center items-center h-22 w-22 bg-red-500 rounded-full'>
-                1
+            <div className='flex mt-4'>
+               <div className='flex justify-center items-center h-35 w-35 rounded-full border-4 border-white z-1 relative'>
+                <img src='avatars/Multiavatar-smalik.png'  alt='misho_avatar'/>
                </div>
-               <div className='flex justify-center items-center h-22 w-22 bg-red-500 rounded-full'>
-                2
+               <div className='flex justify-center items-center h-35 w-35 bg-red-500 rounded-full border-4 border-white z-2 relative ml-[-15px] '>
+                <img src='avatars/Multiavatar-Alik.png'  alt='misho_avatar'/>
                </div>
-               <div className='flex justify-center items-center h-22 w-22 bg-red-500 rounded-full'>
-                3
+               <div className='flex justify-center items-center h-35 w-35 bg-red-500 rounded-full border-4 border-white z-3 relative ml-[-15px]'>
+                <img src='avatars/Multiavatar-an.png'  alt='misho_avatar'/>
+               </div>
+               <div className='flex justify-center items-center h-35 w-35 bg-gray-300 rounded-full border-4 border-white z-3 relative ml-[-15px]'>
+                <span className='text-5xl text-black animate-bounce'> . </span>
+                <span className='text-5xl text-black animate-bounce'> . </span>
+                <span className='text-5xl text-black animate-bounce'> . </span>
                </div>
             </div>
           </div>
