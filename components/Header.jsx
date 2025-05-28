@@ -8,7 +8,13 @@ const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 export default function Header() {
   const [isSideNavBarActive, setIsSideNavBarActive] = useState(false)
   const [shouldRenderNav, setShouldRenderNav] = useState(false)
-  const [selectedNavSection, setSelectedNavSection] = useState('home')
+  const [selectedNavSection, setSelectedNavSection] = useState('')
+
+  useEffect(()=>{
+    const path = window.location.pathname;
+    const filteredPath = path.replace(/\//g, "")
+    filteredPath? setSelectedNavSection(filteredPath) : setSelectedNavSection("home")
+  },[])
 
   function toggleSideNavBar() {
     setIsSideNavBarActive(!isSideNavBarActive)
