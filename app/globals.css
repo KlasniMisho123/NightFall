@@ -129,12 +129,31 @@ body {
 }
 
 .dot-bounce {
-  animation: dot-bounce-animation 1s ease-in-out infinite;
+  animation: custom-bounce 1s infinite;
+  display: inline-block;
 }
 
-@keyframes dot-bounce-animation {
-  50%{
-    transform: translateY(-25px);
+.dot1 {
+  animation-delay: 0s;
+}
+
+.dot2 {
+  animation-delay: 0.2s;
+}
+
+.dot3 {
+  animation-delay: 0.4s;
+}
+
+
+@keyframes custom-bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
 

@@ -98,7 +98,7 @@ export default function Aboutus() {
                </div>
                <div className='flex justify-center items-center h-35 w-35 bg-gray-300 rounded-full border-4 border-white z-3 relative ml-[-15px]'>
                 <span className='text-5xl text-black dot-bounce'> . </span>
-                <span className='text-5xl text-black '> . </span>
+                <span className='text-5xl text-black animate-bounce'> . </span>
                 <span className='text-5xl text-black '> . </span>
                </div>
             </div>
