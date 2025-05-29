@@ -5,6 +5,7 @@ import TeamMemberCard from '@/components/TeamMemberCard';
 import { Exo_2, Inter, Poppins, Urbanist } from 'next/font/google';
 import React, { useEffect, useState } from 'react'
 import { teamMemberMap } from '@/utils';
+import OurVision from '@/components/OurVision';
 
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["300", "700"]});
@@ -147,10 +148,10 @@ function selectTeamMember(teamMember) {
                 }
           </div>
         </div>
-
         {/* Strong Sides */}
         {/* Our Vision */}
       </section>
+        <OurVision />       
 
         <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 gap-4'> 
             {/* ONCLICK SHOW MORE... ANIMATIONS */}
