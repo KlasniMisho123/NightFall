@@ -106,7 +106,7 @@ function selectTeamMember(teamMember) {
                 className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-1 relative cursor-pointer
                 hover:z-100 hover:scale-105 transition-all transition-duration-300 ` + (selectedTeamMember == "misho" ? " border-blue-500" : "border-white")} 
                 onClick={() => {
-                  selectTeamMember("misho")
+                  selectTeamMember("Misho")
                 }}
                 >
                 <img src='avatars/Multiavatar-smalik.png'  alt='misho_avatar'/>
@@ -115,7 +115,7 @@ function selectTeamMember(teamMember) {
                 className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-2 relative ml-[-15px] cursor-pointer
                 hover:z-100 hover:scale-105 transition-duration-300 ` + (selectedTeamMember == "alika" ? " border-blue-500" : "border-white")}
                 onClick={() => {
-                  selectTeamMember("alika")
+                  selectTeamMember("Alika")
                 }}
                 >
                 <img src='avatars/Multiavatar-Alik.png'  alt='alik_avatar'/>
@@ -124,7 +124,7 @@ function selectTeamMember(teamMember) {
                 className={`flex justify-center items-center h-35 w-35  rounded-full border-4 z-3 relative ml-[-15px] cursor-pointer
                 hover:z-100 hover:scale-105 transition-duration-300 ` + (selectedTeamMember == "dummy" ? " border-blue-500" : "border-white")}
                 onClick={() => {
-                  selectTeamMember("dummy")
+                  selectTeamMember("Dummy")
                 }}
                 >
                 <img src='avatars/Multiavatar-an.png'  alt='Dummy_avatar'/>

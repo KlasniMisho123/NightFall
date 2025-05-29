@@ -20,8 +20,8 @@ export default function TeamMemberCard(props) {
         </div>
         <div className='flex flex-col items-center my-2'>
             <h2 className="text-xl font-semibold text-gray-800">
-                <span> <i className='fa-solid fa-rocket text-red-500'></i> </span>
                 {selectedTeamMember}
+                <span> <i className='fa-solid fa-rocket text-red-500 text-lg '></i> </span>
             </h2>
             <p className="text-sm text-gray-500">Frontend Developer</p>
         </div>
