@@ -39,11 +39,9 @@ export default function TeamMemberCard(props) {
             <i className="fa-solid fa-dumbbell ml-2 text-gray-700 text-lg"></i>
         </h3>
         <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
-            {selectedMemberInfo?.strongSides.array.forEach(side => {
-                <li>{side}</li>
+            {selectedMemberInfo?.strongSides.map((side, index) => {
+                <li key={index}>{side}</li>
             })};
-            {/* <li>Reusable component architecture</li>
-            <li>Fast learning and team collaboration</li> */}
         </ul>
         </div>
 
@@ -52,9 +50,9 @@ export default function TeamMemberCard(props) {
             <i className="fa-solid fa-face-laugh-beam ml-2 text-yellow-400 text-lg"></i>
         </h3>
         <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
-            <li>Coffee-powered coding sessions ☕</li>
-            <li>Speaks 3 languages fluently 🌍</li>
-            <li>Loves building side projects 🚧</li>
+            {selectedMemberInfo?.facts.map((fact, index) => {
+                <li key={index}>{fact}</li>
+            })};
         </ul>
         </div>
 

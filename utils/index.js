@@ -48,7 +48,7 @@ export const teamMemberMap = {
     nickTheme: "bg-red-200",
     icon: <i className="fa-solid fa-rocket text-red-500 text-lg"></i>,
     strongSides: [
-      "Problem Solveing",
+      "Problem Solving",
       "Driven to grow",
       "Highly Determined"
     ],
