@@ -14,9 +14,8 @@ export default function TeamMemberCard(props) {
 
         <div className="h-[90px] w-[90px] border-4 border-white rounded-full z-10 shadow-md overflow-hidden -mt-10">
         <img
-            // src={"avatars/Multiavatar-Alik.png"}
             src={selectedMemberInfo?.avatar}
-            alt="misho_avatar"
+            alt={selectedTeamMember + "_avatar"}
             className="h-full w-full object-cover"
         />
         </div>
@@ -26,13 +25,13 @@ export default function TeamMemberCard(props) {
             {selectedTeamMember}
         </h2>
             <span className="mt-1 inline-block px-3 py-1 text-sm text-red-500 bg-red-50 border border-red-200 rounded-full shadow-sm">
-             God Of Fireworks <i className="fa-solid fa-rocket text-red-400 ml-1"></i>
+             {selectedMemberInfo?.nickname} {selectedMemberInfo?.icon}
             </span>
-        <p className="text-sm text-gray-500 mt-1">Frontend Developer</p>
+        <p className="text-sm text-gray-500 mt-1">{selectedMemberInfo?.role}</p>
         </div>
 
         <div className="mt-4 text-center text-gray-600 text-sm">
-        <p>Creative developer focused on clean, scalable UI with modern frontend stacks.</p>
+        <p>{selectedMemberInfo?.bio}</p>
         </div>
 
         <div className="mt-5 w-full">
@@ -40,14 +39,16 @@ export default function TeamMemberCard(props) {
             <i className="fa-solid fa-dumbbell ml-2 text-gray-700 text-lg"></i>
         </h3>
         <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
-            <li>Pixel-perfect design implementation</li>
-            <li>Reusable component architecture</li>
-            <li>Fast learning and team collaboration</li>
+            {selectedMemberInfo?.strongSides.array.forEach(side => {
+                <li>{side}</li>
+            })};
+            {/* <li>Reusable component architecture</li>
+            <li>Fast learning and team collaboration</li> */}
         </ul>
         </div>
 
         <div className="mt-5 w-full">
-        <h3 className="text-md font-semibold text-gray-700 mb-2">Fun Facts
+        <h3 className="text-md font-semibold text-gray-700 mb-2">Facts
             <i className="fa-solid fa-face-laugh-beam ml-2 text-yellow-400 text-lg"></i>
         </h3>
         <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
