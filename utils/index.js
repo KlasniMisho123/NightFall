@@ -62,25 +62,54 @@ export const teamMemberMap = {
       linkedIn: "https://www.linkedin.com/in/misho-silagava-9829aa292/",
       gitHub: "https://github.com/KlasniMisho123",
     }
-  },
-  Alika: {
-    avatar: "avatars/Multiavatar-Alik.png",
-    role: "UI/UX Designer",
-    bio: "Designs with empathy and simplicity in mind.",
+    },
+    
+    Alika: {
+    avatar: "avatars/Multiavatar-Alika.png",
+    role: "Frontend Developer",
+    bio: "Passionate about pixel-perfect designs and smooth animations.",
+    nickname: "Pixel Queen",
+    nickTheme: "bg-blue-200",
+    icon: <i className="fa-solid fa-paintbrush text-blue-500 text-lg"></i>,
     strongSides: [
-      "Figma",
-      "User Research",
-      "Design Systems",
-      "Micro-interactions"
+      "Creative thinker",
+      "Detail oriented",
+      "Quick learner"
     ],
-    funFacts: [
-      "🎨 Has a sketchbook with over 500 UI ideas",
-      "🐱 Cat person to the core",
-      "💡 Once designed an app during a 5-hour train ride"
+    facts: [
+      "🎨 Loves experimenting with colors",
+      "🎧 Codes better with Lo-Fi beats",
+      "🐈‍⬛ Secretly channels her inner Catwoman"
     ],
     contacts: {
       email: "alika@example.com",
-      linkedIn: "https://linkedin.com/in/alika"
+      linkedIn: "https://www.linkedin.com/in/alika-profile/",
+      gitHub: "https://github.com/alika"
+    }
+  },
+
+  Dummy: {
+    avatar: "avatars/Multiavatar-Dummy.png",
+    role: "Backend Developer",
+    bio: "Enjoys optimizing APIs and databases for performance.",
+    nickname: "Server Wizard",
+    nickTheme: "bg-green-200",
+    icon: <i className="fa-solid fa-server text-green-500 text-lg"></i>,
+    strongSides: [
+      "Problem solver",
+      "Efficient coder",
+      "Team player"
+    ],
+    facts: [
+      "☕ Powered by endless coffee",
+      "🛠️ Always fixing bugs",
+      "📚 Lifelong learner"
+    ],
+    contacts: {
+      email: "dummy@example.com",
+      linkedIn: "https://www.linkedin.com/in/dummy-profile/",
+      gitHub: "https://github.com/dummy"
     }
   }
+
 };

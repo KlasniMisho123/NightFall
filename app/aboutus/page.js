@@ -3,7 +3,8 @@ import BorderedTitle from '@/components/BorderedTitle';
 import MessageBox from '@/components/MessageBox';
 import TeamMemberCard from '@/components/TeamMemberCard';
 import { Exo_2, Inter, Poppins, Urbanist } from 'next/font/google';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { teamMemberMap } from '@/utils';
 
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["300", "700"]});
@@ -13,15 +14,19 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 
 export default function Aboutus() {
 const [selectedTeamMember, setSelectedTeamMember] = useState('')
-
+const [selectedMemberInfo, setSelectedMemberInfo] = useState('')
 
 function selectTeamMember(teamMember) {
   if(teamMember == selectedTeamMember ) {
     setSelectedTeamMember("")
+    setSelectedMemberInfo("")
   } else {
     setSelectedTeamMember(teamMember)
+    setSelectedMemberInfo(teamMemberMap[teamMember])
   }
 }
+
+
 
   return (
     <section className=' min-h-[100vh] bg-nightfall bg-white text-white'>
