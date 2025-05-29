@@ -15,7 +15,11 @@ const [selectedTeamMember, setSelectedTeamMember] = useState('')
 
 
 function selectTeamMember(teamMember) {
-  console.log(teamMember)
+  if(teamMember == selectedTeamMember ) {
+    setSelectedTeamMember("")
+  } else {
+    setSelectedTeamMember(teamMember)
+  }
 }
 
   return (
@@ -94,15 +98,34 @@ function selectTeamMember(teamMember) {
             <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base ">
               We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
             </p>
+            <p className='text-sm text-gray-300 mt-4'>Select team member for more info</p>
             {/* Onclick Animation -> display */}
-            <div className='flex mt-4'>
-               <div title='🚀 Misho — Full-Stack Developer' className='flex justify-center items-center h-35 w-35 rounded-full border-4 border-white z-1 relative cursor-pointer hover:z-100 hover:scale-105 transition-all transition-duration-300 '>
+            <div className='flex '>
+               <div title='🚀 Misho — Full-Stack Developer'
+                className='flex justify-center items-center h-35 w-35 rounded-full border-4 border-white z-1 relative cursor-pointer
+                hover:z-100 hover:scale-105 transition-all transition-duration-300 '
+                onClick={() => {
+                  selectTeamMember("misho")
+                }}
+                >
                 <img src='avatars/Multiavatar-smalik.png'  alt='misho_avatar'/>
                </div>
-               <div title='⚡ Alika — Back-End Developer' className='flex justify-center items-center h-35 w-35 bg-red-500 rounded-full border-4 border-white z-2 relative ml-[-15px] cursor-pointer hover:z-100 hover:scale-105 transition-duration-300 '>
+               <div title='⚡ Alika — Back-End Developer'
+                className='flex justify-center items-center h-35 w-35 bg-red-500 rounded-full border-4 border-white z-2 relative ml-[-15px] cursor-pointer
+                hover:z-100 hover:scale-105 transition-duration-300 '
+                onClick={() => {
+                  selectTeamMember("alika")
+                }}
+                >
                 <img src='avatars/Multiavatar-Alik.png'  alt='alik_avatar'/>
                </div>
-               <div title='DummyTeamMember ' className='flex justify-center items-center h-35 w-35 bg-red-500 rounded-full border-4 border-white z-3 relative ml-[-15px] cursor-pointer hover:z-100 hover:scale-105 transition-duration-300 '>
+               <div title='DummyTeamMember '
+                className='flex justify-center items-center h-35 w-35 bg-red-500 rounded-full border-4 border-white z-3 relative ml-[-15px] cursor-pointer
+                hover:z-100 hover:scale-105 transition-duration-300 '
+                onClick={() => {
+                  selectTeamMember("dummy")
+                }}
+                >
                 <img src='avatars/Multiavatar-an.png'  alt='Dummy_avatar'/>
                </div>
                <div className="flex justify-center items-center h-35 w-35 bg-white rounded-full border-4 border-gray-700 relative z-30 ml-[-15px] select-none">
@@ -110,8 +133,11 @@ function selectTeamMember(teamMember) {
                 <span className="dot-bounce dot2 text-5xl text-black">.</span>
                 <span className="dot-bounce dot3 text-5xl text-black">.</span>
               </div>
-
             </div>
+              {/* Slidedown Like Animation */}
+                {selectedTeamMember ? <div className='h-[40vh] w-full bg-white rounded p-4 text-black transition-all duration-500 ease-in-out'> {selectedTeamMember} </div> : 
+                null
+                }
           </div>
         </div>
 
