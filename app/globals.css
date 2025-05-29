@@ -129,7 +129,6 @@ body {
 @keyframes team-member-card-animation {
   0% {
     min-height: 0vh;
-    padding: 0;
   }
   100% {
     min-height: 50vh;
