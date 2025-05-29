@@ -43,9 +43,10 @@ export const teamMemberMap = {
   Misho: {
     avatar: "avatars/Multiavatar-smalik.png",
     role: "Full-Stack Developer",
-    bio: "Loves crafting beautiful and accessible user interfaces.",
+    bio: "Passionate about building visually stunning, accessible, and user-friendly web experiences. Always striving for clean code and thoughtful design.",
+    bioTheme: "text-red-500",
     nickname: "God Of Fireworks",
-    nickTheme: "bg-red-200",
+    nickTheme: "border-red-200 bg-red-50 ",
     icon: <i className="fa-solid fa-rocket text-red-500 text-lg"></i>,
     strongSides: [
       "Problem Solving",
