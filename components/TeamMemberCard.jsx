@@ -29,13 +29,13 @@ export default function TeamMemberCard(props) {
         <h2 className={"text-2xl font-bold text-gray-800 flex items-center gap-2 justify-center " +  exo2.className}>
             {selectedTeamMember}
         </h2>
-            <span className={"mt-1 inline-block px-3 py-1 text-sm text-red-500 border rounded-full shadow-sm " + (selectedMemberInfo.nickTheme) + exo2.className}>
+            <span className={"mt-1 inline-block px-3 py-1 text-sm border rounded-full shadow-sm " + (selectedMemberInfo.nickTheme) + exo2.className}>
              {selectedMemberInfo?.nickname} {selectedMemberInfo?.icon}
             </span>
         <p className="text-sm text-gray-500 mt-1">{selectedMemberInfo?.role}</p>
         </div>
 
-        <div className={"mt-4 text-start text-gray-600 text-sm " + (selectedMemberInfo?.bioTheme) }>
+        <div className={"mt-4 text-start text-sm " + (selectedMemberInfo?.bioTheme) }>
         <p>{selectedMemberInfo?.bio}</p>
         </div>
 

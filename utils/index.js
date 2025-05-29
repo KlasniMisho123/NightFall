@@ -46,7 +46,7 @@ export const teamMemberMap = {
     bio: "Passionate about building visually stunning, accessible, and user-friendly web experiences. Always striving for clean code and thoughtful design.",
     bioTheme: "text-red-500",
     nickname: "God Of Fireworks",
-    nickTheme: "border-red-200 bg-red-50 ",
+    nickTheme: "border-red-200 bg-red-50 text-red-500 ",
     icon: <i className="fa-solid fa-rocket text-red-500 text-lg"></i>,
     strongSides: [
       "Problem Solving",
@@ -68,49 +68,50 @@ export const teamMemberMap = {
     Alika: {
     avatar: "avatars/Multiavatar-Alik.png",
     role: "Frontend Developer",
-    bio: "Passionate about pixel-perfect designs and smooth animations.",
-    nickname: "Pixel Queen",
-    nickTheme: "bg-blue-200",
-    icon: <i className="fa-solid fa-paintbrush text-blue-500 text-lg"></i>,
+    bio: "Creative and detail-oriented developer focused on delivering polished interfaces and seamless user interactions. Believes in clean aesthetics and code harmony.",
+    bioTheme: "text-blue-500",
+    nickname: "Pixel Perfectionist",
+    nickTheme: "border-blue-200 bg-blue-50 text-blue-500",
+    icon: <i className="fa-solid fa-palette text-blue-500 text-lg"></i>,
     strongSides: [
-      "Creative thinker",
-      "Detail oriented",
-      "Quick learner"
+      "Focused & Creative",
+      "Keen Eye for Detail",
+      "Always Evolving"
     ],
     facts: [
-      "🎨 Loves experimenting with colors",
-      "🎧 Codes better with Lo-Fi beats",
-      "🐈‍⬛ Secretly channels her inner Catwoman"
+      "🎨 Loves experimenting with UI styles",
+      "🎧 Works best with synthwave beats",
+      "🐾 Cat lover and whisker whisperer"
     ],
     contacts: {
-      email: "alika@example.com",
-      linkedIn: "https://www.linkedin.com/in/alika-profile/",
-      gitHub: "https://github.com/alika"
+      email: "alika.dev@example.com",
+      linkedIn: "https://www.linkedin.com/in/alika-dev/",
+      gitHub: "https://github.com/alika-dev"
     }
   },
 
   Dummy: {
     avatar: "avatars/Multiavatar-an.png",
-    role: "Backend Developer",
-    bio: "Enjoys optimizing APIs and databases for performance.",
-    nickname: "Server Wizard",
-    nickTheme: "bg-green-200",
-    icon: <i className="fa-solid fa-server text-green-500 text-lg"></i>,
+    role: "Backend Enthusiast",
+    bio: "Quiet observer, reliable executor. Keeps systems running smoothly while staying out of the spotlight.",
+    bioTheme: "text-purple-500",
+    nickname: "Silent Architect",
+    nickTheme: "border-purple-300 bg-purple-50 text-purple-500",
+    icon: <i className="fa-solid fa-server text-purple-500 text-lg"></i>,
     strongSides: [
-      "Problem solver",
-      "Efficient coder",
-      "Team player"
+      "Stable and Reliable",
+      "Loves Deep Work",
+      "Prefers Logic Over Noise"
     ],
     facts: [
-      "☕ Powered by endless coffee",
-      "🛠️ Always fixing bugs",
-      "📚 Lifelong learner"
+      "🛠️ Obsessed with database performance",
+      "📚 Reads technical docs for fun",
+      "🎮 Prefers turn-based games"
     ],
     contacts: {
-      email: "dummy@example.com",
-      linkedIn: "https://www.linkedin.com/in/dummy-profile/",
-      gitHub: "https://github.com/dummy"
+      email: "dummy.dev@example.com",
+      linkedIn: "https://www.linkedin.com/in/dummy-dev/",
+      gitHub: "https://github.com/dummy-dev"
     }
   }
-
 };
