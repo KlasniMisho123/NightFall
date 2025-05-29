@@ -132,17 +132,18 @@ body {
     padding: 0;
   }
   100% {
-    min-height: 60vh;
+    min-height: 50vh;
     padding: 20px;
   }
 }
 
 .team-member-card > *{
- animation: team-member-card-items 0.5s forwards;
+ animation: team-member-card-items 0.4s forwards;
 }
 
 @keyframes team-member-card-items {
-  0% {
+  0%, 90% {
+    display: none;
     opacity: 0;
   }
   100% {
