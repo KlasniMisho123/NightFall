@@ -2,15 +2,7 @@ import React from 'react'
 
 export default function TeamMemberCard(props) {
     const {selectedTeamMember, selectTeamMember} = props
-    // Avatar image
-    // Custom Icon
-    // Theme Color
-    // Name & position
-    // Short bio or description
-    // Contact buttons (like email or LinkedIn)
-    // Nice visual spacing
-    // Strong Sides ??
-    // Fun Facts ??
+
   return (
     <div className={`flex flex-col items-start rounded text-black transition-all duration-500 ease-in-out pt-6 team-member-card overflow-hidden `}>
     <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg w-full max-w-md relative  border-2">
@@ -31,8 +23,10 @@ export default function TeamMemberCard(props) {
         <div className="text-center mt-4">
         <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2 justify-center">
             {selectedTeamMember}
-            <i className="fa-solid fa-rocket text-red-500 text-lg"></i>
         </h2>
+            <span className="mt-1 inline-block px-3 py-1 text-sm text-red-500 bg-red-50 border border-red-200 rounded-full shadow-sm">
+             God Of Fireworks <i className="fa-solid fa-rocket text-red-400 ml-1"></i>
+            </span>
         <p className="text-sm text-gray-500 mt-1">Frontend Developer</p>
         </div>
 

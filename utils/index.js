@@ -37,3 +37,50 @@ export const colorClassMap = {
     decoration: 'decoration-pink-500',
   },
 };
+
+
+export const teamMemberMap = {
+  Misho: {
+    avatar: "avatars/Multiavatar-smalik.png",
+    role: "Full-Stack Developer",
+    bio: "Loves crafting beautiful and accessible user interfaces.",
+    nickname: "God Of Fireworks",
+    nickTheme: "bg-red-200",
+    icon: <i className="fa-solid fa-rocket text-red-500 text-lg"></i>,
+    strongSides: [
+      "Problem Solveing",
+      "Driven to grow",
+      "Highly Determined"
+    ],
+    facts: [
+      "🎮 Goated Phantom Assassin player - Dota",
+      "🎬 Worships Zoe Kravitz",
+      "🔵🔴 Big Barcelona fan"
+    ],
+    contacts: {
+      email: "kirisame404@gmail.com",
+      linkedIn: "https://www.linkedin.com/in/misho-silagava-9829aa292/",
+      gitHub: "https://github.com/KlasniMisho123",
+    }
+  },
+  Alika: {
+    avatar: "avatars/Multiavatar-Alik.png",
+    role: "UI/UX Designer",
+    bio: "Designs with empathy and simplicity in mind.",
+    strongSides: [
+      "Figma",
+      "User Research",
+      "Design Systems",
+      "Micro-interactions"
+    ],
+    funFacts: [
+      "🎨 Has a sketchbook with over 500 UI ideas",
+      "🐱 Cat person to the core",
+      "💡 Once designed an app during a 5-hour train ride"
+    ],
+    contacts: {
+      email: "alika@example.com",
+      linkedIn: "https://linkedin.com/in/alika"
+    }
+  }
+};
