@@ -1,6 +1,7 @@
 'use client'
 import BorderedTitle from '@/components/BorderedTitle';
 import MessageBox from '@/components/MessageBox';
+import TeamMemberCard from '@/components/TeamMemberCard';
 import { Exo_2, Inter, Poppins, Urbanist } from 'next/font/google';
 import React, { useState } from 'react'
 
@@ -135,8 +136,9 @@ function selectTeamMember(teamMember) {
               </div>
             </div>
               {/* Slidedown Like Animation */}
-                {selectedTeamMember ? <div className='h-[40vh] w-full bg-white rounded p-4 text-black transition-all duration-500 ease-in-out'> {selectedTeamMember} </div> : 
-                null
+                {selectedTeamMember ?
+                 <TeamMemberCard selectedTeamMember={selectedTeamMember} />
+                  : null
                 }
           </div>
         </div>
