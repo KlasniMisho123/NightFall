@@ -132,8 +132,21 @@ body {
     padding: 0;
   }
   100% {
-    min-height: 40vh;
+    min-height: 60vh;
     padding: 20px;
+  }
+}
+
+.team-member-card > *{
+ animation: team-member-card-items 0.5s forwards;
+}
+
+@keyframes team-member-card-items {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
