@@ -65,7 +65,7 @@ export const teamMemberMap = {
     },
     
     Alika: {
-    avatar: "avatars/Multiavatar-Alika.png",
+    avatar: "avatars/Multiavatar-Alik.png",
     role: "Frontend Developer",
     bio: "Passionate about pixel-perfect designs and smooth animations.",
     nickname: "Pixel Queen",
@@ -89,7 +89,7 @@ export const teamMemberMap = {
   },
 
   Dummy: {
-    avatar: "avatars/Multiavatar-Dummy.png",
+    avatar: "avatars/Multiavatar-an.png",
     role: "Backend Developer",
     bio: "Enjoys optimizing APIs and databases for performance.",
     nickname: "Server Wizard",

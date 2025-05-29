@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function TeamMemberCard(props) {
-    const {selectedTeamMember, selectTeamMember} = props
+    const {selectedTeamMember, selectTeamMember, selectedMemberInfo} = props
 
   return (
     <div className={`flex flex-col items-start rounded text-black transition-all duration-500 ease-in-out pt-6 team-member-card overflow-hidden `}>
@@ -14,7 +14,8 @@ export default function TeamMemberCard(props) {
 
         <div className="h-[90px] w-[90px] border-4 border-white rounded-full z-10 shadow-md overflow-hidden -mt-10">
         <img
-            src="avatars/Multiavatar-Alik.png"
+            // src={"avatars/Multiavatar-Alik.png"}
+            src={selectedMemberInfo?.avatar}
             alt="misho_avatar"
             className="h-full w-full object-cover"
         />

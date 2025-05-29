@@ -142,7 +142,7 @@ function selectTeamMember(teamMember) {
             </div>
               {/* Slidedown Like Animation */}
                 {selectedTeamMember ?
-                 <TeamMemberCard selectedTeamMember={selectedTeamMember} selectTeamMember={selectTeamMember} />
+                 <TeamMemberCard selectedTeamMember={selectedTeamMember} selectTeamMember={selectTeamMember} selectedMemberInfo={selectedMemberInfo} />
                   : null
                 }
           </div>
