@@ -30,7 +30,10 @@ function selectTeamMember(teamMember) {
 
 useEffect(()=>{
  if(selectedTeamMember == '' ) {
-  setIsMemberCardActive(false)
+  setTimeout(()=>{
+    setIsMemberCardActive(false)
+  }, 2000)
+
  } else {
   setIsMemberCardActive(true)
  }
@@ -112,7 +115,7 @@ useEffect(()=>{
             <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base ">
               We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
             </p>
-            <p className='text-sm text-gray-300 mt-4'>Select team member for more info</p>
+            <p className='text-sm text-gray-300 mt-4'>Select team member for more info  <span className='text-red-500 text-xl ml-2 '> {isMemberCardActive} </span> </p>
             {/* Onclick Animation -> display */}
             <div className='flex '>
                <div title='🚀 Misho — Full-Stack Developer'
@@ -147,10 +150,10 @@ useEffect(()=>{
                 <span className="dot-bounce dot2 text-5xl text-black">.</span>
                 <span className="dot-bounce dot3 text-5xl text-black">.</span>
               </div>
+               
             </div>
             {/* Close Animation Instead Of instant Dismount --> another usestate that gives timeout/timeinterval for dismount(startswith false), animate shutdown on selectedTeamMember false? */}
-                <p className='text-red-500 text-2xl '> {isMemberCardActive} </p>
-                {selectedTeamMember ?
+                {isMemberCardActive ?
                  <TeamMemberCard selectedTeamMember={selectedTeamMember} selectTeamMember={selectTeamMember} selectedMemberInfo={selectedMemberInfo} />
                   : null
                 }                 
