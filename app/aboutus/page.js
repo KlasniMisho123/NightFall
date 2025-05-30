@@ -16,6 +16,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 export default function Aboutus() {
 const [selectedTeamMember, setSelectedTeamMember] = useState('')
 const [selectedMemberInfo, setSelectedMemberInfo] = useState('')
+const [isMemberCardActive, setIsMemberCardActive] = useState(false)
 
 function selectTeamMember(teamMember) {
   if(teamMember == selectedTeamMember ) {
@@ -27,7 +28,13 @@ function selectTeamMember(teamMember) {
   }
 }
 
-
+useEffect(()=>{
+ if(selectedTeamMember == '' ) {
+  setIsMemberCardActive(false)
+ } else {
+  setIsMemberCardActive(true)
+ }
+},[selectedTeamMember])
 
   return (
     <section className=' min-h-[100vh] bg-nightfall bg-white text-white'>
@@ -141,11 +148,12 @@ function selectTeamMember(teamMember) {
                 <span className="dot-bounce dot3 text-5xl text-black">.</span>
               </div>
             </div>
-              {/* Slidedown Like Animation */}
+            {/* Close Animation Instead Of instant Dismount --> another usestate that gives timeout/timeinterval for dismount(startswith false), animate shutdown on selectedTeamMember false? */}
+                <p className='text-red-500 text-2xl '> {isMemberCardActive} </p>
                 {selectedTeamMember ?
                  <TeamMemberCard selectedTeamMember={selectedTeamMember} selectTeamMember={selectTeamMember} selectedMemberInfo={selectedMemberInfo} />
                   : null
-                }
+                }                 
           </div>
         </div>
         {/* Strong Sides */}
