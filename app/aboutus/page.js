@@ -162,7 +162,7 @@ useEffect(()=>{
         {/* Our Vision */}
         <OurVision /> 
         <div className='flex flex-col gap-2 mt-10 -mb-16'>
-          <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Popular</p>
+          <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Most Asked</p>
           <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Questions</h2>      
         </div>
         <ChatComponent />

@@ -11,7 +11,7 @@ export default function MessageBox(props) {
 
   return (
     <div 
-    className={`bg-blue-400/80 text-white p-4 rounded-full shadow-md transition-all transition-duration-300 ${
+    className={`bg-blue-400/80 text-white p-4 rounded-full shadow-md transition-all transition-duration-300 response-message ${
     response ? 'self-end' : 'self-start'
     } ${clickIndex !== null ? 'cursor-pointer hover:bg-blue-400 shadow-none' : ''}`}
     onClick={clickIndex !== null ? handleClick : undefined}>

@@ -393,8 +393,10 @@ body {
 /* Nightfall Hero Animation Start */
 
 
-
 /* Nightfall Hero Animation Ends */
+.response-message {
+   animation: rollAround 0.25s ease-in-out forwards; 
+}
 
 @keyframes compassSearch {
   50% {
