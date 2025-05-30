@@ -67,7 +67,7 @@ export const teamMemberMap = {
     
     Alika: {
     avatar: "avatars/Multiavatar-Alik.png",
-    role: "Frontend Developer",
+    role: "Backend Developer",
     bio: "Creative and detail-oriented developer focused on delivering polished interfaces and seamless user interactions. Believes in clean aesthetics and code harmony.",
     bioTheme: "text-blue-500",
     nickname: "Pixel Perfectionist",
@@ -79,12 +79,12 @@ export const teamMemberMap = {
       "Always Evolving"
     ],
     facts: [
-      "🎨 Loves experimenting with UI styles",
-      "🎧 Works best with synthwave beats",
+      "💪🏻 Benches 110kgx2",
+      "🎧 Works best with some bangers on",
       "🐾 Cat lover and whisker whisperer"
     ],
     contacts: {
-      email: "alika.dev@example.com",
+      email: "alikpashaev06@gmail.com",
       linkedIn: "https://www.linkedin.com/in/alika-dev/",
       gitHub: "https://github.com/alika-dev"
     }
