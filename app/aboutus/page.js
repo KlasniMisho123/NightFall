@@ -113,7 +113,7 @@ useEffect(()=>{
             <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base ">
               We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
             </p>
-            <p className='text-sm text-gray-300 mt-4'>Select team member for more info  <span className='text-red-500 text-xl ml-2 '> {isMemberCardActive} </span> </p>
+            <p className='text-sm text-gray-300 mt-4'>Select team member for more info </p>
             {/* Onclick Animation -> display */}
             <div className='flex '>
                <div title='🚀 Misho — Full-Stack Developer'
