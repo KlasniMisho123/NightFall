@@ -395,7 +395,17 @@ body {
 
 /* Nightfall Hero Animation Ends */
 .response-message {
-   animation: rollAround 0.25s ease-in-out forwards; 
+   animation: response-message-animation 0.75s ease-in-out forwards; 
+}
+
+@keyframes response-message-animation {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+    transform: translateX(0px)
+  }
 }
 
 @keyframes compassSearch {

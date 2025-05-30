@@ -22,9 +22,14 @@ export default function ChatComponent() {
           <MessageBox response={true} text="Hey! We’re a fresh team offering smart web solutions built around your needs." />
         : null}
         <MessageBox text="Like what kind of solutions?" clickIndex={2} selectMessage={selectMessage} />
-        <MessageBox response={true} text="Custom websites, UI/UX design, hosting, deployment - you name it." />
+        {selectedMessage === 2? 
+          <MessageBox response={true} text="Custom websites, UI/UX design, hosting, deployment - you name it." />
+        : null}
         <MessageBox text="Do you stick around after launch?" clickIndex={3} selectMessage={selectMessage} />
-        <MessageBox response={true} text="Yes - and we also offer ongoing support packages to keep everything running smoothly." />
+        {selectedMessage === 3? 
+          <MessageBox response={true} text="Yes - and we also offer ongoing support packages to keep everything running smoothly." />
+        : null}
+        
     </div>
   )
 }
