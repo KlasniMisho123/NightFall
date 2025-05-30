@@ -8,26 +8,17 @@ export default function ChatComponent() {
 
     function selectMessage(messageIndex) {
       if(selectedMessage.includes(messageIndex)) {
-        setSelectedMessage(selectedMessage.filter(index => index !== messageIndex));
-        setTimeout(()=>{
-          selectedMessageActive(selectedMessage.filter(index => index !== messageIndex));
-        }
+        const updated = selectedMessage.filter(index => index !== messageIndex);
+        setSelectedMessage(updated);
+        setTimeout(() => {
+          setSelectedMessageActive(updated);
+        }, 1000 )
       } else {
-        setSelectedMessage([...selectedMessage,messageIndex])
-        selectedMessageActive([...selectedMessage,messageIndex])
+        const updated = [...selectedMessage,messageIndex];
+        setSelectedMessage(updated)
+        setSelectedMessageActive(updated)
       }
     }
-
-    // useEffect(()=>{
-    // if(selectedMessageActive.includes(messageIndex)) {
-    //     setTimeout(()=>{
-
-    //       setSelectedMessage(selectedMessage.filter(index => index !== messageIndex));
-    //     },1000)
-    //   } else {
-    //     setSelectedMessage([...selectedMessage,messageIndex])
-    //   }
-    // },[selectedMessage])
 
   return (
     <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 gap-4'> 
