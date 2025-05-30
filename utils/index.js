@@ -47,7 +47,7 @@ export const teamMemberMap = {
     bioTheme: "text-red-500",
     nickname: "God Of Fireworks",
     nickTheme: "border-red-200 bg-red-50 text-red-500 ",
-    icon: <i className="fa-solid fa-rocket text-red-500 text-lg"></i>,
+    icon: <i className="fa-solid fa-rocket text-red-500 "></i>,
     strongSides: [
       "Problem Solving",
       "Driven to grow",
@@ -72,7 +72,7 @@ export const teamMemberMap = {
     bioTheme: "text-blue-500",
     nickname: "Pixel Perfectionist",
     nickTheme: "border-blue-200 bg-blue-50 text-blue-500",
-    icon: <i className="fa-solid fa-palette text-blue-500 text-lg"></i>,
+    icon: <i className="fa-solid fa-palette text-blue-500 "></i>,
     strongSides: [
       "Focused & Creative",
       "Keen Eye for Detail",
@@ -97,7 +97,7 @@ export const teamMemberMap = {
     bioTheme: "text-purple-500",
     nickname: "Silent Architect",
     nickTheme: "border-purple-300 bg-purple-50 text-purple-500",
-    icon: <i className="fa-solid fa-server text-purple-500 text-lg"></i>,
+    icon: <i className="fa-solid fa-server text-purple-500"></i>,
     strongSides: [
       "Stable and Reliable",
       "Loves Deep Work",
