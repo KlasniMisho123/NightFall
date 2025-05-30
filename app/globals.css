@@ -135,6 +135,20 @@ body {
   }
 }
 
+.team-member-card-close {
+  animation: team-member-card-close-animation 0.25s forwards;
+}
+
+@keyframes team-member-card-close-animation {
+  0% {
+    max-height: 50vh;
+  }
+  100% {
+    max-height: 0vh;
+  }
+}
+
+
 .team-member-card > *{
  animation: team-member-card-items 0.25s forwards;
 }

@@ -9,8 +9,8 @@ export default function TeamMemberCard(props) {
     const {selectedTeamMember, selectTeamMember, selectedMemberInfo} = props
     
   return (
-    <div className={`flex flex-col items-start rounded text-black transition-all duration-500 ease-in-out pt-6 overflow-hidden ` + selectTeamMember == ''? "bg-red-500" : "team-member-card"}>
-    <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg w-full max-w-md relative border-2">
+    <div className={`flex flex-col items-start rounded text-black transition-all duration-500 ease-in-out pt-6 overflow-hidden  ` + (selectedTeamMember == ''? " team-member-card-close" : " team-member-card") }>
+    <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg w-full max-w-md relative border-2 ">
         <i
         className="fa-solid fa-xmark text-xl transition-all duration-300 text-red-500 hover:text-red-400 hover:scale-105 cursor-pointer absolute top-4 right-4 "
         onClick={() => selectTeamMember("")}
@@ -23,7 +23,7 @@ export default function TeamMemberCard(props) {
             className="h-full w-full object-cover"
             />
         </div>
-        <p className='text-red-500'>SMASH</p>
+        <p className='text-red-500'>SMASH: {selectedTeamMember}</p>
 
         <div className="text-center mt-4">
         <h2 className={"text-2xl font-bold text-gray-800 flex items-center gap-2 justify-center " +  exo2.className}>

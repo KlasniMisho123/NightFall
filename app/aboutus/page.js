@@ -21,7 +21,6 @@ const [isMemberCardActive, setIsMemberCardActive] = useState(false)
 function selectTeamMember(teamMember) {
   if(teamMember == selectedTeamMember ) {
     setSelectedTeamMember("")
-    setSelectedMemberInfo("")
   } else {
     setSelectedTeamMember(teamMember)
     setSelectedMemberInfo(teamMemberMap[teamMember])
@@ -32,8 +31,8 @@ useEffect(()=>{
  if(selectedTeamMember == '' ) {
   setTimeout(()=>{
     setIsMemberCardActive(false)
-  }, 1000)
-
+    setSelectedMemberInfo("")
+  }, 250)
  } else {
   setIsMemberCardActive(true)
  }
