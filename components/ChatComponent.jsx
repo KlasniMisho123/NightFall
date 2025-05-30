@@ -1,22 +1,40 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MessageBox from './MessageBox'
 
 export default function ChatComponent() {
     const [selectedMessage, setSelectedMessage] = useState([])
+    const [selectedMessageActive, setSelectedMessageActive] = useState([])
 
     function selectMessage(messageIndex) {
       if(selectedMessage.includes(messageIndex)) {
         setSelectedMessage(selectedMessage.filter(index => index !== messageIndex));
+        setTimeout(()=>{
+          selectedMessageActive(selectedMessage.filter(index => index !== messageIndex));
+        }
       } else {
         setSelectedMessage([...selectedMessage,messageIndex])
+        selectedMessageActive([...selectedMessage,messageIndex])
       }
     }
+
+    // useEffect(()=>{
+    // if(selectedMessageActive.includes(messageIndex)) {
+    //     setTimeout(()=>{
+
+    //       setSelectedMessage(selectedMessage.filter(index => index !== messageIndex));
+    //     },1000)
+    //   } else {
+    //     setSelectedMessage([...selectedMessage,messageIndex])
+    //   }
+    // },[selectedMessage])
 
   return (
     <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 gap-4'> 
         {/* ONCLICK SHOW MORE... ANIMATIONS */}
+        {/* Most Asked Question, also asked? that can be activated. several default one on start */}
         <p className='text-red-500'> selectedMessage: {selectedMessage} </p>
+        <p className='text-red-500'> selectedMessageActive: {selectedMessageActive} </p>
         <MessageBox text="Hey! What is Nightfall?" clickIndex={1} selectMessage={selectMessage} />
         {selectedMessage.includes(1)? 
           <MessageBox response={true} text="Hey! We’re a fresh team offering smart web solutions built around your needs." />
