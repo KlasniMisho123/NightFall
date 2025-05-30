@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 import MessageBox from './MessageBox'
 
 export default function ChatComponent() {
-    const [selectedMessage, setSelectedMessage] = useState(null)
+    const [selectedMessage, setSelectedMessage] = useState([])
 
     function selectMessage(messageIndex) {
-      if(messageIndex == selectedMessage ) {
-        setSelectedMessage(null)
+      if(selectedMessage.includes(messageIndex)) {
+        setSelectedMessage(selectedMessage.filter(index => index !== messageIndex));
       } else {
-        setSelectedMessage(messageIndex)
+        setSelectedMessage([...selectedMessage,messageIndex])
       }
     }
 
@@ -18,15 +18,15 @@ export default function ChatComponent() {
         {/* ONCLICK SHOW MORE... ANIMATIONS */}
         <p className='text-red-500'> selectedMessage: {selectedMessage} </p>
         <MessageBox text="Hey! What is Nightfall?" clickIndex={1} selectMessage={selectMessage} />
-        {selectedMessage === 1? 
+        {selectedMessage.includes(1)? 
           <MessageBox response={true} text="Hey! We’re a fresh team offering smart web solutions built around your needs." />
         : null}
         <MessageBox text="Like what kind of solutions?" clickIndex={2} selectMessage={selectMessage} />
-        {selectedMessage === 2? 
+        {selectedMessage.includes(2)? 
           <MessageBox response={true} text="Custom websites, UI/UX design, hosting, deployment - you name it." />
         : null}
         <MessageBox text="Do you stick around after launch?" clickIndex={3} selectMessage={selectMessage} />
-        {selectedMessage === 3? 
+        {selectedMessage.includes(3)? 
           <MessageBox response={true} text="Yes - and we also offer ongoing support packages to keep everything running smoothly." />
         : null}
         
