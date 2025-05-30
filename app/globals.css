@@ -266,7 +266,7 @@ body {
 }
 
 .flip-card {
-  transition: all 1.5s ease;
+  transition: all 1s ease;
   position: relative;
 }
 

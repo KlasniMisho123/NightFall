@@ -20,11 +20,7 @@ export default function Hero() {
     <div className='py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall overflow-hidden'>
       <div className='flex gap-2 justify-between my-6 z-10'>
         <div className='min-w-none md:min-w-[50%] '> 
-          {/* HERO CARD */}
-          {/* HERO BACKGROUND? */}
           {/* HERO ANIMATION Moon / Sun  DayChangeAnimation ? */}
-          {/* Background color  bg-[#A7C6DA]/ bg-gray-800 / bg-gray-900 */}
-          {/* ROCKET -!? FLIES AND LEAVES MOTTO? */}
           <div className='load-hero'>
             <BorderedTitle text="Your partner in digital transformation" color="blue-500" posAngle={true} /> 
             <h1 className={`text-white text-4xl my-4 md:text-6xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
@@ -64,7 +60,6 @@ export default function Hero() {
         {/* Consider other Variatons for This Animation// (moon/sun ..env) */}
         <HeroAnimation />
       </div>
-      {/* OUR ADVANTAGES Demo // */}
         <OurAdvantages />
         {/* RESPONSIVE */}
         <section className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4 lg:gap-6 lg:p-2 lg:py-8 my-12 text-white '> 
