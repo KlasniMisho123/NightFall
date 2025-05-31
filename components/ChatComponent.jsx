@@ -26,19 +26,27 @@ export default function ChatComponent() {
         {/* Most Asked Question, also asked? that can be activated. several default one on start */}
         {/* <p className='text-red-500'> selectedMessage: {selectedMessage} </p>
         <p className='text-red-500'> selectedMessageActive: {selectedMessageActive} </p> */}
-        <MessageBox text="Hey! What is Nightfall?" clickIndex={1} selectMessage={selectMessage} />
+        
+
+        <div className='start-message self-start '>
+          <MessageBox text="Hey! What is Nightfall?" clickIndex={1} selectMessage={selectMessage} />
+        </div>
         {selectedMessageActive.includes(1)? 
           <div className={"self-end " + (selectedMessage.includes(1)? " " : " slide-message ")}>
             <MessageBox response={true} text="Hey! We’re a fresh team offering smart web solutions built around your needs." />
           </div>
         : null}
-        <MessageBox text="Like what kind of solutions?" clickIndex={2} selectMessage={selectMessage} />
+        <div className='start-message self-start '>
+          <MessageBox text="Like what kind of solutions?" clickIndex={2} selectMessage={selectMessage} />
+        </div>
         {selectedMessageActive.includes(2)? 
           <div className={"self-end " + (selectedMessage.includes(2)? " " : " slide-message ")}>
             <MessageBox response={true} text="Custom websites, UI/UX design, hosting, deployment - you name it." />
           </div>
         : null}
-        <MessageBox text="Do you stick around after launch?" clickIndex={3} selectMessage={selectMessage} />
+        <div className='start-message self-start '>
+          <MessageBox text="Do you stick around after launch?" clickIndex={3} selectMessage={selectMessage} />
+        </div>
         {selectedMessageActive.includes(3)? 
           <div className={"self-end " + (selectedMessage.includes(3)? " " : " slide-message ")}>
             <MessageBox response={true} text="Yes - and we also offer ongoing support packages to keep everything running smoothly." />

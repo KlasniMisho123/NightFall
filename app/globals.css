@@ -412,6 +412,21 @@ body {
    animation: response-message-animation 0.75s ease-in-out forwards; 
 }
 
+.start-message {
+   animation: start-message-animation 0.75s ease-in-out forwards; 
+}
+
+@keyframes start-message-animation {
+  0% {
+    transform: translateY(-75px);
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+
+
 @keyframes response-message-animation {
   0% {
     transform: translateX(100px);
