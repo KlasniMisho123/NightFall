@@ -394,6 +394,20 @@ body {
 
 
 /* Nightfall Hero Animation Ends */
+.slide-message{
+  animation: response-message-close-animation 0.75s ease-in-out forwards;
+}
+
+@keyframes response-message-close-animation {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  } 100% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
 .response-message {
    animation: response-message-animation 0.75s ease-in-out forwards; 
 }

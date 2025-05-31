@@ -28,7 +28,9 @@ export default function ChatComponent() {
         <p className='text-red-500'> selectedMessageActive: {selectedMessageActive} </p>
         <MessageBox text="Hey! What is Nightfall?" clickIndex={1} selectMessage={selectMessage} />
         {selectedMessageActive.includes(1)? 
-          <MessageBox response={true} text="Hey! We’re a fresh team offering smart web solutions built around your needs." />
+          <div className={(selectedMessage.includes(1)? " " : " slide-message")}>
+            <MessageBox response={true} text="Hey! We’re a fresh team offering smart web solutions built around your needs." />
+          </div>
         : null}
         <MessageBox text="Like what kind of solutions?" clickIndex={2} selectMessage={selectMessage} />
         {selectedMessageActive.includes(2)? 
