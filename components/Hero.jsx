@@ -113,6 +113,10 @@ export default function Hero() {
           <Link className="flex justify-center items-center text-black gap-8 p-4 rounded group cursor-pointer bg-white
           transition-all transition-duration-300 transition-ease-in-out ring-4 ring-blue-900 hover:scale-105 aboutus-card max-w-[400px] min-h-[370px]"
           href="/aboutus"
+           onClick={()=>{
+              handleSelectedNavSection("aboutus")
+              }
+            }
           >
           <div>
               <i className="fa-solid fa-angle-right text-9xl text-gray-300 transition-all transition-duration-300 group-hover:text-blue-900"></i>
@@ -142,6 +146,7 @@ export default function Hero() {
                   <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
                   transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
                   href={'/support'}
+                  onClick={() => {handleSelectedNavSection('support')}}
                   >
                     Contact Us
                   </Link>
