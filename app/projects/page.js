@@ -12,7 +12,7 @@ export default function Projects() {
     // PURPLE/BLUE-500? (Span, Card)
     // Different Background
     // Create Project Form ??
-    <div className="flex flex-col transition-all transition-duration-300 bg-nightfall">
+    <div className="transition-all transition-duration-300 bg-nightfall">
       <div className='w-full py-2 px-4 md:px-14 lg:px-28 '
       style={{
         backgroundImage: "url('https://img.freepik.com/free-vector/black-hexagonal-grid-line-pattern-bold-industrial-wallpaper_1017-43002.jpg?t=st=1747303225~exp=1747306825~hmac=78b5e1de77d56f51676995a8629005a3ade93e4a992d945ed48d09bfe85aabe2')",
@@ -28,9 +28,9 @@ export default function Projects() {
         </section>
       </div>
       <div className='px-4 md:px-14 lg:px-28 '>
+        <OrderProject/>
         <ProjectLayout />
       </div>
-        <OrderProject />
     </div>
   )
 }
