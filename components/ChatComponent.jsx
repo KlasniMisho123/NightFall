@@ -27,15 +27,15 @@ export default function ChatComponent() {
         <p className='text-red-500'> selectedMessage: {selectedMessage} </p>
         <p className='text-red-500'> selectedMessageActive: {selectedMessageActive} </p>
         <MessageBox text="Hey! What is Nightfall?" clickIndex={1} selectMessage={selectMessage} />
-        {selectedMessage.includes(1)? 
+        {selectedMessageActive.includes(1)? 
           <MessageBox response={true} text="Hey! We’re a fresh team offering smart web solutions built around your needs." />
         : null}
         <MessageBox text="Like what kind of solutions?" clickIndex={2} selectMessage={selectMessage} />
-        {selectedMessage.includes(2)? 
+        {selectedMessageActive.includes(2)? 
           <MessageBox response={true} text="Custom websites, UI/UX design, hosting, deployment - you name it." />
         : null}
         <MessageBox text="Do you stick around after launch?" clickIndex={3} selectMessage={selectMessage} />
-        {selectedMessage.includes(3)? 
+        {selectedMessageActive.includes(3)? 
           <MessageBox response={true} text="Yes - and we also offer ongoing support packages to keep everything running smoothly." />
         : null}
         
