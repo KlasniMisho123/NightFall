@@ -31,18 +31,21 @@ export default function ChatComponent() {
         <MessageBox response={true} text={ 
           <>
             NightfallWeb is a junior digital studio. We offer a range of{' '}
-            <span className=" font-bold text-base bg-purple-500 px-2 pb-1 rounded-full ">services</span> to help individuals and small businesses bring their ideas online.
+            <span className=" font-semibold text-base bg-purple-500 px-2 pb-1 rounded-full ">services</span> to help individuals and small businesses bring their ideas online.
             Focused on gaining real-world experience, we deliver modern, tailored solutions from design to deployment.
           </>
-    }
+        }
         />
         <MessageBox text="What Services?" />
-        <MessageBox response={true} text="
-          Custom websites built with clean, scalable code
-          User-first UI/UX design that makes your product shine
-          Hosting & deployment with seamless handoff or managed delivery
-          Ongoing support — optional, but always available if needed"
-        />
+        <MessageBox response={true} text={
+         <>
+            We offerfew core services:
+            <br />🛠️ <strong>Custom Websites</strong> – Built to fit your brand and goals.
+            <br />🎨 <strong>UI/UX Design</strong> – Clean, user-focused interfaces.
+            <br />🚀 <strong>Deployment & Hosting</strong> – We take your site live, start to finish.
+            <br />🧩 <strong>Ongoing Support</strong> – Optional help after launch.
+          </>}
+          />
         <div className='start-message self-start ' >
           <MessageBox text="Hey! What is Nightfall?" clickIndex={1} selectMessage={selectMessage} />
         </div>
