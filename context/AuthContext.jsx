@@ -11,15 +11,15 @@ export function useAuth() {
 
 export function AuthProvider({ children }) {
   const [authTest, setAuthTest] = useState(false)
+  const [selectedNavSection, setSelectedNavSection] = useState('')
 
   useEffect(()=>{
     setAuthTest(true)
   },[])
 
-
-
 const value = {
-    authTest
+    authTest,
+    setSelectedNavSection
 }
 
 return (
