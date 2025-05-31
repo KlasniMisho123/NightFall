@@ -17,7 +17,7 @@ const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Hero() {
-    const {handleSelectedNavSection} =  useAuth()
+    const {handleSelectedNavSection} =  useAuth();
 
   return (
     <div className='py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall overflow-hidden'>

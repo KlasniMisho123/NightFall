@@ -2,25 +2,20 @@
 import React, { useEffect, useState } from 'react'
 import { Exo_2 } from 'next/font/google';
 import Link from 'next/link';
+import { useAuth } from '@/context/AuthContext';
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 
 export default function Header() {
-  const [isSideNavBarActive, setIsSideNavBarActive] = useState(false)
-  const [selectedNavSection, setSelectedNavSection] = useState('')
   const [shouldRenderNav, setShouldRenderNav] = useState(false)
 
-  
+  const {handleSelectedNavSection, setIsSideNavBarActive, setSelectedNavSection, isSideNavBarActive, selectedNavSection} = useAuth();
 
   function toggleSideNavBar() {
     setIsSideNavBarActive(!isSideNavBarActive)
   }
 
-  function handleSelectedNavSection(section) {
-    setSelectedNavSection(section)
-    setIsSideNavBarActive(false)
-  }
-
+ 
   useEffect(()=>{
     const path = window.location.pathname;
     const filteredPath = path.replace(/\//g, "")

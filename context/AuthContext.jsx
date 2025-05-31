@@ -25,6 +25,10 @@ export function AuthProvider({ children }) {
 
 const value = {
     authTest,
+    isSideNavBarActive,
+    setIsSideNavBarActive,
+    selectedNavSection,
+    setSelectedNavSection,
     handleSelectedNavSection
 }
 
