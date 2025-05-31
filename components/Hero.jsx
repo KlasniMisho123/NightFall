@@ -39,15 +39,20 @@ export default function Hero() {
               <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
               transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
               href={'/support'}
-              onClick={setSelectedNavSection("support")}
-              >
+              onClick={()=>{
+                setSelectedNavSection("support")
+                }
+              }>
+              
                 Contact Us
               </Link>
               <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white border-blue-500 hover:text-blue-500 transition-all duration-300 text-center
               cursor-pointer shadow-sm whitespace-nowrap"
               href={'/aboutus'}
-              onClick={setSelectedNavSection("aboutus")}
-              >
+              onClick={()=>{
+                setSelectedNavSection("aboutus")
+                }
+              }>
                 About Us
               </Link>
             </div>
