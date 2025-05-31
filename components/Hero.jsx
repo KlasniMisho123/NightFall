@@ -17,7 +17,8 @@ const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Hero() {
-    const {setSelectedNavSection} =  useAuth()
+    const {handleSelectedNavSection} =  useAuth()
+
   return (
     <div className='py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall overflow-hidden'>
       <div className='flex gap-2 justify-between my-6 z-10'>
@@ -39,10 +40,8 @@ export default function Hero() {
               <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
               transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
               href={'/support'}
-              onClick={()=>{
-                setSelectedNavSection("support")
-                }
-              }>
+              onClick={() => {handleSelectedNavSection('support')}}
+            >
               
                 Contact Us
               </Link>
@@ -50,7 +49,7 @@ export default function Hero() {
               cursor-pointer shadow-sm whitespace-nowrap"
               href={'/aboutus'}
               onClick={()=>{
-                setSelectedNavSection("aboutus")
+                handleSelectedNavSection("aboutus")
                 }
               }>
                 About Us

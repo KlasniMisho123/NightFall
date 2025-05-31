@@ -11,7 +11,13 @@ export function useAuth() {
 
 export function AuthProvider({ children }) {
   const [authTest, setAuthTest] = useState(false)
+  const [isSideNavBarActive, setIsSideNavBarActive] = useState(false)
   const [selectedNavSection, setSelectedNavSection] = useState('')
+
+  function handleSelectedNavSection(section) {
+    setSelectedNavSection(section)
+    setIsSideNavBarActive(false)
+  }
 
   useEffect(()=>{
     setAuthTest(true)
@@ -19,7 +25,7 @@ export function AuthProvider({ children }) {
 
 const value = {
     authTest,
-    setSelectedNavSection
+    handleSelectedNavSection
 }
 
 return (

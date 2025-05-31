@@ -7,8 +7,8 @@ const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 
 export default function Header() {
   const [isSideNavBarActive, setIsSideNavBarActive] = useState(false)
-  const [shouldRenderNav, setShouldRenderNav] = useState(false)
   const [selectedNavSection, setSelectedNavSection] = useState('')
+  const [shouldRenderNav, setShouldRenderNav] = useState(false)
 
   
 
