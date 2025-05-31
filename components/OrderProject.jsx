@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function OrderProject() {
   return (
-    <div>OrderProject</div>
+    <div className=' self-center my-4 p-4 bg-white rounded-lg '>
+        OrderProject
+    </div>
   )
 }
