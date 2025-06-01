@@ -5,7 +5,7 @@ export default function OrderProject() {
   return (
     <div className="overflow-hidden flex flex-col md:flex-row justify-between gap-10 items-center my-16 p-8 rounded-3xl shadow-lg bg-blue-50/90 backdrop-blur-xl border border-gray-200 max-h-[600px]">
       {/* LEFT: Headline, Subtitle, Visual */}
-      <div className="flex-shrink-0 flex flex-col gap-6 text-center md:text-left max-w-lg">
+      <div className="flex-shrink-0 flex flex-col gap-6 text-center md:text-left max-w-lg load-hero">
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-800">
             Launch Your <span className="text-blue-600">Website</span> with Confidence
@@ -44,29 +44,29 @@ export default function OrderProject() {
       </div>
 
 
-      <div className="flex-shrink-0 flex px-2">
+      <div className="flex-shrink-0 flex px-2 ">
         
         <img
           src="zoe-kravitz-vision.jpg"
           alt="Creative concept"
-          className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-4 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white"
+          className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-4 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white main-hero-load"
         />
 
         <img
           src="EspressoMeter.png"
           alt="Creative concept"
-          className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-3 -left-60 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white"
+          className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-3 -left-60 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white main-hero-load"
         />
 
         <img
           src="UI-UXWallpaper.jpg"
           alt="Creative concept"
-          className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-2 -left-120 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white"
+          className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-2 -left-120 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white main-hero-load"
         />
         <img
           src="UI-UXWallpaper.jpg"
           alt="Creative concept"
-          className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-1 -left-180 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white"
+          className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-1 -left-180 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white main-hero-load"
         />
       </div>
     </div>
