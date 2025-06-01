@@ -47,7 +47,7 @@ export default function ChatComponent() {
           </>}
           />
         <div className='start-message self-start ' >
-          <MessageBox text="Hey! What is Nightfall?" clickIndex={1} selectMessage={selectMessage} />
+          <MessageBox text="Hey! What is Nightfall?" selectedMessage={selectedMessage} clickIndex={1} selectMessage={selectMessage} />
         </div>
         {selectedMessageActive.includes(1)? 
           <div className={"self-end " + (selectedMessage.includes(1)? " " : " slide-message ")}>
@@ -59,15 +59,15 @@ export default function ChatComponent() {
         </div>
         {selectedMessageActive.includes(2)? 
           <div className={"self-end " + (selectedMessage.includes(2)? " " : " slide-message ")}>
-            <MessageBox response={true} text="Custom websites, UI/UX design, hosting, deployment - you name it." />
+            <MessageBox response={true}  text="Custom websites, UI/UX design, hosting, deployment - you name it." />
           </div>
         : null}
         <div className='start-message self-start '>
-          <MessageBox text="Do you stick around after launch?" clickIndex={3} selectMessage={selectMessage} />
+          <MessageBox text="Do you stick around after launch?" selectedMessage={selectedMessage} clickIndex={3} selectMessage={selectMessage} />
         </div>
         {selectedMessageActive.includes(3)? 
           <div className={"self-end " + (selectedMessage.includes(3)? " " : " slide-message ")}>
-            <MessageBox response={true} text="Yes - and we also offer ongoing support packages to keep everything running smoothly." />
+            <MessageBox response={true}  text="Yes - and we also offer ongoing support packages to keep everything running smoothly." />
           </div>
         : null}
         
