@@ -22,4 +22,6 @@ responsive updates
 
 #Avatars  - https://multiavatar.com/
 #Cusom Avatars - https://getavataaars.com/
+
+add interval. onclick(example chat messages)
  

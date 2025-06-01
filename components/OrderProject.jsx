@@ -1,7 +1,11 @@
+'use client'
+import { useAuth } from '@/context/AuthContext'
 import Link from 'next/link'
 import React from 'react'
 
 export default function OrderProject() {
+  const {handleSelectedNavSection} = useAuth();
+
   return (
     <div className="overflow-hidden flex flex-col md:flex-row justify-between gap-10 items-center my-16 p-8 rounded-3xl shadow-lg bg-blue-50/90 backdrop-blur-xl border border-gray-200 max-h-[600px]">
       {/* LEFT: Headline, Subtitle, Visual */}
@@ -37,6 +41,7 @@ export default function OrderProject() {
 
 
         <Link className="self-center flex items-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-400/80 transition font-semibold shadow-md cursor-pointer "
+        onClick={()=>{handleSelectedNavSection("support")}}
         href={"/support"}>
           <i className="fa-solid fa-rocket text-white"></i>
           Get Started Now
