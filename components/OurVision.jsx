@@ -19,6 +19,6 @@ export default function OurVision() {
                 </p>
             </div>
         </div>
-        </div>
+      </div>
   )
 }
