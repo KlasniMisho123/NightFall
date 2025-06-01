@@ -27,7 +27,7 @@ export default function OrderProject() {
                     <div className="inline-block bg-white text-blue-500 px-4 py-1 rounded-full text-xs shadow-md uppercase tracking-wider font-semibold mb-4">
                     <i className="fa-solid fa-hammer text-blue-500 mr-1 "></i>Create
                     </div>
-                    <h4 className="text-2xl font-semibold mb-2">From  <span className='text-blue-500 font-semibold'> Idea to Reality </span> <i className="fa-solid fa-vr-cardboard"></i></h4>
+                    <h4 className="text-2xl font-semibold mb-2 ">From <span className='text-blue-500 font-semibold'> Idea </span> to  Reality <i className="fa-solid fa-award text-blue-500 "></i></h4>
                     <p className="text-sm leading-relaxed">
                     Whether you have a rough sketch or a clear vision, we bring your project to life with strategy, design, and code.
                     </p>
