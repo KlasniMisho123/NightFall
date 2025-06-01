@@ -24,29 +24,29 @@ export default function OrderProject() {
       </div>
 
       {/* RIGHT: Premium Card Offer */}
-      <div className="flex-1 flex flex-col items-center gap-6">
-        <div
-          className="relative p-8 rounded-2xl shadow-2xl border border-blue-100 bg-gradient-to-br from-white via-white/80 to-blue-50 max-w-md w-full text-center backdrop-blur-md hover:shadow-blue-200 transition-all duration-300"
-        >
-          <div className="absolute inset-0 bg-white/50 rounded-2xl z-0 backdrop-blur-sm"></div>
+      <div className="flex flex-col gap-4">
+        <div className="self-center ">
+            <div 
+            className="mt-10 relative p-6 rounded-xl shadow-xl max-w-xl mx-auto border border-white/30 text-gray-800 bg-cover bg-center bg-no-repeat backdrop-blur-md
+            hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer "
+            style={{ backgroundImage: `url('zoe-kravitz-vision.jpg')` }}
+            >
+                <div className="absolute inset-0 bg-white/70 rounded-xl z-0"></div>
 
-          <div className="relative z-10">
-            <div className="inline-block bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-4 shadow-sm">
-              Web Design Package
+                <div className="relative z-10 text-center">
+                    <div className="inline-block bg-white text-blue-500 px-4 py-1 rounded-full text-xs shadow-md uppercase tracking-wider font-semibold mb-4">
+                    <i className="fa-solid fa-plus text-blue-500 mr-1 "></i>Create
+                    </div>
+                    <h4 className="text-2xl font-semibold mb-2 text-blue-500">Our Vision <i className="fa-solid fa-eye"></i></h4>
+                    <p className="text-sm leading-relaxed">
+                    To grow through meaningful work — designing smart, user-focused experiences that make a real impact.
+                    </p>
+                </div>
             </div>
-            <h4 className="text-2xl font-bold mb-2 text-blue-600">
-              Everything You Need to Get Online
-            </h4>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              ✔️ Custom Design<br />
-              ✔️ Mobile-First Approach<br />
-              ✔️ SEO-Ready<br />
-              ✔️ Launch Support
-            </p>
           </div>
-        </div>
 
-        <button className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold shadow-md">
+
+        <button className="self-center flex items-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-400/80 transition font-semibold shadow-md cursor-pointer ">
           <i className="fa-solid fa-rocket text-white"></i>
           Get Started Now
         </button>
