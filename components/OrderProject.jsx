@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function OrderProject() {
   return (
-    <div className="flex flex-col md:flex-row justify-between gap-10 items-center my-16 p-8 rounded-3xl shadow-lg bg-white/70 backdrop-blur-xl border border-gray-200">
+    <div className="flex flex-col md:flex-row justify-between gap-10 items-center my-16 p-8 rounded-3xl shadow-lg bg-blue-50/90 backdrop-blur-xl border border-gray-200">
       {/* LEFT: Headline, Subtitle, Visual */}
-      <div className="flex-1 flex flex-col gap-6 text-center md:text-left max-w-lg">
+      <div className="flex-shrink-0 flex flex-col gap-6 text-center md:text-left max-w-lg">
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-800">
             Launch Your <span className="text-blue-600">Website</span> with Confidence
@@ -42,17 +42,14 @@ export default function OrderProject() {
       </div>
 
 
-      {/* RIGHT: Premium Card Offer */}
-      <div className="flex flex-col gap-4">
+      <div className="flex-shrink-0 flex ">
         
         <img
           src="zoe-kravitz-vision.jpg"
           alt="Creative concept"
-          className="w-48 md:w-64 rounded-xl shadow-md mx-auto md:mx-0"
+          className="w-64 md:w-72 rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 hover:rotate-0 cursor-pointer"
         />
       </div>
     </div>
-
-
   )
 }
