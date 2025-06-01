@@ -17,7 +17,7 @@ export default function MessageBox(props) {
      ${selectedMessage?.includes(clickIndex)? "bg-blue-400/80 " : " "}
      `}
     onClick={clickIndex !== null ? handleClick : undefined}>
-        <p className='text-sm max-w-[500px] mx-2'> {text} {selectedMessage} </p>
+        <p className='text-sm max-w-[500px] mx-2'> {text} </p>
     </div>
   )
 }
