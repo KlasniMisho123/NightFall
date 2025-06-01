@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function OrderProject() {
@@ -24,21 +25,22 @@ export default function OrderProject() {
 
                 <div className="relative z-10 text-center">
                     <div className="inline-block bg-white text-blue-500 px-4 py-1 rounded-full text-xs shadow-md uppercase tracking-wider font-semibold mb-4">
-                    <i className="fa-solid fa-plus text-blue-500 mr-1 "></i>Create
+                    <i className="fa-solid fa-hammer text-blue-500 mr-1 "></i>Create
                     </div>
-                    <h4 className="text-2xl font-semibold mb-2 text-blue-500">Our Vision <i className="fa-solid fa-eye"></i></h4>
+                    <h4 className="text-2xl font-semibold mb-2">From  <span className='text-blue-500 font-semibold'> Idea to Reality </span> <i className="fa-solid fa-vr-cardboard"></i></h4>
                     <p className="text-sm leading-relaxed">
-                    To grow through meaningful work — designing smart, user-focused experiences that make a real impact.
+                    Whether you have a rough sketch or a clear vision, we bring your project to life with strategy, design, and code.
                     </p>
                 </div>
             </div>
           </div>
 
 
-        <button className="self-center flex items-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-400/80 transition font-semibold shadow-md cursor-pointer ">
+        <Link className="self-center flex items-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-400/80 transition font-semibold shadow-md cursor-pointer "
+        href={"/support"}>
           <i className="fa-solid fa-rocket text-white"></i>
           Get Started Now
-        </button>
+        </Link>
       </div>
 
 
