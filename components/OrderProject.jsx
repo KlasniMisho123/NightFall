@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function OrderProject() {
   return (
-    <div className="flex flex-col md:flex-row justify-between gap-10 items-center my-16 p-8 rounded-3xl shadow-lg bg-blue-50/90 backdrop-blur-xl border border-gray-200">
+    <div className="flex flex-col md:flex-row justify-between gap-10 items-center my-16 p-8 rounded-3xl shadow-lg bg-blue-50/90 backdrop-blur-xl border border-gray-200 max-h-[600px]">
       {/* LEFT: Headline, Subtitle, Visual */}
       <div className="flex-shrink-0 flex flex-col gap-6 text-center md:text-left max-w-lg">
         <div>
@@ -42,12 +42,18 @@ export default function OrderProject() {
       </div>
 
 
-      <div className="flex-shrink-0 flex ">
+      <div className="flex-shrink-0 flex px-2">
         
         <img
           src="zoe-kravitz-vision.jpg"
           alt="Creative concept"
-          className="w-64 md:w-72 rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 hover:rotate-0 cursor-pointer"
+          className="max-h-[450px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 hover:rotate-0 cursor-pointer"
+        />
+
+        <img
+          src="zoe-kravitz-vision.jpg"
+          alt="Creative concept"
+          className="max-h-[450px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 hover:rotate-0 cursor-pointer"
         />
       </div>
     </div>
