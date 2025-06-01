@@ -2,8 +2,6 @@ import React from 'react'
 
 export default function OrderProject() {
   return (
-
-
     <div className="flex flex-col md:flex-row justify-between gap-10 items-center my-16 p-8 rounded-3xl shadow-lg bg-white/70 backdrop-blur-xl border border-gray-200">
       {/* LEFT: Headline, Subtitle, Visual */}
       <div className="flex-1 flex flex-col gap-6 text-center md:text-left max-w-lg">
@@ -16,18 +14,9 @@ export default function OrderProject() {
           </p>
         </div>
 
-        <img
-          src="zoe-kravitz-vision.jpg"
-          alt="Creative concept"
-          className="w-48 md:w-64 rounded-xl shadow-md mx-auto md:mx-0"
-        />
-      </div>
-
-      {/* RIGHT: Premium Card Offer */}
-      <div className="flex flex-col gap-4">
         <div className="self-center ">
             <div 
-            className="mt-10 relative p-6 rounded-xl shadow-xl max-w-xl mx-auto border border-white/30 text-gray-800 bg-cover bg-center bg-no-repeat backdrop-blur-md
+            className="mt-4 relative p-6 rounded-xl shadow-xl max-w-xl mx-auto border border-white/30 text-gray-800 bg-cover bg-center bg-no-repeat backdrop-blur-md
             hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer "
             style={{ backgroundImage: `url('zoe-kravitz-vision.jpg')` }}
             >
@@ -50,6 +39,17 @@ export default function OrderProject() {
           <i className="fa-solid fa-rocket text-white"></i>
           Get Started Now
         </button>
+      </div>
+
+
+      {/* RIGHT: Premium Card Offer */}
+      <div className="flex flex-col gap-4">
+        
+        <img
+          src="zoe-kravitz-vision.jpg"
+          alt="Creative concept"
+          className="w-48 md:w-64 rounded-xl shadow-md mx-auto md:mx-0"
+        />
       </div>
     </div>
 
