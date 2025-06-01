@@ -17,7 +17,7 @@ export default function Projects() {
       style={{
         backgroundImage: "url('https://img.freepik.com/free-vector/black-hexagonal-grid-line-pattern-bold-industrial-wallpaper_1017-43002.jpg?t=st=1747303225~exp=1747306825~hmac=78b5e1de77d56f51676995a8629005a3ade93e4a992d945ed48d09bfe85aabe2')",
       }}>        
-        <section className='my-10 mx-[20%]'>
+        <section className='my-10 mx-[20%] hero-stats-load '>
           <BorderedTitle text="Our Projects" color="blue-500" angle={5}/>
           {/* Light Background */}
           <div className='text-white my-6'>

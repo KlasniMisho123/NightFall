@@ -50,27 +50,27 @@ export default function OrderProject() {
           src="zoe-kravitz-vision.jpg"
           alt="Creative concept"
           className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-4 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white main-hero-load order-img-load "
-          style={{ animationDelay: '0.2s' }}
+          style={{ animationDelay: '0.15s' }}
         />
 
         <img
           src="EspressoMeter.png"
           alt="Creative concept"
           className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-3 -left-60 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white main-hero-load"
-          style={{ animationDelay: '0.4s' }}
+          style={{ animationDelay: '0.3s' }}
         />
 
         <img
           src="UI-UXWallpaper.jpg"
           alt="Creative concept"
           className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-2 -left-120 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white main-hero-load"
-          style={{ animationDelay: '0.6s' }}
+          style={{ animationDelay: '0.45s' }}
         />
         <img
           src="UI-UXWallpaper.jpg"
           alt="Creative concept"
           className="max-h-[450px] w-[350px] rounded-2xl shadow-xl object-cover -rotate-5 relative z-1 transition-all duration-300 cursor-pointer absolute z-1 -left-180 hover:rotate-0 hover:translate-x-6 hover:z-100 border-2 border-white main-hero-load"
-          style={{ animationDelay: '0.8s' }}
+          style={{ animationDelay: '0.6s' }}
         />
       </div>
     </div>
