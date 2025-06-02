@@ -55,7 +55,7 @@ export default function ChatComponent() {
           </div>
         : null}
         <div className='start-message self-start '>
-          <MessageBox text="Like what kind of solutions?" clickIndex={2} selectMessage={selectMessage} />
+          <MessageBox text="Like what kind of solutions?" selectedMessage={selectedMessage} clickIndex={2} selectMessage={selectMessage} />
         </div>
         {selectedMessageActive.includes(2)? 
           <div className={"self-end " + (selectedMessage.includes(2)? " " : " slide-message ")}>

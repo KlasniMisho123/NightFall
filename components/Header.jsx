@@ -15,12 +15,12 @@ export default function Header() {
     setIsSideNavBarActive(!isSideNavBarActive)
   }
 
- 
   useEffect(()=>{
     const path = window.location.pathname;
     const filteredPath = path.replace(/\//g, "")
     filteredPath? setSelectedNavSection(filteredPath) : setSelectedNavSection("home")
   },[])
+  
   // if sidebar is not rendered, it will dismount from dom, but also allows to get open/close animation
   useEffect(()=> {
     if (isSideNavBarActive) {
