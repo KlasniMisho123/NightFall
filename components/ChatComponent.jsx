@@ -55,30 +55,32 @@ export default function ChatComponent() {
             <br />🧩 <strong>Ongoing Support</strong> – Optional help after launch. 
           </>}
           />
-          <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Also Asked</p>
 
         <div className='start-message self-start ' >
-          <MessageBox text="Hey! What is Nightfall?" selectedMessage={selectedMessage} clickIndex={1} selectMessage={selectMessage} />
+          <MessageBox text="Who is Nightfall for?" selectedMessage={selectedMessage} clickIndex={1} selectMessage={selectMessage} />
         </div>
         {selectedMessageActive.includes(1)? 
           <div className={"self-end " + (selectedMessage.includes(1)? " " : " slide-message ")}>
-            <MessageBox response={true} text="Hey! We’re a fresh team offering smart web solutions built around your needs." />
+            <MessageBox response={true} text="We work best with individuals, early-stage startups, and small teams who value clarity, 
+            collaboration, and thoughtful design — especially those just starting out." />
           </div>
         : null}
         <div className='start-message self-start '>
-          <MessageBox text="Like what kind of solutions?" selectedMessage={selectedMessage} clickIndex={2} selectMessage={selectMessage} />
+          <MessageBox text="Are your services beginner-friendly?" selectedMessage={selectedMessage} clickIndex={2} selectMessage={selectMessage} />
         </div>
         {selectedMessageActive.includes(2)? 
           <div className={"self-end " + (selectedMessage.includes(2)? " " : " slide-message ")}>
-            <MessageBox response={true}  text="Custom websites, UI/UX design, hosting, deployment - you name it." />
+            <MessageBox response={true}  text="Yes! We keep things clear and collaborative. Whether you're launching your first site or refining an idea,
+             we walk you through each step — no jargon, no pressure." />
           </div>
         : null}
         <div className='start-message self-start '>
-          <MessageBox text="Do you stick around after launch?" selectedMessage={selectedMessage} clickIndex={3} selectMessage={selectMessage} />
+          <MessageBox text="Why choose a junior studio like Nightfall?" selectedMessage={selectedMessage} clickIndex={3} selectMessage={selectMessage} />
         </div>
         {selectedMessageActive.includes(3)? 
           <div className={"self-end " + (selectedMessage.includes(3)? " " : " slide-message ")}>
-            <MessageBox response={true}  text="Yes - and we also offer ongoing support packages to keep everything running smoothly." />
+            <MessageBox response={true}  text="We’re hungry to build, learn, and prove ourselves — which means more care, more attention, and often a more flexible price.
+             Every project matters deeply to us." />
           </div>
         : null}
         
