@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { teamMemberMap } from '@/utils';
 import OurVision from '@/components/OurVision';
 import ChatComponent from '@/components/ChatComponent';
-import BorderedTitle from '@/components/BorderedTitle';
+import Image from 'next/image';
 
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["300", "700"]});
@@ -42,9 +42,15 @@ useEffect(()=>{
     <section className=' min-h-[100vh] bg-nightfall bg-white text-white'>
       {/* Different Bg? Style? about us? */}
       <div className='relative py-8 bg-transparent px-[20%]'>
-        <img src="aboutus-bg.jpg"
+        <Image src="/aboutus-bg.jpg"
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"/>
+        width={800} 
+        height={600} 
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        {/* <img src="aboutus-bg.jpg"
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover z-0"/> */}
       {/* <BorderedTitle text="About Us" color="blue-500" posAngle={false} /> */}
         <div className='relative inset-0 z-10  flex flex-col mx-16 min-h-[250px] text-white items-center justify-center gap-4'>
           <h2 className={'text-5xl font-light ' + exo2.className} > About Us </h2>
