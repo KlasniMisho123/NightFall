@@ -1,6 +1,7 @@
 import BorderedTitle from '@/components/BorderedTitle';
 import OrderProject from '@/components/OrderProject';
 import ProjectLayout from '@/components/ProjectLayout';
+import StatCard from '@/components/StatCard';
 import { Inter, Urbanist } from 'next/font/google';
 import React from 'react'
 
@@ -23,6 +24,13 @@ export default function Projects() {
         </section>
       </div>
       <div className='px-4 md:px-14 lg:px-28 '>
+        <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-24 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 hero-stats-load '} >
+            {/* RESPONSIVE */}
+            <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue`}/>
+            <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Lifed`} cardColor={`purple`}/>
+            <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red`}/>
+            <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green`}/>
+        </section> 
         <OrderProject/>
         <ProjectLayout />
       </div>

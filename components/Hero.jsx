@@ -56,14 +56,13 @@ export default function Hero() {
               </Link>
             </div>
           </div>
-
-          <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-24 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 hero-stats-load '} >
-              {/* RESPONSIVE */}
+          {/* RESPONSIVE */}
+          {/* <section className={'flex overflow-x-auto whitespace-nowrap bg-white mt-24 mb-4 flex justify-between py-4 px-2 rounded-lg  md:px-4 lg:px-8 hero-stats-load '} >
               <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue`}/>
               <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Lifed`} cardColor={`purple`}/>
               <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red`}/>
               <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green`}/>
-          </section>  
+          </section>   */}
         </div>
         {/* Consider other Variatons for This Animation// (moon/sun ..env) */}
         <HeroAnimation />
