@@ -83,7 +83,7 @@ export default function Hero() {
               desc={`Stand out with a custom-built website tailored to your brand's identity and goals.
               From design to deployment, we craft unique digital experiences that leave a lasting impression.`}
               title={`Custom Websites`}
-              imgSrc={`websitesWallpaper.jpg`}
+              imgSrc={`/websitesWallpaper.jpg`}
               cardParagraph={`Bespoke designs built for your brand.`}
           />
 
@@ -91,7 +91,7 @@ export default function Hero() {
               desc={`Deliver seamless, user-first experiences with thoughtfully crafted interfaces. 
                   We design intuitive, visually stunning layouts that keep users engaged and coming back.`}
               title={`UI/UX Design`}
-              imgSrc={`UI-UXWallpaper.jpg`}
+              imgSrc={`/UI-UXWallpaper.jpg`}
               cardParagraph={`Beautiful, intuitive interfaces users love.`}
           />
 
@@ -99,14 +99,14 @@ export default function Hero() {
               desc={`Effortless hosting and reliable deployment solutions to keep your websites fast, secure, and always online. 
                 Say goodbye to downtime and technical headaches — we handle it all so you can focus on what matters most`}
               title={`Hosting & Deployment`}
-              imgSrc={`Deployment.jpg`}
+              imgSrc={`/Deployment.jpg`}
               cardParagraph={`Lightning-fast hosting, zero stress.`}
           />
           <ServiceCard
               desc={`Keep your site running smoothly with proactive updates, security monitoring, and performance optimization.
                  Our ongoing support ensures your website stays fresh, functional, and problem-free.`}
               title={`Ongoing Support`}
-              imgSrc={`Maintenance.jpg`}
+              imgSrc={`/Maintenance.jpg`}
               cardParagraph={`Ongoing Website Maintenance & Support`}
           />
 

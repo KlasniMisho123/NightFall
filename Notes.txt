@@ -27,5 +27,9 @@ add interval. onclick(example chat messages)
  
 
  !! ERRORS ---> 
-
+ img to -> Images? lazy loading for better webSpeed
  transition-duration-300 -> duration-300
+
+
+ !!! BAGON  --> 
+ Network -> loading images, change page, still loaded? change back adds on already requested assets,Network??

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { teamMemberMap } from '@/utils';
 import OurVision from '@/components/OurVision';
 import ChatComponent from '@/components/ChatComponent';
-import BorderedTitle from '@/components/BorderedTitle';
+import Image from 'next/image';
 
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["300", "700"]});
@@ -42,10 +42,12 @@ useEffect(()=>{
     <section className=' min-h-[100vh] bg-nightfall bg-white text-white'>
       {/* Different Bg? Style? about us? */}
       <div className='relative py-8 bg-transparent px-[20%]'>
-        <img src="aboutus-bg.jpg"
+        <Image src="/aboutus-bg.jpg"
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"/>
-      {/* <BorderedTitle text="About Us" color="blue-500" posAngle={false} /> */}
+        width={800} 
+        height={600} 
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        />
         <div className='relative inset-0 z-10  flex flex-col mx-16 min-h-[250px] text-white items-center justify-center gap-4'>
           <h2 className={'text-5xl font-light ' + exo2.className} > About Us </h2>
           <p className='text-gray-400 text-center max-w-[500px] ' > 🌒 We’re more than a design agency — we’re your digital partner. From UX strategy to clean code, Nightfall helps brands transform ideas into powerful online experiences. </p>
@@ -65,7 +67,13 @@ useEffect(()=>{
               </p>
           </div>
           <div>
-            <img src='https://i.pinimg.com/736x/ed/c6/2f/edc62fccbbbdee334e00dda45966d963.jpg' alt='Our Story photo' className='object-cover min-w-[400px] max-h-[400px] ' />
+            <Image
+             src='/our-story-pic.jpg'
+             alt='Our Story photo'
+             className='object-cover min-w-[350px] max-h-[450px] '
+             width={800} 
+             height={600} 
+             />
           </div>
         </div>
         {/* <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
@@ -101,7 +109,13 @@ useEffect(()=>{
                   </li>
                 </ul>
             </div>
-            <img src="https://i.pinimg.com/736x/b3/b3/eb/b3b3eb81e2cca6f50c42a63cdea1afeb.jpg" className="w-[40%] object-cover" alt="team-photo" />
+            <Image
+             src="/our-goals-pic.jpg" 
+             className="w-[40%] object-cover"
+             width={800} 
+             height={600} 
+             alt="team-photo" 
+             />
           </div>
         </div>
 
@@ -112,37 +126,53 @@ useEffect(()=>{
           <div className='flex flex-col gap-6 mt-4'>
             <p className={'flex gap-2 text-base md:text-lg truncate' + urbanist.className}> <i className="fa-solid fa-seedling text-green-500 text-xl "></i> We design with intention, develop with care, and grow alongside the people we support. </p>
             <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base ">
-              We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
+              We&apos;re a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We&apos;re not just here to deliver — we&apos;re here to grow with you.
             </p>
             <p className='text-sm text-gray-300 mt-4'>Select team member for more info </p>
             {/* Onclick Animation -> display */}
             <div className='flex '>
                <div title='🚀 Misho — Full-Stack Developer'
                 className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-1 relative cursor-pointer
-                hover:z-100 hover:scale-105 transition-all duration-300 ` + (selectedTeamMember == "misho" ? " border-blue-500" : "border-white")} 
+                hover:z-100 hover:scale-105 transition-all duration-200 ` + (selectedTeamMember == "misho" ? " border-blue-500" : "border-white")} 
                 onClick={() => {
                   selectTeamMember("Misho")
                 }}
                 >
-                <img src='avatars/Multiavatar-smalik.png'  alt='misho_avatar'/>
+                <Image
+                 src='/avatars/Multiavatar-smalik.png'
+                 width={800} 
+                 height={600} 
+                 alt='misho_avatar'
+                />
+
                </div>
                <div title='⚡ Alika — Back-End Developer'
                 className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-2 relative ml-[-15px] cursor-pointer
-                hover:z-100 hover:scale-105 duration-300 ` + (selectedTeamMember == "alika" ? " border-blue-500" : "border-white")}
+                hover:z-100 hover:scale-105 duration-200 ` + (selectedTeamMember == "alika" ? " border-blue-500" : "border-white")}
                 onClick={() => {
                   selectTeamMember("Alika")
                 }}
                 >
-                <img src='avatars/Multiavatar-Alik.png'  alt='alik_avatar'/>
+                <Image
+                 src='/avatars/Multiavatar-Alik.png'
+                 width={800} 
+                 height={600} 
+                 alt='alik_avatar'
+                />
                </div>
                <div title='DummyTeamMember '
                 className={`flex justify-center items-center h-35 w-35  rounded-full border-4 z-3 relative ml-[-15px] cursor-pointer
-                hover:z-100 hover:scale-105 duration-300 ` + (selectedTeamMember == "dummy" ? " border-blue-500" : "border-white")}
+                hover:z-100 hover:scale-105 duration-200 ` + (selectedTeamMember == "dummy" ? " border-blue-500" : "border-white")}
                 onClick={() => {
                   selectTeamMember("Dummy")
                 }}
                 >
-                <img src='avatars/Multiavatar-an.png'  alt='Dummy_avatar'/>
+                <Image
+                 src='/avatars/Multiavatar-an.png'
+                 width={800} 
+                 height={600} 
+                 alt='Dummy_avatar'
+                 />
                </div>
                <div className="flex justify-center items-center h-35 w-35 bg-white rounded-full border-4 border-gray-700 relative z-30 ml-[-15px] select-none">
                 <span className="dot-bounce dot1 text-5xl text-black">.</span>
