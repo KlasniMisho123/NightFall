@@ -12,13 +12,19 @@ export default function MessageBox(props) {
 
   return (
     <div 
-    className={`bg-blue-400/80  p-5 text-white rounded-full shadow-md transition-all duration-300
-     ${response ? ' self-end response-message border-2 border-purple-500 ' : ' self-start '}
-     ${clickIndex !== null ? ' cursor-pointer hover:bg-blue-400 shadow-none bg-transparent border-blue-500 border-2 ' : ''}
-     ${selectedMessage?.includes(clickIndex)? " !bg-blue-400/30  " : " "}
-     `}
-    onClick={clickIndex !== null ? handleClick : undefined}>
-        <p className='text-sm max-w-[500px] mx-2'> {text}</p>
+      className={`
+        p-5 text-white rounded-full transition-all duration-300 ease-in-out
+        ${response ? 'self-end response-message' : 'self-start'}
+        ${clickIndex !== null 
+          ? 'cursor-pointer border-2 border-blue-500 bg-transparent hover:bg-blue-400/40 shadow-none' 
+          : 'bg-blue-400/80 shadow-md'}
+        ${selectedMessage?.includes(clickIndex) 
+          ? '!bg-blue-400/30 ring-2 ring-blue-300' 
+          : ''}
+      `}
+      onClick={clickIndex !== null ? handleClick : undefined}
+    >
+      <p className="text-sm max-w-[500px] mx-2">{text}</p>
     </div>
   )
 }

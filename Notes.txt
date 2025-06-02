@@ -25,3 +25,7 @@ responsive updates
 
 add interval. onclick(example chat messages)
  
+
+ !! ERRORS ---> 
+
+ transition-duration-300 -> duration-300
