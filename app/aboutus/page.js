@@ -109,7 +109,13 @@ useEffect(()=>{
                   </li>
                 </ul>
             </div>
-            <img src="https://i.pinimg.com/736x/b3/b3/eb/b3b3eb81e2cca6f50c42a63cdea1afeb.jpg" className="w-[40%] object-cover" alt="team-photo" />
+            <Image
+             src="/our-goals-pic.jpg" 
+             className="w-[40%] object-cover"
+             width={800} 
+             height={600} 
+             alt="team-photo" 
+             />
           </div>
         </div>
 
@@ -127,30 +133,46 @@ useEffect(()=>{
             <div className='flex '>
                <div title='🚀 Misho — Full-Stack Developer'
                 className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-1 relative cursor-pointer
-                hover:z-100 hover:scale-105 transition-all transition-duration-300 ` + (selectedTeamMember == "misho" ? " border-blue-500" : "border-white")} 
+                hover:z-100 hover:scale-105 transition-all duration-200 ` + (selectedTeamMember == "misho" ? " border-blue-500" : "border-white")} 
                 onClick={() => {
                   selectTeamMember("Misho")
                 }}
                 >
-                <img src='avatars/Multiavatar-smalik.png'  alt='misho_avatar'/>
+                <Image
+                 src='/avatars/Multiavatar-smalik.png'
+                 width={800} 
+                 height={600} 
+                 alt='misho_avatar'
+                />
+
                </div>
                <div title='⚡ Alika — Back-End Developer'
                 className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-2 relative ml-[-15px] cursor-pointer
-                hover:z-100 hover:scale-105 transition-duration-300 ` + (selectedTeamMember == "alika" ? " border-blue-500" : "border-white")}
+                hover:z-100 hover:scale-105 duration-200 ` + (selectedTeamMember == "alika" ? " border-blue-500" : "border-white")}
                 onClick={() => {
                   selectTeamMember("Alika")
                 }}
                 >
-                <img src='avatars/Multiavatar-Alik.png'  alt='alik_avatar'/>
+                <Image
+                 src='/avatars/Multiavatar-Alik.png'
+                 width={800} 
+                 height={600} 
+                 alt='alik_avatar'
+                />
                </div>
                <div title='DummyTeamMember '
                 className={`flex justify-center items-center h-35 w-35  rounded-full border-4 z-3 relative ml-[-15px] cursor-pointer
-                hover:z-100 hover:scale-105 transition-duration-300 ` + (selectedTeamMember == "dummy" ? " border-blue-500" : "border-white")}
+                hover:z-100 hover:scale-105 duration-200 ` + (selectedTeamMember == "dummy" ? " border-blue-500" : "border-white")}
                 onClick={() => {
                   selectTeamMember("Dummy")
                 }}
                 >
-                <img src='avatars/Multiavatar-an.png'  alt='Dummy_avatar'/>
+                <Image
+                 src='/avatars/Multiavatar-an.png'
+                 width={800} 
+                 height={600} 
+                 alt='Dummy_avatar'
+                 />
                </div>
                <div className="flex justify-center items-center h-35 w-35 bg-white rounded-full border-4 border-gray-700 relative z-30 ml-[-15px] select-none">
                 <span className="dot-bounce dot1 text-5xl text-black">.</span>
