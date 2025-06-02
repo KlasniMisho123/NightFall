@@ -1,7 +1,6 @@
 import BorderedTitle from '@/components/BorderedTitle';
 import OrderProject from '@/components/OrderProject';
 import ProjectLayout from '@/components/ProjectLayout';
-import StatCard from '@/components/StatCard';
 import { Inter, Urbanist } from 'next/font/google';
 import React from 'react'
 

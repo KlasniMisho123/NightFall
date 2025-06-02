@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { Inter, Poppins, Space_Mono, Urbanist } from 'next/font/google';
-import StatCard from './statCard';
+import StatCard from '@/components/StatCard';
 import Link from 'next/link';
 import ServiceCard from './ServiceCard';
 import WorkStages from './WorkStages';
@@ -57,13 +57,14 @@ export default function Hero() {
             </div>
           </div>
           {/* RESPONSIVE */}
-          <section className='flex flex-col gap-4 bg-white mt-24 mb-4 rounded-lg o whitespace-nowrap py-4 px-2 md:px-4 lg:px-8 hero-stats-load '>
-          <div className="self-center text-2xl font-semibold text-indigo-600 tracking-wide">
+          <section className='flex flex-col gap-4 bg-white mt-24 mb-4 rounded-lg overflow-x-auto whitespace-nowrap py-6 px-2 md:px-4 lg:px-8 hero-stats-load '>
+          <div className={"self-center text-2xl font-bold text-blue-500 tracking-wide " + urbanist.className }>
             NightFall In Numbers
+            {/* Style/ dismount */}
           </div>
-          <div className={'flex justify-evenly '} >
+          <div className={'flex justify-between '} >
               <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue`}/>
-              <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Lifed`} cardColor={`purple`}/>
+              <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Life`} cardColor={`purple`}/>
               <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red`}/>
               <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green`}/>
           </div> 
