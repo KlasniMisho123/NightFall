@@ -324,7 +324,6 @@ body {
   }
 }
 
-
 @keyframes bg-nightfall-animation {
   100% {
     background-color: #091826; 
@@ -436,6 +435,27 @@ body {
     transform: translateX(0px)
   }
 }
+
+.night-fall-stats {
+  animation:  shift-in-front-animation 2s forwards ; 
+}
+
+
+@keyframes shift-in-front-animation {
+    0% {
+        opacity: 0; 
+        transform: translateY(-100px) rotateX(90deg); 
+    } 
+    10% {
+      opacity: 0; 
+      transform: translateY(-100px) rotateX(90deg); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg); 
+    }
+}
+
 
 @keyframes compassSearch {
   50% {
