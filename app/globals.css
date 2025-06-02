@@ -439,7 +439,7 @@ body {
 .night-fall-stats {
   opacity: 0; 
   transform: translateY(-100px) rotateX(90deg);
-  animation:  shift-in-front-animation 2s forwards ; 
+  animation:  shift-in-front-animation 2s ease-in-out forwards ; 
 }
 
 
