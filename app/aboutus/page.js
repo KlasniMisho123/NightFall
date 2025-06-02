@@ -48,10 +48,6 @@ useEffect(()=>{
         height={600} 
         className="absolute inset-0 w-full h-full object-cover z-0"
         />
-        {/* <img src="aboutus-bg.jpg"
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"/> */}
-      {/* <BorderedTitle text="About Us" color="blue-500" posAngle={false} /> */}
         <div className='relative inset-0 z-10  flex flex-col mx-16 min-h-[250px] text-white items-center justify-center gap-4'>
           <h2 className={'text-5xl font-light ' + exo2.className} > About Us </h2>
           <p className='text-gray-400 text-center max-w-[500px] ' > 🌒 We’re more than a design agency — we’re your digital partner. From UX strategy to clean code, Nightfall helps brands transform ideas into powerful online experiences. </p>
@@ -71,7 +67,13 @@ useEffect(()=>{
               </p>
           </div>
           <div>
-            <img src='https://i.pinimg.com/736x/ed/c6/2f/edc62fccbbbdee334e00dda45966d963.jpg' alt='Our Story photo' className='object-cover min-w-[400px] max-h-[400px] ' />
+            <Image
+             src='/our-story-pic.jpg'
+             alt='Our Story photo'
+             className='object-cover min-w-[350px] max-h-[450px] '
+             width={800} 
+             height={600} 
+             />
           </div>
         </div>
         {/* <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
