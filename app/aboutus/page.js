@@ -126,7 +126,7 @@ useEffect(()=>{
           <div className='flex flex-col gap-6 mt-4'>
             <p className={'flex gap-2 text-base md:text-lg truncate' + urbanist.className}> <i className="fa-solid fa-seedling text-green-500 text-xl "></i> We design with intention, develop with care, and grow alongside the people we support. </p>
             <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base ">
-              We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
+              We&apos;re a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We&apos;re not just here to deliver — we&apos;re here to grow with you.
             </p>
             <p className='text-sm text-gray-300 mt-4'>Select team member for more info </p>
             {/* Onclick Animation -> display */}
