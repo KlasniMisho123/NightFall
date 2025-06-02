@@ -24,18 +24,6 @@ export default function Projects() {
         </section>
       </div>
       <div className='px-4 md:px-14 lg:px-28 '>
-        <section className='flex flex-col gap-4 bg-white mt-24 mb-4 rounded-lg o whitespace-nowrap py-4 px-2 md:px-4 lg:px-8 hero-stats-load '>
-          <div className="self-center text-2xl font-semibold text-indigo-600 tracking-wide">
-            NightFall In Numbers
-          </div>
-          <div className={'flex justify-evenly '} >
-              {/* RESPONSIVE */}
-              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue`}/>
-              <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Lifed`} cardColor={`purple`}/>
-              <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red`}/>
-              <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green`}/>
-          </div> 
-        </section>
         <OrderProject/>
         <ProjectLayout />
       </div>
