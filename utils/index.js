@@ -7,6 +7,8 @@ export const colorMap = {
 
 export const colorClassMap = {
   indigo: {
+    bg: 'bg-indigo-500',
+    borderBase: 'border-indigo-500',
     border: 'hover:border-indigo-500',
     text: 'text-indigo-500',
     decoration: 'decoration-indigo-500',
