@@ -23,7 +23,6 @@ export default function ChatComponent() {
   return (
     <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 gap-4'> 
         {/* ONCLICK SHOW MORE... ANIMATIONS */}
-        {/* Most Asked Question, also asked? that can be activated. several default one on start */}
         {/* <p className='text-red-500'> selectedMessage: {selectedMessage} </p>
         <p className='text-red-500'> selectedMessageActive: {selectedMessageActive} </p> */}
         
@@ -39,13 +38,21 @@ export default function ChatComponent() {
         <MessageBox text="What Services?" />
         <MessageBox response={true} text={
          <>
-            We offerfew core services:
+            We offer few core services:
             <br />🛠️ <strong>Custom Websites</strong> – Built to fit your brand and goals.
             <br />🎨 <strong>UI/UX Design</strong> – Clean, user-focused interfaces.
-            <br />🚀 <strong>Deployment & Hosting</strong> – We take your site live, start to finish.
-            <br />🧩 <strong>Ongoing Support</strong> – Optional help after launch.
+            
           </>}
           />
+          
+        <MessageBox  response={true} text={
+          <>   
+            We also offer:
+            <br />🚀 <strong>Deployment & Hosting</strong> – We take your site live, start to finish.
+            <br />🧩 <strong>Ongoing Support</strong> – Optional help after launch. 
+          </>}
+          />
+          
         <div className='start-message self-start ' >
           <MessageBox text="Hey! What is Nightfall?" selectedMessage={selectedMessage} clickIndex={1} selectMessage={selectMessage} />
         </div>

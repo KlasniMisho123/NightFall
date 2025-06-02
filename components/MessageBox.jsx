@@ -13,7 +13,7 @@ export default function MessageBox(props) {
   return (
     <div 
     className={`bg-blue-400/80  p-5 text-white rounded-full shadow-md transition-all duration-300
-     ${response ? ' self-end response-message ' : ' self-start '}
+     ${response ? ' self-end response-message border-2 border-purple-500 ' : ' self-start '}
      ${clickIndex !== null ? ' cursor-pointer hover:bg-blue-400 shadow-none bg-transparent border-blue-500 border-2 ' : ''}
      ${selectedMessage?.includes(clickIndex)? " !bg-blue-400/30  " : " "}
      `}
