@@ -119,7 +119,7 @@ useEffect(()=>{
             <div className='flex '>
                <div title='🚀 Misho — Full-Stack Developer'
                 className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-1 relative cursor-pointer
-                hover:z-100 hover:scale-105 transition-all transition-duration-300 ` + (selectedTeamMember == "misho" ? " border-blue-500" : "border-white")} 
+                hover:z-100 hover:scale-105 transition-all duration-300 ` + (selectedTeamMember == "misho" ? " border-blue-500" : "border-white")} 
                 onClick={() => {
                   selectTeamMember("Misho")
                 }}
@@ -128,7 +128,7 @@ useEffect(()=>{
                </div>
                <div title='⚡ Alika — Back-End Developer'
                 className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-2 relative ml-[-15px] cursor-pointer
-                hover:z-100 hover:scale-105 transition-duration-300 ` + (selectedTeamMember == "alika" ? " border-blue-500" : "border-white")}
+                hover:z-100 hover:scale-105 duration-300 ` + (selectedTeamMember == "alika" ? " border-blue-500" : "border-white")}
                 onClick={() => {
                   selectTeamMember("Alika")
                 }}
@@ -137,7 +137,7 @@ useEffect(()=>{
                </div>
                <div title='DummyTeamMember '
                 className={`flex justify-center items-center h-35 w-35  rounded-full border-4 z-3 relative ml-[-15px] cursor-pointer
-                hover:z-100 hover:scale-105 transition-duration-300 ` + (selectedTeamMember == "dummy" ? " border-blue-500" : "border-white")}
+                hover:z-100 hover:scale-105 duration-300 ` + (selectedTeamMember == "dummy" ? " border-blue-500" : "border-white")}
                 onClick={() => {
                   selectTeamMember("Dummy")
                 }}
