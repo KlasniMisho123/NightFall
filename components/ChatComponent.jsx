@@ -1,6 +1,9 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import MessageBox from './MessageBox'
+import { Urbanist } from 'next/font/google'
+
+const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function ChatComponent() {
     const [selectedMessage, setSelectedMessage] = useState([])
@@ -21,7 +24,7 @@ export default function ChatComponent() {
     }
 
   return (
-    <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 gap-4'> 
+    <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 pb-[200px] gap-4'> 
         {/* ONCLICK SHOW MORE... ANIMATIONS */}
         {/* <p className='text-red-500'> selectedMessage: {selectedMessage} </p>
         <p className='text-red-500'> selectedMessageActive: {selectedMessageActive} </p> */}
@@ -52,7 +55,8 @@ export default function ChatComponent() {
             <br />🧩 <strong>Ongoing Support</strong> – Optional help after launch. 
           </>}
           />
-          
+          <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Also Asked</p>
+
         <div className='start-message self-start ' >
           <MessageBox text="Hey! What is Nightfall?" selectedMessage={selectedMessage} clickIndex={1} selectMessage={selectMessage} />
         </div>
