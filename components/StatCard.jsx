@@ -7,7 +7,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 
 export default function StatCard(props) {
-  const {cardColor, stat, title, titleDec } = props;
+  const {cardColor, stat, title, titleDec, delay } = props;
 
   const colorClasses = colorClassMap[cardColor] || "";
 
