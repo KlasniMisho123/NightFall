@@ -64,9 +64,9 @@ export default function Hero() {
           </div>
           <div className={'flex justify-between '} >
               <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue`} delay={0} />
-              <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Life`} cardColor={`purple`} delay={1}/>
-              <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red`} delay={2}/>
-              <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green`} delay={3}/>
+              <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Life`} cardColor={`purple`} delay={0.5}/>
+              <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red`} delay={1}/>
+              <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green`} delay={1.5}/>
           </div> 
         </section>
         </div>
