@@ -24,8 +24,10 @@ export default function Hero() {
       <div className='flex flex-col md:flex-row gap-2 justify-between my-6 z-10 '>
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO ANIMATION Moon / Sun  DayChangeAnimation ? */}
-          <div className='load-hero'>
-            <BorderedTitle text="Your partner in digital transformation" color="blue-500" posAngle={true} /> 
+          <div className='load-hero flex flex-col items-center md:items-start '>
+            <div className=''>
+              <BorderedTitle text="Your partner in digital transformation" color="blue-500" posAngle={true} /> 
+            </div>
             <h1 className={`text-white text-4xl my-4 md:text-6xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
               Digitize Your Idea
             </h1>
