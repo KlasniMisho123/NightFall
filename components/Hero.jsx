@@ -21,7 +21,7 @@ export default function Hero() {
 
   return (
     <div className='py-4 px-4 md:px-14 lg:px-28 transition-all transition-duration-300 bg-nightfall overflow-hidden'>
-      <div className='flex gap-2 justify-between my-6 z-10'>
+      <div className='flex flex-col md:flex-row gap-2 justify-between my-6 z-10 '>
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO ANIMATION Moon / Sun  DayChangeAnimation ? */}
           <div className='load-hero'>
@@ -58,17 +58,17 @@ export default function Hero() {
           </div>
           {/* RESPONSIVE */}
           <section className='flex flex-col gap-4 bg-white mt-24 mb-4 rounded-lg overflow-x-auto whitespace-nowrap py-6 px-2 md:px-4 lg:px-8 hero-stats-load '>
-          <div className={"self-center text-2xl font-bold text-blue-500 tracking-wide " + urbanist.className }>
-            NightFall In Numbers
-            {/* Style/ dismount */}
-          </div>
-          <div className={'flex justify-between '} >
-              <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue`} delay={0} />
-              <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Life`} cardColor={`purple`} delay={0.5}/>
-              <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red`} delay={1}/>
-              <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green`} delay={1.5}/>
-          </div> 
-        </section>
+            <div className={"self-center text-2xl font-bold text-blue-500 tracking-wide " + urbanist.className }>
+              NightFall In Numbers
+              {/* Style/ dismount */}
+            </div>
+            <div className={'flex justify-between '} >
+                <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue`} delay={0} />
+                <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Life`} cardColor={`purple`} delay={0.5}/>
+                <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red`} delay={1}/>
+                <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green`} delay={1.5}/>
+            </div> 
+         </section>
         </div>
         {/* Consider other Variatons for This Animation// (moon/sun ..env) */}
         <HeroAnimation />
