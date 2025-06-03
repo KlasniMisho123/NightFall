@@ -28,7 +28,7 @@ export default function Hero() {
             <div className=''>
               <BorderedTitle text="Your partner in digital transformation" color="blue-500" posAngle={true} /> 
             </div>
-            <h1 className={`text-white my-4 text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
+            <h1 className={`text-white my-4 text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
               Digitize Your Idea
             </h1>
 
@@ -38,7 +38,7 @@ export default function Hero() {
             </p>
 
 
-            <div className="flex my-6 gap-[15%] sm:gap-[10%] ">
+            <div className="flex mt-6 md:my-6 gap-[15%] sm:gap-[10%] ">
               <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
               transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
               href={'/support'}
@@ -59,7 +59,7 @@ export default function Hero() {
             </div>
           </div>
           {/* RESPONSIVE */}
-          <section className='flex flex-col gap-4 bg-white mt-24 mb-4 rounded-lg overflow-x-auto whitespace-nowrap py-6 px-2 md:px-4 lg:px-8 hero-stats-load '>
+          <section className='flex flex-col gap-4 bg-white mt-12 md:mt-18 lg:mt-24 mb-4 rounded-lg overflow-x-auto whitespace-nowrap py-6 px-2 md:px-4 lg:px-8 hero-stats-load '>
             <div className={"self-center text-2xl font-bold text-blue-500 tracking-wide " + urbanist.className }>
               NightFall In Numbers
               {/* Style/ dismount */}
