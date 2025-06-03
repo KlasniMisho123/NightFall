@@ -24,21 +24,21 @@ export default function Hero() {
       <div className='flex flex-col md:flex-row gap-2 justify-between my-6 z-10 '>
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO ANIMATION Moon / Sun  DayChangeAnimation ? */}
-          <div className='load-hero flex flex-col items-center md:items-start '>
+          <div className='load-hero flex flex-col '>
             <div className=''>
               <BorderedTitle text="Your partner in digital transformation" color="blue-500" posAngle={true} /> 
             </div>
-            <h1 className={`text-white text-4xl my-4 md:text-6xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
+            <h1 className={`text-white my-4 text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
               Digitize Your Idea
             </h1>
 
-            <p className={"text-gray-300 text-sm max-w-md  mt-3 leading-relaxed lg:max-w-2xl md:text-base " + inter.className}>
+            <p className={"text-gray-300 text-base md:text-sm max-w-md  mt-3 leading-relaxed lg:max-w-2xl md:text-base " + inter.className}>
             Nightfall Webworks helps you build modern, responsive websites that elevate your brand and grow your digital presence.
             From concept to launch — we code your vision into reality.
             </p>
 
 
-            <div className="flex my-6 gap-[20%] sm:gap-[10%] ">
+            <div className="flex my-6 gap-[15%] sm:gap-[10%] ">
               <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
               transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
               href={'/support'}
