@@ -6,8 +6,12 @@ export default function Reveal( {children, width = "fit-content"}, props) {
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
 
+    const mainControls = useAnimation();
+
     useEffect(() => {
-        console.log("isInView: ", isInView)
+        if(isInView) {
+            mainControls.start("visible")
+        }
     },[isInView])
 
 return (
@@ -18,7 +22,7 @@ return (
             visible: {opacity:1, x:0 },
         }}
         initial="hidden"
-        animate="visible"
+        animate={mainControls}
         transition={{duration: 0.5, delay: 0.25}}
         > {children} </motion.div>
     </div>

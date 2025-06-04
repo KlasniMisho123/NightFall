@@ -106,12 +106,6 @@ export default function WorkStages() {
                 <h1 className={'text-2xl ' + urbanist.className}> DEPLOYMENT </h1> 
               </div>
               </Reveal>
-              <div className='flex items-center relative z-10 font-bold arrow-land '>
-              
-                <img src='arrow.png' alt='arrow' className='h-14 w-14 rotate-45 select-none '/> 
-                <h1 className={'text-2xl ' + urbanist.className}> DEPLOYMENT </h1> 
-              </div>
-
             </div>
             <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-red-500 transition-all duration-300'>
                After final review, we launch the product smoothly, configure hosting,
