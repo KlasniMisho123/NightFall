@@ -3,9 +3,15 @@ import { motion, useAnimation, useInView } from "motion/react"
 // import moti
 
 export default function Reveal( {children, width = "fit-content"}, props) {
+    const ref = useRef(null)
+    const isInView = useInView(ref, {once: true})
+
+    useEffect(() => {
+        console.log("isInView: ", isInView)
+    },[isInView])
 
 return (
-    <div style={{ position: "relative", width, overflow: "hidden" }}>
+    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
         <motion.div
         variants={{
             hidden: {opacity:0, x:200 },
