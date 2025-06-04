@@ -6,6 +6,7 @@ import { teamMemberMap } from '@/utils';
 import OurVision from '@/components/OurVision';
 import ChatComponent from '@/components/ChatComponent';
 import Image from 'next/image';
+import Reveal from '@/components/utils/Reveal';
 
 
 const exo2 = Exo_2({subsets: ["latin"],weight: ["300", "700"]});
@@ -54,7 +55,7 @@ useEffect(()=>{
         </div>
       </div>
       <section className='flex flex-col gap-12 py-8 mx-[20%] '> 
-        <div className='flex justify-center gap-6'>
+        <div className='flex justify-center gap-6 hero-stats-load '>
           <div className='flex flex-col gap-2'>
              <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Little About</p>
              <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Story</h2>
@@ -76,7 +77,8 @@ useEffect(()=>{
              />
           </div>
         </div>
-        <div className="flex justify-evenly pt-8 mx-4 gap-4"> 
+        <Reveal> 
+          <div className="flex justify-evenly pt-8 mx-4 gap-4"> 
          <div className="flex flex-row-reverse  justify-center gap-8 pt-8 ">  
             <div className="flex flex-col ">
                 <p className="text-white ">A little about </p>
@@ -116,6 +118,8 @@ useEffect(()=>{
              />
           </div>
         </div>
+        </Reveal>
+        
 
 
         <div className='flex flex-col gap-2 pt-8 '>
