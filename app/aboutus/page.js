@@ -77,7 +77,7 @@ useEffect(()=>{
              />
           </div>
         </div>
-        <Reveal> 
+        <Reveal > 
           <div className="flex justify-evenly pt-8 mx-4 gap-4"> 
          <div className="flex flex-row-reverse  justify-center gap-8 pt-8 ">  
             <div className="flex flex-col ">
