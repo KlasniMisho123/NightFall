@@ -11,8 +11,8 @@ export default function Reveal( {children, width = "fit-content"}, props) {
     useEffect(() => {
         if(isInView) {
             mainControls.start("visible")
-            slideControls.start("visible")
         }
+
     },[isInView])
 
 return (
