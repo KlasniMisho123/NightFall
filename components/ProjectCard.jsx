@@ -1,7 +1,9 @@
+'use client'
 import React from 'react'
 import { Exo_2, Urbanist } from 'next/font/google';
 import Link from 'next/link';
 import { colorClassMap } from '@/utils';
+import Reveal from './utils/Reveal';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
@@ -17,7 +19,8 @@ export default function ProjectCard(props) {
 
 
   return (
-    <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${classes.border}`}>
+    <Reveal > 
+        <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${classes.border}`}>
         <Link
         className={`text-xl md:text-2xl font-semibold text-white mb-4 leading-snug 0 max-w-[650px] truncate`}
         href={webLink}
@@ -31,7 +34,6 @@ export default function ProjectCard(props) {
         </p>
 
         <div className={'text-white text-4xl font-bold ' + urbanist.className }>{year}</div>
-        {/* Flex,  Flex-col(Client, Client Name), (Time Duration, Time) (Service, Service)*/}
         <div className={'flex justify-between ' + exo2.cl}>
             <div className='flex flex-col gap-1'>
                 <div>Client</div>
@@ -46,7 +48,6 @@ export default function ProjectCard(props) {
                 <div className='text-gray-500'>{service}</div>
             </div>
         </div>
-        {/* Project Img */}
         <Link
         className=' rounded-2xl max-w-full max-h-[300px] overflow-hidden transition-all transition-duration-300 hover:scale-103'
         href={webLink}
@@ -54,5 +55,7 @@ export default function ProjectCard(props) {
             <img src={imgSrc} alt="Project Image" className='object-cover' />
         </Link>
     </div>
-  )
+
+    </Reveal>
+      )
 }
