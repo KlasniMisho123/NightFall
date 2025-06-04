@@ -25,7 +25,7 @@ return (
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{duration: 0.25, delay: 0.25, forwards, ease:"ease-in"}}
+        transition={{duration: 0.25, delay: 0.25, ease:"easeIn"}}
         > {children} </motion.div>
     </div>
   )
