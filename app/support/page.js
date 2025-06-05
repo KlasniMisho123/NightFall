@@ -165,7 +165,8 @@ export default function ContactPage() {
 
             {/* Features */}
             <div className="grid gap-6">
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm">
+              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm night-fall-stats"
+              style={{animationDelay: '0s'}}>
                 <Code className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Custom Development</h3>
@@ -176,7 +177,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm night-fall-stats" 
-              style={{animationDelay: 0.5}}>
+              style={{animationDelay: '0.25s'}}>
                 <Zap className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">High Performance</h3>
@@ -186,7 +187,8 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm">
+              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm night-fall-stats"
+              style={{animationDelay: '0.5s'}}>
                 <Shield className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Enterprise Security</h3>
