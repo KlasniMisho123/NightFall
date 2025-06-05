@@ -165,7 +165,7 @@ export default function ContactPage() {
 
             {/* Features */}
             <div className="grid gap-8 ">
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-blue-500 night-fall-stats"
+              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-blue-500 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm "
               style={{animationDelay: '0s'}}>
                 <Code className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
@@ -176,7 +176,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-blue-500 night-fall-stats" 
+              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-blue-500 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats " 
               style={{animationDelay: '0.25s'}}>
                 <Zap className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
@@ -187,7 +187,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-blue-500 night-fall-stats"
+              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-blue-500 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats "
               style={{animationDelay: '0.5s'}}>
                 <Shield className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
@@ -210,7 +210,7 @@ export default function ContactPage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3 text-gray-200">
                   <Mail className="w-5 h-5 text-blue-400" />
-                  <span>contact@softwarecompany.com</span>
+                  <span>nightfallwebworks@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-200">
                   <Phone className="w-5 h-5 text-blue-400" />
