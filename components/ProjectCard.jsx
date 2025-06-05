@@ -25,7 +25,7 @@ export default function ProjectCard(props) {
         <Reveal projectIndex={projectIndex} > 
             <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${classes.border}`}>
             <Link
-            className={`text-xl md:text-2xl font-semibold text-white mb-4 leading-snug 0 max-w-[650px] truncate`}
+            className={`text-xl md:text-2xl font-semibold text-white mb-4 leading-snug 0 max-w-[650px] truncate py-2`}
             href={webLink}
             >
                 <span className={`${classes.text} font-bold  px-2 rounded-r-full border-2 mr-1 ` + urbanist.className }> {projectName} </span> -
