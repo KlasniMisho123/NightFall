@@ -154,7 +154,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Information */}
-          <div className="space-y-8 animate-slide-in-left">
+          <div className="space-y-8 hero-stats-load ">
             <div>
               <h2 className="text-3xl font-bold text-blue-400 mb-6">Why Choose Our Software Solutions?</h2>
               <p className="text-gray-200 text-lg leading-relaxed mb-8">
