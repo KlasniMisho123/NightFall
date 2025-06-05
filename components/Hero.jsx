@@ -24,38 +24,40 @@ export default function Hero() {
       <div className='flex flex-col md:flex-row gap-2 justify-between my-6 z-10 '>
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO ANIMATION Moon / Sun  DayChangeAnimation ? */}
-          <div className='load-hero flex flex-col '>
-            <div className=''>
-              <BorderedTitle text="Your partner in digital transformation" color="blue-500" posAngle={true} /> 
-            </div>
-            <h1 className={`text-white my-4 text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
-              Digitize Your Idea
-            </h1>
+          <div className='flex '>
+            <div className='load-hero flex flex-col self-center '>
+              <div className=''>
+                <BorderedTitle text="Your partner in digital transformation" color="blue-500" posAngle={true} /> 
+              </div>
+              <h1 className={`text-white my-4 text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold mt-2 whitespace-nowrap ` + urbanist.className}>
+                Digitize Your Idea
+              </h1>
 
-            <p className={"text-gray-300 text-base md:text-sm max-w-md  mt-3 leading-relaxed lg:max-w-2xl md:text-base " + inter.className}>
-            Nightfall Webworks helps you build modern, responsive websites that elevate your brand and grow your digital presence.
-            From concept to launch — we code your vision into reality.
-            </p>
+              <p className={"text-gray-300 text-base md:text-sm max-w-md  mt-3 leading-relaxed lg:max-w-2xl md:text-base " + inter.className}>
+              Nightfall Webworks helps you build modern, responsive websites that elevate your brand and grow your digital presence.
+              From concept to launch — we code your vision into reality.
+              </p>
 
 
-            <div className="flex mt-6 md:my-6 gap-[15%] sm:gap-[10%] ">
-              <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
-              transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
-              href={'/support'}
-              onClick={() => {handleSelectedNavSection('support')}}
-            >
-              
-                Contact Us
-              </Link>
-              <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white border-blue-500 hover:text-blue-500 transition-all duration-300 text-center
-              cursor-pointer shadow-sm whitespace-nowrap"
-              href={'/aboutus'}
-              onClick={()=>{
-                handleSelectedNavSection("aboutus")
-                }
-              }>
-                About Us
-              </Link>
+              <div className="flex mt-6 md:my-6 gap-[15%] sm:gap-[10%] ">
+                <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white bg-blue-500 border-blue-500 hover:border-white hover:brightness-90 text-center
+                transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
+                href={'/support'}
+                onClick={() => {handleSelectedNavSection('support')}}
+              >
+                
+                  Contact Us
+                </Link>
+                <Link className="flex-1 max-w-40 border-2 p-3 rounded-lg text-white border-blue-500 hover:text-blue-500 transition-all duration-300 text-center
+                cursor-pointer shadow-sm whitespace-nowrap"
+                href={'/aboutus'}
+                onClick={()=>{
+                  handleSelectedNavSection("aboutus")
+                  }
+                }>
+                  About Us
+                </Link>
+              </div>
             </div>
           </div>
           {/* RESPONSIVE */}
@@ -68,7 +70,7 @@ export default function Hero() {
               NightFall In Numbers
             </div>
 
-            <div className={'flex justify-between '} >
+            <div className={'flex flex-col sm:flex-row md:grid lg:flex-row justify-between '} >
                 <StatCard stat={1 + "+"} title={`Years of Experience`} titleDec="Working With You" cardColor={"blue"} delay={0} />
                 <StatCard stat={10 + "+"} title={`Completed Projects`} titleDec="From Start to Finish" cardColor={"purple"} delay={0.5} />
                 <StatCard stat={4 + "+"} title={`Ideas in Progress`} titleDec={`Always Innovating`} cardColor={`red`} delay={1}/>
