@@ -35,3 +35,5 @@ add interval. onclick(example chat messages)
  Network -> loading images, change page, still loaded? change back adds on already requested assets,Network??
 
  Terminal -> GET /.well-known/appspecific/com.chrome.devtools.json 404 in 14094ms
+
+///////// ERROR PAGE

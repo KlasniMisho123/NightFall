@@ -19,3 +19,8 @@ ProjectCards -> On Scroll Animation
 // ProjectCards Style !! >>
 
 Hero Animation >>? animation by Time? day/night
+
+
+///////// ERROR PAGE
+
+Nightfall Stats -> Avrg Reiting, Followers, viewers
