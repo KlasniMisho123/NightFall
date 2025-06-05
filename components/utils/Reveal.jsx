@@ -3,28 +3,20 @@ import { motion, useAnimation, useInView } from "motion/react"
 
 export default function Reveal( {children, width = "fit-content", projectIndex=2}, props) {
     const ref = useRef(null)
-    const isInView = useInView(ref, {once: true})
-    const {isOddIndex, setIsOddIndex} = useState({}) 
-
-    const mainControls = useAnimation();
-
-    useEffect(() => {
-        if(isInView) {
-             if(projectIndex % 2 == 0){
-                setIsOddIndex({opacity:0, x:200 })
-            } else {
-                setIsOddIndex({opacity:0, x:-200 },)
-            }
-            mainControls.start("visible")
-        }
-    },[])
+    const isInView = useInView(ref, {once: false})
     
-    useEffect(() => {
-        if(isInView) {
-            mainControls.start("visible")
-        }
-    },[isInView])
+    const mainControls = useAnimation();
+    const [initialHiddenVariant, setInitialHiddenVariant] = useState({ opacity: 0, x: 0 });
 
+    useEffect(() => {
+        if (isInView) {
+            const isOdd = projectIndex % 2 !== 0;
+            setInitialHiddenVariant({ opacity: 0, x: isOdd ? -200 : 200 });
+            mainControls.start("visible");
+        } else {
+            mainControls.start("hidden");
+        }
+    }, [isInView, projectIndex, mainControls]);
 
 return (
     <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
