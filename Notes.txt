@@ -37,3 +37,5 @@ add interval. onclick(example chat messages)
  Terminal -> GET /.well-known/appspecific/com.chrome.devtools.json 404 in 14094ms
 
 ///////// ERROR PAGE
+// About us Responsive.
+// projects, order Projects Component Responsive 

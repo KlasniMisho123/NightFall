@@ -19,7 +19,7 @@ export default function MessageBox(props) {
           ? 'cursor-pointer border-2 border-blue-500 bg-transparent hover:bg-blue-400/40 shadow-none' 
           : 'bg-blue-400/80 shadow-md'}
         ${selectedMessage?.includes(clickIndex) 
-          ? '!bg-blue-400/30 ring-2 ring-blue-300' 
+          ? '!bg-blue-400/30  ' 
           : ''}
       `}
       onClick={clickIndex !== null ? handleClick : undefined}
