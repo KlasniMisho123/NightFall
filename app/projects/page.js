@@ -23,7 +23,7 @@ export default function Projects() {
         </section>
       </div>
       <div className='px-4 sm:px-8 md:px-14 lg:px-28 '>
-        {/* Order PRoject Responsive !? */}
+        {/* Order Project Responsive !? */}
         <OrderProject/>
         <ProjectLayout />
       </div>

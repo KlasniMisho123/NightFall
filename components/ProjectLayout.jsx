@@ -4,8 +4,8 @@ import ProjectCard from './ProjectCard'
 
 export default function ProjectLayout() {
   return (
-    <section className="py-6 flex justify-center gap-8 w-full text-white">
-        <div className='flex flex-1 flex-col gap-16 '>
+    <section className="py-6 flex flex-col lg:flex-row justify-center gap-8 w-full text-white">
+        <div className='flex flex-1 flex-col px-2 gap-2 lg:gap-8 '>
             <ProjectCard animationIndex={1} year={2024} projectName="MoodCheck" title=" Track your mood and see how you feel over time" webLink="https://mood-check.vercel.app/" projectSecondaryColor="indigo" client="Developeing Skills"
             time="10 Days" service="Web Page Development" imgSrc="Moodcheck.png"
             projectDesc="is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
@@ -25,7 +25,7 @@ export default function ProjectLayout() {
               At Nightfall Webworks, we don’t just build websites—we create experiences that empower your brand and engage your audience." />
             
         </div>
-        <div className='mt-16 flex flex-1 flex-col gap-16 '>
+        <div className='mt-16 flex flex-1 flex-col px-2 gap-2 lg:gap-8  '>
             <ProjectCard animationIndex={2} year={2024} projectName="EspressoMeter" title=" Coffee Tracking for Cofee Fiends" webLink="https://espresso-meter.vercel.app/" projectSecondaryColor="pink" client="Developeing Skills"
             time="2 Weeks" service="Web Page Development" imgSrc="EspressoMeter.png"
             
