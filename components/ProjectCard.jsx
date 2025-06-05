@@ -39,7 +39,7 @@ export default function ProjectCard(props) {
           className={`text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-4 leading-snug max-w-full ${urbanist.className}`}
         >
           <span
-            className={`${classes.text} font-bold px-2 py-1 rounded-r-full border-2 mr-1 ${urbanist.className}`}
+            className={`${classes.text} font-bold px-2 py-1 rounded-r-full border-2 mr-1 truncate ${urbanist.className}`}
           >
             {projectName}
           </span>
