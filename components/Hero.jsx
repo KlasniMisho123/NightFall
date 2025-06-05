@@ -65,8 +65,9 @@ export default function Hero() {
               {/* Style/ dismount */}
             </div>
             <div className={'flex justify-between '} >
-                <StatCard stat={300 + "+"} title={`USERS`} titleDec={`To Monitor Mood`} cardColor={`blue`} delay={0} />
-                <StatCard stat={200} title={`Total Users`} titleDec={`For a Healthier Life`} cardColor={`purple`} delay={0.5}/>
+                <StatCard stat="1+" title="Years of Experience" titleDec="Working With You" cardColor="blue" delay={0} />
+                <StatCard stat="10+" title="Completed Projects" titleDec="From Start to Finish" cardColor="purple" delay={0.5} />
+
                 <StatCard stat={100} title={`Mood Commits`} titleDec={`Connecting with Your Emotions`} cardColor={`red`} delay={1}/>
                 <StatCard stat={450} title={`Reaction`} titleDec={`Connecting with Your Emotions`} cardColor={`green`} delay={1.5}/>
             </div> 
@@ -130,7 +131,6 @@ export default function Hero() {
               <h3 className="text-lg text-gray-600 text-center lg:text-start ">More on us</h3>
           </div>
           </Link>
-          {/* hover arrow animation */}
         </section>
           <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] ">
           <div className="bg-white mx-2  my-6 py-6 text-black rounded md:py-8 lg:py-10 md:mx-4 lg:mx-8 md:my-12">
@@ -165,6 +165,5 @@ export default function Hero() {
           </section>
         <WorkStages />
     </div>
-    // Proejects Section
   )
 }

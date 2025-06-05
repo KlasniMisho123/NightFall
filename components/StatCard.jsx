@@ -19,19 +19,6 @@ export default function StatCard(props) {
       <h3 className={`text-sm ${poppins.className} ${colorClasses?.text}`}>{title}</h3> 
       <h4 className="text-xs" >{titleDec}</h4> 
     </div>
-    // only colored part animation? 
-    // <div className="flex flex-col gap-4 items-center px-1 py-4 min-w-[100px] md:px-2 lg:px-4 ">
-    //   <div className={`px-4 py-1 rounded-lg border-2 night-fall-stats  ${colorClasses?.text}  ${colorClasses?.bg} `}
-    //   style={{ animationDelay: `${delay}s` }}
-    //   ></div>
-    //   <h2 className={`text-4xl italic night-fall-stats ${mono.className} ${colorClasses?.text}`}
-    //   style={{ animationDelay: `${delay}s` }}
-    //   >{stat}</h2>
-    //   <h3 className={`text-sm night-fall-stats ${poppins.className} ${colorClasses?.text}`}
-    //   style={{ animationDelay: `${delay}s` }}
-    //   >{title}</h3> 
-    //   <h4 className="text-xs">{titleDec}</h4> 
-    // </div>
   );
 }
 
