@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { motion, useAnimation, useInView } from "motion/react"
 
-export default function Reveal( {children, width = "fit-content"}, props) {
+export default function Reveal( {children, width = "fit-content", projectIndex=2}, props) {
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
 
@@ -11,6 +11,7 @@ export default function Reveal( {children, width = "fit-content"}, props) {
     useEffect(() => {
         if(isInView) {
             mainControls.start("visible")
+            console.log(projectIndex)
         }
 
     },[isInView])

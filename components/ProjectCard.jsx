@@ -1,8 +1,9 @@
+'use client'
 import React from 'react'
 import { Exo_2, Urbanist } from 'next/font/google';
 import Link from 'next/link';
 import { colorClassMap } from '@/utils';
-// import Reveal from './utils/Reveal';
+import Reveal from './utils/Reveal';
 
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
@@ -17,7 +18,8 @@ export default function ProjectCard(props) {
         decoration: 'decoration-white',
     }
 
-    
+    // Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen 
+    // if a SSR-ed Client Component used: - after reveal
 
   return (
         <Reveal projectIndex={projectIndex} > 
