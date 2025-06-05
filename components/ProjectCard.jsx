@@ -22,7 +22,7 @@ export default function ProjectCard(props) {
     // if a SSR-ed Client Component used: - after reveal
 
   return (
-        <Reveal animationIndex={animationIndex} > 
+        <Reveal animationIndex={animationIndex} noRepeat={false} > 
             <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${classes.border}`}>
             <Link
             className={`text-xl md:text-2xl font-semibold text-white mb-4 leading-snug 0 max-w-[650px] truncate py-2`}
