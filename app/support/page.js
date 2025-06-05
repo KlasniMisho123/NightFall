@@ -151,7 +151,7 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-10 ">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Information */}
           <div className="space-y-8 hero-stats-load ">
@@ -165,7 +165,8 @@ export default function ContactPage() {
 
             {/* Features */}
             <div className="grid gap-8 ">
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-blue-500 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm "
+              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
+               hover:bg-blue-500/30 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm "
               style={{animationDelay: '0s'}}>
                 <Code className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
@@ -176,7 +177,8 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-blue-500 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats " 
+              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
+               hover:bg-blue-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats " 
               style={{animationDelay: '0.25s'}}>
                 <Zap className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
@@ -187,7 +189,8 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-blue-500 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats "
+              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
+               hover:bg-blue-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats "
               style={{animationDelay: '0.5s'}}>
                 <Shield className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
@@ -200,7 +203,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Details */}
-            <Card className="bg-blue-800/20 border-blue-700/50 backdrop-blur-sm">
+            <Card className="bg-blue-800/20 border-white backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-blue-400">Contact Information</CardTitle>
                 <CardDescription className="text-gray-300">
@@ -226,9 +229,9 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="main-hero-load mt-10 ">
-            <Card className="bg-blue-800/20 border-blue-700/50 backdrop-blur-sm">
+            <Card className="bg-blue-800/20 border-white backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-2xl text-blue-400">Send Us a Message</CardTitle>
+                <CardTitle className="text-2xl text-blue-400 ">Send Us a Message</CardTitle>
                 <CardDescription className="text-gray-300">
                   Fill out the form below and we'll get back to you within 24 hours
                 </CardDescription>
@@ -247,7 +250,7 @@ export default function ContactPage() {
                       onChange={handleInputChange}
                       placeholder="your.email@company.com"
                       required
-                      className="bg-blue-900/50 border-blue-600 text-white placeholder:text-gray-400 focus:border-blue-400"
+                      className="bg-blue-900/50 border-white text-white placeholder:text-gray-400 focus:border-blue-400"
                     />
                   </div>
 
@@ -262,7 +265,7 @@ export default function ContactPage() {
                       onChange={handleInputChange}
                       placeholder="What can we help you with?"
                       required
-                      className="bg-blue-900/50 border-blue-600 text-white placeholder:text-gray-400 focus:border-blue-400"
+                      className="bg-blue-900/50 border-white text-white placeholder:text-gray-400 focus:border-blue-400"
                     />
                   </div>
 
@@ -277,7 +280,7 @@ export default function ContactPage() {
                       onChange={handleInputChange}
                       placeholder="Tell us about your project requirements, timeline, and any specific features you need..."
                       required
-                      className="min-h-[150px] bg-blue-900/50 border-blue-600 text-white placeholder:text-gray-400 focus:border-blue-400 resize-none"
+                      className="min-h-[150px] bg-blue-900/50 border-white text-white placeholder:text-gray-400 focus:border-blue-400 resize-none"
                     />
                   </div>
 
@@ -300,7 +303,7 @@ export default function ContactPage() {
             </Card>
 
             {/* Additional Info */}
-            <div className="mt-8 p-6 bg-blue-800/20 rounded-lg backdrop-blur-sm border border-blue-700/50">
+            <div className="mt-8 p-6 bg-blue-800/20 rounded-lg backdrop-blur-sm border border-white">
               <h3 className="text-xl font-semibold text-blue-400 mb-3">What Happens Next?</h3>
               <ul className="space-y-2 text-gray-200">
                 <li className="flex items-center gap-2">
