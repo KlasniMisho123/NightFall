@@ -23,4 +23,4 @@ Hero Animation >>? animation by Time? day/night
 
 ///////// ERROR PAGE
 
-Nightfall Stats -> Avrg Reiting, Followers, viewers
+Nightfall Stats -> Avrg Reiting, Followers, viewers, FeedBack
