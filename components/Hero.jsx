@@ -64,7 +64,7 @@ export default function Hero() {
           <section className='flex flex-col gap-4 bg-white mt-12 md:mt-18 lg:mt-24 mb-4 rounded-lg overflow-x-auto whitespace-nowrap py-6 px-2 md:px-4 lg:px-8 hero-stats-load '>
             <div
               className={
-                "self-center text-xl p-1 px-2 md:text-2xl md:p-2 md:px-4 font-semibold md:tracking-wide rounded-full  border-2 border-blue-500 text-blue-500 " +
+                "self-center text-xl p-1 px-2 mb-2 md:mb-4 md:text-2xl md:p-2 md:px-4 font-semibold md:tracking-wide rounded-full border-2 border-blue-500 text-blue-500 " +
                 urbanist.className
               }>
               NightFall In Numbers
