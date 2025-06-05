@@ -26,10 +26,10 @@ export default function ChatComponent() {
 
   return (
     <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 pb-[200px] gap-4'>
-      <Reveal animationIndex={1}>
+      <Reveal  noRepeat={false} animationIndex={1}>
         <MessageBox text="Hey! What is Nightfall?" />
       </Reveal> 
-      <Reveal animationIndex={2} >
+      <Reveal  noRepeat={false} animationIndex={2} >
         <MessageBox response={true} text={ 
           <>
             NightfallWeb is a junior digital studio. We offer a range of{' '}
@@ -40,11 +40,11 @@ export default function ChatComponent() {
         />
       </Reveal>
         
-        <Reveal animationIndex={1} > 
+        <Reveal  noRepeat={false} animationIndex={1} > 
           <MessageBox text="What Services?" />
         </Reveal>
 
-        <Reveal animationIndex={2}>
+        <Reveal  noRepeat={false} animationIndex={2}>
           <MessageBox response={true} text={
             <>
                 We offer few core services:
@@ -55,7 +55,7 @@ export default function ChatComponent() {
           />
         </Reveal>
 
-        <Reveal animationIndex={2}>
+        <Reveal  noRepeat={false} animationIndex={2}>
           <MessageBox  response={true} text={
             <>   
               We also offer:
@@ -65,7 +65,7 @@ export default function ChatComponent() {
             />
         </Reveal>
         
-        <Reveal animationIndex={1} > 
+        <Reveal  noRepeat={false} animationIndex={1} > 
           <div className='start-message self-start ' >
             <MessageBox text="Who is Nightfall for?" selectedMessage={selectedMessage} clickIndex={1} selectMessage={selectMessage} />
           </div>
@@ -76,7 +76,7 @@ export default function ChatComponent() {
             collaboration, and thoughtful design — especially those just starting out." />
           </div>
         : null}
-        <Reveal animationIndex={1} > 
+        <Reveal  noRepeat={false} animationIndex={1} > 
           <div className='start-message self-start '>
             <MessageBox text="Are your services beginner-friendly?" selectedMessage={selectedMessage} clickIndex={2} selectMessage={selectMessage} />
           </div>
@@ -87,7 +87,7 @@ export default function ChatComponent() {
              we walk you through each step — no jargon, no pressure." />
           </div>
         : null}
-        <Reveal animationIndex={1} > 
+        <Reveal  noRepeat={false} animationIndex={1} > 
           <div className='start-message self-start '>
             <MessageBox text="Why choose a junior studio like Nightfall?" selectedMessage={selectedMessage} clickIndex={3} selectMessage={selectMessage} />
           </div>
