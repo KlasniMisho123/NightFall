@@ -6,7 +6,7 @@ export default function Reveal( {children, width = "fit-content"}, props) {
     const isInView = useInView(ref, {once: true})
 
     const mainControls = useAnimation();
-    const slideControls = useAnimation();
+
 
     useEffect(() => {
         if(isInView) {
