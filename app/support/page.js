@@ -10,7 +10,7 @@ const Button = ({ children, onClick, disabled, type = "button", className = "" }
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
+      className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
     >
       {children}
     </button>
@@ -122,7 +122,7 @@ export default function ContactPage() {
   }, [showSuccess])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900">
+    <div className="min-h-screen bg-nightfall ">
       {/* Success Popup */}
       <div
         className={`fixed top-4 right-4 z-50 transition-all duration-500 transform ${
@@ -136,9 +136,9 @@ export default function ContactPage() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+      <div className="relative overflow-hidden ">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 "></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 load-hero ">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Get In <span className="text-blue-400">Touch</span>
@@ -222,7 +222,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="animate-slide-in-right">
+          <div className="main-hero-load mt-10 ">
             <Card className="bg-blue-800/20 border-blue-700/50 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-2xl text-blue-400">Send Us a Message</CardTitle>
