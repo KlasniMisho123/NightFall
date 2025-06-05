@@ -64,18 +64,18 @@ export default function Hero() {
           <section className='flex flex-col gap-4 bg-white mt-12 md:mt-18 lg:mt-24 mb-4 rounded-lg overflow-x-auto whitespace-nowrap py-6 px-2 md:px-4 lg:px-8 hero-stats-load '>
             <div
               className={
-                "self-center text-2xl font-semibold tracking-wide rounded-full p-2 px-4 border-2 border-blue-500 text-blue-500 " +
+                "self-center text-xl p-1 px-2 md:text-2xl md:p-2 md:px-4 font-semibold md:tracking-wide rounded-full  border-2 border-blue-500 text-blue-500 " +
                 urbanist.className
               }>
               NightFall In Numbers
             </div>
 
-            <div className={'flex flex-col sm:flex-row md:grid lg:flex-row justify-between '} >
-                <StatCard stat={1 + "+"} title={`Years of Experience`} titleDec="Working With You" cardColor={"blue"} delay={0} />
-                <StatCard stat={10 + "+"} title={`Completed Projects`} titleDec="From Start to Finish" cardColor={"purple"} delay={0.5} />
-                <StatCard stat={4 + "+"} title={`Ideas in Progress`} titleDec={`Always Innovating`} cardColor={`red`} delay={1}/>
-                <StatCard stat={50 + "+"} title={`Feedback Received`} titleDec={`From Happy Clients`} cardColor={`green`} delay={1.5}/>
-            </div> 
+            <div className="flex items-start flex-wrap sm:flex-row sm:flex-wrap justify-center sm:items-center">
+              <StatCard stat="1+" title="Years of Experience" titleDec="Working With You" cardColor="blue" delay={0} />
+              <StatCard stat="10+" title="Completed Projects" titleDec="From Start to Finish" cardColor="purple" delay={0.5} />
+              <StatCard stat="4+" title="Ideas in Progress" titleDec="Always Innovating" cardColor="red" delay={1} />
+              <StatCard stat="50+" title="Feedback Received" titleDec="From Happy Clients" cardColor="green" delay={1.5} />
+            </div>
          </section>
         </div>
         {/* Consider other Variatons for This Animation// (moon/sun ..env) */}
