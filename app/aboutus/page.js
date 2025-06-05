@@ -120,79 +120,78 @@ useEffect(()=>{
         </div>
         </Reveal>
         
+        <Reveal animationIndex={1}> 
+          <div className='flex flex-col gap-2 pt-8 '>
+            <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
+            <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2>
+            <div className='flex flex-col gap-6 mt-4'>
+              <p className={'flex gap-2 text-base md:text-lg truncate' + urbanist.className}> <i className="fa-solid fa-seedling text-green-500 text-xl "></i> We design with intention, develop with care, and grow alongside the people we support. </p>
+              <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base ">
+                We&apos;re a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We&apos;re not just here to deliver — we&apos;re here to grow with you.
+              </p>
+              <p className='text-sm text-gray-300 mt-4'>Select team member for more info </p>
+              {/* Onclick Animation -> display */}
+              <div className='flex '>
+                <div title='🚀 Misho — Full-Stack Developer'
+                  className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-1 relative cursor-pointer
+                  hover:z-100 hover:scale-105 transition-all duration-200 ` + (selectedTeamMember == "misho" ? " border-blue-500" : "border-white")} 
+                  onClick={() => {
+                    selectTeamMember("Misho")
+                  }}
+                  >
+                  <Image
+                  src='/avatars/Multiavatar-smalik.png'
+                  width={800} 
+                  height={600} 
+                  alt='misho_avatar'
+                  />
 
-
-        <div className='flex flex-col gap-2 pt-8 '>
-          <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Meet </p>
-          <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Our Team</h2>
-          <div className='flex flex-col gap-6 mt-4'>
-            <p className={'flex gap-2 text-base md:text-lg truncate' + urbanist.className}> <i className="fa-solid fa-seedling text-green-500 text-xl "></i> We design with intention, develop with care, and grow alongside the people we support. </p>
-            <p className="text-gray-400 leading-relaxed max-w-[700px] text-sm md:text-base ">
-              We&apos;re a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We&apos;re not just here to deliver — we&apos;re here to grow with you.
-            </p>
-            <p className='text-sm text-gray-300 mt-4'>Select team member for more info </p>
-            {/* Onclick Animation -> display */}
-            <div className='flex '>
-               <div title='🚀 Misho — Full-Stack Developer'
-                className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-1 relative cursor-pointer
-                hover:z-100 hover:scale-105 transition-all duration-200 ` + (selectedTeamMember == "misho" ? " border-blue-500" : "border-white")} 
-                onClick={() => {
-                  selectTeamMember("Misho")
-                }}
-                >
-                <Image
-                 src='/avatars/Multiavatar-smalik.png'
-                 width={800} 
-                 height={600} 
-                 alt='misho_avatar'
-                />
-
-               </div>
-               <div title='⚡ Alika — Back-End Developer'
-                className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-2 relative ml-[-15px] cursor-pointer
-                hover:z-100 hover:scale-105 duration-200 ` + (selectedTeamMember == "alika" ? " border-blue-500" : "border-white")}
-                onClick={() => {
-                  selectTeamMember("Alika")
-                }}
-                >
-                <Image
-                 src='/avatars/Multiavatar-Alik.png'
-                 width={800} 
-                 height={600} 
-                 alt='alik_avatar'
-                />
-               </div>
-               <div title='DummyTeamMember '
-                className={`flex justify-center items-center h-35 w-35  rounded-full border-4 z-3 relative ml-[-15px] cursor-pointer
-                hover:z-100 hover:scale-105 duration-200 ` + (selectedTeamMember == "dummy" ? " border-blue-500" : "border-white")}
-                onClick={() => {
-                  selectTeamMember("Dummy")
-                }}
-                >
-                <Image
-                 src='/avatars/Multiavatar-an.png'
-                 width={800} 
-                 height={600} 
-                 alt='Dummy_avatar'
-                 />
-               </div>
-               <div className="flex justify-center items-center h-35 w-35 bg-white rounded-full border-4 border-gray-700 relative z-30 ml-[-15px] select-none">
-                <span className="dot-bounce dot1 text-5xl text-black">.</span>
-                <span className="dot-bounce dot2 text-5xl text-black">.</span>
-                <span className="dot-bounce dot3 text-5xl text-black">.</span>
+                </div>
+                <div title='⚡ Alika — Back-End Developer'
+                  className={`flex justify-center items-center h-35 w-35 rounded-full border-4 z-2 relative ml-[-15px] cursor-pointer
+                  hover:z-100 hover:scale-105 duration-200 ` + (selectedTeamMember == "alika" ? " border-blue-500" : "border-white")}
+                  onClick={() => {
+                    selectTeamMember("Alika")
+                  }}
+                  >
+                  <Image
+                  src='/avatars/Multiavatar-Alik.png'
+                  width={800} 
+                  height={600} 
+                  alt='alik_avatar'
+                  />
+                </div>
+                <div title='DummyTeamMember '
+                  className={`flex justify-center items-center h-35 w-35  rounded-full border-4 z-3 relative ml-[-15px] cursor-pointer
+                    hover:z-100 hover:scale-105 duration-200 ` + (selectedTeamMember == "dummy" ? " border-blue-500" : "border-white")}
+                  onClick={() => {
+                    selectTeamMember("Dummy")
+                  }}
+                  >
+                  <Image
+                  src='/avatars/Multiavatar-an.png'
+                  width={800} 
+                  height={600} 
+                  alt='Dummy_avatar'
+                  />
+                </div>
+                <div className="flex justify-center items-center h-35 w-35 bg-white rounded-full border-4 border-gray-700 relative z-30 ml-[-15px] select-none">
+                  <span className="dot-bounce dot1 text-5xl text-black">.</span>
+                  <span className="dot-bounce dot2 text-5xl text-black">.</span>
+                  <span className="dot-bounce dot3 text-5xl text-black">.</span>
+                </div>
+                
               </div>
-               
+              {/* Close Animation Instead Of instant Dismount --> another usestate that gives timeout/timeinterval for dismount(startswith false), animate shutdown on selectedTeamMember false? */}
+                  {isMemberCardActive ?
+                  <TeamMemberCard selectedTeamMember={selectedTeamMember} selectTeamMember={selectTeamMember} selectedMemberInfo={selectedMemberInfo} />
+                    : null
+                  }                 
             </div>
-            {/* Close Animation Instead Of instant Dismount --> another usestate that gives timeout/timeinterval for dismount(startswith false), animate shutdown on selectedTeamMember false? */}
-                {isMemberCardActive ?
-                 <TeamMemberCard selectedTeamMember={selectedTeamMember} selectTeamMember={selectTeamMember} selectedMemberInfo={selectedMemberInfo} />
-                  : null
-                }                 
           </div>
-        </div>
-        {/* Strong Sides */}
-        {/* Our Vision */}
-        <OurVision /> 
+          {/* Strong Sides */}
+          <OurVision /> 
+        </Reveal>
         <div className='flex flex-col gap-2 mt-10 -mb-16'>
           <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className} >Most Asked</p>
           <h2 className={'text-4xl font-bold text-blue-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 ' + urbanist.className}>Questions</h2>      

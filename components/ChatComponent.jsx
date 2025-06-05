@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import MessageBox from './MessageBox'
 import { Urbanist } from 'next/font/google'
+import Reveal from './utils/Reveal';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -24,12 +25,11 @@ export default function ChatComponent() {
     }
 
   return (
-    <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 pb-[200px] gap-4'> 
-        {/* ONCLICK SHOW MORE... ANIMATIONS */}
-        {/* <p className='text-red-500'> selectedMessage: {selectedMessage} </p>
-        <p className='text-red-500'> selectedMessageActive: {selectedMessageActive} </p> */}
-        
+    <div className='flex flex-col min-w-[600px] max-w-[700px] justify-self-center py-12 pb-[200px] gap-4'>
+      <Reveal animationIndex={1}>
         <MessageBox text="Hey! What is Nightfall?" />
+      </Reveal> 
+      <Reveal animationIndex={2} >
         <MessageBox response={true} text={ 
           <>
             NightfallWeb is a junior digital studio. We offer a range of{' '}
@@ -38,6 +38,8 @@ export default function ChatComponent() {
           </>
         }
         />
+      </Reveal>
+        
         <MessageBox text="What Services?" />
         <MessageBox response={true} text={
          <>
