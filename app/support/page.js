@@ -175,7 +175,8 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm">
+              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm night-fall-stats" 
+              style={{animationDelay: 0.5}}>
                 <Zap className="w-8 h-8 text-blue-400 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">High Performance</h3>
