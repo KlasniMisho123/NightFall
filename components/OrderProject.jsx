@@ -8,7 +8,6 @@ export default function OrderProject() {
 
   return (
     <div className="overflow-hidden flex flex-col md:flex-row justify-between gap-10 items-center my-16 p-8 rounded-3xl shadow-lg bg-blue-50/90 backdrop-blur-xl border border-gray-200 max-h-[600px]">
-      {/* LEFT: Headline, Subtitle, Visual */}
       <div className="flex-shrink-0 flex flex-col gap-6 text-center md:text-left max-w-lg load-hero">
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-800">
@@ -48,9 +47,7 @@ export default function OrderProject() {
         </Link>
       </div>
 
-
       <div className="flex-shrink-0 flex px-2 ">
-        
         <img
           src="order-project-card-1.jpg"
           alt="Creative concept"
