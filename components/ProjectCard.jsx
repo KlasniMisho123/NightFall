@@ -10,7 +10,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 const exo2 = Exo_2({subsets: ["latin"], weight: ["400", "700"]});
 
 export default function ProjectCard(props) {
-    const { year, projectName, title, webLink, projectDesc, projectSecondaryColor, client, time, service, imgSrc, projectIndex } = props
+    const { year, projectName, title, webLink, projectDesc, projectSecondaryColor, client, time, service, imgSrc, animationIndex } = props
 
     const classes = colorClassMap[projectSecondaryColor] || {
         border: 'hover:border-white',
@@ -22,7 +22,7 @@ export default function ProjectCard(props) {
     // if a SSR-ed Client Component used: - after reveal
 
   return (
-        <Reveal projectIndex={projectIndex} > 
+        <Reveal animationIndex={animationIndex} > 
             <div className={`bg-transparent flex flex-col gap-4 rounded-2xl p-4 border-2 border-transparent transition-all duration-300 ${classes.border}`}>
             <Link
             className={`text-xl md:text-2xl font-semibold text-white mb-4 leading-snug 0 max-w-[650px] truncate py-2`}
