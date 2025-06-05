@@ -14,7 +14,7 @@ export default function MessageBox(props) {
     <div 
       className={`
         p-5 text-white rounded-full transition-all duration-300 ease-in-out
-        ${response ? 'self-end response-message' : 'self-start'}
+        ${response ? 'ml-40 self-end response-message' : 'self-start'}
         ${clickIndex !== null 
           ? 'cursor-pointer border-2 border-blue-500 bg-transparent hover:bg-blue-400/40 shadow-none' 
           : 'bg-blue-400/80 shadow-md'}
