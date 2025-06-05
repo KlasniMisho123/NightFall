@@ -168,7 +168,7 @@ export default function ContactPage() {
               <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
                hover:bg-blue-500/30 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm "
               style={{animationDelay: '0s'}}>
-                <Code className="w-8 h-8 text-blue-400 mt-1" />
+                <Code className="w-8 h-8 text-purple-400 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Custom Development</h3>
                   <p className="text-gray-300">
@@ -180,7 +180,7 @@ export default function ContactPage() {
               <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
                hover:bg-blue-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats " 
               style={{animationDelay: '0.25s'}}>
-                <Zap className="w-8 h-8 text-blue-400 mt-1" />
+                <Zap className="w-8 h-8 text-yellow-500/80 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">High Performance</h3>
                   <p className="text-gray-300">
@@ -287,11 +287,11 @@ export default function ContactPage() {
                   <Button
                     type="submit"
                     disabled={isLoading}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 transition-all duration-200 transform hover:scale-105"
+                    className="w-full bg-blue-600 hover:bg-blue-400/80 text-white font-semibold py-3 transition-all duration-200 transform hover:scale-105"
                   >
                     {isLoading ? (
                       <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                        <div className="w-4 h-4 border-2 border-white border-t-white rounded-full animate-spin"></div>
                         Sending Message...
                       </div>
                     ) : (
