@@ -41,7 +41,6 @@ useEffect(()=>{
 
   return (
     <section className=' min-h-[100vh] bg-nightfall bg-white text-white'>
-      {/* Different Bg? Style? about us? */}
       <div className='relative py-8 bg-transparent px-[20%]'>
         <Image src="/aboutus-bg.jpg"
         alt="Background"
@@ -49,9 +48,12 @@ useEffect(()=>{
         height={600} 
         className="absolute inset-0 w-full h-full object-cover z-0"
         />
-        <div className='relative inset-0 z-10  flex flex-col mx-16 min-h-[250px] text-white items-center justify-center gap-4'>
-          <h2 className={'text-5xl font-light ' + exo2.className} > About Us </h2>
-          <p className='text-gray-400 text-center max-w-[500px] ' > 🌒 We’re more than a design agency — we’re your digital partner. From UX strategy to clean code, Nightfall helps brands transform ideas into powerful online experiences. </p>
+        <div className='relative inset-0 z-10 flex flex-col mx-4 md:mx-16   min-h-[250px] text-white items-center justify-center gap-4'>
+          <h2 className={'text-3xl sm:text-4xl md:text-5xl font-light truncate ' + exo2.className} > About Us </h2>
+          <p className='text-gray-400 text-center text-sm sm:text-base max-w-[500px] max-h-[200px] line-clamp-5 md:line-clamp-none' >
+             🌒 We’re more than a design agency — we’re your digital partner. From UX strategy to clean code,
+              Nightfall helps brands transform ideas into powerful online experiences.
+          </p>
         </div>
       </div>
       <section className='flex flex-col gap-12 py-8 mx-[20%] '> 
