@@ -98,7 +98,6 @@ export default function ChatComponent() {
              Every project matters deeply to us." />
           </div>
         : null}
-        
     </div>
   )
 }

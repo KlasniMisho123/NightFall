@@ -14,7 +14,7 @@ import { useAuth } from '@/context/AuthContext';
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
-const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
+const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Hero() {
     const {handleSelectedNavSection} =  useAuth();
