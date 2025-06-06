@@ -82,7 +82,7 @@ export default function ChatComponent() {
           </div>
         </Reveal>
         {selectedMessageActive.includes(2)? 
-          <div className={"self-end " + (selectedMessage.includes(2)? " " : " slide-message ")}>
+          <div className={"w-fit md:w-auto ml-5 sm:ml-10 md:ml-0 md:self-end  " + (selectedMessage.includes(2)? " " : " slide-message ")}>
             <MessageBox response={true}  text="Yes! We keep things clear and collaborative. Whether you're launching your first site or refining an idea,
              we walk you through each step — no jargon, no pressure." />
           </div>
@@ -93,7 +93,7 @@ export default function ChatComponent() {
           </div>
         </Reveal>
         {selectedMessageActive.includes(3)? 
-          <div className={"self-end " + (selectedMessage.includes(3)? " " : " slide-message ")}>
+          <div className={"w-fit md:w-auto ml-5 sm:ml-10 md:ml-0 md:self-end  " + (selectedMessage.includes(3)? " " : " slide-message ")}>
             <MessageBox response={true}  text="We’re hungry to build, learn, and prove ourselves — which means more care, more attention, and often a more flexible price.
              Every project matters deeply to us." />
           </div>
