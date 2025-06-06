@@ -56,7 +56,7 @@ useEffect(()=>{
           </p>
         </div>
       </div>
-      <section className='flex flex-col gap-12 py-8  mx-[5%] sm:mx-[10%] md:mx-[10%] lg:mx-[20%]'> 
+      <section className='flex flex-col gap-12 py-8  mx-[5%] sm:mx-[10%] md:mx-[10%] lg:mx-[18%]'> 
         <div className='flex flex-col md:flex-row justify-center gap-6 hero-stats-load '>
           <div className='flex flex-col gap-2'>
              <p className={'font-bold text-pink-500 font-bold rounded-r-full border-2 w-fit p-1 pl-2 pr-4 truncate ' + urbanist.className} >Little About</p>
@@ -80,9 +80,9 @@ useEffect(()=>{
           </div>
         </div>
         <Reveal > 
-          <div className="flex justify-evenly pt-8 mx-4 gap-4"> 
+          <div className="flex justify-evenly pt-8 gap-4 md:gap-1 lg:gap-4"> 
          <div className="flex flex-col md:flex-row-reverse justify-center gap-8 pt-8 ">  
-            <div className="flex flex-col ">
+            <div className="flex flex-col shrink">
                 <p className="text-white ">A little about </p>
                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold  ">Our <span className='text-blue-500'> Goals </span> <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
               
@@ -95,25 +95,25 @@ useEffect(()=>{
                 <ul className="list-inside mt-6 space-y-2 text-base md:text-base text-white ">
                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-brain text-xl text-pink-400 group-hover:text-white group-hover:bg-pink-400 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate">Gain real-world experience through client work.</span>
+                    <span className="truncate text-base md:text-sm lg:text-base ">Gain real-world experience through client work.</span>
                   </li>
-                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
+                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all ">
                     <i className="fa-solid fa-palette text-xl text-teal-500 group-hover:text-white group-hover:bg-teal-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate">Create thoughtful, user-centered design that solves real problems.</span>
+                    <span className="truncate text-base md:text-sm lg:text-base ">Create thoughtful, user-centered design that solves real problems.</span>
                   </li>
                    <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-handshake-simple text-xl text-yellow-500 group-hover:text-white group-hover:bg-yellow-500 p-[6px] py-[8px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate">Build lasting client relationships based on trust and care.</span>
+                    <span className="truncate text-base md:text-sm lg:text-base ">Build lasting client relationships based on trust and care.</span>
                   </li>
                    <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-rocket text-xl text-red-500 group-hover:text-white group-hover:bg-red-500 p-[7px] pr-[8px] pt-[8px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate">Help startups grow with budget-friendly tools.</span>
+                    <span className="truncate text-base md:text-sm lg:text-base ">Help startups grow with budget-friendly tools.</span>
                   </li>
                 </ul>
             </div>
             <Image
              src="/our-goals-pic.jpg" 
-             className="w-[40%] object-cover"
+             className=" w-full md:min-w-[250px] lg:w-[50%] object-cover relative "
              width={800} 
              height={600} 
              alt="team-photo" 
