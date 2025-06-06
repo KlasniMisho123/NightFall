@@ -69,11 +69,11 @@ useEffect(()=>{
               and every solution is crafted with care, backed by our commitment to quality and a hunger to grow. Let’s build something great — together.
               </p>
           </div>
-          <div>
+          <div className='relative'>
             <Image
              src='/our-story-pic.jpg'
              alt='Our Story photo'
-             className='object-cover min-w-[350px] max-h-[450px] '
+             className='object-cover min-w-[250px] max-h-[500px] md:min-w-[350px] md:max-h-[450px] '
              width={800} 
              height={600} 
              />
