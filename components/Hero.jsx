@@ -6,9 +6,9 @@ import Link from 'next/link';
 import ServiceCard from './ServiceCard';
 import WorkStages from './WorkStages';
 import OurAdvantages from './OurAdvantages';
-import HeroAnimation from './HeroAnimation';
 import BorderedTitle from './BorderedTitle';
 import { useAuth } from '@/context/AuthContext';
+import HeroAnimation from './HeroAnimation';
 
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
@@ -61,7 +61,7 @@ export default function Hero() {
             </div>
           </div>
           {/* RESPONSIVE */}
-          <section className='flex flex-col gap-4 bg-white mt-12 md:mt-18 lg:mt-24 mb-4 rounded-lg overflow-x-auto whitespace-nowrap py-6 px-2 md:px-4 lg:px-8 hero-stats-load '>
+          <section className='flex flex-col gap-4 bg-white mt-12 md:mt-18 lg:mt-24 mb-4 rounded-lg overflow-x-auto whitespace-nowrap py-6 px-2 hero-stats-load '>
             <div
               className={
                 "self-center text-xl p-1 px-2 mb-2 md:mb-4 md:text-2xl md:p-2 md:px-4 font-semibold md:tracking-wide rounded-full border-2 border-blue-500 text-blue-500 " +
@@ -79,7 +79,8 @@ export default function Hero() {
          </section>
         </div>
         {/* Consider other Variatons for This Animation// (moon/sun ..env) */}
-        <HeroAnimation />
+        <HeroAnimation/>
+        
       </div>
         <OurAdvantages />
         <section className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4 lg:gap-6 lg:p-2 lg:py-8 my-12 text-white '> 
