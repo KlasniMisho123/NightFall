@@ -4,7 +4,7 @@ export default function OurVision() {
   return (
     <div className="self-center ">
         <div 
-        className="mt-10 relative p-6 rounded-xl shadow-xl max-w-xl mx-auto border border-white/30 text-gray-800 bg-cover bg-center bg-no-repeat backdrop-blur-md"
+        className="mt-10 relative p-1 sm:p-2 md:p-4 lg:p-6 rounded-xl shadow-xl max-w-xl mx-auto border border-white/30 text-gray-800 bg-cover bg-center bg-no-repeat backdrop-blur-md"
         style={{ backgroundImage: `url('zoe-kravitz-vision.jpg')` }}
         >
             <div className="absolute inset-0 bg-white/70 rounded-xl z-0"></div>
