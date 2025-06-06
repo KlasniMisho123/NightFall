@@ -33,6 +33,7 @@ add interval. onclick(example chat messages)
 
  !!! BAGON  --> 
  Network -> loading images, change page, still loaded? change back adds on already requested assets,Network??
+ responsive - body/html
 
  Terminal -> GET /.well-known/appspecific/com.chrome.devtools.json 404 in 14094ms
 

@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
+html {
+  
+}
+
 body {
   background-color: #1F2937;
   scroll-behavior: smooth;
+  width: 100%;
 }
-
-/* OADING ANIMATION>> */
+ 
 .loading-div-one {
     animation: firstDivAnim 5s ease-in-out infinite;
 }

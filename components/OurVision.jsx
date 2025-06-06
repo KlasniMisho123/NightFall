@@ -8,7 +8,6 @@ export default function OurVision() {
         style={{ backgroundImage: `url('zoe-kravitz-vision.jpg')` }}
         >
             <div className="absolute inset-0 bg-white/70 rounded-xl z-0"></div>
-
             <div className="relative z-10 text-center">
                 <div className="inline-block bg-white text-blue-500 px-4 py-1 rounded-full text-xs shadow-md uppercase tracking-wider font-semibold mb-4">
                 Vision
