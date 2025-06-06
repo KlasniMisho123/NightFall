@@ -83,8 +83,8 @@ useEffect(()=>{
         <div className="flex justify-evenly pt-8 gap-4 "> 
          <div className="flex flex-col md:flex-row-reverse justify-center gap-8 md:gap-4 lg:gap-8 pt-8 ">  
             <div className="flex flex-col shrink">
-                <p className="text-white ">A little about </p>
-                <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold  ">Our <span className='text-blue-500'> Goals </span> <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
+                <p className="text-white text-lg ">A little about </p>
+                <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold  ">Our <span className='text-blue-500'> Goals </span> <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
               
                 <p className="mt-12 text-gray-400 leading-relaxed max-w-[500px] text-base  md:text-sm lg:text-base">
                   Our goal is to empower startups and small teams with smart, beautifully designed web solutions — from custom websites to ongoing support. 
