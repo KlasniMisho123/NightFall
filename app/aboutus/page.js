@@ -81,7 +81,7 @@ useEffect(()=>{
         </div>
         <Reveal > 
           <div className="flex justify-evenly pt-8 mx-4 gap-4"> 
-         <div className="flex flex-row-reverse  justify-center gap-8 pt-8 ">  
+         <div className="flex flex-col md:flex-row-reverse justify-center gap-8 pt-8 ">  
             <div className="flex flex-col ">
                 <p className="text-white ">A little about </p>
                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold  ">Our <span className='text-blue-500'> Goals </span> <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
