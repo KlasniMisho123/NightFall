@@ -82,42 +82,53 @@ useEffect(()=>{
         <Reveal > 
         <div className="flex justify-evenly pt-8 gap-4 "> 
          <div className="flex flex-col md:flex-row-reverse justify-center gap-8 md:gap-4 lg:gap-8 pt-8 ">  
-            <div className="flex flex-col shrink">
+            <div className="flex-1 flex flex-col shrink">
                 <p className="text-white text-lg ">A little about </p>
                 <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold  ">Our <span className='text-blue-500'> Goals </span> <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
-              
-                <p className="mt-12 text-gray-400 leading-relaxed max-w-[500px] text-base  md:text-sm lg:text-base">
+                <p className="mt-12 text-gray-400 leading-relaxed max-w-[500px] text-sm sm:text-base md:text-sm lg:text-base">
                   Our goal is to empower startups and small teams with smart, beautifully designed web solutions — from custom websites to ongoing support. 
                   As we help others grow their digital presence, we’re also growing ourselves — gaining real-world experience, refining our craft,
                    and building meaningful partnerships along the way.
                 </p>
-              {/* top-bg isnot even? */}
-                <ul className="list-inside mt-6 space-y-2 text-base md:text-base text-white ">
-                  <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
+
+                <div className="flex flex-col mt-6 space-y-2 text-white sm:w-full md:w-[90%] lg:w-full">
+                  <li className="flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-brain text-xl text-pink-400 group-hover:text-white group-hover:bg-pink-400 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate text-base md:text-sm lg:text-base ">Gain real-world experience through client work.</span>
+                    <span className="truncate whitespace-nowrap flex-1 text-sm md:text-sm lg:text-base">
+                      Gain real-world experience through client work.
+                    </span>
                   </li>
-                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all ">
+
+                  <li className="flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-palette text-xl text-teal-500 group-hover:text-white group-hover:bg-teal-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate text-base md:text-sm lg:text-base ">Create thoughtful, user-centered design that solves real problems.</span>
+                    <span className="truncate whitespace-nowrap flex-1 text-sm md:text-sm lg:text-base">
+                      Create thoughtful design that solves real problems.
+                    </span>
                   </li>
-                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
+
+                  <li className="flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-handshake-simple text-xl text-yellow-500 group-hover:text-white group-hover:bg-yellow-500 p-[6px] py-[8px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate text-base md:text-sm lg:text-base ">Build lasting client relationships based on trust and care.</span>
+                    <span className="truncate whitespace-nowrap flex-1 text-sm md:text-sm lg:text-base">
+                      Build lasting client relationships based on trust and care.
+                    </span>
                   </li>
-                   <li className="goal-list flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
+
+                  <li className="flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-rocket text-xl text-red-500 group-hover:text-white group-hover:bg-red-500 p-[7px] pr-[8px] pt-[8px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate text-base md:text-sm lg:text-base ">Help startups grow with budget-friendly tools.</span>
+                    <span className="truncate whitespace-nowrap flex-1 text-sm md:text-sm lg:text-base">
+                      Help startups grow with budget-friendly tools.
+                    </span>
                   </li>
-                </ul>
+                </div>
+
             </div>
             <Image
-             src="/our-goals-pic.jpg" 
-             className=" w-full md:min-w-[250px] lg:w-[50%] object-cover relative "
-             width={800} 
-             height={600} 
-             alt="team-photo" 
-             />
+              src="/our-goals-pic.jpg" 
+              className="w-full max-w-[400px] md:max-w-[50%] object-cover h-auto" 
+              width={800}
+              height={600}
+              alt="team-photo"
+            />
           </div>
         </div>
         </Reveal>
