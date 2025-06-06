@@ -71,7 +71,7 @@ export default function ChatComponent() {
           </div>
         </Reveal>
         {selectedMessageActive.includes(1)? 
-          <div className={"self-end " + (selectedMessage.includes(1)? " " : " slide-message ")}>
+          <div className={"w-fit md:w-auto ml-5 sm:ml-10 md:ml-0 md:self-end " + (selectedMessage.includes(1)? " " : " slide-message ")}>
             <MessageBox response={true} text="We work best with individuals, early-stage startups, and small teams who value clarity, 
             collaboration, and thoughtful design — especially those just starting out." />
           </div>
