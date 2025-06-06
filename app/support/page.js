@@ -144,7 +144,7 @@ export default function ContactPage() {
               Get In <span className="text-blue-400">Touch</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Ready to transform your business with cutting-edge software solutions? Let's discuss how we can help you
+              Ready to transform your business with cutting-edge software solutions? Let&apos;s discuss how we can help you
               achieve your goals.
             </p>
           </div>
@@ -233,7 +233,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle className="text-2xl text-blue-400 ">Send Us a Message</CardTitle>
                 <CardDescription className="text-gray-300">
-                  Fill out the form below and we'll get back to you within 24 hours
+                  Fill out the form below and we&apos;ll get back to you within 24 hours
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -308,7 +308,7 @@ export default function ContactPage() {
               <ul className="space-y-2 text-gray-200">
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  We'll review your message within 2-4 hours
+                  We&apos;ll review your message within 2-4 hours
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
