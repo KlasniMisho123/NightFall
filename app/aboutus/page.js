@@ -85,37 +85,37 @@ useEffect(()=>{
             <div className="flex-1 flex flex-col shrink">
                 <p className="text-white text-lg ">A little about </p>
                 <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold  ">Our <span className='text-blue-500'> Goals </span> <i className="fa-solid fa-bullseye text-white animate-bounce"></i></h2>
-                <p className="mt-12 text-gray-400 leading-relaxed max-w-[500px] text-sm sm:text-base md:text-sm lg:text-base">
+                <p className="mt-12 text-gray-400 leading-relaxed max-w-[250px] md:max-w-[500px] text-sm sm:text-base md:text-sm lg:text-base">
                   Our goal is to empower startups and small teams with smart, beautifully designed web solutions — from custom websites to ongoing support. 
                   As we help others grow their digital presence, we’re also growing ourselves — gaining real-world experience, refining our craft,
                    and building meaningful partnerships along the way.
                 </p>
 
-                <div className="flex flex-col mt-6 space-y-2 text-white sm:w-full md:w-[90%] lg:w-full">
+                <div className="flex flex-col mt-6 space-y-2 text-white text-xs sm:text-sm md:text-base w-fit sm:w-full max-w-[250px]  md:w-[90%] lg:w-full">
                   <li className="flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-brain text-xl text-pink-400 group-hover:text-white group-hover:bg-pink-400 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate whitespace-nowrap flex-1 text-sm md:text-sm lg:text-base">
+                    <span className=" line-clamp-2 flex-1 text-sm md:text-sm lg:text-base">
                       Gain real-world experience through client work.
                     </span>
                   </li>
 
                   <li className="flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-palette text-xl text-teal-500 group-hover:text-white group-hover:bg-teal-500 p-[7px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate whitespace-nowrap flex-1 text-sm md:text-sm lg:text-base">
+                    <span className=" line-clamp-2 flex-1 text-sm md:text-sm lg:text-base">
                       Create thoughtful design that solves real problems.
                     </span>
                   </li>
 
                   <li className="flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-handshake-simple text-xl text-yellow-500 group-hover:text-white group-hover:bg-yellow-500 p-[6px] py-[8px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate whitespace-nowrap flex-1 text-sm md:text-sm lg:text-base">
+                    <span className=" line-clamp-2 flex-1 text-sm md:text-sm lg:text-base">
                       Build lasting client relationships based on trust and care.
                     </span>
                   </li>
 
                   <li className="flex gap-3 items-center p-2 border-2 border-transparent rounded-lg bg-gray-800 group shadow-sm hover:shadow-xl hover:bg-gray-600 transition-all">
                     <i className="fa-solid fa-rocket text-xl text-red-500 group-hover:text-white group-hover:bg-red-500 p-[7px] pr-[8px] pt-[8px] rounded-full transition-colors duration-300 flex items-center justify-center"></i>
-                    <span className="truncate whitespace-nowrap flex-1 text-sm md:text-sm lg:text-base">
+                    <span className=" line-clamp-2 flex-1 text-sm md:text-sm lg:text-base">
                       Help startups grow with budget-friendly tools.
                     </span>
                   </li>
@@ -124,7 +124,7 @@ useEffect(()=>{
             </div>
             <Image
               src="/our-goals-pic.jpg" 
-              className="w-full max-w-[400px] md:max-w-[50%] object-cover h-auto" 
+              className="max-w-[250px] md:max-w-[50%] object-cover h-auto" 
               width={800}
               height={600}
               alt="team-photo"
@@ -193,7 +193,6 @@ useEffect(()=>{
                   <span className="dot-bounce dot2 text-5xl text-black">.</span>
                   <span className="dot-bounce dot3 text-5xl text-black">.</span>
                 </div>
-                
               </div>
               {/* Close Animation Instead Of instant Dismount --> another usestate that gives timeout/timeinterval for dismount(startswith false), animate shutdown on selectedTeamMember false? */}
                   {isMemberCardActive ?
