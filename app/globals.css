@@ -389,12 +389,10 @@ body {
 /* Nightfall Hero Animation Start */
 .astronaut-flight {
   position: relative;
-  animation: astronaut-flight-animation 2s linear;
+  /* animation: astronaut-flight-animation 2s linear; */
   opacity: 0;
   animation-delay: 1s;
 }
-
-
 
 @keyframes astronaut-flight-animation {
   0% {
@@ -422,7 +420,45 @@ body {
   }
 }
 
+.austronaut-with-pizza {
+  position: relative;
+  animation: austronaut-with-pizza-animation 2s linear;
+  /* opacity: 0; */
+   /* transform: translate(-150px, 100x) rotate(30deg); */
+  opacity: 1;
+  animation-delay: 4s;
+}
 
+@keyframes austronaut-with-pizza-animation {
+  0% {
+    transform: translate(-150px, 100x) rotate(30deg);
+    opacity: 1;
+  }
+  30% {
+    transform: translate(100px, -150px) rotate(30deg);
+  }
+  35% {
+    transform: translate(150px, -100px) rotate(30deg);
+  }
+  45% {
+    transform: translate(200px, -100px) rotate(15deg);
+  }
+  55% {
+    transform: translate(250px, -150px) rotate(0deg);
+  }
+  65% {
+    transform: translate(100px, -70px) rotate(-15deg) scale(0.9);
+  }
+  75% {
+    transform: translate(100px, -70px) rotate(-15deg) scale(0.9);
+  }
+
+
+  100% {
+    transform: translate(500px, -200px) rotate(-20deg) scale(0.8);
+    /* filter: drop-shadow(0 5px 8px orange) drop-shadow(20px 20px 15px red); */
+  }
+}
 
 /* Nightfall Hero Animation Ends */
 
