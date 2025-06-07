@@ -389,7 +389,7 @@ body {
 /* Nightfall Hero Animation Start */
 .astronaut-flight {
   position: relative;
-  animation: astronaut-flight-animation 2s linear forwards;
+  animation: astronaut-flight-animation 2s linear;
   opacity: 0;
   animation-delay: 1s;
 }
@@ -405,17 +405,23 @@ body {
     transform: translate(350px, 0px) rotate(0deg);
     opacity: 1;
   }
+  70% {
+    scale: 1;
+  }
   75% {
-    transform: translate(100px, -70px) rotate(-15deg);
+    transform: translate(100px, -70px) rotate(-15deg) scale(0.9);
     filter: drop-shadow(0 5px 8px orange) drop-shadow(15px 15px 15px red);
     opacity: 0.8;
   }
   100% {
-    transform: translate(-150px, -100px) rotate(-20deg);
+    transform: translate(-150px, -100px) rotate(-20deg) scale(0.8);
     filter: drop-shadow(0 5px 8px orange) drop-shadow(20px 20px 15px red);
-    opacity: 0.8;
+    opacity: 0.7;
+    height: 6rem;
+    width: 6rem;
   }
 }
+
 
 
 /* Nightfall Hero Animation Ends */

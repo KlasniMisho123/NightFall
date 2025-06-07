@@ -17,11 +17,11 @@ export default function HeroAnimation() {
          className='h-32 w-32 object-cover rounded-full astronaut-flight '
          alt="Astronaut on the Moon"
         />
-        <img
+        {/* <img
          src="HeroAnimationAssets/astronaut-pizza-rocket.png" 
          className='h-32 w-32 object-cover rounded-full '
          alt="Astronaut on the Moon"
-        />
+        /> */}
       </div>
     </section>
 
