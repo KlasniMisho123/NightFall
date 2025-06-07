@@ -3,17 +3,23 @@ import Image from 'next/image';
 
 export default function HeroAnimation() {
   return (
-    <div className='w-full h-full '>
-      {/* <Image
-        src="https://i.pinimg.com/736x/1b/c5/3e/1bc53e53aa055c0247e30714a874adb5.jpg" 
-        alt="Astronaut on the Moon"
-        className='w-[100%] h-[100%] object-cover '
-        width={100}
-        height={100} /> */}
+    <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] lg:min-w-[40%] text-white main-hero-load flex items-center'>
+      <div>
         <img
          src="https://i.pinimg.com/736x/1b/c5/3e/1bc53e53aa055c0247e30714a874adb5.jpg" 
+         className='max-h-[800px] w-full object-cover '
+         alt="Astronaut on the Moon"
         />
-    </div>
+      </div>
+      
+      <div>
+        <img
+         src="https://i.pinimg.com/736x/1b/c5/3e/1bc53e53aa055c0247e30714a874adb5.jpg" 
+         className='max-h-[800px] w-full object-cover '
+         alt="Astronaut on the Moon"
+        />
+      </div>
+    </section>
 
     // <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] text-white main-hero-load flex items-center'>
     //   <div className='flex flex-col items-center p-8'>
