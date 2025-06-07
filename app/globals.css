@@ -389,10 +389,8 @@ body {
 /* Nightfall Hero Animation Start */
 .astronaut-flight {
   position: relative;
-  animation: astronaut-flight-animation 2s linear infinite;
+  animation: astronaut-flight-animation 2s linear forwards;
   opacity: 0;
-  /* opacity: 1; */
-  /* transform: translate(100px, -70px) rotate(-15deg); */
   animation-delay: 1s;
 }
 
