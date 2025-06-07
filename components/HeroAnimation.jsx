@@ -3,19 +3,18 @@ import Image from 'next/image';
 
 export default function HeroAnimation() {
   return (
-    <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] lg:min-w-[40%] text-white main-hero-load flex items-center'>
-      <div>
+    <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] lg:min-w-[40%] text-white main-hero-load flex items-center overflow-hidden'>
+      <div className='absolute z-1 w-full '>
         <img
          src="https://i.pinimg.com/736x/1b/c5/3e/1bc53e53aa055c0247e30714a874adb5.jpg" 
          className='max-h-[800px] w-full object-cover '
          alt="Astronaut on the Moon"
         />
       </div>
-      
-      <div>
+      <div className='z-2'>
         <img
-         src="https://i.pinimg.com/736x/1b/c5/3e/1bc53e53aa055c0247e30714a874adb5.jpg" 
-         className='max-h-[800px] w-full object-cover '
+         src="HeroAnimationAssets/astronaut-rocket.png" 
+         className='h-32 w-32 object-cover rounded-full astronaut-flight '
          alt="Astronaut on the Moon"
         />
       </div>
