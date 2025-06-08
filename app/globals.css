@@ -472,27 +472,28 @@ body {
 
 @keyframes astronaut-floating-animation {
   0% {
-    transform: translate(0px, 150px) rotate(0deg) scale(0.9);
+    transform: translate(0px, 50px) rotate(0deg) scale(0.9);
     opacity: 1;
   }
 
   25% {
-    transform: translate(140px, 135px) rotate(90deg) scale(0.95);
+    transform: translate(140px, 35px) rotate(90deg) scale(0.95);
   }
 
   50% {
-    transform: translate(275px, 167px) rotate(180deg) scale(1);
+    transform: translate(275px, 67px) rotate(180deg) scale(1);
   }
 
   75% {
-    transform: translate(415px, 138px) rotate(270deg) scale(1.05);
+    transform: translate(415px, 38px) rotate(270deg) scale(1.05);
   }
 
   100% {
-    transform: translate(550px, 150px) rotate(360deg) scale(1.1);
+    transform: translate(550px, 50px) rotate(360deg) scale(1.1);
     opacity: 1;
   }
 }
+
 
 
 
