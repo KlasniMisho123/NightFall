@@ -442,14 +442,14 @@ body {
   }
 }
 
-.austronaut-with-pizza {
+.astronaut-with-pizza {
   position: relative;
-  animation: austronaut-with-pizza-animation 4s forwards;
+  animation: astronaut-with-pizza-animation 4s forwards;
   opacity: 0;
   animation-delay: 6s;
 }
 
-@keyframes austronaut-with-pizza-animation {
+@keyframes astronaut-with-pizza-animation {
   0% {
     transform: translate(-150px, -200px) rotate(15deg) scale(0.8);
     opacity: 1;

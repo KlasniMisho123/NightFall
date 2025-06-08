@@ -1,7 +1,19 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 
 export default function HeroAnimation() {
+ const [animate, setAnimate] = useState(true);
+
+ useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimate(false);
+      setTimeout(() => setAnimate(true), 100)
+    }, 15000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] lg:min-w-[40%] text-white main-hero-load flex items-center overflow-hidden'>
       <div className='absolute z-1 w-full '>
@@ -14,48 +26,25 @@ export default function HeroAnimation() {
       <div className='z-2'>
         <img
          src="HeroAnimationAssets/astronaut-rocket.png" 
-         className='h-32 w-32 object-cover rounded-full astronaut-flight '
+         className='h-32 w-32 object-cover rounded-full astro-flight astronaut-flight '
          alt="Astronaut on the Moon"
         />
         <img
          src="HeroAnimationAssets/astronaut-pizza-rocket.png" 
-         className='h-32 w-32 object-cover rounded-full austronaut-with-pizza'
+         className='h-32 w-32 object-cover rounded-full astro-pizza astronaut-with-pizza'
          alt="Astronaut on the Moon"
         />
         <img
          src="HeroAnimationAssets/animation-moon.png" 
-         className='h-46 w-46 object-cover rounded-full animated-moon'
+         className='h-46 w-46 object-cover rounded-full ani-moon animated-moon'
          alt="Astronaut on the Moon"
         />
         <img
          src="HeroAnimationAssets/astronaut-star.png" 
-         className='h-46 w-46 object-cover rounded-full astronaut-star'
+         className='h-32 w-32 object-cover rounded-full astro-star astronaut-star'
          alt="Astronaut on the Moon"
         />
       </div>
     </section>
-
-    // <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] text-white main-hero-load flex items-center'>
-    //   <div className='flex flex-col items-center p-8'>
-      /* <div className='flex justify-center gap-2'>
-          <img
-            src='sun.png'
-            alt='Sun icon'
-            className='h-24 w-24 object-cover spin-slow'
-          />
-          <img
-            src='moonlogo.png'
-            alt='Moon logo'
-            className='h-24 w-24 object-cover fade-delay'
-          />
-        </div>
-        <img
-          src='Mountains.png'
-          alt='Mountain landscape'
-          className='mt-4 object-cover rise-up'
-        /> */
-    //   </div>
-    // </section>
-    
   )
 }
