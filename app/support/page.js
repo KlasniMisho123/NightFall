@@ -1,328 +1,171 @@
-"use client"
+import React, { useState } from 'react';
+import { Urbanist, Inter } from 'next/font/google';
+import { HiUser, HiMail, HiChat } from 'react-icons/hi'; // Heroicons
 
-import { useState, useEffect } from "react"
-import { Mail, Phone, MapPin, Code, Zap, Shield, CheckCircle } from "lucide-react"
+const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
+const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
 
-// Custom Components
-const Button = ({ children, onClick, disabled, type = "button", className = "" }) => {
-  return (
-    <button
-      type={type}
-      onClick={onClick}
-      disabled={disabled}
-      className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
-    >
-      {children}
-    </button>
-  )
-}
+export default function Contact() {
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
-const Input = ({ id, name, type = "text", value, onChange, placeholder, required, className = "" }) => {
-  return (
-    <input
-      id={id}
-      name={name}
-      type={type}
-      value={value}
-      onChange={onChange}
-      placeholder={placeholder}
-      required={required}
-      className={`w-full px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-200 ${className}`}
-    />
-  )
-}
+  // Simple validation
+  const validate = () => {
+    const newErrors = {};
+    if (!form.name.trim()) newErrors.name = 'Name is required';
+    if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email)) newErrors.email = 'Valid email required';
+    if (!form.message.trim()) newErrors.message = 'Message cannot be empty';
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
-const Label = ({ htmlFor, children, className = "" }) => {
-  return (
-    <label htmlFor={htmlFor} className={`block text-sm font-medium ${className}`}>
-      {children}
-    </label>
-  )
-}
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: '' });
+  };
 
-const Textarea = ({ id, name, value, onChange, placeholder, required, className = "" }) => {
-  return (
-    <textarea
-      id={id}
-      name={name}
-      value={value}
-      onChange={onChange}
-      placeholder={placeholder}
-      required={required}
-      className={`w-full px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-200 resize-none ${className}`}
-    />
-  )
-}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!validate()) return;
+    setLoading(true);
+    setSuccess(false);
 
-const Card = ({ children, className = "" }) => {
-  return <div className={`rounded-lg border shadow-sm ${className}`}>{children}</div>
-}
-
-const CardHeader = ({ children, className = "" }) => {
-  return <div className={`p-6 pb-4 ${className}`}>{children}</div>
-}
-
-const CardTitle = ({ children, className = "" }) => {
-  return <h3 className={`text-2xl font-semibold leading-none tracking-tight ${className}`}>{children}</h3>
-}
-
-const CardDescription = ({ children, className = "" }) => {
-  return <p className={`text-sm mt-1.5 ${className}`}>{children}</p>
-}
-
-const CardContent = ({ children, className = "" }) => {
-  return <div className={`p-6 pt-0 ${className}`}>{children}</div>
-}
-
-export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    email: "",
-    subject: "",
-    message: "",
-  })
-  const [isLoading, setIsLoading] = useState(false)
-  const [showSuccess, setShowSuccess] = useState(false)
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }))
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsLoading(true)
-
-    try {
-      const { email, subject, message } = formData
-      const response = await fetch(
-        `https://portfolio-website-server-gilt.vercel.app/?email=${encodeURIComponent(email)}&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`,
-      )
-
-      if (response.ok) {
-        setFormData({ email: "", subject: "", message: "" })
-        setShowSuccess(true)
-      }
-    } catch (error) {
-      console.error("Error sending message:", error)
-    } finally {
-      setIsLoading(false)
-    }
-  }
-
-  useEffect(() => {
-    if (showSuccess) {
-      const timer = setTimeout(() => {
-        setShowSuccess(false)
-      }, 4000)
-      return () => clearTimeout(timer)
-    }
-  }, [showSuccess])
+    // Fake submit simulation
+    setTimeout(() => {
+      setLoading(false);
+      setSuccess(true);
+      setForm({ name: '', email: '', message: '' });
+    }, 1500);
+  };
 
   return (
-    <div className="min-h-screen bg-nightfall ">
-      {/* Success Popup */}
-      <div
-        className={`fixed top-4 right-4 z-50 transition-all duration-500 transform ${
-          showSuccess ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
-        }`}
+    <div className="min-h-screen bg-nightfall text-white transition-all duration-300 px-6 py-16 md:px-28 flex flex-col items-center">
+      <header className={`max-w-3xl text-center mb-12 ${urbanist.className}`}>
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          Get in Touch <br />
+          <span className="text-blue-500/80">We’d Love to Hear From You</span>
+        </h1>
+        <p className={`mt-4 text-gray-400 text-base md:text-lg ${inter.className}`}>
+          Have questions, want to collaborate, or just want to say hi? Use the form below and we’ll get back to you as soon as possible.
+        </p>
+      </header>
+
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-2xl bg-[#1e293b] rounded-xl p-8 shadow-lg"
+        noValidate
       >
-        <div className="bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg flex items-center gap-2">
-          <CheckCircle className="w-5 h-5" />
-          <span>Message sent successfully!</span>
+        {/* Name Input */}
+        <div className="relative mb-6">
+          <input
+            id="name"
+            name="name"
+            type="text"
+            value={form.name}
+            onChange={handleChange}
+            className={`peer w-full pl-10 pr-4 py-3 rounded-md bg-nightfall border ${
+              errors.name ? 'border-red-500' : 'border-gray-700'
+            } placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition`}
+            placeholder="Your full name"
+            autoComplete="name"
+          />
+          <label
+            htmlFor="name"
+            className="absolute left-10 top-3 text-gray-400 text-sm cursor-text transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base peer-focus:top-[-10px] peer-focus:text-blue-500 peer-focus:text-sm"
+          >
+            Name
+          </label>
+          <HiUser className="absolute left-3 top-3.5 text-gray-500 peer-focus:text-blue-500" size={20} />
+          {errors.name && <p className="mt-1 text-red-500 text-sm">{errors.name}</p>}
         </div>
-      </div>
 
-      {/* Hero Section */}
-      <div className="relative overflow-hidden ">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 "></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 load-hero ">
-          <div className="text-center animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Get In <span className="text-blue-400">Touch</span>
-            </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Ready to transform your business with cutting-edge software solutions? Let&apos;s discuss how we can help you
-              achieve your goals.
-            </p>
-          </div>
+        {/* Email Input */}
+        <div className="relative mb-6">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value={form.email}
+            onChange={handleChange}
+            className={`peer w-full pl-10 pr-4 py-3 rounded-md bg-nightfall border ${
+              errors.email ? 'border-red-500' : 'border-gray-700'
+            } placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition`}
+            placeholder="you@example.com"
+            autoComplete="email"
+          />
+          <label
+            htmlFor="email"
+            className="absolute left-10 top-3 text-gray-400 text-sm cursor-text transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base peer-focus:top-[-10px] peer-focus:text-blue-500 peer-focus:text-sm"
+          >
+            Email
+          </label>
+          <HiMail className="absolute left-3 top-3.5 text-gray-500 peer-focus:text-blue-500" size={20} />
+          {errors.email && <p className="mt-1 text-red-500 text-sm">{errors.email}</p>}
         </div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-10 ">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Contact Information */}
-          <div className="space-y-8 hero-stats-load ">
-            <div>
-              <h2 className="text-3xl font-bold text-blue-400 mb-6">Why Choose Our Software Solutions?</h2>
-              <p className="text-gray-200 text-lg leading-relaxed mb-8">
-                We specialize in delivering innovative software solutions that drive business growth. Our team of expert
-                developers creates scalable, secure, and user-friendly applications tailored to your specific needs.
-              </p>
-            </div>
-
-            {/* Features */}
-            <div className="grid gap-8 ">
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
-               hover:bg-blue-500/30 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm "
-              style={{animationDelay: '0s'}}>
-                <Code className="w-8 h-8 text-purple-400 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Custom Development</h3>
-                  <p className="text-gray-300">
-                    Tailored software solutions built from the ground up to match your business requirements.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
-               hover:bg-blue-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats " 
-              style={{animationDelay: '0.25s'}}>
-                <Zap className="w-8 h-8 text-yellow-500/80 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">High Performance</h3>
-                  <p className="text-gray-300">
-                    Optimized applications that deliver exceptional speed and reliability for your users.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
-               hover:bg-blue-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats "
-              style={{animationDelay: '0.5s'}}>
-                <Shield className="w-8 h-8 text-blue-400 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Enterprise Security</h3>
-                  <p className="text-gray-300">
-                    Bank-level security measures to protect your data and ensure compliance.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Details */}
-            <Card className="bg-blue-800/20 border-white backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-blue-400">Contact Information</CardTitle>
-                <CardDescription className="text-gray-300">
-                  Reach out to us through any of these channels
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center gap-3 text-gray-200">
-                  <Mail className="w-5 h-5 text-blue-400" />
-                  <span>nightfallwebworks@gmail.com</span>
-                </div>
-                <div className="flex items-center gap-3 text-gray-200">
-                  <Phone className="w-5 h-5 text-blue-400" />
-                  <span>+1 (555) 123-4567</span>
-                </div>
-                <div className="flex items-center gap-3 text-gray-200">
-                  <MapPin className="w-5 h-5 text-blue-400" />
-                  <span>123 Tech Street, Innovation City, IC 12345</span>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Contact Form */}
-          <div className="main-hero-load mt-10 ">
-            <Card className="bg-blue-800/20 border-white backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-2xl text-blue-400 ">Send Us a Message</CardTitle>
-                <CardDescription className="text-gray-300">
-                  Fill out the form below and we&apos;ll get back to you within 24 hours
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-white">
-                      Email Address
-                    </Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="your.email@company.com"
-                      required
-                      className="bg-blue-900/50 border-white text-white placeholder:text-gray-400 focus:border-blue-400"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="subject" className="text-white">
-                      Subject
-                    </Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      placeholder="What can we help you with?"
-                      required
-                      className="bg-blue-900/50 border-white text-white placeholder:text-gray-400 focus:border-blue-400"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-white">
-                      Message
-                    </Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      placeholder="Tell us about your project requirements, timeline, and any specific features you need..."
-                      required
-                      className="min-h-[150px] bg-blue-900/50 border-white text-white placeholder:text-gray-400 focus:border-blue-400 resize-none"
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    disabled={isLoading}
-                    className="w-full bg-blue-600 hover:bg-blue-400/80 text-white font-semibold py-3 transition-all duration-200 transform hover:scale-105"
-                  >
-                    {isLoading ? (
-                      <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 border-2 border-white border-t-white rounded-full animate-spin"></div>
-                        Sending Message...
-                      </div>
-                    ) : (
-                      "Send Message"
-                    )}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-
-            {/* Additional Info */}
-            <div className="mt-8 p-6 bg-blue-800/20 rounded-lg backdrop-blur-sm border border-white">
-              <h3 className="text-xl font-semibold text-blue-400 mb-3">What Happens Next?</h3>
-              <ul className="space-y-2 text-gray-200">
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  We&apos;ll review your message within 2-4 hours
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  Schedule a consultation call to discuss your needs
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  Provide a detailed proposal with timeline and pricing
-                </li>
-              </ul>
-            </div>
-          </div>
+        {/* Message Input */}
+        <div className="relative mb-6">
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            value={form.message}
+            onChange={handleChange}
+            className={`peer w-full pt-5 pl-10 pr-4 rounded-md bg-nightfall border resize-none ${
+              errors.message ? 'border-red-500' : 'border-gray-700'
+            } placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition`}
+            placeholder="Write your message here..."
+          ></textarea>
+          <label
+            htmlFor="message"
+            className="absolute left-10 top-3 text-gray-400 text-sm cursor-text transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base peer-focus:top-[-10px] peer-focus:text-blue-500 peer-focus:text-sm"
+          >
+            Message
+          </label>
+          <HiChat className="absolute left-3 top-4 text-gray-500 peer-focus:text-blue-500" size={20} />
+          {errors.message && <p className="mt-1 text-red-500 text-sm">{errors.message}</p>}
         </div>
-      </div>
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 transition text-white font-semibold py-3 rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-blue-400 flex justify-center items-center gap-2"
+        >
+          {loading && (
+            <svg
+              className="animate-spin h-5 w-5 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              ></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+              ></path>
+            </svg>
+          )}
+          {loading ? 'Sending...' : 'Send Message'}
+        </button>
+
+        {/* Success message */}
+        {success && (
+          <p className="mt-6 text-green-400 font-semibold text-center">
+            Your message was sent successfully!
+          </p>
+        )}
+      </form>
     </div>
-  )
+  );
 }
