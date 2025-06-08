@@ -25,7 +25,7 @@ export default function Hero() {
         <div className='min-w-none md:min-w-[50%] '> 
           {/* HERO ANIMATION Moon / Sun  DayChangeAnimation ? */}
           <div className='flex '>
-            <div className='load-hero flex flex-col self-center '>
+            <div className='load-hero flex flex-col self-center z-5 '>
               <div className=''>
                 <BorderedTitle text="Your partner in digital transformation" color="blue-500" posAngle={true} /> 
               </div>
