@@ -1,6 +1,5 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Image from 'next/image';
 
 export default function HeroAnimation() {
  const [animate, setAnimate] = useState(true);
@@ -16,7 +15,7 @@ export default function HeroAnimation() {
   }, []);
 
   return (
-    <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] lg:min-w-[40%] text-white main-hero-load flex items-center overflow-hidden h-[100vh] '>
+    <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] lg:min-w-[40%] text-white main-hero-load flex items-center overflow-hidden md:min-w-[400px] md:min-h-[600px] lg:h-[100vh] max-w-[450px] '>
       <div className={'absolute w-full ' + (animate? ' z-1 ' : ' z-3 ')}>
         <img
          src="https://i.pinimg.com/736x/1b/c5/3e/1bc53e53aa055c0247e30714a874adb5.jpg" 
