@@ -390,16 +390,17 @@ body {
 
 .astronaut-flight {
   position: relative;
-  animation: astronaut-flight-animation 2s linear;
-  transform: translate(500px, 100px) rotate(30deg);
-  opacity: 0;
+  animation: astronaut-flight-animation 2s linear forwards;
   animation-delay: 1s;
+  opacity: 0;
+  visibility: hidden; 
 }
 
 @keyframes astronaut-flight-animation {
   0% {
     transform: translate(500px, 100px) rotate(30deg);
     opacity: 1;
+    visibility: visible; 
   }
   45% {
     transform: translate(350px, 0px) rotate(0deg);

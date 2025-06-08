@@ -10,14 +10,14 @@ export default function HeroAnimation() {
     const interval = setInterval(() => {
       setAnimate(false);
       setTimeout(() => setAnimate(true), 100)
-    }, 15000);
+    }, 17000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] lg:min-w-[40%] text-white main-hero-load flex items-center overflow-hidden'>
-      <div className='absolute z-1 w-full '>
+    <section className='min-w-0 sm:min-w-[20%] md:min-w-[25%] lg:min-w-[40%] text-white main-hero-load flex items-center overflow-hidden h-[100vh] '>
+      <div className={'absolute w-full ' + (animate? ' z-1 ' : ' z-3 ')}>
         <img
          src="https://i.pinimg.com/736x/1b/c5/3e/1bc53e53aa055c0247e30714a874adb5.jpg" 
          className='max-h-[800px] w-full object-cover '
@@ -27,22 +27,22 @@ export default function HeroAnimation() {
       <div className='z-2'>
         <img
          src="HeroAnimationAssets/astronaut-rocket.png" 
-         className={'h-32 w-32 object-cover rounded-full ' + (animate? ' astronaut-flight ' : '') }
+         className={'h-32 w-32 object-cover rounded-full hidden-before-animation ' + (animate? ' astronaut-flight ' : '') }
          alt="Astronaut on the Moon"
         />
         <img
          src="HeroAnimationAssets/astronaut-pizza-rocket.png" 
-         className='h-32 w-32 object-cover rounded-full astronaut-with-pizza'
+         className={'h-32 w-32 object-cover rounded-full ' + (animate? ' astronaut-with-pizza' : '') }
          alt="Astronaut on the Moon"
         />
         <img
          src="HeroAnimationAssets/animation-moon.png" 
-         className='h-46 w-46 object-cover rounded-full animated-moon'
+         className={'h-46 w-46 object-cover rounded-full ' + (animate? ' animated-moon ' : '') }
          alt="Astronaut on the Moon"
         />
         <img
          src="HeroAnimationAssets/astronaut-star.png" 
-         className='h-32 w-32 object-cover rounded-full astronaut-star'
+         className={'h-46 w-46 object-cover rounded-full ' + (animate? ' astronaut-star ' : '') }
          alt="Astronaut on the Moon"
         />
       </div>
