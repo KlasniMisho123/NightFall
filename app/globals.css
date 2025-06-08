@@ -391,6 +391,7 @@ body {
 .astronaut-flight {
   position: relative;
   animation: astronaut-flight-animation 2s linear;
+  transform: translate(500px, 100px) rotate(30deg);
   opacity: 0;
   animation-delay: 1s;
 }
@@ -424,6 +425,7 @@ body {
 .animated-moon {
   position: relative;
   animation: moon-animation 2s forwards;
+  transform: translate(475px, -300px) rotate(0deg);
   animation-delay: 4s;
   opacity: 0;
 }
@@ -445,6 +447,7 @@ body {
 .astronaut-with-pizza {
   position: relative;
   animation: astronaut-with-pizza-animation 4s forwards;
+  transform: translate(-150px, -200px) rotate(15deg) scale(0.8);
   opacity: 0;
   animation-delay: 6s;
 }
@@ -467,6 +470,7 @@ body {
 .astronaut-star {
   position: relative;
   animation: astronaut-floating-animation 6s ease-in-out forwards;
+  transform: translate(-100px, 50px) rotate(0deg) scale(0.9);
   opacity: 0;
   animation-delay: 11s;
 }

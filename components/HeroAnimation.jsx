@@ -6,6 +6,7 @@ export default function HeroAnimation() {
  const [animate, setAnimate] = useState(true);
 
  useEffect(() => {
+
     const interval = setInterval(() => {
       setAnimate(false);
       setTimeout(() => setAnimate(true), 100)
@@ -26,22 +27,22 @@ export default function HeroAnimation() {
       <div className='z-2'>
         <img
          src="HeroAnimationAssets/astronaut-rocket.png" 
-         className='h-32 w-32 object-cover rounded-full astro-flight astronaut-flight '
+         className={'h-32 w-32 object-cover rounded-full ' + (animate? ' astronaut-flight ' : '') }
          alt="Astronaut on the Moon"
         />
         <img
          src="HeroAnimationAssets/astronaut-pizza-rocket.png" 
-         className='h-32 w-32 object-cover rounded-full astro-pizza astronaut-with-pizza'
+         className='h-32 w-32 object-cover rounded-full astronaut-with-pizza'
          alt="Astronaut on the Moon"
         />
         <img
          src="HeroAnimationAssets/animation-moon.png" 
-         className='h-46 w-46 object-cover rounded-full ani-moon animated-moon'
+         className='h-46 w-46 object-cover rounded-full animated-moon'
          alt="Astronaut on the Moon"
         />
         <img
          src="HeroAnimationAssets/astronaut-star.png" 
-         className='h-32 w-32 object-cover rounded-full astro-star astronaut-star'
+         className='h-32 w-32 object-cover rounded-full astronaut-star'
          alt="Astronaut on the Moon"
         />
       </div>
