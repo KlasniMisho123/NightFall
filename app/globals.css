@@ -389,7 +389,7 @@ body {
 /* Nightfall Hero Animation Start */
 .astronaut-flight {
   position: relative;
-  /* animation: astronaut-flight-animation 2s linear; */
+  animation: astronaut-flight-animation 2s linear;
   opacity: 0;
   animation-delay: 1s;
 }
@@ -421,76 +421,46 @@ body {
 }
 
 .animated-moon {
-  /* transform:  translate(375px, -300px); */
-  /* opacity: 0; */
-  animation: moon-animation 3s infinite;
-  animation-delay: 1s;
-  
-  opacity: 1;
+  animation: moon-animation 2s forwards;
+  animation-delay: 4s;
+  opacity: 0;
 }
+
 @keyframes moon-animation {
   0% {
     transform: translate(475px, -300px) rotate(0deg);
+    opacity: 1;
   }
   75% {
     transform: translate(375px, -300px) rotate(360deg);
   }
   100% {
   transform: translate(475px, -300px) rotate(0deg);
+  opacity: 1;
   }
 }
 
 .austronaut-with-pizza {
   position: relative;
-  animation: austronaut-with-pizza-animation 10s infinite;
+  animation: austronaut-with-pizza-animation 4s forwards;
   opacity: 0;
-
-  /* transform: translate(200px, -100px) rotate(-345deg); */
-  /* opacity: 1; */
-  animation-delay: 1s;
+  animation-delay: 6s;
 }
 
-/* @keyframes austronaut-with-pizza-animation {
+@keyframes austronaut-with-pizza-animation {
   0% {
-    transform: translate(-100px, -200px) rotate(30deg);
+    transform: translate(-150px, -200px) rotate(15deg) scale(0.8);
     opacity: 1;
+    border: none;
   }
-  10% {
-    transform: translate(100px, -150px) rotate(30deg);
-  }
-  20% {
-    transform: translate(150px, -100px) rotate(30deg);
-  }
-  30% {
-    transform: translate(200px, -100px) rotate(15deg);
-  }
-  40% {
-    transform: translate(250px, -150px) rotate(0deg);
-  }
-  50% {
-    transform: translate(300px, -200px) rotate(-15deg);
-  }
-  60% {
-    transform: translate(300px, -200px) rotate(-90deg);
-  }
-  70% {
-    transform: translate(200px, -200px) rotate(-165deg);
-  }
-  80% {
-    transform: translate(100px, -150px) rotate(-230deg);
-  }
-  90% {
-    transform: translate(100px, -150px) rotate(-230deg);
-  }
-  95% {
-    transform: translate(200px, -100px) rotate(390deg);
-  }
+
   100% {
-    transform: translate(500px, -100px) rotate(-345deg);
+    transform: translate(550px, -100px) rotate(15deg) scale(1);
     opacity: 1;
-    /* filter: drop-shadow(0 5px 8px orange) drop-shadow(20px 20px 15px red); */
-  /* }
-}  */
+    filter: drop-shadow(-10px 4px 8px orange) drop-shadow(-25px 4px 25px red);
+    border: none;
+  }
+} 
 
 
 /* Nightfall Hero Animation Ends */
