@@ -387,6 +387,7 @@ body {
 }
 
 /* Nightfall Hero Animation Start */
+
 .astronaut-flight {
   position: relative;
   animation: astronaut-flight-animation 2s linear;
@@ -472,12 +473,12 @@ body {
 
 @keyframes astronaut-floating-animation {
   0% {
-    transform: translate(0px, 50px) rotate(0deg) scale(0.9);
+    transform: translate(-100px, 50px) rotate(0deg) scale(0.9);
     opacity: 1;
   }
 
   25% {
-    transform: translate(140px, 35px) rotate(90deg) scale(0.95);
+    transform: translate(100px, 35px) rotate(90deg) scale(0.95);
   }
 
   50% {
@@ -493,13 +494,6 @@ body {
     opacity: 1;
   }
 }
-
-
-
-
-
-
-
 
 /* Nightfall Hero Animation Ends */
 
