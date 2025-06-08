@@ -12,7 +12,7 @@ export default function HeroAnimation() {
         />
       </div>
       <div className='z-2'>
-        {/* <img
+        <img
          src="HeroAnimationAssets/astronaut-rocket.png" 
          className='h-32 w-32 object-cover rounded-full astronaut-flight '
          alt="Astronaut on the Moon"
@@ -25,8 +25,8 @@ export default function HeroAnimation() {
         <img
          src="HeroAnimationAssets/animation-moon.png" 
          className='h-46 w-46 object-cover rounded-full animated-moon'
-         alt="Astronaut on the Moon" 
-        /> */}
+         alt="Astronaut on the Moon"
+        />
         <img
          src="HeroAnimationAssets/astronaut-star.png" 
          className='h-46 w-46 object-cover rounded-full astronaut-star'
