@@ -22,6 +22,11 @@ export default function HeroAnimation() {
          className='h-32 w-32 object-cover rounded-full austronaut-with-pizza'
          alt="Astronaut on the Moon"
         />
+        <img
+         src="HeroAnimationAssets/animation-moon.png" 
+         className='h-32 w-32 object-cover rounded-full animated-moon'
+         alt="Astronaut on the Moon"
+        />
       </div>
     </section>
 
