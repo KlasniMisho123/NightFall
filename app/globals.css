@@ -420,6 +420,26 @@ body {
   }
 }
 
+.animated-moon {
+  /* transform:  translate(375px, -300px); */
+  /* opacity: 0; */
+  animation: moon-animation 3s infinite;
+  animation-delay: 1s;
+  
+  opacity: 1;
+}
+@keyframes moon-animation {
+  0% {
+    transform: translate(475px, -300px) rotate(0deg);
+  }
+  75% {
+    transform: translate(375px, -300px) rotate(360deg);
+  }
+  100% {
+  transform: translate(475px, -300px) rotate(0deg);
+  }
+}
+
 .austronaut-with-pizza {
   position: relative;
   animation: austronaut-with-pizza-animation 10s infinite;
@@ -471,6 +491,7 @@ body {
     /* filter: drop-shadow(0 5px 8px orange) drop-shadow(20px 20px 15px red); */
   /* }
 }  */
+
 
 /* Nightfall Hero Animation Ends */
 
