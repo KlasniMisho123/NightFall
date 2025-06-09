@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Mail, Phone, MapPin, Code, Zap, Shield, CheckCircle } from "lucide-react"
 
+
 // Custom Components
 const Button = ({ children, onClick, disabled, type = "button", className = "" }) => {
   return (
@@ -171,19 +172,19 @@ export default function ContactPage() {
                 <Code className="w-8 h-8 text-purple-500/90 mt-1 transition-all duration-300 group-hover:text-white   " />
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-purple-500/90 transition-all duration-300 group-hover:text-white ">Custom Development</h3>
-                  <p className="text-gray-300 ">
+                  <p className="text-gray-300 group-hover:text-white ">
                     Tailored software solutions built from the ground up to match your business requirements.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg backdrop-blur-sm cursor-pointer
-               hover:bg-yellow-500/60 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm group " 
+               hover:bg-yellow-500/70 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm group " 
               style={{animationDelay: '0.25s'}}>
                 <Zap className="w-8 h-8 text-yellow-500/90 mt-1 transition-all duration-300 group-hover:text-white" />
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2 ">High Performance</h3>
-                  <p className="text-gray-300">
+                  <h3 className="text-xl font-semibold text-yellow-500 mb-2 transition-all duration-300 group-hover:text-white ">High Performance</h3>
+                  <p className="text-gray-300 group-hover:text-white">
                     Optimized applications that deliver exceptional speed and reliability for your users.
                   </p>
                 </div>
@@ -195,7 +196,7 @@ export default function ContactPage() {
                 <Shield className="w-8 h-8 text-blue-500/80 mt-1 transition-all duration-300 group-hover:text-white " />
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-blue-500/80 transition-all duration-300 group-hover:text-white ">Enterprise Security</h3>
-                  <p className="text-gray-300">
+                  <p className="text-gray-300 group-hover:text-white ">
                     Bank-level security measures to protect your data and ensure compliance.
                   </p>
                 </div>
@@ -206,7 +207,7 @@ export default function ContactPage() {
             <Card className="bg-blue-800/20 border-white backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-blue-400">Contact Information</CardTitle>
-                <CardDescription className="text-gray-300">
+                <CardDescription className="text-gray-300 ">
                   Reach out to us through any of these channels
                 </CardDescription>
               </CardHeader>
@@ -228,79 +229,80 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="main-hero-load mt-10 ">
-            <Card className="bg-blue-800/20 border-white backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-2xl text-blue-400 ">Send Us a Message</CardTitle>
-                <CardDescription className="text-gray-300">
-                  Fill out the form below and we&apos;ll get back to you within 24 hours
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-white">
-                      Email Address
-                    </Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="your.email@company.com"
-                      required
-                      className="bg-blue-900/50 border-white text-white placeholder:text-gray-400 focus:border-blue-400"
-                    />
-                  </div>
+          <div className="main-hero-load mt-10 px-4 flex flex-col ">
+  <div className="w-full max-w-2xl bg-gray-800/90 backdrop-blur-md rounded-xl shadow-lg p-8">
+    <div className="mb-6">
+      <h2 className="text-2xl text-blue-400 font-semibold">Send Us a Message</h2>
+      <p className="text-gray-300 text-sm mt-1">
+        Fill out the form below and we&apos;ll get back to you within 24 hours
+      </p>
+    </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="subject" className="text-white">
-                      Subject
-                    </Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      placeholder="What can we help you with?"
-                      required
-                      className="bg-blue-900/50 border-white text-white placeholder:text-gray-400 focus:border-blue-400"
-                    />
-                  </div>
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="space-y-2">
+        <label htmlFor="email" className="block text-white text-sm font-medium">
+          Email Address
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          value={formData.email}
+          onChange={handleInputChange}
+          placeholder="your.email@company.com"
+          required
+          className="w-full px-4 py-2 rounded-md bg-gray-700 text-white placeholder:text-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+      </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-white">
-                      Message
-                    </Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      placeholder="Tell us about your project requirements, timeline, and any specific features you need..."
-                      required
-                      className="min-h-[150px] bg-blue-900/50 border-white text-white placeholder:text-gray-400 focus:border-blue-400 resize-none"
-                    />
-                  </div>
+      <div className="space-y-2">
+        <label htmlFor="subject" className="block text-white text-sm font-medium">
+          Subject
+        </label>
+        <input
+          id="subject"
+          name="subject"
+          value={formData.subject}
+          onChange={handleInputChange}
+          placeholder="What can we help you with?"
+          required
+          className="w-full px-4 py-2 rounded-md bg-gray-700 text-white placeholder:text-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+      </div>
 
-                  <Button
-                    type="submit"
-                    disabled={isLoading}
-                    className="w-full bg-blue-600 hover:bg-blue-400/80 text-white font-semibold py-3 transition-all duration-200 transform hover:scale-105"
-                  >
-                    {isLoading ? (
-                      <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 border-2 border-white border-t-white rounded-full animate-spin"></div>
-                        Sending Message...
-                      </div>
-                    ) : (
-                      "Send Message"
-                    )}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+      <div className="space-y-2">
+        <label htmlFor="message" className="block text-white text-sm font-medium">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleInputChange}
+          placeholder="Tell us about your project requirements, timeline, and any specific features you need..."
+          required
+          className="w-full min-h-[150px] px-4 py-2 rounded-md bg-gray-700 text-white placeholder:text-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+        />
+      </div>
+
+      <button
+        type="submit"
+        disabled={isLoading}
+        className={`w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-md transition-transform duration-200 ${
+          isLoading ? 'opacity-60 cursor-not-allowed' : 'hover:scale-105'
+        }`}
+      >
+        {isLoading ? (
+          <>
+            <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+            Sending Message...
+          </>
+        ) : (
+          'Send Message'
+        )}
+      </button>
+    </form>
+  </div>
 
             {/* Additional Info */}
             <div className="mt-8 p-6 bg-blue-800/20 rounded-lg backdrop-blur-sm border border-white">
