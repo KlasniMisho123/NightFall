@@ -231,9 +231,9 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="main-hero-load mt-10 px-4 flex flex-col ">
-            <div className="w-full max-w-2xl bg-gray-800/90 backdrop-blur-md rounded-xl shadow-lg p-8">
+            <div className="w-full max-w-2xl bg-gray-800 rounded-xl shadow-lg p-8">
               <div className="mb-6">
-                <h2 className="text-2xl text-blue-400 font-semibold">Send Us a Message</h2>
+                <h2 className="text-2xl text-blue-500 font-semibold">Start the Conversation</h2>
                 <p className="text-gray-300 text-sm mt-1">
                   Fill out the form below and we&apos;ll get back to you within 24 hours
                 </p>
