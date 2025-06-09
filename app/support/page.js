@@ -204,28 +204,29 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Details */}
-            <Card className="bg-blue-800/20 border-white backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-blue-400">Contact Information</CardTitle>
-                <CardDescription className="text-gray-300 ">
+            <div className="bg-blue-900/30 border border-white/20 rounded-xl backdrop-blur-md p-6 shadow-md">
+              <div className="mb-4">
+                <h3 className="text-2xl font-semibold text-blue-400">Contact Information</h3>
+                <p className="text-gray-300 text-sm mt-1">
                   Reach out to us through any of these channels
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center gap-3 text-gray-200">
-                  <Mail className="w-5 h-5 text-blue-400" />
+                </p>
+              </div>
+              <div className="space-y-4 text-gray-200 text-sm">
+                <div className="flex items-center gap-3">
+                  <Mail className="w-5 h-5 text-blue-400 shrink-0" />
                   <span>nightfallwebworks@gmail.com</span>
                 </div>
-                <div className="flex items-center gap-3 text-gray-200">
-                  <Phone className="w-5 h-5 text-blue-400" />
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-blue-400 shrink-0" />
                   <span>+1 (555) 123-4567</span>
                 </div>
-                <div className="flex items-center gap-3 text-gray-200">
-                  <MapPin className="w-5 h-5 text-blue-400" />
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-5 h-5 text-blue-400 shrink-0" />
                   <span>123 Tech Street, Innovation City, IC 12345</span>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
+
           </div>
 
           {/* Contact Form */}
@@ -288,8 +289,8 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className={`w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-md transition-transform duration-200 ${
-                    isLoading ? 'opacity-60 cursor-not-allowed' : 'hover:scale-105'
+                  className={`w-full flex items-center justify-center gap-2 bg-blue-500/90 hover:bg-blue-500/50 text-white font-semibold py-3 rounded-md transition-all duration-200  ${
+                    isLoading ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer '
                   }`}
                 >
                   {isLoading ? (
