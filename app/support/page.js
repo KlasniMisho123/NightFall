@@ -230,98 +230,99 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="main-hero-load mt-10 px-4 flex flex-col ">
-  <div className="w-full max-w-2xl bg-gray-800/90 backdrop-blur-md rounded-xl shadow-lg p-8">
-    <div className="mb-6">
-      <h2 className="text-2xl text-blue-400 font-semibold">Send Us a Message</h2>
-      <p className="text-gray-300 text-sm mt-1">
-        Fill out the form below and we&apos;ll get back to you within 24 hours
-      </p>
-    </div>
+            <div className="w-full max-w-2xl bg-gray-800/90 backdrop-blur-md rounded-xl shadow-lg p-8">
+              <div className="mb-6">
+                <h2 className="text-2xl text-blue-400 font-semibold">Send Us a Message</h2>
+                <p className="text-gray-300 text-sm mt-1">
+                  Fill out the form below and we&apos;ll get back to you within 24 hours
+                </p>
+              </div>
 
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="space-y-2">
-        <label htmlFor="email" className="block text-white text-sm font-medium">
-          Email Address
-        </label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          value={formData.email}
-          onChange={handleInputChange}
-          placeholder="your.email@company.com"
-          required
-          className="w-full px-4 py-2 rounded-md bg-gray-700 text-white placeholder:text-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
-      </div>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="space-y-2">
+                  <label htmlFor="email" className="block text-white text-sm font-medium">
+                    Email Address
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="your.email@company.com"
+                    required
+                    className="w-full px-4 py-2 rounded-md bg-gray-700 text-white placeholder:text-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+                </div>
 
-      <div className="space-y-2">
-        <label htmlFor="subject" className="block text-white text-sm font-medium">
-          Subject
-        </label>
-        <input
-          id="subject"
-          name="subject"
-          value={formData.subject}
-          onChange={handleInputChange}
-          placeholder="What can we help you with?"
-          required
-          className="w-full px-4 py-2 rounded-md bg-gray-700 text-white placeholder:text-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
-      </div>
+                <div className="space-y-2">
+                  <label htmlFor="subject" className="block text-white text-sm font-medium">
+                    Subject
+                  </label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    placeholder="What can we help you with?"
+                    required
+                    className="w-full px-4 py-2 rounded-md bg-gray-700 text-white placeholder:text-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+                </div>
 
-      <div className="space-y-2">
-        <label htmlFor="message" className="block text-white text-sm font-medium">
-          Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleInputChange}
-          placeholder="Tell us about your project requirements, timeline, and any specific features you need..."
-          required
-          className="w-full min-h-[150px] px-4 py-2 rounded-md bg-gray-700 text-white placeholder:text-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
-        />
-      </div>
+                <div className="space-y-2">
+                  <label htmlFor="message" className="block text-white text-sm font-medium">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Tell us about your project requirements, timeline, and any specific features you need..."
+                    required
+                    className="w-full min-h-[150px] px-4 py-2 rounded-md bg-gray-700 text-white placeholder:text-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+                  />
+                </div>
 
-      <button
-        type="submit"
-        disabled={isLoading}
-        className={`w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-md transition-transform duration-200 ${
-          isLoading ? 'opacity-60 cursor-not-allowed' : 'hover:scale-105'
-        }`}
-      >
-        {isLoading ? (
-          <>
-            <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-            Sending Message...
-          </>
-        ) : (
-          'Send Message'
-        )}
-      </button>
-    </form>
-  </div>
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className={`w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-md transition-transform duration-200 ${
+                    isLoading ? 'opacity-60 cursor-not-allowed' : 'hover:scale-105'
+                  }`}
+                >
+                  {isLoading ? (
+                    <>
+                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      Sending Message...
+                    </>
+                  ) : (
+                    'Send Message'
+                  )}
+                </button>
+              </form>
+          </div>
 
             {/* Additional Info */}
-            <div className="mt-8 p-6 bg-blue-800/20 rounded-lg backdrop-blur-sm border border-white">
-              <h3 className="text-xl font-semibold text-blue-400 mb-3">What Happens Next?</h3>
-              <ul className="space-y-2 text-gray-200">
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  We&apos;ll review your message within 2-4 hours
+            <div className="mt-10 p-6 bg-blue-900/30 rounded-xl backdrop-blur-md border border-white/20 shadow-md">
+              <h3 className="text-2xl font-semibold text-blue-400 mb-4">What Happens Next?</h3>
+              <ul className="space-y-3 text-gray-200 text-sm leading-relaxed">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 w-2 h-2 bg-blue-400 rounded-full shrink-0"></span>
+                  <span>We&apos;ll review your message within 2–4 hours.</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  Schedule a consultation call to discuss your needs
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 w-2 h-2 bg-blue-400 rounded-full shrink-0"></span>
+                  <span>Schedule a consultation call to discuss your needs.</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  Provide a detailed proposal with timeline and pricing
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 w-2 h-2 bg-blue-400 rounded-full shrink-0"></span>
+                  <span>Provide a detailed proposal with timeline and pricing.</span>
                 </li>
               </ul>
             </div>
+
           </div>
         </div>
       </div>
