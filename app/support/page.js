@@ -137,11 +137,11 @@ export default function ContactPage() {
 
       {/* Hero Section */}
       <div className="relative overflow-hidden ">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 "></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-800/80 to-black "></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 load-hero ">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Get In <span className="text-blue-400">Touch</span>
+              Get In <span className="text-blue-500">Touch</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
               Ready to transform your business with cutting-edge software solutions? Let&apos;s discuss how we can help you
@@ -156,7 +156,7 @@ export default function ContactPage() {
           {/* Contact Information */}
           <div className="space-y-8 hero-stats-load ">
             <div>
-              <h2 className="text-3xl font-bold text-blue-400 mb-6">Why Choose Our Software Solutions?</h2>
+              <h2 className="text-3xl font-bold text-blue-500 mb-6">Why Choose Our Software Solutions?</h2>
               <p className="text-gray-200 text-lg leading-relaxed mb-8">
                 We specialize in delivering innovative software solutions that drive business growth. Our team of expert
                 developers creates scalable, secure, and user-friendly applications tailored to your specific needs.
@@ -190,11 +190,11 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg backdrop-blur-sm cursor-pointer
-               hover:bg-blue-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats "
+               hover:bg-blue-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats group"
               style={{animationDelay: '0.5s'}}>
-                <Shield className="w-8 h-8 text-blue-400 mt-1" />
+                <Shield className="w-8 h-8 text-blue-500/80 mt-1 transition-all duration-300 group-hover:text-white " />
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Enterprise Security</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-blue-500/80 transition-all duration-300 group-hover:text-white ">Enterprise Security</h3>
                   <p className="text-gray-300">
                     Bank-level security measures to protect your data and ensure compliance.
                   </p>
