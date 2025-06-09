@@ -164,11 +164,11 @@ export default function ContactPage() {
             </div>
 
             {/* Features */}
-            <div className="grid gap-8 ">
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
-               hover:bg-blue-500/30 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm "
+            <div className="grid gap-8 transition-all duration-300 ">
+              <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg backdrop-blur-sm cursor-pointer
+               hover:bg-purple-500/60 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm group "
               style={{animationDelay: '0s'}}>
-                <Code className="w-8 h-8 text-purple-400 mt-1" />
+                <Code className="w-8 h-8 text-purple-400 mt-1 group-hover:text-white " />
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Custom Development</h3>
                   <p className="text-gray-300">
@@ -177,7 +177,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
+              <div className="flex items-start gap-4 p-4 bg-blue-500/30 rounded-lg backdrop-blur-sm cursor-pointer
                hover:bg-blue-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats " 
               style={{animationDelay: '0.25s'}}>
                 <Zap className="w-8 h-8 text-yellow-500/80 mt-1" />
@@ -189,7 +189,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-blue-800/30 rounded-lg backdrop-blur-sm cursor-pointer
+              <div className="flex items-start gap-4 p-4 bg-blue-500/30 rounded-lg backdrop-blur-sm cursor-pointer
                hover:bg-blue-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats "
               style={{animationDelay: '0.5s'}}>
                 <Shield className="w-8 h-8 text-blue-400 mt-1" />
