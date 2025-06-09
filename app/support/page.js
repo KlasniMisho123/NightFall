@@ -168,9 +168,9 @@ export default function ContactPage() {
               <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg backdrop-blur-sm cursor-pointer
                hover:bg-purple-500/60 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm group "
               style={{animationDelay: '0s'}}>
-                <Code className="w-8 h-8 text-purple-500/60 mt-1 transition-all duration-300 group-hover:text-white   " />
+                <Code className="w-8 h-8 text-purple-500/90 mt-1 transition-all duration-300 group-hover:text-white   " />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-purple-500/60 transition-all duration-300   group-hover:text-white ">Custom Development</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-purple-500/90 transition-all duration-300 group-hover:text-white ">Custom Development</h3>
                   <p className="text-gray-300 ">
                     Tailored software solutions built from the ground up to match your business requirements.
                   </p>
@@ -178,11 +178,11 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg backdrop-blur-sm cursor-pointer
-               hover:bg-yellow-500/60 transition-all duration-300 shadow-2xl hover:shadow-sm night-fall-stats group " 
+               hover:bg-yellow-500/60 night-fall-stats transition-all duration-300 shadow-2xl hover:shadow-sm group " 
               style={{animationDelay: '0.25s'}}>
-                <Zap className="w-8 h-8 text-yellow-500/80 mt-1" />
+                <Zap className="w-8 h-8 text-yellow-500/90 mt-1 transition-all duration-300 group-hover:text-white" />
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">High Performance</h3>
+                  <h3 className="text-xl font-semibold text-white mb-2 ">High Performance</h3>
                   <p className="text-gray-300">
                     Optimized applications that deliver exceptional speed and reliability for your users.
                   </p>
