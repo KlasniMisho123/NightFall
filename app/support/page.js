@@ -204,25 +204,37 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Details */}
-            <div className="bg-blue-900/30 border border-white/20 rounded-xl backdrop-blur-md p-6 shadow-md">
+            <div className=" border border-white/20 rounded-xl bg-blue-900/20 backdrop-blur-md p-6 shadow-md">
               <div className="mb-4">
-                <h3 className="text-2xl font-semibold text-blue-400">Contact Information</h3>
+                <h3 className="text-2xl font-semibold text-white">Contact Information</h3>
                 <p className="text-gray-300 text-sm mt-1">
                   Reach out to us through any of these channels
                 </p>
               </div>
               <div className="space-y-4 text-gray-200 text-sm">
                 <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-blue-400 shrink-0" />
+                  <a className='flex justify-center items-center cursor-pointer transition-all duration-300 bg-gray-500/50 h-8 w-8 rounded-full pt-0.5 hover:bg-orange-600'
+                    title='nighfallwebworks@gmail.com'>
+                    <i className="fa-solid fa-envelope text-xl text-white"></i>
+                  </a>
                   <span>nightfallwebworks@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-blue-400 shrink-0" />
-                  <span>+1 (555) 123-4567</span>
+                  <a className='flex justify-center items-center cursor-pointer transition-all transition-duration-300 bg-gray-500/50 h-8 w-8 rounded-full pt-0.5 hover:bg-blue-500'
+                  href='https://www.facebook.com/profile.php?id=61575481044791'
+                  target="_blank">
+                    <i className="fa-brands fa-facebook-f text-xl text-white "></i>
+                  </a>
+                  <span>Facebook</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-blue-400 shrink-0" />
-                  <span>123 Tech Street, Innovation City, IC 12345</span>
+                  <a className='flex justify-center items-center cursor-pointer transition-all transition-duration-300 bg-gray-500/50 text-white h-8 w-8 rounded-full pt-0.5
+                  hover:bg-gray-900'
+                  href='https://github.com/KlasniMisho123'
+                  target="_blank">
+                    <i className="fa-brands fa-github text-xl "></i>
+                  </a>
+                  <span>GitHub</span>
                 </div>
               </div>
             </div>
@@ -306,8 +318,8 @@ export default function ContactPage() {
           </div>
 
             {/* Additional Info */}
-            <div className="mt-10 p-6 bg-blue-900/30 rounded-xl backdrop-blur-md border border-white/20 shadow-md">
-              <h3 className="text-2xl font-semibold text-blue-400 mb-4">What Happens Next?</h3>
+            <div className="mt-10 p-6 bg-blue-900/20 rounded-xl backdrop-blur-md border border-white/20 shadow-md">
+              <h3 className="text-2xl font-semibold text-white mb-4">What Happens Next?</h3>
               <ul className="space-y-3 text-gray-200 text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <span className="mt-1 w-2 h-2 bg-blue-400 rounded-full shrink-0"></span>
