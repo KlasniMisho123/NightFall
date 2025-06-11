@@ -425,7 +425,7 @@ body {
 
 .animated-moon {
   position: relative;
-  animation: moon-animation 2s forwards;
+  animation: moon-animation 3s forwards;
   transform: translate(150%, -300px) rotate(0deg);
   animation-delay: 4s;
   opacity: 0;
@@ -433,17 +433,17 @@ body {
 
 @keyframes moon-animation {
   0% {
-    transform: translate(1000px, -300px) rotate(0deg);
+    transform: translate(800px, -300px) rotate(0deg);
     opacity: 1;
   }
   75% {
-    transform: translate(375px, -300px) rotate(720deg);
+    transform: translate(375px, -300px) rotate(360deg);
   }
   90%{
     opacity:1;
   }
   100% {
-  transform: translate(1000px, -300px) rotate(0deg);
+  transform: translate(800px, -300px) rotate(0deg);
   opacity: 0;
   }
 }
@@ -466,7 +466,7 @@ body {
     opacity:1
   }
   100% {
-    transform: translate(600px, -100px) rotate(15deg) scale(1);
+    transform: translate(800px, -100px) rotate(15deg) scale(1);
     opacity: 0;
     filter: drop-shadow(-10px 4px 8px orange) drop-shadow(-25px 4px 25px red);
     border: none;
