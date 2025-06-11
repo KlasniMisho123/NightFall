@@ -1,31 +1,45 @@
-# 🌙 Nightfall Webworks
+# 🌙 Nightfall Webworks — Website Project
 
-Welcome to the official repository for **Nightfall Webworks** — a fresh and passionate team offering creative and strategic website solutions.
-
-## 🌐 About Us
-
-At **Nightfall Webworks**, we specialize in:
-
-- 🌟 Custom Website Creation  
-- 🎨 Design Consultations  
-
-We're a small but passionate group of creatives and builders focused on delivering thoughtful web solutions. Every project is a chance to refine our craft, learn something new, and support others in growing their ideas. We're not just here to deliver — we're here to grow with you.
-
-## 🚀 What We Offer
-
-- Responsive, modern websites tailored to your needs  
-- Collaborative design consultation to bring your vision to life  
-- Clean, maintainable, and scalable code  
-- Personalized support and long-term partnerships  
+This is the official website project for **Nightfall Webworks**, a new creative team offering website development and design consultations.
 
 ## 📺 Demo
 
-Check out a live preview of our site here:  
-👉 [nightfallwebworks.com](https://nightfallwebworks.com) *(or your actual demo link)*
+🔗 **Live Site**: [https://night-fall-webworks.vercel.app](https://night-fall-webworks.vercel.app)
 
-> ⚠️ **Note:** The site is not fully adjusted for desktop (PC) screens yet. Optimization is in progress for better cross-device compatibility.
+> ⚠️ **Note:** The site is not yet fully optimized for desktop (PC) screens. Full responsiveness is still in progress.
 
-## 📁 Project Structure
+## 🧾 About the Project
 
-> _(Optional section – you can include this if you're uploading actual code for the website)_
+This project serves as the digital home for Nightfall Webworks. It presents our services, introduces our approach, and reflects our design philosophy.
 
+## 🎯 Features
+
+- Custom homepage layout  
+- Intro to services: web creation & design consultation  
+- Clean, modern UI  
+- Mobile-first design  
+- Smooth navigation  
+
+## 🛠️ Tech Stack
+
+- ⚛️ [Next.js](https://nextjs.org/)  
+- 🎨 [Tailwind CSS](https://tailwindcss.com/)  
+- 🖌️ CSS3  
+- 💡 JavaScript (ES6+)
+
+## 🚧 Development Notes
+
+- Responsive design is in progress (desktop view is being refined).
+- Future updates may include additional pages and animations.
+- Performance and accessibility improvements planned.
+
+## 📬 Contact
+
+For feedback or collaboration:
+
+📧 kirisame404@gmail.com  
+🌐 [https://night-fall-webworks.vercel.app](https://night-fall-webworks.vercel.app)
+
+---
+
+> _“We’re not just here to deliver — we’re here to grow with you.”_
