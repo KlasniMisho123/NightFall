@@ -398,7 +398,7 @@ body {
 
 @keyframes astronaut-flight-animation {
   0% {
-    transform: translate(500px, 100px) rotate(30deg);
+    transform: translate(1000px, 100px) rotate(30deg);
     opacity: 1;
     visibility: visible; 
   }
@@ -433,14 +433,17 @@ body {
 
 @keyframes moon-animation {
   0% {
-    transform: translate(150%, -300px) rotate(0deg);
+    transform: translate(1000px, -300px) rotate(0deg);
     opacity: 1;
   }
   75% {
-    transform: translate(375px, -300px) rotate(360deg);
+    transform: translate(375px, -300px) rotate(720deg);
+  }
+  90%{
+    opacity:0;
   }
   100% {
-  transform: translate(150%, -300px) rotate(0deg);
+  transform: translate(1000px, -300px) rotate(0deg);
   opacity: 1;
   }
 }
