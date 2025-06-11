@@ -426,21 +426,21 @@ body {
 .animated-moon {
   position: relative;
   animation: moon-animation 2s forwards;
-  transform: translate(475px, -300px) rotate(0deg);
+  transform: translate(150%px, -300px) rotate(0deg);
   animation-delay: 4s;
   opacity: 0;
 }
 
 @keyframes moon-animation {
   0% {
-    transform: translate(475px, -300px) rotate(0deg);
+    transform: translate(150%, -300px) rotate(0deg);
     opacity: 1;
   }
   75% {
     transform: translate(375px, -300px) rotate(360deg);
   }
   100% {
-  transform: translate(475px, -300px) rotate(0deg);
+  transform: translate(150%, -300px) rotate(0deg);
   opacity: 1;
   }
 }
@@ -459,10 +459,12 @@ body {
     opacity: 1;
     border: none;
   }
-
+  90%{
+    opacity:1
+  }
   100% {
     transform: translate(600px, -100px) rotate(15deg) scale(1);
-    opacity: 1;
+    opacity: 0;
     filter: drop-shadow(-10px 4px 8px orange) drop-shadow(-25px 4px 25px red);
     border: none;
   }
@@ -493,10 +495,12 @@ body {
   75% {
     transform: translate(415px, 38px) rotate(270deg) scale(1.05);
   }
-
+  90%{
+    opacity:1;
+  }
   100% {
     transform: translate(550px, 50px) rotate(360deg) scale(1.1);
-    opacity: 1;
+    opacity: 0;
   }
 }
 
