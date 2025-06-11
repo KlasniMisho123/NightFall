@@ -426,7 +426,7 @@ body {
 .animated-moon {
   position: relative;
   animation: moon-animation 2s forwards;
-  transform: translate(150%px, -300px) rotate(0deg);
+  transform: translate(150%, -300px) rotate(0deg);
   animation-delay: 4s;
   opacity: 0;
 }
