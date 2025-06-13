@@ -24,7 +24,6 @@ const footer = (
   <Footer />
 )
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -38,7 +37,7 @@ export default function RootLayout({ children }) {
           referrerPolicy="no-referrer"
         />
       </head>
-        <body className={`${geistSans.variable} antialiased`} >
+        <body>
           {header}
           {children}
           {footer}
