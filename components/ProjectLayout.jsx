@@ -34,7 +34,7 @@ export default function ProjectLayout() {
             Whether you're a casual drinker or a coffee enthusiast, Expressometer offers a clear, data-driven picture of your coffee habits." />
 
             <ProjectCard animationIndex={4} year={2025} projectName="AllDesign" title=" Purposeful work for real people and bold ideas" webLink="" projectSecondaryColor="red" client="Developeing Skills"
-            time="2 Weeks" service="Web Page Development" imgSrc="Moodcheck.png"
+            time="2 Weeks" service="Web Page Development" imgSrc="all-design.png"
             projectDesc="Comming Soon" />
         </div>
     </section>
