@@ -33,13 +33,9 @@ export default function ProjectLayout() {
             caffeine, the app highlights top-consumed coffee types, estimates daily spending, and provides useful insights to promote more mindful consumption. 
             Whether you're a casual drinker or a coffee enthusiast, Expressometer offers a clear, data-driven picture of your coffee habits." />
 
-            <ProjectCard animationIndex={4} year={2024} projectName="MoodCheck" title=" Track your mood and see how you feel over time" webLink="https://mood-check.vercel.app/" projectSecondaryColor="indigo" client="Developeing Skills"
-            time="10 Days" service="Web Page Development" imgSrc="Moodcheck.png"
-            projectDesc="is a personal mood tracking application that allows you to rate your day using a 5-point scale, add a short description or reflection, 
-            and save your entries securely to a Firebase server tied to your personal account. The app provides a simple and intuitive interface for logging daily moods,
-            helping you stay mindful of your emotional well-being over time. In addition to mood logging, MoodCheck includes extra features such as mood statistics to 
-            help you visualize patterns or changes in your emotional state, as well as a section for light-hearted jokes to brighten your day.
-            Whether you're tracking for personal insight or simply want a fun way to reflect on your feelings, MoodCheck offers a thoughtful and user-friendly experience." />
+            <ProjectCard animationIndex={4} year={2025} projectName="AllDesign" title=" Purposeful work for real people and bold ideas" webLink="" projectSecondaryColor="red" client="Developeing Skills"
+            time="2 Weeks" service="Web Page Development" imgSrc="Moodcheck.png"
+            projectDesc="Comming Soon" />
         </div>
     </section>
   )
