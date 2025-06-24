@@ -3,7 +3,6 @@
 body {
   background-color: #1F2937;
   scroll-behavior: smooth;
-  width: max-content;
 }
  
 .loading-div-one {
